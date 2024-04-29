@@ -1,11 +1,11 @@
 update-theme:
-	git submodule update --remote --recursive
+	hugo mod get -u
 
 server:
 	hugo server
 
 build:
-	hugo -D
+	hugo
 
 
 define new_post_content
