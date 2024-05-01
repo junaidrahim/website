@@ -1,5 +1,5 @@
 ---
-title: "Shipping Argo Workflows in Packages 📦 - KubeCon EU 2024"
+title: "Shipping Argo Workflows in Packages 📦 - KubeCon 2023"
 date: "2023-04-18"
 toc: false
 readTime: true
