@@ -18,7 +18,7 @@ toc: true
 readTime: true
 autonumber: false
 math: true
-draft: true
+draft: false
 ---
 EOF
 endef

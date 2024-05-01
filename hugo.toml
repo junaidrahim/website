@@ -1,4 +1,4 @@
-baseURL = 'https://junaidrahim.dev/'
+baseURL = 'https://junaid.foo/'
 languageCode = 'en-us'
 title = 'Junaid Rahim'
 theme = "github.com/junaidrahim/typo"
@@ -21,15 +21,15 @@ theme = "light"
 
 # Intro on main page, content in markdown, if you omit title or content the other can be displayed
 homeIntro = true
-homeIntroTitle = 'Hello,'
+homeIntroTitle = 'Hello ☕️'
 homeIntroContent = """
-This website is an archive of my thoughts, musings, projects, and research.
+This website is a record of my work, talks, projects, musings and research.
 
-Apart from work, I love writing, cycling, swimming and traveling. I am a huge nerd about PKM systems, hmu if you need app suggestions.
+I'm currently building systems and data pipelines at [Atlan](https://atlan.com). 
 
-I simp for long form content, I try to spend a lot of time with podcasts, well-filmed yt vids, books, pdfs and my RSS feed. I love reading/listening about psychology, history, society, tech, design and economics.
+Apart from work I love to read, write, cycle, travel and go on bike rides. I'm weirdly nerdy about PKM systems, fountain pens and cameras.
 
-You can find me on twitter [@junaidrahxm](https://twitter.com/junaidrahxm)
+I've written a longer introduction [here](/about) if you're interested :)
 """
 
 # Collection to display on home page: 
@@ -42,6 +42,10 @@ paginationSize = 100
 
 # Social icons
 [[params.social]]
+name = "twitter"
+url = "https://x.com/junaidrahxm"
+
+[[params.social]]
 name = "linkedin"
 url = "https://www.linkedin.com/in/junaidrahim"
 
@@ -49,21 +53,19 @@ url = "https://www.linkedin.com/in/junaidrahim"
 name = "github"
 url = "https://github.com/junaidrahim"
 
-[[params.social]]
-name = "twitter"
-url = "https://x.com/junaidrahxm"
 
 [[params.social]]
 name = "instagram"
 url = "https://instagram.com/junaidrahxm"
 
-[[params.social]]
-name = "strava"
-url = "https://www.strava.com/athletes/50189743"
 
 [[params.social]]
 name = "telegram"
 url = "https://t.me/zebion"
+
+[[params.social]]
+name = "strava"
+url = "https://www.strava.com/athletes/50189743"
 
 # Main menu pages
 [[params.menu]]
@@ -75,16 +77,9 @@ name = "posts"
 url = "/posts"
 
 [[params.menu]]
-name = "work"
-url = "/work"
-
-[[params.menu]]
 name = "talks"
 url = "/talks"
 
-[[params.menu]]
-name = "contact"
-url = "/contact"
 
 [[params.menu]]
 name = "about"
