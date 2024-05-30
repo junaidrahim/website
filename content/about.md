@@ -26,9 +26,9 @@ I'm deeply interested all things around systems programming -- database internal
 
 - I love fountain pens
 - I prefer physical books over a kindle
-- I despise short-form content
-- On weekends you'll find me [reading in cubbon park](https://www.instagram.com/cubbonreads/), [doing bike rides](https://www.corner.inc/list/db4aac10-9f0e-461b-bf00-2d785b387bf0) or [cycling across bangalore](https://www.strava.com/athletes/50189743).
+- On weekends you'll find me [reading in cubbon park](https://www.instagram.com/cubbonreads/), [doing bike rides](https://www.corner.inc/list/db4aac10-9f0e-461b-bf00-2d785b387bf0), [cycling across bangalore](https://www.strava.com/athletes/50189743).
 - Big [Obsidian](https://twitter.com/obsdmd) and [@kepano](https://twitter.com/kepano) fan
+- I do street photography sometimes, you can find my photos on my[unsplash](https://unsplash.com/@junaidrahxm)
 - I live with [Shiro](https://www.instagram.com/shirotoninn/) 🐶
 
 ## Contact
