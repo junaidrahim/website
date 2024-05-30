@@ -27,4 +27,4 @@ I started out with a [Lamy Safari](https://www.lamy.com/en/lamy-safari/), it's a
 
 After that you can puruse the enermous world of fountain pens, there are so many brands, so many nibs, so many inks, so many converters. It's a rabbit hole, but it's a fun one.
 
-A pen is a tool for expression, and I really want my favourite tool of expression to stay with me for years on end. And that makes fountain pens a perfect fit.
+A pen is a tool for expression, and I really want my tools of expression to stay with me for years on end. And that makes fountain pens a perfect fit.
