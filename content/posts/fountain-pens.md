@@ -25,6 +25,6 @@ Fountain pens are modular, thus they are repairable, you can swap out a part if 
 
 I started out with a [Lamy Safari](https://www.lamy.com/en/lamy-safari/), it's a great pen for beginners. It's a workhorse, it's reliable, and it's a great choice if you are looking for a "first" fountain pen. This one will get you hooked.
 
-After that you can puruse the enermous world of fountain pens, there are so many brands, so many nibs, so many inks, so many converters. It's a rabbit hole, but it's a fun one.
+After that you can puruse the enermous world of fountain pens, there many brands, many nibs and an abnormal number of types of inks. It's a rabbit hole, but it's a fun one.
 
 A pen is a tool for expression, and I really want my tools of expression to stay with me for years on end. And that makes fountain pens a perfect fit.

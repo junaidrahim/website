@@ -2,7 +2,7 @@
 
 👋🏻 Hi, I’m Junaid.
 
-I currently live in Bangalore working remotely as a **Software Engineer II** at [Atlan](https://atlan.com/) -- a collaborative platform for modern data teams.
+I currently live in Bangalore working remotely as a software engineer at [Atlan](https://atlan.com/) -- a collaborative platform for modern data teams.
 
 ## Boyhood and College
 
@@ -28,7 +28,7 @@ I'm deeply interested all things around systems programming -- database internal
 - I prefer physical books over a kindle
 - On weekends you'll find me [reading in cubbon park](https://www.instagram.com/cubbonreads/), [doing bike rides](https://www.corner.inc/list/db4aac10-9f0e-461b-bf00-2d785b387bf0), [cycling across bangalore](https://www.strava.com/athletes/50189743).
 - Big [Obsidian](https://twitter.com/obsdmd) and [@kepano](https://twitter.com/kepano) fan
-- I do street photography sometimes, you can find my photos on my[unsplash](https://unsplash.com/@junaidrahxm)
+- I do street photography sometimes, you can find my photos [here](https://unsplash.com/@junaidrahxm)
 - I live with [Shiro](https://www.instagram.com/shirotoninn/) 🐶
 
 ## Contact
