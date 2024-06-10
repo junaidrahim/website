@@ -23,7 +23,7 @@ theme = "light"
 homeIntro = true
 homeIntroTitle = 'Hello ☕️'
 homeIntroContent = """
-I'm currently working as a swe at [Atlan](https://atlan.com) building systems and data pipelines. 
+I'm currently working as a SWE at [Atlan](https://atlan.com) building systems and data pipelines. 
 
 Living in Bengaluru, India.
 
