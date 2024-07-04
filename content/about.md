@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-# Me
-
 👋🏻 Hi, I’m Junaid.
 
 I currently live in Bengaluru working remotely as a software engineer at [Atlan](https://atlan.com/) -- a collaborative platform for modern data teams.
