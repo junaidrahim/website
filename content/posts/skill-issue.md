@@ -2,6 +2,7 @@
 title: "Everything is a Skill Issue"
 date: "2024-06-10"
 summary: "\"skill issue\" is my favourite phrase"
+description: "\"skill issue\" is my favourite phrase"
 toc: false
 readTime: true
 autonumber: false

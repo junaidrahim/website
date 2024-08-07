@@ -2,6 +2,7 @@
 title: "Well Rounded Engineer"
 date: "2021-12-14"
 summary: "What does it mean to have high technical skill as an engineer ? Most of the content of this article is borrowed from a talk by Swanand Pagnis on the very same topic."
+description: "What does it mean to have high technical skill as an engineer ? Most of the content of this article is borrowed from a talk by Swanand Pagnis on the very same topic."
 toc: true
 readTime: true
 autonumber: false

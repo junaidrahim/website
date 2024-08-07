@@ -2,6 +2,7 @@
 title: "Smart Pointers in C++"
 date: "2020-08-18"
 summary: "Please don’t dig yourself a grave with raw pointers"
+description: "Please don’t dig yourself a grave with raw pointers"
 toc: true
 readTime: true
 autonumber: false

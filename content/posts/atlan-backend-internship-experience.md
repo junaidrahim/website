@@ -2,6 +2,7 @@
 title: "Atlan's Backend Internship Experience"
 date: "2022-06-06"
 summary: "I wanted to do a follow up article discussing backend engineering intern role at Atlan – how the internship went, what I learnt, and what can you expect from interning at here."
+description: "I wanted to do a follow up article discussing backend engineering intern role at Atlan – how the internship went, what I learnt, and what can you expect from interning at here."
 toc: true
 readTime: true
 autonumber: false

@@ -2,6 +2,7 @@
 title: "Being in the Control Room"
 date: "2024-07-23"
 summary: "Have you ever been in a control room ?"
+description: "Have you ever been in a control room ?"
 toc: false
 readTime: true
 autonumber: false

@@ -2,6 +2,7 @@
 title: "A Love Letter to Fountain Pens"
 date: "2024-05-20"
 summary: "Just a little post romanticising fountain pens"
+description: "Just a little post romanticising fountain pens"
 toc: false
 readTime: true
 autonumber: false
