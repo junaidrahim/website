@@ -7,7 +7,7 @@ toc: true
 readTime: true
 autonumber: false
 math: true
-draft: false
+draft: true
 ---
 
 ![img](./note-taking-normal.jpg)
