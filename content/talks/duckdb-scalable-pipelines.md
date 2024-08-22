@@ -1,5 +1,5 @@
 ---
-title: "Scalable Data Pipelines with DuckDB - KubeCon 2023"
+title: "Scalable Data Pipelines with DuckDB - DuckCon #5"
 date: "2024-08-15"
 toc: false
 readTime: true
