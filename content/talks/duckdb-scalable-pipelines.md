@@ -14,7 +14,7 @@ Presented in person at [DuckCon #5 in Seattle](https://duckdb.org/2024/08/15/duc
 
 - **Slides**: https://pitch.com/v/a-quack-at-building-scalable-data-pipelines-with-duckdb-t2dhzd
 - **Code**: https://github.com/junaidrahim/duckdb-with-argo-wf
-- **Recording**: Not published yet.
+- **Recording**: https://youtu.be/rveaJWvD_zk?feature=shared.
 
 ## Submitted Proposal
 
