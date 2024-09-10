@@ -2,7 +2,7 @@
 title: "The Notion Industrial Complex"
 date: "2024-08-18"
 summary: "Close your tasks anon, you don't need to fall for the notion industrial complex"
-description: "New Post Description"
+description: "Close your tasks anon, you don't need to fall for the notion industrial complex"
 toc: false
 readTime: true
 autonumber: false
