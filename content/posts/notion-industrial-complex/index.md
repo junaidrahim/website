@@ -58,7 +58,7 @@ It is very easy to fall prey to all this and forget that the whole point of this
 
 One of my favourite advice I received from a manager was to "stop starting and start closing". And I have taken this line to heart when it comes to productivity and output in general.
 
-The only way to perform is to pick a few tasks every day and lock-in until you close them. Rather than keep building elaborate information hierarchies of things you're supposed to do, doing, and have done.
+The only way to perform is to pick a few tasks every day and lock-in until you close them. Rather than building elaborate information hierarchies of things you're supposed to do, doing, and have done.
 
 Action creates information, motion causes motivation, execution is the only thing that eventually matters. You don't have to build perfect systems that capture all kinds of metadata about your tasks so you can keep feeling good about how you are making informed decisions about your tasks.
 
