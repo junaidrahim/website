@@ -62,6 +62,6 @@ I am deeply enamoured by companies like stripe, google and meta who make it a pr
 
 One of the effective ways to combat viscosity in your team is to encourage and allow your toolsmiths to innovate. 
 
-Their focus on creating and improving tools can significantly impact your team's efficiency and ability to move faster. Preferring tooling over process works, especially if your team is growing. 
+Their focus on creating and improving tools can significantly impact your team's efficiency and ability to move faster. Preferring tooling over process works, especially if your team is growing. The easiest way to enforce a process is to invest in tooling.
 
 By empowering your toolsmiths, you're investing in the long-term agility of your team. While it may seem like a short-term trade-off to entertain the rebellion, the reduced viscosity will pay dividends and you will have more satisfied developers in the long run.
