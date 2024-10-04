@@ -48,7 +48,7 @@ You can probably think of a few in your team who you would attribute to as *the 
 
 ## A Rebellion (sometimes)
 
-In some teams, mostly in startups, the whole "*let me write a tool for this*" is an act of rebellion. This being a rebellion comes a surprise to some folks who have always been at big tech companies, you probably have more tools at your disposal than you can keep track of, and can easily prioritise building some tooling to get your work done.  
+In some teams, mostly in startups, the whole "*let me write a tool for this*" is an act of rebellion. This being a rebellion comes as a surprise to some folks who have always been at big tech companies, you probably have more tools at your disposal than you can keep track of, and can easily prioritise building some tooling to get your work done.  
 
 But being skeptical here makes sense for startups, the priority is to ship features and get revenue, can't waste too much time building layers of internal tooling, it's pointless. Toolsmiths here can use a healthy dose of asking -- [but does it help you ship ?](https://thorstenball.com/blog/2020/08/25/but-does-it-help-you-ship/)
 
