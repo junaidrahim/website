@@ -1,7 +1,7 @@
 ---
 title: "Toolsmiths and Viscosity in Software Teams"
 date: "2024-10-02"
-summary: "The toolsmithss tip the scales and reduce viscosity in software teams. Encourage them."
+summary: "The toolsmiths tip the scales and reduce viscosity in software teams. Encourage them."
 description: "The toolsmiths tip the scales and reduce viscosity in software teams. Encourage them."
 toc: true
 readTime: true
