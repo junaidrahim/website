@@ -18,7 +18,7 @@ What do I mean by viscosity ?
 
 Viscosity in software teams refers to the resistance or difficulty in making changes to their systems. With time, even with planning and being mindful about tech debt, it's natural that the viscosity in your teams will go up.
 
-If you're an individual contributor who prefers moving fast, it becomes really frustrating to see this viscosity grow to a point that it becomes harder to ship something than to build something. It becomes annoying to see all this friction get in the way. 
+If you're an individual contributor who prefers moving fast, it is really frustrating to watch this viscosity grow to a point that it becomes harder to ship things. It becomes annoying with all this friction getting in the way. 
 
 It is also ironic that if you make decisions that are too indexed on shipping fast, you get to a highly viscous state even faster. You accrue debt faster, you don't write docs. You introduce tightly coupled components, you prefer introducing a rigid manual process than investing time in automation. You don't worry about the developer experience of new services. Every engineer knows doing all this comes back to bite us, but we do it anyway to get things to prod.
 
