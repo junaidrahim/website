@@ -10,7 +10,7 @@ math: true
 draft: false
 ---
 
-I've been thinking a lot about the relationship between **toolsmiths** and **viscosity** in teams that ship software. If you're reading this, you probably work in one of these teams, or better -- *manage one of these teams*.
+I've been thinking a lot about the relationship between **toolsmiths** and **viscosity** in teams that ship software. If you're reading this, you probably work in one of these teams, or better -- *manage* one of these teamsga.
 
 ## Viscosity
 
