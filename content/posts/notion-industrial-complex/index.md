@@ -10,7 +10,7 @@ math: true
 draft: false
 ---
 
-![img](./note-taking-normal.jpg)
+![img](./note-taking-normal.jpg#full)
 
 *Productivity Porn* -- engaging in activities that create an illusion of productivity without actual work. 
 
@@ -42,7 +42,7 @@ If you have used notion in any capacity to manage your personal notes, you might
 
 Apart from this, there is a full cadre of content creators on all the platforms you can imagine who create very cute playlists and guides on how you can hit your nirvana notion workspace. They might also convince you to buy one of their templates. [Even I have done it](https://junaidrahim.gumroad.com/l/notion-for-devs?a=590092627). 
 
-![ss](./ss.png)
+![ss](./ss.png#full)
 
 You see what I mean ?
 
