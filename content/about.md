@@ -8,7 +8,7 @@ I currently live in Bengaluru working remotely as a software engineer at [Atlan]
 
 ## Work
 
-I joined [Atlan](https://atlan.com/) in June 2021 as an swe intern towards the end of my second year of college. It was remote so I could manage it with my “online” college during the covid lockdown.
+I joined [Atlan](https://atlan.com/) in June 2021 as an intern towards the end of my second year of college. It was remote so I could manage it with my “online” college during the covid lockdown.
 
 Since joining most of my work has primarily been towards building the connector platform and also the set of initial connectors for BI and SQL tools. These connectors are data pipelines built using Argo Workflows, JDBC and Python.
 
