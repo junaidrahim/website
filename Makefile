@@ -1,5 +1,5 @@
 update-theme:
-	hugo mod get -u
+	git submodule update --recursive --remote
 
 server:
 	hugo server
