@@ -24,6 +24,6 @@ I'm deeply interested all things around systems programming -- database internal
 
 ## Contact
 
-- I'm fairly active on twitter [@junaidrahxm](https://twitter.com/junaidrahxm)
+- I'm fairly active on X [@junaidrahxm](https://x.com/junaidrahxm)
 - You can dm me on telegram [@zebion](https://t.me/zebion)
 - You can email me at [junaidrahim5a@gmail.com](mailto:junaidrahim5a@gmail.com)
