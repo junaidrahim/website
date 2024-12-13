@@ -53,4 +53,4 @@ No
 
 #### Open Source Projects
 
-[Verdaccio](https://github.com/verdaccio/verdaccio), [argopm](https://github.com/atlanhq/argopm) (If we could open source it in time)
+[Verdaccio](https://github.com/verdaccio/verdaccio), [argopm](https://github.com/atlanhq/argopm)
