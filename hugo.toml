@@ -41,7 +41,7 @@ description = "This website is a record of my work, talks, projects, musings and
 
 # Social icons
 [[params.social]]
-name = "twitter"
+name = "x"
 url = "https://x.com/junaidrahxm"
 
 [[params.social]]
