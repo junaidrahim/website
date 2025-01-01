@@ -199,7 +199,7 @@ I hope this story of mine would add to you getting started on your journey of wr
 **Notes**
 
 - This post was mostly inspired from [Andrej Karpathy's love letter to obsidian](https://x.com/karpathy/status/1761467904737067456). 
-<!-- - Thanks to [Aman](https://x.com/amanv8060), [Rohan](https://x.com/rohankmr414), [Akash](https://x.com/akashjkhamkar), [Ganesh](https://x.com/ganesh_df) and [Bindu](https://x.com/BinduTenneti) for reading drafts of this post. -->
+- Thanks to [Aman](https://x.com/amanv8060), [Rohan](https://x.com/rohankmr414), [Akash](https://x.com/akashjkhamkar) and [Ganesh](https://x.com/ganesh_df) for reading drafts of this post.
 
 [^1]: https://paulgraham.com/words.html
 [^2]: https://paulgraham.com/writes.html
