@@ -1,6 +1,6 @@
 ---
 title: "The Resume Is Not Enough"
-date: "2025-02-12T19:52:35+05:30"
+date: "2025-05-05T19:52:35+05:30"
 summary: "Why traditional resumes fail to capture the true value of experienced engineers, and how technical blogging, conferences, and open source contributions create more meaningful signals of technical capability."
 description: "Why traditional resumes fail to capture the true value of experienced engineers, and how technical blogging, conferences, and open source contributions create more meaningful signals of technical capability."
 toc: true
