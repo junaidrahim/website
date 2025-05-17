@@ -44,7 +44,7 @@ This is one of the reasons why I wanted my internship to be at least 6 months, b
 
 ## People and Culture
 
-{{< twitter user="swamusing" id="1527638653878476800" >}}
+{{< x user="swamusing" id="1527638653878476800" >}}
 
 I always keep coming back to this wonderful tweet by my colleague for the people vibe. Working at Atlan has been pretty amazing – remote first, flexible hours, weekends are respected, high trust and ownership, all meetings are open by default.
 
@@ -54,11 +54,11 @@ Internships here have a good mix of mentorship and ownership. You will be truste
 
 The quarterly meet-ups with the team were pretty fun too. We usually fly out to a new city for a week or two and work together out of a WeWork.
 
-{{< twitter user="junaidrahxm" id="1507296041166848000" >}}
+{{< x user="junaidrahxm" id="1507296041166848000" >}}
 
 Also another sweet perk of interning here 🥹
 
-{{< twitter user="junaidrahxm" id="1435267762796969985" >}}
+{{< x user="junaidrahxm" id="1435267762796969985" >}}
 
 Atlan put up a pic of everyone in the company on the NASDAQ building in Times Square as a token of appreciation.
 
@@ -103,6 +103,6 @@ I have my final year of college left. I started my journey as a full time engine
 
 It’s still day 1.
 
-{{< twitter user="junaidrahxm" id="1400065390949011462" >}}
+{{< x user="junaidrahxm" id="1400065390949011462" >}}
 
 

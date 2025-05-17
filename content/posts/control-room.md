@@ -13,7 +13,7 @@ draft: false
 
 There is a beautiful tweet by [svs](https://x.com/_svs_) which I keep coming back to when trying to describe how it feels like being in a control room.
 
-{{< twitter user="_svs" id="1742106021550842262" >}}
+{{< x user="_svs" id="1742106021550842262" >}}
 
 He is talking about this cocktail of curiosity, wonder and nothingness you feel when you are in a control room of any sorts.
 

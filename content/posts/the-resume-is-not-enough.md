@@ -14,7 +14,7 @@ I'm at a phase of my career where most of my mid-to-senior engineer friends are 
 
 And this got me thinking about how technical personas actually demonstrate their capabilities in a free market.
 
-{{< twitter user="GraduatedBen" id="1868020759479607771" >}}
+{{< x user="GraduatedBen" id="1868020759479607771" >}}
 
 The average hiring manager spends 7.4 seconds reviewing a resume [^1].
 

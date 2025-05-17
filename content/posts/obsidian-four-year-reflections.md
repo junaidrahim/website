@@ -32,7 +32,7 @@ My current vault sits at 776 notes, 22k lines in total. The median note size is 
 
 You can view the current graph view of my vault in this thread which I keep updating every few months.
 
-{{< twitter user="junaidrahxm" id="1419715852526522369" >}}
+{{< x user="junaidrahxm" id="1419715852526522369" >}}
 
 My productivity setup as of today is just two tools -- [Obsidian](https://obsidian.md/) and [Akiflow](https://akiflow.com/). I use Akiflow to manage my tasks and my calendar, everything else goes via Obsidian.
 
@@ -184,7 +184,7 @@ I've been using this app called [VoicePal](https://apps.apple.com/us/app/voicepa
 
 I used it a lot recently to write some documentation for a tool at work and this flow is very fluid and fun.
 
-{{< twitter user="junaidrahxm" id="1869746363187290470" >}}
+{{< x user="junaidrahxm" id="1869746363187290470" >}}
 
 I've pre-ordered [Pocket](https://www.openvision.engineering/) as well. The team says the software is going to be open-source, I'd probably figure out a way to sync transcriptions to my obsidian vault. 
 
