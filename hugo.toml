@@ -39,6 +39,10 @@ paginationSize = 100
 
 description = "This website is a record of my work, talks, projects, musings and research."
 
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = false
+
 # Social icons
 [[params.social]]
 name = "x"
