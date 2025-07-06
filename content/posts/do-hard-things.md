@@ -14,7 +14,7 @@ I've been thinking about friction lately. Not the physics kind, but the resistan
 
 Signull wrote about how [friction is a moat](https://open.substack.com/pub/anu/p/make-something-heavy) - a competitive advantage that keeps noise away.
 
-This concept has been bouncing around my mind, connecting with other thoughts about work, value, and meaning. It's crystallized into a simple directive that 
+This concept has been bouncing around my mind, connecting with other thoughts about work, value, and meaning[^1]. It's crystallized into a simple directive that 
 
 I keep coming back to:
 
@@ -83,3 +83,5 @@ This isn't about suffering for its own sake. It's about embracing the necessary 
 The question isn't whether you should do hard things - you must, if you want your work to matter. The question is: which hard things are worth doing?
 
 The resistance you feel is the whole point - it's the proof that what you're doing matters.
+
+[^1]: [Costly signaling theory in Evolutionary Psychology](https://en.wikipedia.org/wiki/Costly_signaling_theory_in_evolutionary_psychology)
