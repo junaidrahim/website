@@ -33,5 +33,3 @@ This architecture enables us to run very lean and memory efficient data pipeline
 Post-run analysis and debugging also becomes easy as developers can just run SQL notebooks against the cloud object store from their laptops directly leveraging the excellent parquet and object store support present in DuckDB.
 
 We have used DuckDB to decrease the runtime of our pipelines by ~50% replacing our older architecture that used in-memory apache spark. We propose this talk to present this solution to the DuckDB and the data engineering community so more teams are encouraged to leverage DuckDB in their analytical data pipelines.
-
-

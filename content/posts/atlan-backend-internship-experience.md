@@ -22,7 +22,6 @@ Donut is our onboarding bot, it guides you through your first week. This is what
 
 ![](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9092cbd-79f7-4efd-96db-1af84feea9d0_1466x814.png)
 
-
 ### What is Atlan ?
 
 [Atlan](https://atlan.com/) is a collaborative workspace for Data teams. Engineering teams have Github, Sales teams have Hubspot, Design teams have Figma, but there’s no home for data teams. A place where they can collaborate and get work done.
@@ -104,5 +103,3 @@ I have my final year of college left. I started my journey as a full time engine
 It’s still day 1.
 
 {{< x user="junaidrahxm" id="1400065390949011462" >}}
-
-

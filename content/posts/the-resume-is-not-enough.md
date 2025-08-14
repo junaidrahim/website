@@ -10,7 +10,7 @@ math: true
 draft: false
 ---
 
-I'm at a phase of my career where most of my mid-to-senior engineer friends are looking to switch after a few years of working at their first companies after college. 
+I'm at a phase of my career where most of my mid-to-senior engineer friends are looking to switch after a few years of working at their first companies after college.
 
 And this got me thinking about how technical personas actually demonstrate their capabilities in a free market.
 
@@ -24,19 +24,19 @@ As your career progresses and your work grows in depth and complexity, the disco
 
 A resume that's meant to be scanned in seconds utterly fails to capture what makes mid-to-senior engineers valuable.
 
-When you're starting out, a resume works fine, it's better if you have a portfolio of projects, but still, you list your education, maybe an internship or two. 
+When you're starting out, a resume works fine, it's better if you have a portfolio of projects, but still, you list your education, maybe an internship or two.
 
 But once you've spent years solving complex problems in a specific business context, a single page of bullet points becomes a laughably inadequate compression format for your actual capabilities.
 
 ## The Problem
 
-Resumes are reductive by design. 
+Resumes are reductive by design.
 
-They force you to distill years of complex problem-solving, architectural decisions, and technical growth into a handful of terse bullet points. 
+They force you to distill years of complex problem-solving, architectural decisions, and technical growth into a handful of terse bullet points.
 
 What's worse, they're optimized for the wrong audience – ATS systems and non-technical recruiters scanning for keywords.
 
-Let's be honest about what a resume *actually* captures:
+Let's be honest about what a resume _actually_ captures:
 
 - Project descriptions that are too shallow to be useful
 - Buzzwords
@@ -57,7 +57,7 @@ Being in a hole and just working for your company and then coming out years late
 
 ## Better Signals
 
-So if resumes aren't enough, what actually works? 
+So if resumes aren't enough, what actually works?
 
 How do you demonstrate technical competence in a format that actually preserves the signal?
 
@@ -65,7 +65,7 @@ How do you demonstrate technical competence in a format that actually preserves 
 
 ### Blogs
 
-Writing technical blogs is probably the most accessible way to demonstrate your capabilities. 
+Writing technical blogs is probably the most accessible way to demonstrate your capabilities.
 
 A well-written technical post does several things simultaneously:
 
@@ -78,19 +78,19 @@ The best technical blogs aren't sanitized marketing pieces – they're honest ex
 
 [Confusion is a great muse for technical writing](https://notes.eatonphil.com/2024-06-14-confusion-is-a-muse.html).
 
-A good technical blog is a window into that person's engineering mindset. 
+A good technical blog is a window into that person's engineering mindset.
 
 I can see how they think, how they approach problems, and what they value. No resume bullet point gives me that insight.
 
 ### Speaking at Conferences
 
-Speaking at conferences is another great way to demonstrate your technical knowledge. 
+Speaking at conferences is another great way to demonstrate your technical knowledge.
 
-Not only are you presenting your technical knowledge, but you're also showcasing your ability to structure your thoughts around a problem and communicate them to an audience. 
+Not only are you presenting your technical knowledge, but you're also showcasing your ability to structure your thoughts around a problem and communicate them to an audience.
 
 This is a critical skill for senior engineers who need to influence without authority.
 
-The most valuable talks aren't just about showcasing technical prowess – they're about providing genuine value to the audience. 
+The most valuable talks aren't just about showcasing technical prowess – they're about providing genuine value to the audience.
 
 A talk that helps other engineers avoid pitfalls you've encountered or understand complex concepts more clearly demonstrates both your technical depth and your commitment to the wider community.
 
@@ -125,7 +125,7 @@ As Simon Sarris [writes about creating "breadcrumbs"](https://open.substack.com/
 
 You also end up creating a [binge bank](https://x.com/shaanvp/status/1570901221942366210) of work that you can draw on for your next role.
 
-The most valuable aspect might be how these signals compound over time. 
+The most valuable aspect might be how these signals compound over time.
 
 A resume is ephemeral – it gets updated every few years and then discarded. But a body of public work builds on itself, creating a comprehensive picture of your growth as an engineer that no resume could ever capture.
 
@@ -135,7 +135,7 @@ The resume gets you past initial filters. Your broader body of work is what actu
 
 ## Thinking Long Term
 
-Building these signals takes time. 
+Building these signals takes time.
 
 It's a marathon, not a sprint. But the compounding benefits make it one of the highest-leverage activities for your career growth.
 
@@ -146,6 +146,9 @@ You'll have created a body of work that demonstrates not just what you've done, 
 And that's something no resume alone could ever capture.
 
 [^1]: https://www.prnewswire.com/news-releases/ladders-updates-popular-recruiter-eye-tracking-study-with-new-key-insights-on-how-job-seekers-can-improve-their-resumes-300744217.html
+
 [^2]: [@svs on blogging](https://x.com/_svs_/status/1716356724175655059)
+
 [^3]: [@svs on how the blog to job pipeline is undefeated](https://x.com/_svs_/status/1907424601476338006)
+
 [^4]: [Phil Eaton on technical blogging](https://writethatblog.substack.com/p/phil-eaton-on-technical-blogging)

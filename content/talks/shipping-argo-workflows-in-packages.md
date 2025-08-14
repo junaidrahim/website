@@ -35,7 +35,7 @@ Argo workflows is the go-to tool to run workflow DAGs on k8s. In argo workflows,
 
 Projects like couler and hera are solutions to distribute workflows as python packages, but there is no option for teams looking for a more language-agnostic solution that does not lock them into an ecosystem.
 
-argopm enables developers to manage workflow templates just like npm packages. This helps with dependencies, versioning and all the other benefits of a package ecosystem. 
+argopm enables developers to manage workflow templates just like npm packages. This helps with dependencies, versioning and all the other benefits of a package ecosystem.
 
 We propose this talk to present the community with the package ecosystem built using argopm at Atlan to distribute workflow templates as standard packages.
 

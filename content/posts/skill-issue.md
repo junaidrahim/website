@@ -1,8 +1,8 @@
 ---
 title: "Everything is a Skill Issue"
 date: "2024-06-10"
-summary: "\"skill issue\" is my favourite phrase"
-description: "\"skill issue\" is my favourite phrase"
+summary: '"skill issue" is my favourite phrase'
+description: '"skill issue" is my favourite phrase'
 toc: false
 readTime: true
 autonumber: false
@@ -10,12 +10,12 @@ math: true
 draft: false
 ---
 
-Approach life like every problem arises from a skill issue. 
+Approach life like every problem arises from a skill issue.
 
-- Can't get a job ? skill issue. 
-- Can't lose weight ? skill issue. 
-- Can't hit your reading goal ? skill issue. 
-- Can't hit your FTP ? skill issue. 
+- Can't get a job ? skill issue.
+- Can't lose weight ? skill issue.
+- Can't hit your reading goal ? skill issue.
+- Can't hit your FTP ? skill issue.
 
 Marking almost everything as a skill issue turns the problem from rigid to malleable. It flips the narrative from "oh fuck I have this problem" to "what can I do to make progress"
 

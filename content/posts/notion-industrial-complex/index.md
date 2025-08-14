@@ -12,7 +12,7 @@ draft: false
 
 ![img](./note-taking-normal.jpg#full)
 
-*Productivity Porn* -- engaging in activities that create an illusion of productivity without actual work. 
+_Productivity Porn_ -- engaging in activities that create an illusion of productivity without actual work.
 
 Binge-watching videos on how to be productive, obsessing over the perfect productivity setup, watching too many motivational vidoes and reading too many self-help books. Ultimately hindering real progress.
 
@@ -34,13 +34,13 @@ Notion seems to be going after the google workspace business these days with the
 >
 > -- [Zawinski’s Law](https://modelthinkers.com/mental-model/zawinskis-law#:~:text=Zawinski's%20Law%20captures%20common%20market,replaced%20by%20ones%20which%20can.%E2%80%9D)
 
-But this is not about them as a company or their tech, it's a very impressive product. 
+But this is not about them as a company or their tech, it's a very impressive product.
 
-This is about notion's cultural presence in the personal productivity space. Productivity porn and Notion are a match made in heaven. I like to call it the Notion Industrial Complex. 
+This is about notion's cultural presence in the personal productivity space. Productivity porn and Notion are a match made in heaven. I like to call it the Notion Industrial Complex.
 
 If you have used notion in any capacity to manage your personal notes, you might have realised how it is designed to lure you into using all of its features to make your workspace as complicated as possible, you might start with simple pages and backlinks, but then you try databases, and linked databases, and then reminders and then filters and formulae and you realise you have spent the last 4 hours doing everything on notion apart from the one thing you opened it for, to write.
 
-Apart from this, there is a full cadre of content creators on all the platforms you can imagine who create very cute playlists and guides on how you can hit your nirvana notion workspace. They might also convince you to buy one of their templates. [Even I have done it](https://junaidrahim.gumroad.com/l/notion-for-devs?a=590092627). 
+Apart from this, there is a full cadre of content creators on all the platforms you can imagine who create very cute playlists and guides on how you can hit your nirvana notion workspace. They might also convince you to buy one of their templates. [Even I have done it](https://junaidrahim.gumroad.com/l/notion-for-devs?a=590092627).
 
 ![ss](./ss.png#full)
 
@@ -48,7 +48,7 @@ You see what I mean ?
 
 I started using notion when it was in beta, I still use it for my day job, but I don't use it anymore to manage my personal notes and tasks, I have moved to a radically simpler setup to just use [obsidian](https://obsidian.md/) and [todoist](https://todoist.com/).
 
-I was a part of the notion industrial complex, I always thought that I was just another notion re-org away from hitting my perfect productivity setup, because everyone was selling that narrative, some of them were paid to sell that narrative by Notion. 
+I was a part of the notion industrial complex, I always thought that I was just another notion re-org away from hitting my perfect productivity setup, because everyone was selling that narrative, some of them were paid to sell that narrative by Notion.
 
 I used to spend hours making my notion pretty and organised. I used to religiously follow creators on yt that would keep coming up with new videos of elaborate setups to organise notes, projects, goals, tasks, milestones, reminders.
 

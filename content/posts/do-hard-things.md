@@ -10,16 +10,15 @@ math: true
 draft: false
 ---
 
-I've been thinking about friction lately. Not the physics kind, but the resistance that makes progress difficult. 
+I've been thinking about friction lately. Not the physics kind, but the resistance that makes progress difficult.
 
 Signull wrote about how [friction is a moat](https://open.substack.com/pub/anu/p/make-something-heavy) - a competitive advantage that keeps noise away.
 
-This concept has been bouncing around my mind, connecting with other thoughts about work, value, and meaning[^1]. It's crystallized into a simple directive that 
+This concept has been bouncing around my mind, connecting with other thoughts about work, value, and meaning[^1]. It's crystallized into a simple directive that
 
 I keep coming back to:
 
 > **DO HARD THINGS**
-
 
 ## Do
 
@@ -28,7 +27,7 @@ Action first. Not writing about doing things, not pondering or procrastinating. 
 The world is full of people who talk about what they'll build, systems they'll create, changes they'll make. But talk is cheap - execution is everything.
 
 - Most people never start
-- Of those who start, most quit when it gets difficult 
+- Of those who start, most quit when it gets difficult
 - Of those who persist, most settle for "good enough"
 
 Each dropout creates space. Opportunity. A gap where you can push forward if you're willing to do the work.
