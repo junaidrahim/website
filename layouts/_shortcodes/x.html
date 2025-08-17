@@ -15,7 +15,6 @@
   {{- end -}}
 
   {{- define "render-x" -}}
-    <div style="display: flex; justify-content: center;">
       {{- $url := printf "https://x.com/%v/status/%v" .user .id -}}
       {{- $query := querify "url" $url "dnt" .dnt -}}
       {{- $request := printf "https://publish.x.com/oembed?%s" $query -}}
@@ -28,6 +27,5 @@
           {{- warnidf "shortcode-x-getremote" "The %q shortcode was unable to retrieve the remote data. See %s" $.ctx.Name $.ctx.Position -}}
         {{- end -}}
       {{- end -}}
-    </div>
   {{- end -}}
 </div>
