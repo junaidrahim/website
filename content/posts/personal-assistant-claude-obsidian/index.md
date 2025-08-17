@@ -10,6 +10,8 @@ math: true
 draft: false
 ---
 
+{{< x user="signulll" id="1955645191580533190" >}}
+
 This guide covers how I’ve setup a practical personal executive assistant using the Claude desktop app and Obsidian MCP.
 
 The core idea: connect Claude to your universe of notes and tools, so it can read, write, and reason with your real context—not just isolated prompts.
