@@ -4,22 +4,45 @@ title: "About"
 
 👋🏻 Hi, I’m Junaid.
 
-I currently live in Bengaluru working remotely as a software engineer at [Atlan](https://atlan.com/) -- a collaborative platform for modern data teams.
+I'm a systems engineer based in Bengaluru, currently building the future of agentic data collaboration at [Atlan](https://atlan.com/). 
+
+My work sits at the intersection of distributed systems, developer experience, and AI-native engineering.
+
+I try to build systems that are both technically excellent and deeply human-centered. 
+
+Whether I'm architecting metadata pipelines, designing developer workflows, or documenting complex systems, I approach problems with systematic thinking while maintaining focus on the people who'll use what I build, be it humans or agents.
+
 
 ## Work
 
-I joined [Atlan](https://atlan.com/) in June 2021 as an intern towards the end of my second year of college. It was remote so I could manage it with my “online” college during the covid lockdown.
+I wear multiple hats at Atlan. My work spans the following domains:
 
-Since joining most of my work has primarily been towards building the connector platform and also the set of initial connectors for BI and SQL tools. These connectors are data pipelines built using Argo Workflows, JDBC and Python.
+**Platform Engineering**
 
-I'm deeply interested all things around systems programming -- database internals, distributed systems, PL theory, compilers, containers and kubernetes. I love technical writing as well, I drive a lot of engineering documentation initiatives at work.
+My primary focus right now is on the Atlan App Framework that enables our customers, forward-deployed and internal engineering teams to build on top of the Atlan platform faster and better.
+
+
+**Data Engineering**
+
+I've worked on a lot of metadata pipelines for BI and SQL tools using Argo Workflows, JDBC, and Python.
+
+
+**Developer Experience**
+
+I really enjoy working in problems that require developer empathy. I work on a lot of internal projects around documentation and tooling that empower other engineers to build faster and better.
+
+
+**AI-Native Engineering**
+
+I'm super interested in figuring out ecosystem investments that help engineers ship faster with LLMs and tools like Cursor and Claude Code. So I work on a lot of internal projects around this as well.
+
+I'm deeply interested in all things around systems programming -- database internals, distributed systems, PL theory, compilers, containers and kubernetes. I love technical writing as well. 
 
 ## Not Work
 
-- I love fountain pens
-- On weekends you'll find me [reading in cubbon park](https://www.instagram.com/cubbonreads/), [doing bike rides](https://www.corner.inc/list/db4aac10-9f0e-461b-bf00-2d785b387bf0) or [cycling across bangalore](https://www.strava.com/athletes/50189743).
-- Big [Obsidian](https://twitter.com/obsdmd) and [@kepano](https://twitter.com/kepano) fan
-- I do street photography sometimes, you can find my photos [here](https://instagram.com/blrstreet)
+On weekends you'll find me [reading in cubbon park](https://www.instagram.com/cubbonreads/), [doing bike rides](https://www.corner.inc/list/db4aac10-9f0e-461b-bf00-2d785b387bf0) or [cycling across bangalore](https://www.strava.com/athletes/50189743).
+
+I do street photography sometimes, you can find my photos [here](https://unsplash.com/@junaidrahxm).
 
 ## Contact
 
