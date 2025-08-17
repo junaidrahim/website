@@ -7,10 +7,10 @@ toc: false
 readTime: true
 autonumber: false
 math: true
-draft: false
+draft: true
 ---
 
->> WIP Post. Not Ready
+> > WIP Post. Not Ready
 
 I have been thinking a lot about complexity in the past few months of using cursor to build everything.
 

@@ -8,5 +8,6 @@ server:
 build:
 	hugo
 
-	
+lint:
+	npx prettier content --write
 	
