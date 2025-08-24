@@ -17,9 +17,9 @@ We've gone all in on Cursor at Atlan. It's the default recommendation for anyone
 
 The promise? **Build anything 10x faster**. The reality? _A weird paradox_.
 
-Nothing's changed by the way, you still are responsible for the correctness of your code.
+Nothing's changed by the way, you still are responsible for the correctness of your code. But in a way, everything has changed, the implementation happens in seconds, not hours. 
 
-But in a way, everything has changed, the implementation happens in seconds, not hours. The bottleneck has shifted from writing code to understanding what you've written (or generated).
+The bottleneck has shifted from writing code to understanding what you've written (or generated).
 
 And in this world, I've become obsessed with verification. Tests. Schemas. Anything that proves the code does what I think it does.
 
