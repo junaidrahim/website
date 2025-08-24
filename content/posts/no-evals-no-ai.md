@@ -1,8 +1,8 @@
 ---
 title: "No Evals, No AI: Dijkstra's Humility in the Age of Cursor"
 date: "2025-07-16T18:54:14+05:30"
-summary: "Dijkstra warned us in 1972 that software complexity would outpace human comprehension—now AI generates that complexity in seconds instead of hours. The humble programmer of 2025 doesn't avoid AI, they build verification scaffolding strong enough to bridge the comprehension gap."
-description: "Dijkstra warned us in 1972 that software complexity would outpace human comprehension—now AI generates that complexity in seconds instead of hours. The humble programmer of 2025 doesn't avoid AI, they build verification scaffolding strong enough to bridge the comprehension gap."
+summary: "Dijkstra warned us in 1972 that software complexity would outpace human comprehension. The humble programmer of 2025 doesn't avoid AI, they build verification scaffolding strong enough to bridge the comprehension gap."
+description: "Dijkstra warned us in 1972 that software complexity would outpace human comprehension. The humble programmer of 2025 doesn't avoid AI, they build verification scaffolding strong enough to bridge the comprehension gap."
 toc: false
 readTime: true
 autonumber: false
