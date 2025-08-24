@@ -390,17 +390,13 @@ Now that you've set up the system prompt, you can start prompting your assistant
 
 I am currently doing ~30 conversations per week with Glitch, from morning routines to complex technical discussions. The ROI isn't measurable in time saved alone—it's in the cognitive space reclaimed for what matters.
 
-Every morning starts with "gm" - two words that trigger Glitch to pull my calendar, scan my daily notes, and grab the top HackerNews stories. It's a simple routine that saves maybe 10 minutes, but more importantly, it starts my day with everything I need in one place.
+Every morning starts with "gm" - it triggers Glitch to pull my calendar, scan my daily notes, and grab the top HackerNews stories. It's a simple routine that saves maybe 10 minutes, but more importantly, it starts my day with everything I need in one place.
 
-Throughout the day, I'll drop in quick commands like "tbw catchup" to review drafts or ask for help structuring a technical document. The assistant knows my Obsidian vault structure, understands my tagging system, and can pull context from weeks-old notes about that architecture I was working on or that parquet corruption problem I was debugging.
+Throughout the day, I'll drop in quick commands to review drafts or ask for help structuring a technical document. The assistant knows my Obsidian vault structure, understands my tagging system, and can pull context from weeks-old notes about that architecture I was working on or that parquet corruption problem I was debugging.
 
-The real value comes from having something that maintains context across all my work. When I need to write EOD updates for a project, Glitch knows we moved to xxh3_128 hashing, that we're solving 24-hour workflow bottlenecks, that the updates need to be outcome-focused for leadership.
-
-It drafts in my voice - direct, hierarchical bullets, technical but not overwhelming. Sure, I could write these myself, but why spend 20 minutes context-switching when I could be actually solving the problems instead? The assistant handles the communication overhead while I focus on the engineering.
+The real value comes from having something that maintains context across all my work. When I need to write EOD updates for a project, Glitch knows we moved to xxh3_128 hashing, that we're solving 24-hour workflow bottlenecks, that the updates need to be outcome-focused for leadership. It drafts in my voice - direct, hierarchical bullets, technical but not overwhelming.
 
 What surprised me most is how it's become a thinking partner for technical decisions. When I'm stuck on something like deterministic partitioning strategies or trying to remember why we made certain architectural choices three months ago, I can explore ideas through conversation. Glitch remembers the evolution of my technical decisions, from early prototypes to current implementations.
-
-It's not replacing my thinking - it's augmenting my memory and helping me see patterns in my own work. Every conversation adds to this shared context, making the next interaction more valuable.
 
 Sometimes I just draw something on a piece of paper, yap a lot of context about it via wisprflow and then ask Glitch to help me structure it, summarize it and add it to my notes, boom, I have context now that I can pull in later to build on top of.
 
