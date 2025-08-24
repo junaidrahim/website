@@ -21,8 +21,6 @@ Nothing's changed by the way, you still are responsible for the correctness of y
 
 But in a way, everything has changed, the implementation happens in seconds, not hours. The bottleneck has shifted from writing code to understanding what you've written (or generated).
 
-I am a part of the [App Framework](https://github.com/atlanhq/application-sdk) team. I write things other developers build on top of. Every decision at the code level in this team has long-term implications. Can't just ship and iterate freely. 
-
 And in this world, I've become obsessed with verification. Tests. Schemas. Anything that proves the code does what I think it does.
 
 Because here's the thing: *complexity doesn't care about your velocity*.
@@ -87,6 +85,9 @@ Real humility in the AI era looks different:
 **Build verification layers.** Not just unit tests. Property-based testing. Invariant checking. Runtime assertions. Observability that tells you when reality diverges from your mental model.
 
 **Simplify relentlessly.** The simplest abstraction isn't just easier to understand—it's easier to verify. I've seen early complexity compound into unmaintainable disasters. With AI, this happens 10x faster.
+
+I am a part of the [App Framework](https://github.com/atlanhq/application-sdk) team. I write things other developers build on top of. Every decision at the code level in this team has long-term implications. Can't just ship and iterate freely. 
+
 
 I work on platform components—the stuff other developers build on top of. Can't just ship and iterate. These decisions cascade. One bad abstraction infects every service built on it.
 
