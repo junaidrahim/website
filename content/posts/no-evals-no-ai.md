@@ -1,8 +1,8 @@
 ---
 title: "No Evals, No AI: Dijkstra's Humility in the Age of Cursor"
 date: "2025-07-16T18:54:14+05:30"
-summary: "The humble programmer of 2025 doesn't avoid AI, they build verification scaffolding strong enough to bridge the comprehension gap."
-description: "The humble programmer of 2025 doesn't avoid AI, they build verification scaffolding strong enough to bridge the comprehension gap."
+summary: "The humble programmers of 2025 doesn't avoid AI, they build verification scaffolding strong enough to bridge the comprehension gap."
+description: "The humble programmers of 2025 doesn't avoid AI, they build verification scaffolding strong enough to bridge the comprehension gap."
 toc: false
 readTime: true
 autonumber: false
