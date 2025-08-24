@@ -9,36 +9,36 @@ autonumber: false
 math: true
 ---
 
-Last week, I watched Cursor generate a 500-line feature implementation in 12 seconds. 
+Last week, I watched Cursor generate a 500-line feature implementation in 12 seconds.
 
 The code worked. The tests passed. But, I had no idea what half of it did. So I spent another hour reading every line and making sure it was what I wanted.
 
-We've gone all in on Cursor at Atlan. It's the default recommendation for anyone shipping code. 
+We've gone all in on Cursor at Atlan. It's the default recommendation for anyone shipping code.
 
-The promise? **Build anything 10x faster**. The reality? *A weird paradox*.
+The promise? **Build anything 10x faster**. The reality? _A weird paradox_.
 
-Nothing's changed by the way, you still are responsible for the correctness of your code. 
+Nothing's changed by the way, you still are responsible for the correctness of your code.
 
 But in a way, everything has changed, the implementation happens in seconds, not hours. The bottleneck has shifted from writing code to understanding what you've written (or generated).
 
 And in this world, I've become obsessed with verification. Tests. Schemas. Anything that proves the code does what I think it does.
 
-Because here's the thing: *complexity doesn't care about your velocity*.
+Because here's the thing: _complexity doesn't care about your velocity_.
 
 This world would have horrified Dijkstra.
 
 ## Dijkstra's Warning
 
-I fell down a rabbit hole recently and found the [Edsger W. Dijkstra Archive](https://www.cs.utexas.edu/~EWD/welcome.html). You must know him from the [shortest path algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm). 
+I fell down a rabbit hole recently and found the [Edsger W. Dijkstra Archive](https://www.cs.utexas.edu/~EWD/welcome.html). You must know him from the [shortest path algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm).
 
-It's the archive of all of his notes and correspondence on a wide variety of topics. These notes are called *EWDs*. 
+It's the archive of all of his notes and correspondence on a wide variety of topics. These notes are called _EWDs_.
 
 Some of these essays are cult classics[^1] and you will find them peppered across [hackernews](https://hn.algolia.com/?q=the%20humble%20programmer).
 
 I want to talk about [EWD 340: The Humble Programmer](https://www.cs.utexas.edu/~EWD/ewd03xx/EWD340.PDF). His 1972 Turing Award lecture, the core observation was simple:
 
 - Hardware capabilities improved 1000x
-- Software complexity grew even faster  
+- Software complexity grew even faster
 - Human brain capacity stayed constant
 - Result: an ever-widening comprehension gap
 
@@ -58,7 +58,7 @@ Last month, we needed a distributed lock mechanism. Cursor generated sophisticat
 
 It worked—until it didn't.
 
-The AI didn't know our Redis runs in HA mode with Sentinel. Didn't know about our specific `down-after-milliseconds` value. 
+The AI didn't know our Redis runs in HA mode with Sentinel. Didn't know about our specific `down-after-milliseconds` value.
 
 Generated perfect locks for single-instance Redis. Deployed to production? We'd have had split-brain scenarios during failovers.
 
@@ -86,14 +86,13 @@ Real humility in the AI era looks different:
 
 **Simplify relentlessly.** The simplest abstraction isn't just easier to understand—it's easier to verify. I've seen early complexity compound into unmaintainable disasters. With AI, this happens 10x faster.
 
-I am a part of the [App Framework](https://github.com/atlanhq/application-sdk) team. I write things other developers build on top of. Every decision at the code level in this team has long-term implications. Can't just ship and iterate freely. 
-
+I am a part of the [App Framework](https://github.com/atlanhq/application-sdk) team. I write things other developers build on top of. Every decision at the code level in this team has long-term implications. Can't just ship and iterate freely.
 
 I work on platform components—the stuff other developers build on top of. Can't just ship and iterate. These decisions cascade. One bad abstraction infects every service built on it.
 
 So here's a rule: **No Evals, No AI.**
 
-No AI-generated code ships without evaluation criteria. Tests, benchmarks, property checks, load testing, something that proves correctness without requiring code review. 
+No AI-generated code ships without evaluation criteria. Tests, benchmarks, property checks, load testing, something that proves correctness without requiring code review.
 
 If you can't verify it mechanically, you can't trust it operationally.
 
@@ -103,9 +102,9 @@ Software today is about "good enough" delivered quickly. Requirements change fas
 
 But here's what Dijkstra got right: the gap between capability and comprehension is dangerous. With AI, we've accelerated both sides. We can build incredibly complex systems incredibly fast. We can also generate incomprehensible complexity at unprecedented speed.
 
-The humble programmer of 2025 isn't someone who writes less code, they just write more verification. They don't build simpler systems, they build systems they can prove work. 
+The humble programmer of 2025 isn't someone who writes less code, they just write more verification. They don't build simpler systems, they build systems they can prove work.
 
-Simon Willison [wrote](https://simonwillison.net/2025/Mar/11/using-llms-for-code/) about using LLMs for code. 
+Simon Willison [wrote](https://simonwillison.net/2025/Mar/11/using-llms-for-code/) about using LLMs for code.
 
 One of his key insights: **"You absolutely cannot outsource testing"** - Your responsibility as a developer is delivering working systems. If you haven't seen it run, it's not a working system
 
@@ -133,7 +132,7 @@ Every line of generated code is a liability until proven otherwise. Every abstra
 
 That's not pessimism. That's engineering.
 
-Dijkstra called for humility in 1972. 
+Dijkstra called for humility in 1972.
 
 In 2025, with AI as our co-pilot, we need it more than ever. Not the humility of limitation, but the humility of verification. Not the humility of building less, but the humility of proving more.
 
@@ -144,6 +143,5 @@ Just remember who's responsible when it breaks.
 <!-- ---
 
 *Special thanks to Sanveer Singh Osahan and Aman Verma for reading drafts of this post and providing valuable feedback.* -->
-
 
 [^1]: https://stackoverflow.com/questions/1318412/what-are-some-must-read-ewds
