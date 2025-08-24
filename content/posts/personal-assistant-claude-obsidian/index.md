@@ -1,6 +1,6 @@
 ---
 title: "Build a Personal Assistant with Claude and Obsidian MCP"
-date: "2025-08-14T23:48:09+05:30"
+date: "2025-08-24T23:48:09+05:30"
 summary: "Set up a personal executive assistant with Claude and Obsidian MCP."
 description: "Set up a personal executive assistant with Claude and Obsidian MCP."
 toc: true
