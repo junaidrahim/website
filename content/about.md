@@ -30,7 +30,7 @@ I really enjoy working in problems that require developer empathy. I work on a l
 
 **AI-Native Engineering**
 
-I'm super interested in figuring out ecosystem investments that help engineers ship faster with LLMs and tools like Cursor and Claude Code. So I work on a lot of internal projects around this as well.
+I'm super interested in figuring out ecosystem investments that help engineers ship faster with LLMs and tools like Cursor and Claude Code.
 
 I'm deeply interested in all things around systems programming -- database internals, distributed systems, PL theory, compilers, containers and kubernetes. I love technical writing as well.
 
