@@ -18,13 +18,15 @@ theme = "light"
 homeIntro = true
 homeIntroTitle = 'Hello ☕️'
 homeIntroContent = """
+Just another [hacker](https://phrack.org/issues/7/3).
+
 I'm currently working as a systems engineer at [Atlan](https://atlan.com) building the future of agentic data collaboration. 
 
 Living in Bengaluru, India.
 
-This website is a record of my work, talks, projects, musings and research.
+This website is a record of my work, talks, projects, musings, curiosities and research.
 
-In my free time I love to read, write, cycle, travel and go on bike rides. I'm weirdly nerdy about PKM systems, fountain pens and cameras.
+In my free time I love to write, read, cycle, travel and go on bike rides. I'm weirdly nerdy about PKM systems, fountain pens and street photography.
 
 I've written a longer introduction [here](/about) if you're interested :)
 """
