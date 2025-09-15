@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Iowan Old Style';
+    src: url('/iowan-old-style-bt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
   --main-width: 780px;
   --main-padding: 1.4em;
@@ -13,10 +21,10 @@
 
   /* Typography */
   --font-heading:
-    "Crimson Text", Georgia, Cambria, "Noto Serif", "Droif Serif", ui-serif,
+    "Iowan Old Style", Georgia, Cambria, "Noto Serif", "Droif Serif", ui-serif,
     serif;
   --font-body:
-    "Inter", Georgia, Cambria, "Noto Serif", "Droif Serif", ui-serif, serif;
+    "Iowan Old Style", Georgia, Cambria, "Noto Serif", "Droif Serif", ui-serif, serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
   --h1-margin-top: 2rem;
