@@ -142,7 +142,8 @@ code {
   font-feature-settings: "liga", "dlig";
   font-variant-ligatures: contextual;
   font-family: var(--font-mono);
-  font-size: 0.9em;
+  font-size: var(--code-font-size);
+  line-height: var(--code-line-height);
 }
 
 li code,
