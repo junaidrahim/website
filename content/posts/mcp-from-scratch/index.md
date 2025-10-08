@@ -10,7 +10,7 @@ math: true
 draft: false
 ---
 
->> This post is a **Work In Progress**.
+> > This post is a **Work In Progress**.
 
 As you can infer from the title, by the end of this post, you will have a working implementation of the Model Context Protocol (MCP) from scratch.
 
@@ -28,7 +28,6 @@ And that's what I want to uncover in this piece, is to implement the protocol it
 
 I'll try to build all the ideas and code from scratch, the only pre-requisite knowledege I am assuing you possess is that you have interacted with one of the LLMs -- ChatGPT, Claude, Grok etc.
 
-
 ## Tool Calling and LLMs
 
 If you just open any of the LLM apps and prompt it with the following
@@ -36,14 +35,14 @@ If you just open any of the LLM apps and prompt it with the following
 ```markdown
 Problem Statement
 
-I need you to come up with a sequence of the following mentioned function calls 
-to resolve an issue where a customer has ordered a particular flavour of 
-ice-cream and it's not in stock. 
+I need you to come up with a sequence of the following mentioned function calls
+to resolve an issue where a customer has ordered a particular flavour of
+ice-cream and it's not in stock.
 
-The situation is that Junaid had ordered choco mint icecream and wants it 
-delivered in bangalore, 560037. 
+The situation is that Junaid had ordered choco mint icecream and wants it
+delivered in bangalore, 560037.
 
-Write your sequence as in a text format and add an explanation for why you 
+Write your sequence as in a text format and add an explanation for why you
 think that sequence is correct. Please only use the functions specified below
 
 You have the following functions at your disposal to use:
@@ -75,7 +74,7 @@ Think of MCP like a USB-C port for AI applications. Just as USB-C provides a sta
 
 ### Clients and Servers
 
-MCP follows a client-server architecture where an MCP host — an AI application like Claude Code or Claude Desktop — establishes connections to one or more MCP servers. 
+MCP follows a client-server architecture where an MCP host — an AI application like Claude Code or Claude Desktop — establishes connections to one or more MCP servers.
 
 The MCP host accomplishes this by creating one MCP client for each MCP server. Each MCP client maintains a dedicated one-to-one connection with its corresponding MCP server.
 
@@ -90,31 +89,31 @@ graph TB
     subgraph "AI Application"
         Host[Claude/ChatGPT]
     end
-    
+
     subgraph "MCP Clients"
         Client1[MCP Client 1]
         Client2[MCP Client 2]
         ClientN[MCP Client N]
     end
-    
+
     subgraph "MCP Servers"
         Server1[MCP Server 1]
         Server2[MCP Server 2]
         ServerN[MCP Server N]
     end
-    
+
     Host --> Client1
     Host --> Client2
     Host --> ClientN
-    
+
     Client1 -.->|"1:1 Connection"| Server1
     Client2 -.->|"1:1 Connection"| Server2
     ClientN -.->|"1:1 Connection"| ServerN
-    
+
     Server1 -->|"Context & Tools"| Client1
     Server2 -->|"Context & Tools"| Client2
     ServerN -->|"Context & Tools"| ClientN
-    
+
     Client1 -->|"Context"| Host
     Client2 -->|"Context"| Host
     ClientN -->|"Context"| Host
@@ -122,7 +121,7 @@ graph TB
 
 ## MCP Server Decomposition
 
-MCP Clients talk to MCP Servers in a standardized format over a specific protocol. 
+MCP Clients talk to MCP Servers in a standardized format over a specific protocol.
 
 MCP uses [JSON-RPC 2.0](https://www.jsonrpc.org/specification) as it's serialization standard, which is a JSON based standard to perform client-server operations with RPC-like servers.
 
@@ -159,11 +158,11 @@ We'll unwrap this entire lifecycle with specific methods in a while, but let's u
 
 ### JSON-RPC
 
-JSON RPC is the serialization format used by MCP. 
+JSON RPC is the serialization format used by MCP.
 
 It's a very simple standard that you can use for RPC like operations. The protocol is so small and simple that it could easily fit on an index card.
 
-The protocol defines two kinds of objects -- **Request** and **Response**. 
+The protocol defines two kinds of objects -- **Request** and **Response**.
 
 - Request: A rpc call is represented by sending a Request object to a Server
 - Response: When a rpc call is made, the Server MUST reply with a Response, except for in the case of Notifications
@@ -179,10 +178,10 @@ Schema of a `Request` Object
 - `id`
   - An identifier established by the Client that MUST contain a String, Number, or NULL value if included. If it is not included it is assumed to be a notification. The value SHOULD normally not be Null and Numbers SHOULD NOT contain fractional parts.
 
-Example: 
+Example:
 
 ```json
-{"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 1}
+{ "jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 1 }
 ```
 
 Schema of a `Response` Object
@@ -199,7 +198,7 @@ Schema of a `Response` Object
 Example:
 
 ```json
-{"jsonrpc": "2.0", "result": 19, "id": 1}
+{ "jsonrpc": "2.0", "result": 19, "id": 1 }
 ```
 
 ### Transport
@@ -207,6 +206,7 @@ Example:
 ### stdio
 
 The `stdio` (standard input/output) streams are a core part of Unix systems. Every process gets three default file descriptors:
+
 - **stdin** (standard input, usually file descriptor 0): where a process reads input, typically from the keyboard or another program.
 - **stdout** (standard output, file descriptor 1): where a process writes its output, usually displayed on the terminal or piped to another process.
 - **stderr** (standard error, file descriptor 2): used for error messages and diagnostics, separate from regular output.
@@ -215,15 +215,15 @@ These streams enable simple, composable communication between programs. Tools ca
 
 ### Streamable HTTP
 
-In the Streamable HTTP transport, the server operates as an independent process that can handle multiple client connections. This transport uses HTTP POST and GET requests. 
+In the Streamable HTTP transport, the server operates as an independent process that can handle multiple client connections. This transport uses HTTP POST and GET requests.
 
 Server can optionally make use of Server-Sent Events (SSE) to stream multiple server messages. This permits basic MCP servers, as well as more feature-rich servers supporting streaming and server-to-client notifications and requests.
 
 The server MUST provide a single HTTP endpoint path (hereafter referred to as the MCP endpoint) that supports both POST and GET methods. For example, this could be a URL like https://example.com/mcp.
 
-If the MCP server is using Server-Sent Events (SSE), then it's advised to implement it over HTTP/2 for performance reasons. 
+If the MCP server is using Server-Sent Events (SSE), then it's advised to implement it over HTTP/2 for performance reasons.
 
-When not used over HTTP/2, SSE suffers from a limitation to the maximum number of open connections, which can be especially painful when opening multiple tabs, as the limit is per browser and is set to a very low number (6). 
+When not used over HTTP/2, SSE suffers from a limitation to the maximum number of open connections, which can be especially painful when opening multiple tabs, as the limit is per browser and is set to a very low number (6).
 
 When using HTTP/2, the maximum number of simultaneous HTTP streams over a single TCP connection is negotiated between the server and the client (defaults to 100).
 
@@ -264,4 +264,3 @@ sequenceDiagram
     end
     deactivate Server
 ```
-

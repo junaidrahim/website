@@ -12,7 +12,7 @@ draft: false
 
 > WIP Post, will be updated soon.
 
-I had been reading a lot about generative UIs lately. 
+I had been reading a lot about generative UIs lately.
 
 Most of the re-thinking is happening in the UI layer[^1], it naturally got me curious about the other layers.
 
@@ -20,29 +20,28 @@ Most of the re-thinking is happening in the UI layer[^1], it naturally got me cu
 
 For example, instead of replying with "The weather in Bengaluru is 26 degrees", your tool can generate a nice custom weather widget with a nice background image and temperature display as a reply to your query.
 
-Every system or app I've worked on in the pre-LLM era follows a similar pattern. You model the domain, write the schemas, write your business logic and then build the UI on top of it. 
+Every system or app I've worked on in the pre-LLM era follows a similar pattern. You model the domain, write the schemas, write your business logic and then build the UI on top of it.
 
-It's muscle memory at this point. 
+It's muscle memory at this point.
 
-But watching LLMs rewrite entire UI components on the fly made me wonder - What if we do not stop at the presentation layer? 
+But watching LLMs rewrite entire UI components on the fly made me wonder - What if we do not stop at the presentation layer?
 
-The LLMs are perfectly capable of understanding our data structures better than most ORMs. They can infer relationships, suggest fields, even question the domain boundaries and extend it. 
+The LLMs are perfectly capable of understanding our data structures better than most ORMs. They can infer relationships, suggest fields, even question the domain boundaries and extend it.
 
 ```text
 Traditional:  [Fixed Schema] -> [Static Logic]  ->  [Predictable UI]
 Generative:   [Fluid Data]  <-> [Dynamic Rules] <-> [Adaptive Experience]
 ```
 
-Interestingly, with the help of libraries like [DSPy](https://dspy.ai), you can implement this fluidity in all the layers of your application very easily.  
+Interestingly, with the help of libraries like [DSPy](https://dspy.ai), you can implement this fluidity in all the layers of your application very easily.
 
 What would happen if we let the entire stack be as fluid as the conversations we're having with these models instead of being rigid ?
 
 ## Three Layers
 
-You can look at almost every software product as a three layered cake. 
+You can look at almost every software product as a three layered cake.
 
-Experience, Logic, and Data. 
-
+Experience, Logic, and Data.
 
 ```text
 ┌──────────────────────┐
@@ -60,7 +59,7 @@ Every app we build starts with the same first steps. Define your domain, lock do
 
 [Domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design) told us to model our world in rigid structures - A Todo app has tasks, projects, subtasks. A CRM has contacts, deals, pipelines.
 
-LLMs allow us to break this assumption. 
+LLMs allow us to break this assumption.
 
 They can understand and generate far more complex structures. They can evolve not just the UI layer, but the entire stack.
 
@@ -71,8 +70,6 @@ They can understand and generate far more complex structures. They can evolve no
 To illustrate this, I'll use a simple in-memory todo app in python using DSPy.
 
 ### Setting a Base
-
-
 
 ```python
 from pydantic import BaseModel
@@ -289,7 +286,7 @@ You can find the complete code at [github.com/junaidrahim/rethinking-todo](https
 
 ## Super App ?
 
-Most apps in the market are pretty vertical, they solve a specific problem or a set of closely related problems. You use Todoist or TickTick to manage your todos, you use Spotify to listen to music. 
+Most apps in the market are pretty vertical, they solve a specific problem or a set of closely related problems. You use Todoist or TickTick to manage your todos, you use Spotify to listen to music.
 
 This is mostly because evolving schemas rapidly is very hard and not economically viable. Engineers would rather focus on a narrow problem domain and offer a better experience for that. The great unbundling of SaaS.
 
@@ -302,6 +299,5 @@ If you give ChatGPT a list of todos, and keep texting it to mark things as done,
 ChatGPT can also do research, it can also write, it can search the web for you. I believe in the future, apps with LLMs baked into them will often have some sort of fluidity in all of the layers.
 
 Project updates can be dynamically ordered in your homepage based on your email inbox. Maybe your founder needs some updates first thing in the morning, so your project manager software re-orders those particular updates to show them first.
-
 
 [^1]: Rightfully so, the UI or the presentation layer has been the most fluid of all the three layers, and it's a lot more fruitful to experiment there with LLM driven layouts. We've had [Server Driven UI](https://medium.com/@tech.rapipay/server-driven-ui-80ae85603747) in the mobile apps ecosystem for a while now. The logic and the data layer need to be mostly deterministic for reliable iterations.
