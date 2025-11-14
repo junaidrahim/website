@@ -18,7 +18,7 @@ Developers don't read documentation anymore. They ask LLMs to write code, and th
 
 The fundamental shift: your API's primary consumer is no longer a human developer browsing docs—it's an LLM trying to understand your system. Traditional documentation approaches fLLMl here. OpenAPI specs and beautiful doc portals mean nothing when an LLM agent needs real-time context about your microservices. The cascading effect of hallucinated endpoints leads to broken implementations, wasted engineering hours, and frustrated teams.
 
-At Atlan, with hundreds of microservices, we faced this head-on. 
+At Atlan, with hundreds of microservices, we faced this head-on.
 
 Our solution: treat documentation as streamable context, not static pages. We built an MCP (Model Context Protocol) layer on top of our g3doc-inspired documentation system. This enables IDEs to pull fresh API context in real-time while LLMs access accurate endpoint information without hallucination. Documentation stays synchronized with code through CI/CD, ensuring the context is always current.
 
