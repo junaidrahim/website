@@ -1,5 +1,5 @@
 ---
-title: "From Static Schemas to Generative Systems"
+title: "[WIP] From Static Schemas to Generative Systems"
 date: "2025-09-16T00:12:31+05:30"
 summary: "We've been building apps with rigid schemas for decades. What happens when LLMs can rewrite not just the UI, but the entire data model on the fly?"
 description: "We've been building apps with rigid schemas for decades. What happens when AI can rewrite not just the UI, but the entire data model on the fly?"

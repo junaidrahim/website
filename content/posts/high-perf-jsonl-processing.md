@@ -1,5 +1,5 @@
 ---
-title: "High Performance JSONL Processing via Byte Offsets"
+title: "[WIP] High Performance JSONL Processing via Byte Offsets"
 date: "2025-10-30T01:03:04+05:30"
 summary: "Processing TB-scale JSONL files efficiently"
 description: "Processing TB-scale JSONL files efficiently"

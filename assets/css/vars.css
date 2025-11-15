@@ -31,7 +31,7 @@
   --caption-padding: calc(0.25 * var(--main-padding));
 
   /* header settings */
-  --header-top-gap: 2rem;
+  --header-top-gap: 4rem;
   --header-bottom-gap: 2rem;
   --header-menu-side-gap: 0.5rem;
   --header-menu-top-gap: 1rem;
