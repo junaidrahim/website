@@ -408,6 +408,6 @@ I hope you find this guide useful, please feel free to share your experiences wi
 
 **Notes**
 
-- Special thanks to [Priyansi](https://www.linkedin.com/in/iiverveii/) and [Komal](https://www.linkedin.com/in/komal-t-b4662119a/) for reading drafts of this post.
+Special thanks to [Priyansi](https://www.linkedin.com/in/iiverveii/) and [Komal Tiwari](https://www.linkedin.com/in/komal-t-b4662119a/) for reading drafts of this post.
 
 [^1]: [Claude can now reference your previous conversations](https://support.anthropic.com/en/articles/10185728-understanding-claude-s-personalization-features)
