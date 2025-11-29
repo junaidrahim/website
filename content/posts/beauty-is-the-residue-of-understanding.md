@@ -97,7 +97,7 @@ The residue metaphor still holds, you can't force beauty or value, but you can c
 
 **Notes**
 
-- Special thanks to  Komal Tiwari, Hrushikesh Dokala and Sanil Khurana for reading drafts of this post and providing feedback.
+Special thanks to  Komal Tiwari, Hrushikesh Dokala and Sanil Khurana for reading drafts of this post and providing feedback.
 
 
 [^1]: [AI Slop Attacks on the cURL Project by Daniel Haxx](https://daniel.haxx.se/blog/2025/08/18/ai-slop-attacks-on-the-curl-project)
