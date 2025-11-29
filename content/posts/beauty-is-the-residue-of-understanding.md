@@ -93,13 +93,12 @@ Ten years in, I'm less interested in being spot-on about craft versus speed and 
 
 The residue metaphor still holds, you can't force beauty or value, but you can create the conditions where they're likely to emerge. Practice the constraints. Delete more. Keep feedback loops tight. Care about the right things. And ship.
 
-<!-- ---
+---
 
 **Notes**
 
-- Special thanks to  Komal Tiwari for reading drafts of this post and providing feedback. -->
+- Special thanks to  Komal Tiwari, Hrushikesh Dokala and Sanil Khurana for reading drafts of this post and providing feedback.
 
 
 [^1]: [AI Slop Attacks on the cURL Project by Daniel Haxx](https://daniel.haxx.se/blog/2025/08/18/ai-slop-attacks-on-the-curl-project)
-
 [^2]: [I want to see the claw by Vicki Boykis](https://vickiboykis.com/2025/10/20/i-want-to-see-the-claw/)
