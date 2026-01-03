@@ -1,6 +1,6 @@
 ---
-title: "[WIP] From Static Schemas to Generative Systems"
-date: "2025-09-16T00:12:31+05:30"
+title: "From Static Schemas to Generative Systems"
+date: "2025-11-12T00:12:31+05:30"
 summary: "We've been building apps with rigid schemas for decades. What happens when LLMs can rewrite not just the UI, but the entire data model on the fly?"
 description: "We've been building apps with rigid schemas for decades. What happens when AI can rewrite not just the UI, but the entire data model on the fly?"
 toc: true
@@ -33,9 +33,13 @@ Traditional:  [Fixed Schema] -> [Static Logic]  ->  [Predictable UI]
 Generative:   [Fluid Data]  <-> [Dynamic Rules] <-> [Adaptive Experience]
 ```
 
+Explanation: The first line shows the classic, one‑directional pipeline: you design a fixed schema, write logic on top, and the UI is a predictable rendering of that logic. The second line emphasizes bidirectional coupling and feedback: data, rules, and experience can influence and reshape each other on the fly, so changes in one layer can propagate back and forth to the others.
+
 Interestingly, with the help of libraries like [DSPy](https://dspy.ai), you can implement this fluidity in all the layers of your application very easily.
 
 What would happen if we let the entire stack be as fluid as the conversations we're having with these models instead of being rigid ?
+
+This really takes the whole idea of "state is text" and builds on it.
 
 ## Three Layers
 
@@ -53,7 +57,9 @@ Experience, Logic, and Data.
 └──────────────────────┘
 ```
 
-This is also known as the [three-tier architecture](https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture).
+Explanation: A quick visual of the common three‑tier architecture. “Experience” is what users touch; “Logic” encodes rules, validations, workflows; “Data” is the underlying structure and persistence. The post explores making each layer fluid with LLMs so that the boundaries can adapt based on intent and context.
+
+This is also known as the infamous [three-tier architecture](https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture).
 
 Every app we build starts with the same first steps. Define your domain, lock down your schemas, build everything on top. We have done this for decades in software development.
 
@@ -85,6 +91,8 @@ class BaseTodoApp(ABC):
     def print_todos(self) -> str:
         raise NotImplementedError
 ```
+
+Explanation: Defines an interface for a todo app using Python’s `ABC`. It sets two required behaviors: `add_todo`, which accepts a Pydantic model for type safety, and `print_todos`, which returns a string representation. Concrete implementations can swap how they store and render todos while keeping a consistent surface area.
 
 ### Vanilla
 
@@ -118,6 +126,26 @@ class VanillaTodoApp(BaseTodoApp):
         headers = ["ID", "Title", "Description", "Completed"]
         return tabulate(table, headers, tablefmt="github")
 ```
+
+Explanation: A conventional implementation. `Todo` is a structured Pydantic model. `VanillaTodoApp` collects todos in memory and uses `tabulate` to print a simple, deterministic ASCII table. Nothing generative here—schema and presentation are fixed, so you always get the same columns and layout.
+
+Running this looks like the following
+
+```bash
+$ python main.py
+| ID  | Title                    | Description                                                                                   | Completed |
+| --- | ------------------------ | --------------------------------------------------------------------------------------------- | --------- |
+| 1   | Plan weekly sprint       | Outline goals; backlog triage; due:2025-12-01; priority:high #work                            | False     |
+| 2   | Fix flaky tests          | Investigate CI failures in search module; repro steps; due:2025-11-30 #dev                    | False     |
+| 3   | Book dentist appointment | Call clinic; schedule annual check-up; due:2025-12-15; priority:medium #personal              | False     |
+| 4   | Grocery run              | Buy milk, eggs, coffee; use coupons; #home                                                    | True      |
+| 5   | Write blog post          | “From Static Schemas to Generative Systems” — outline, examples, code; priority:high #writing | False     |
+| 6   | Read paper               | “Self-Discovering Prompting”; notes in Obsidian; extract key claims; #research                | False     |
+| 7   | Marathon training        | 10k recovery run; HR<140 bpm; hydrate; #fitness                                               | False     |
+| 8   | Backup photos            | Move 2025/Diwali album to NAS; verify checksums; #ops                                         | True      |
+```
+
+Explanation: Running the vanilla version typically looks like initializing the app, adding a few `Todo` objects, then calling `print_todos()` to render the table. For example, you might run a small `main.py` that constructs `VanillaTodoApp`, adds sample tasks, and prints the output to the console.
 
 ### Generate Experience
 
@@ -162,6 +190,31 @@ class GenerativeExperienceTodoApp(BaseTodoApp):
         p = dspy.Predict(TodoPrintSignature)
         formatted_output = p(todos=self.todos).formatted_output
         return formatted_output
+```
+
+Explanation: The experience layer becomes fluid. `TodoPrintSignature` describes inputs and the desired output format to the LLM. `GenerativeExperienceTodoApp.print_todos` delegates rendering to `dspy.Predict`, letting the model choose layout, emojis, and style while producing a pipe‑delimited GitHub‑style Markdown table with a header and separator row. This ensures the table renders aligned in Markdown. The data and logic remain static; only the presentation is generative.
+
+```bash
+$ python main.py
+✨ **Your Todo Vibe Check** ✨
+
+**🔥 HIGH PRIORITY - NO CAP**
+• 📋 Plan weekly sprint - Outline goals; backlog triage; due:2025-12-01 #work (bestie this is URGENT fr fr)
+• ✍️ Write blog post - "From Static Schemas to Generative Systems" — outline, examples, code #writing (your brain is about to serve CONTENT)
+
+**⚡ MEDIUM ENERGY TASKS**
+• 🦷 Book dentist appointment - Call clinic; schedule annual check-up; due:2025-12-15 #personal (adulting is pain but necessary bestie)
+
+**📝 REGULAR TASKS (but still important queen)**
+• 🐛 Fix flaky tests - Investigate CI failures in search module; repro steps; due:2025-11-30 #dev (debugging era incoming)
+• 📚 Read paper - "Self-Discovering Prompting"; notes in Obsidian; extract key claims #research (big brain time activated)
+• 🏃‍♀️ Marathon training - 10k recovery run; HR<140 bpm; hydrate #fitness (we love a healthy queen)
+
+**✅ ALREADY SLAYED**
+• ✅ Grocery run - Buy milk, eggs, coffee; use coupons #home (DONE AND DUSTED)
+• ✅ Backup photos - Move 2025/Diwali album to NAS; verify checksums #ops (tech queen behavior)
+
+*You're doing amazing sweetie! 6 tasks to go, 2 already conquered. That's some main character energy right there! 💅*
 ```
 
 ### Generative Logic
@@ -217,6 +270,41 @@ class GenerativeLogicTodoApp(BaseTodoApp):
         p = dspy.Predict(TodoPrintSignature)
         formatted_output = p(todos=self.todos).formatted_output
         return formatted_output
+```
+
+Explanation: The logic layer is now generative. Instead of storing exactly what the user provided, `add_todo` uses `RewriteTodoSignature` to expand and enrich the todo (longer description, tone, emojis) before persistence. The printed output still uses the generative formatter, but the key shift is that application behavior modifies data on the way in via the LLM.
+
+```bash
+$ python main.py
+
+| STATUS | PRIORITY | TASK TITLE                                   | VIBE CHECK                |
+| ------ | -------- | -------------------------------------------- | ------------------------- |
+| ❌      | 🚨🔥       | Plan weekly sprint 🚀✨                        | Main character energy!    |
+| ❌      | 🚨🔥       | 🔧 Debug Those Annoying Flaky Tests 😤         | CI pipeline looking sus   |
+| ❌      | ⚡📚       | 📚 Deep dive Self-Discovering Prompting paper | Become AI knowledge queen |
+| ❌      | 🚨📝       | ✨ Drop that fire blog post about Schemas 🔥   | Educational but aesthetic |
+| ❌      | ⚡🏃       | Marathon Training Vibes 🏃‍♀️✨                   | Recovery run era          |
+| ❌      | 📅🦷       | Book that dreaded dentist appointment 🦷✨     | Time to adult fr fr       |
+| ✅      | 🏠🛒       | Epic Grocery Adventure 🛒✨                    | Budget queen life! DONE   |
+| ✅      | 💾📸       | 📸✨ Backup Diwali memories                    | Data integrity queen DONE |
+
+
+📊 STATS THAT MATTER:
+• Total tasks: 8 (we're busy bestie!)
+• Completed: 2 ✅ (25% - not bad but we can do better!)
+• Pending: 6 ❌ (75% - time to lock in!)
+• High Priority: 3 🚨 (these need your main character energy ASAP!)
+
+🔥 PRIORITY BREAKDOWN:
+🚨 HIGH: Sprint planning, flaky tests, blog post (these are NOT optional!)
+⚡ MEDIUM: Research paper, marathon training, dentist (important but flexible)
+🏠 LIFE: Groceries ✅, photo backup ✅ (adulting complete!)
+
+💅 MOTIVATION: You're literally crushing it! Two tasks down, six to go.
+Time to channel that productivity queen energy and make this list your b*tch!
+No cap, you got this bestie! 💪✨
+
+Remember: Progress > Perfection. Let's get this bread! 🍞
 ```
 
 ### Generative Data
@@ -281,6 +369,34 @@ class GenerativeDataTodoApp(BaseTodoApp):
         formatted_output = p(todos=self.todos).formatted_output
         return formatted_output
 ```
+
+Explanation: The data layer becomes fluid. There is no fixed `Todo` model; instead `Todo` is a generic dict. `CreateTodoSignature` turns free‑form text into a structured JSON object with keys inferred by the model, then `RewriteTodoSignature` enriches it. Printing still uses a generative formatter. This shows how schemas can emerge and evolve from text and intent rather than being hard‑coded.
+
+```bash
+$ python main.py
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           ✨ TODO LIST - MAIN CHARACTER ENERGY ✨                │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│ ID       │ todo_001                                                             │
+│ TASK     │ 🦷✨ Book dentist appointment                                        │
+│ VIBE     │ 📞 Okay bestie, time to adult and call that dental clinic!         │
+│          │ Need to schedule my annual check-up because we're not about         │
+│          │ that cavity life 💅 Gotta keep these pearly whites sparkling       │
+│          │ and my oral health on point! No cap, dental hygiene is self-care   │
+│          │ and we stan a responsible queen/king who takes care of their       │
+│          │ teeth 🔥 Time to face the music and book that appointment -        │
+│          │ my future self will thank me fr fr! 😤💪                           │
+│ STATUS   │ ❌ Not done yet (but we're gonna slay this!)                       │
+│ DUE      │ 📅 2025-12-15 (mark your calendar bestie!)                        │
+│ PRIORITY │ 🟡 Medium energy - important but not urgent urgent                  │
+│ CATEGORY │ 🏠 Personal (self-care era activated)                              │
+│ TAGS     │ #personal #adulting #self-care #health                             │
+│ CREATED  │ 📝 2024-12-19 (when the motivation hit different)                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+💫 That's the tea on your current tasks! Time to get this bread and check off that list! 💪✨
+```
+
 
 You can find the complete code at [github.com/junaidrahim/rethinking-todo](https://github.com/junaidrahim/rethinking-todo)
 
