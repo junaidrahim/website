@@ -82,9 +82,12 @@ name = "posts"
 url = "/posts"
 
 [[params.menu]]
+name = "drafts"
+url = "/drafts"
+
+[[params.menu]]
 name = "talks"
 url = "/talks"
-
 
 [[params.menu]]
 name = "about"

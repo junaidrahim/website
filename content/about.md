@@ -30,6 +30,8 @@ On weekends you'll find me [reading in cubbon park](https://www.instagram.com/cu
 
 I do street photography sometimes, you can find my photos on [my unsplash page](https://unsplash.com/@junaidrahxm).
 
+I do a lot of right-brain writing on my substack, you can find it [here](https://substack.com/@junaidrahim).
+
 ## Contact
 
 - I'm fairly active on X -- [@junaidrahxm](https://x.com/junaidrahxm)

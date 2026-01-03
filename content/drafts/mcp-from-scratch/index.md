@@ -1,5 +1,5 @@
 ---
-title: "[WIP] Implementing the Model Context Protocol from Scratch"
+title: "Implementing the Model Context Protocol from Scratch"
 date: "2025-09-19T12:26:30+05:30"
 summary: "Implementing the Model Context Protocol from Scratch"
 description: "Implementing the Model Context Protocol from Scratch"
