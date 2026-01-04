@@ -33,29 +33,33 @@ A few “it looks fine” examples that aren’t fine:
 
 If your services don’t agree on these, an attacker can make them disagree on your data. Let’s see how, and how to fix it.
 
-## The Myth of "Simple JSON"
+## The Myth of JSON
 
 JSON looks simple: objects, arrays, strings, numbers, booleans, null. Six characters of syntax. What could go wrong?
 
-The problem: six different documents define it.
+![Standards by xkcd](./images/xkcd_standards.png)
 
-- RFC 4627 → RFC 7159 → RFC 8259 (IETF evolution)
-- ECMA-404 (the "canonical" standard)
-- ECMAScript (JavaScript's take)
-- JSON5, HJSON (supersets with "helpful" extensions)
+Well, there are a total of six standards that define JSON.
 
-Nicolas Seriot tested dozens of parsers against a comprehensive test suite and found that no two libraries exhibit the same behaviour. Edge cases and maliciously crafted payloads cause bugs, crashes, and denial of services — mainly because JSON libraries rely on specifications that evolved over time and left many details loosely specified or not specified at all.
+- [RFC 4627](https://datatracker.ietf.org/doc/html/rfc4627) → [RFC 7158](https://datatracker.ietf.org/doc/html/rfc7158) → [RFC 7159](https://datatracker.ietf.org/doc/html/rfc7159) → [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259) (IETF evolution)
+- [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404/) (the "canonical" standard)
+- [ECMAScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/) (JavaScript's take)
+- [JSON5](https://json5.org/), [HJSON](https://hjson.github.io/) (supersets with "helpful" extensions)
+
+Nicolas Seriot tested dozens of parsers against a comprehensive test suite and found that no two libraries exhibit the same behaviour. [He wrote a blog post about it](https://seriot.ch/software/parsing_json.html).
+
+Edge cases and maliciously crafted payloads cause bugs, crashes, and denial of services — mainly because JSON libraries rely on specifications that evolved over time and left many details loosely specified or not specified at all.
 
 ## Where the Spec Is Silent (or Shrugs)
 
 Four categories of deliberate ambiguity:
 
-### 2.1 Duplicate Keys
+### Duplicate Keys
 
-RFC 8259 says keys "SHOULD" be unique — not "MUST". That single word choice creates a vulnerability class.
+[RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259) says keys "SHOULD" be unique — not "MUST". That single word choice creates a vulnerability class.
 
 > "When the names within an object are not unique, the behavior of software that receives such an object is unpredictable. Many implementations report the last name/value pair only. Other implementations report an error or fail to parse the object, and some implementations report all of the name/value pairs, including duplicates."
-> — RFC 8259
+> — [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)
 
 Three parsers, three outcomes:
 
@@ -63,12 +67,12 @@ Three parsers, three outcomes:
 - Parser B: last-key wins
 - Parser C: throws error
 
-### 2.2 Number Representation
+### Number Representation
 
 The spec explicitly punts on precision:
 
 > "This specification allows implementations to set limits on the range and precision of numbers accepted."
-> — RFC 8259
+> — [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)
 
 What's "safe"? Integers in the range `[-(2^53)+1, (2^53)-1]`. Anything outside is implementation-defined.
 
@@ -76,7 +80,7 @@ Worse: Python's `json.dump` will happily emit `NaN` and `Infinity` by default �
 
 Numbers like `1E400` or `3.141592653589793238462643383279` indicate potential interoperability problems — the producing software expects more precision than most consumers provide.
 
-### 2.3 String Encoding
+### String Encoding
 
 String encoding was only explicitly required to be UTF-8 in the 2017 revision of the specification. Before that? Implementation-defined.
 
@@ -88,9 +92,9 @@ Handling of:
 
 ...varies wildly across parsers.
 
-### 2.4 Comments and Trailing Commas
+### Comments and Trailing Commas
 
-Not in any JSON spec. But JSON5 and HJSON accept them. Some "lenient" parsers in strict-mode languages accept them too.
+Not in any JSON spec. But [JSON5](https://json5.org/) and [HJSON](https://hjson.github.io/) accept them. Some "lenient" parsers in strict-mode languages accept them too.
 
 Attackers can craft payloads that exploit inconsistent support for comments:
 
@@ -106,7 +110,7 @@ Parser C (lenient): `{"qty": -1}` after stripping "comments"
 
 BishopFox surveyed 49 JSON parsers and cataloged exploitable inconsistencies. Here are three attack patterns:
 
-### 3.1 Key Collision Attacks (Duplicate Key Precedence)
+### Key Collision Attacks (Duplicate Key Precedence)
 
 Scenario: Cart service validates, Payment service processes.
 
@@ -119,7 +123,7 @@ Scenario: Cart service validates, Payment service processes.
 
 Result: attacker gets items, payment processes negative amount (refund).
 
-### 3.2 Large Number Overflow
+### Large Number Overflow
 
 ```json
 { "qty": 999999999999999999999999999999999999999999999999999999999999 }
@@ -130,7 +134,7 @@ Result: attacker gets items, payment processes negative amount (refund).
 
 Result: qty validates as huge number, processes as zero cost.
 
-### 3.3 Character Truncation
+### Character Truncation
 
 Inject control characters to create "shadow keys":
 
@@ -198,6 +202,6 @@ The fix isn't to abandon JSON — it's to stop assuming all parsers agree. They 
 
 - [BishopFox: An Exploration of JSON Interoperability Vulnerabilities](https://bishopfox.com/blog/json-interoperability-vulnerabilities)
 - [Seriot: Parsing JSON is a Minefield](https://seriot.ch/projects/parsing_json.html)
-- [RFC 8259: The JSON Data Interchange Format](https://tools.ietf.org/html/rfc8259)
+- [RFC 8259: The JSON Data Interchange Format](https://datatracker.ietf.org/doc/html/rfc8259)
 - [JSONTestSuite on GitHub](https://github.com/nst/JSONTestSuite)
 - [BishopFox Labs: json-interop-vuln-labs](https://github.com/BishopFox/json-interop-vuln-labs)
