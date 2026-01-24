@@ -1,14 +1,16 @@
 ---
-title: "The Factory Turn: Software Engineering in the Age of AI Agents"
-date: "2026-01-24"
+title: "Software Factories"
+date: "2026-01-16T18:30:46+05:30"
 summary: "Software engineering is no longer about building products. It's about building systems and software factories."
 description: "A meditation on how the best engineers have shifted from building products to building production systems—and what this means for the future of the craft."
 toc: true
 readTime: true
 autonumber: false
 math: true
-draft: true
+draft: false
 ---
+
+> This is AI written.
 
 *A meditation on Johannes Schickling's provocation: "Software engineering is no longer about building products. It's about building systems and software factories."*
 
