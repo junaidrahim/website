@@ -1,6 +1,6 @@
 ---
 title: "The Factory Turn: Software Engineering in the Age of AI Agents"
-date: "2026-01-24T13:04:00+05:30"
+date: "2026-01-24"
 summary: "Software engineering is no longer about building products. It's about building systems and software factories."
 description: "A meditation on how the best engineers have shifted from building products to building production systems—and what this means for the future of the craft."
 toc: true
