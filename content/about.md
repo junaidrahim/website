@@ -32,6 +32,10 @@ I do street photography sometimes, you can find my photos on [my unsplash page](
 
 I do a lot of right-brain writing on my substack, you can find it [here](https://substack.com/@junaidrahim).
 
+## Colophon
+
+This site is built with [Hugo](https://gohugo.io) using the [Typo](https://github.com/tomfran/typo) theme.
+
 ## Contact
 
 - I'm fairly active on X -- [@junaidrahxm](https://x.com/junaidrahxm)
