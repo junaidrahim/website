@@ -1,5 +1,6 @@
 ---
 title: "About"
+description: "About Junaid Rahim - systems engineer, cyclist, and street photographer based in Bengaluru"
 ---
 
 👋🏻 Hi, I’m Junaid.
