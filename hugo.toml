@@ -118,3 +118,8 @@ siteName = "Junaid Rahim"
 
 [outputs]
 home = ['html', 'rss']
+section = ['html', 'rss']
+
+[sitemap]
+changefreq = "weekly"
+priority = 0.5
