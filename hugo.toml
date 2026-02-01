@@ -2,6 +2,8 @@ baseURL = 'https://junaid.foo/'
 languageCode = 'en-us'
 title = 'Junaid Rahim'
 theme = "typo"
+enableRobotsTXT = false
+enableGitInfo = true
 
 # Disable tags, actually, they are rendered as a list, but the idea is to disable them.
 disableKinds = ['taxonomy']
@@ -9,7 +11,14 @@ disableKinds = ['taxonomy']
 # Google analytics code
 # googleAnalytics = "G-xxxxxxxxxx"
 
+# Copyright notice
+copyright = "© 2024-2026 Junaid Rahim. All rights reserved."
+
 [params]
+# Meta
+author = "Junaid Rahim"
+keywords = ["software engineering", "systems", "data engineering", "personal blog"]
+
 # Math mode
 math = true
 theme = "light"
@@ -38,6 +47,9 @@ homeCollection = 'posts'
 
 # Pagination size across all website, this is the same for homepage and single list page
 paginationSize = 100
+
+# Reading time
+showReadingTime = true
 
 description = "This website is a record of my work, talks, projects, musings and research."
 
@@ -101,5 +113,15 @@ url = "/about"
 [markup.highlight]
 style = 'abap'
 
+# Open Graph / Social Sharing
+[params.opengraph]
+enabled = true
+siteName = "Junaid Rahim"
+
 [outputs]
 home = ['html', 'rss']
+section = ['html', 'rss']
+
+[sitemap]
+changefreq = "weekly"
+priority = 0.5
