@@ -9,6 +9,9 @@ disableKinds = ['taxonomy']
 # Google analytics code
 # googleAnalytics = "G-xxxxxxxxxx"
 
+# Copyright notice
+copyright = "© 2024-2026 Junaid Rahim. All rights reserved."
+
 [params]
 # Meta
 author = "Junaid Rahim"
