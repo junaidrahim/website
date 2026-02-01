@@ -46,6 +46,9 @@ homeCollection = 'posts'
 # Pagination size across all website, this is the same for homepage and single list page
 paginationSize = 100
 
+# Reading time
+showReadingTime = true
+
 description = "This website is a record of my work, talks, projects, musings and research."
 
 # Breadcrumbs
