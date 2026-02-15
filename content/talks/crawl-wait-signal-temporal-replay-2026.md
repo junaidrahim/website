@@ -8,9 +8,10 @@ readTime: true
 autonumber: false
 math: false
 draft: false
+status: "rejected"
 ---
 
-> Submitted for Temporal Replay 2026.
+> Submitted for Temporal Replay 2026. **Rejected.**
 
 ## Title (100 chars)
 
