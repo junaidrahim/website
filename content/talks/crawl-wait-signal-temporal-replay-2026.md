@@ -1,5 +1,5 @@
 ---
-title: "Crawl, Wait, Signal: An ETL Platform's Path to Agents - Temporal Replay 2026"
+title: "[Rejected] Crawl, Wait, Signal: An ETL Platform's Path to Agents - Temporal Replay 2026"
 date: "2026-01-27"
 summary: "How we built an app platform on Temporal for metadata ETL and discovered it was already agent-ready"
 description: "How we built an app platform on Temporal for metadata ETL and discovered it was already agent-ready"
@@ -10,7 +10,7 @@ math: false
 draft: false
 ---
 
-> Submitted for Temporal Replay 2026.
+> NOTE: This talk was rejected for Temporal Replay 2026.
 
 ## Title (100 chars)
 
