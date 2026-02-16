@@ -1,8 +1,8 @@
 ---
 title: "From Index to Oracle"
 date: "2026-01-10"
-summary: "Every era of information technology has changed what it means to find something. Not just how fast or how conveniently, but what 'finding' is, what becomes findable, and who decides."
-description: "Every era of information technology has changed what it means to find something. Not just how fast or how conveniently, but what 'finding' is, what becomes findable, and who decides."
+summary: "Search used to be about locating things. Now it's about synthesizing them. That changes more than you'd think."
+description: "Search used to be about locating things. Now it's about synthesizing them. That changes more than you'd think."
 toc: false
 readTime: true
 math: false
