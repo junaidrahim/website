@@ -1,6 +1,6 @@
 ---
 title: "From Index to Oracle"
-date: "2025-02-10"
+date: "2026-01-10"
 summary: "Every era of information technology has changed what it means to find something. Not just how fast or how conveniently, but what 'finding' is, what becomes findable, and who decides."
 description: "Every era of information technology has changed what it means to find something. Not just how fast or how conveniently, but what 'finding' is, what becomes findable, and who decides."
 toc: false
