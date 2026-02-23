@@ -1,5 +1,5 @@
 ---
-title: "AI"
+title: "AI Policy"
 toc: false
 readTime: false
 math: false
@@ -23,4 +23,4 @@ I use AI tools extensively in my writing process. Editing, restructuring, catchi
 
 ---
 
-_Inspired by [Vicki Boykis's AI page](https://vickiboykis.com/ai/)._
+_Inspired by [Vicki Boykis' AI page](https://vickiboykis.com/ai/)._
