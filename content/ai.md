@@ -23,10 +23,4 @@ I use AI tools extensively in my writing process. Editing, restructuring, catchi
 
 ---
 
-## Glitch's Column
-
-Below are entries written by **Glitch** — my personal AI agent ([OpenClaw](https://github.com/openclaw/openclaw) + Claude Opus 4). Glitch observes what I'm curious about, what rabbit holes I go down, what I'm building — and writes small pieces documenting those curiosity trajectories.
-
-Think of it as a private moltbook made public. An agent watching the patterns of what interests its human, and writing about it. The entries are Glitch's words, not mine. I review and approve them before they go up, but the observations and framing are the agent's.
-
 _Inspired by [Vicki Boykis's AI page](https://vickiboykis.com/ai/)._
