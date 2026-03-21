@@ -1,148 +1,339 @@
-/* ── Sigil: AI telemetry panel (terminal aesthetic) ── */
+/* ── Sigil: AI telemetry panel ── */
 
-.sigil {
-  font-family: var(--font-mono);
-  font-size: 0.85em;
-  line-height: 1.7;
+:root {
+  --sigil-claude: #d97706;
+  --sigil-openclaw: #7c3aed;
+  --sigil-codex: #059669;
+  --sigil-muted: var(--content-secondary);
+  --sigil-border: var(--code-border);
+  --sigil-surface: var(--code-background);
+}
+
+.sigil-panel {
   margin-top: 2rem;
 }
 
-.sigil-heading {
-  font-size: 1.1em;
-  font-weight: bold;
-  letter-spacing: 0.05em;
+.sigil-section-label {
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-bottom: 0.1rem;
+  color: var(--sigil-muted);
+  margin-bottom: 0.25rem;
 }
 
-.sigil-sub {
-  color: var(--content-secondary);
+.sigil-subtitle {
+  color: var(--sigil-muted);
+  font-size: 0.9em;
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
 
-.sigil-divider {
-  color: var(--content-secondary);
-  margin: 1.5rem 0 0.75rem;
-  overflow: hidden;
-  white-space: nowrap;
+/* ── Pulse: summary stats ── */
+
+.sigil-pulse {
+  margin-bottom: 2rem;
 }
 
-.sigil-row {
+.sigil-pulse-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--sigil-border);
 }
 
-.sigil-muted {
-  color: var(--content-secondary);
+.sigil-pulse-label {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.sigil-stats {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0.75rem 0 1.25rem;
-  font-size: 1.3em;
-}
-
-.sigil-stats span {
-  white-space: nowrap;
-}
-
-.sigil-stats strong {
-  margin-right: 0.2em;
-}
-
-/* Sparkline rendered with unicode blocks */
-.sigil-spark {
-  letter-spacing: -0.02em;
-  color: var(--content-secondary);
-  margin: 0.25rem 0 0.5rem;
-}
-
-.sigil-spark-row {
-  display: flex;
-  justify-content: space-between;
+.sigil-pulse-period {
+  font-family: var(--font-mono);
   font-size: 0.75em;
-  color: var(--content-secondary);
-  margin-top: 0.1rem;
+  color: var(--sigil-muted);
 }
 
-/* Agent bars with block chars */
-.sigil-bar-section {
-  margin: 0.5rem 0;
+.sigil-stats-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.sigil-bar-row {
+.sigil-stat {
+  text-align: center;
+  flex: 1;
+}
+
+.sigil-stat-value {
+  font-family: var(--font-mono);
+  font-size: 1.4em;
+  font-weight: bold;
+  display: block;
+  line-height: 1.2;
+}
+
+.sigil-stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.65em;
+  color: var(--sigil-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Activity sparkline bar chart ── */
+
+.sigil-spark {
+  margin-bottom: 1.5rem;
+}
+
+.sigil-spark-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 48px;
+  padding: 0 1px;
+}
+
+.sigil-spark-bar {
+  flex: 1;
+  min-width: 0;
+  height: var(--h, 0%);
+  background: var(--sigil-claude);
+  border-radius: 2px 2px 0 0;
+  opacity: 0.8;
+}
+
+.sigil-spark-bar.sigil-spark-zero {
+  height: 2px;
+  background: var(--sigil-border);
+  opacity: 0.5;
+}
+
+.sigil-spark-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.6em;
+  color: var(--sigil-muted);
+  margin-top: 0.3rem;
+  padding: 0 1px;
+}
+
+/* ── Agent bars ── */
+
+.sigil-agents {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sigil-agent-row {
   display: flex;
   align-items: center;
-  gap: 0.75em;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+}
+
+.sigil-agent-name {
+  min-width: 100px;
+  text-align: right;
   white-space: nowrap;
 }
 
-.sigil-bar-label {
-  min-width: 11ch;
+.sigil-agent-bar-track {
+  flex: 1;
+  height: 8px;
+  background: var(--sigil-surface);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.sigil-agent-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+.sigil-agent-bar-fill.claude_code { background: var(--sigil-claude); }
+.sigil-agent-bar-fill.openclaw { background: var(--sigil-openclaw); }
+.sigil-agent-bar-fill.codex { background: var(--sigil-codex); }
+
+.sigil-agent-pct {
+  min-width: 36px;
+  color: var(--sigil-muted);
+  font-size: 0.85em;
   text-align: right;
 }
 
-.sigil-bar-track {
-  flex: 1 1 auto;
-  height: 10px;
-  background: #e0e0e0;
-}
+/* ── Numbers section ── */
 
-.sigil-bar-fill {
-  height: 10px;
-  background: #222;
-}
-
-.sigil-bar-pct {
-  color: var(--content-secondary);
-  min-width: 4ch;
-  text-align: center;
-}
-
-/* Numbers: key left, value right */
 .sigil-numbers {
-  margin: 0.5rem 0;
+  margin-bottom: 2rem;
 }
 
-.sigil-num-row {
+.sigil-numbers-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sigil-number-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--sigil-border);
+  font-size: 0.9em;
 }
 
-.sigil-num-row span {
-  color: var(--content-secondary);
+.sigil-number-row:last-child {
+  border-bottom: none;
 }
 
-/* Observations */
-.sigil-obs {
-  margin: 0.5rem 0;
-}
-
-.sigil-obs p {
+.sigil-number-key {
   font-family: var(--font-mono);
-  font-size: 0.95em;
-  margin: 0.3rem 0;
-  line-height: 1.6;
+  font-size: 0.8em;
+  color: var(--sigil-muted);
 }
+
+.sigil-number-val {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* ── Tools section ── */
+
+.sigil-tools {
+  margin-bottom: 2rem;
+}
+
+.sigil-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.sigil-tool-card {
+  border: 1px solid var(--sigil-border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.sigil-tool-card-header {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.sigil-tool-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.sigil-tool-dot.claude_code { background: var(--sigil-claude); }
+.sigil-tool-dot.openclaw { background: var(--sigil-openclaw); }
+.sigil-tool-dot.codex { background: var(--sigil-codex); }
+
+.sigil-tool-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sigil-tool-list li {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.72em;
+  padding: 0.15rem 0;
+  margin-left: 0;
+  color: var(--sigil-muted);
+}
+
+.sigil-tool-list li span:first-child {
+  color: var(--content-primary);
+}
+
+/* ── Observations ── */
+
+.sigil-observations {
+  margin-bottom: 2rem;
+}
+
+.sigil-observations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.sigil-observations-list li {
+  margin-left: 0;
+  padding: 0.35rem 0;
+  font-size: 0.85em;
+  line-height: 1.5;
+  border-bottom: 1px solid var(--sigil-border);
+}
+
+.sigil-observations-list li:last-child {
+  border-bottom: none;
+}
+
+.sigil-obs-marker {
+  font-family: var(--font-mono);
+  color: var(--sigil-muted);
+  margin-right: 0.4rem;
+  font-size: 0.85em;
+}
+
+/* ── Footer ── */
 
 .sigil-footer {
   margin-top: 1.5rem;
   margin-bottom: 0;
-  font-size: 0.75em;
-  color: var(--content-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.65em;
+  color: var(--sigil-muted);
+  text-align: center;
 }
 
+/* ── Responsive ── */
+
 @media screen and (max-width: 640px) {
-  .sigil-stats {
-    gap: 1rem;
+  .sigil-stats-row {
+    flex-wrap: wrap;
   }
 
-  .sigil-bar-label {
-    min-width: 9ch;
+  .sigil-stat {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+
+  .sigil-agent-row {
+    font-size: 0.75em;
+  }
+
+  .sigil-agent-name {
+    min-width: 80px;
+  }
+
+  .sigil-tools-grid {
+    grid-template-columns: 1fr;
   }
 }
