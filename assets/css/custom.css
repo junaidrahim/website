@@ -1,0 +1,148 @@
+/* ── Sigil: AI telemetry panel (terminal aesthetic) ── */
+
+.sigil {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  line-height: 1.7;
+  margin-top: 2rem;
+}
+
+.sigil-heading {
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+}
+
+.sigil-sub {
+  color: var(--content-secondary);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.sigil-divider {
+  color: var(--content-secondary);
+  margin: 1.5rem 0 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sigil-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.sigil-muted {
+  color: var(--content-secondary);
+}
+
+.sigil-stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0.75rem 0 1.25rem;
+  font-size: 1.3em;
+}
+
+.sigil-stats span {
+  white-space: nowrap;
+}
+
+.sigil-stats strong {
+  margin-right: 0.2em;
+}
+
+/* Sparkline rendered with unicode blocks */
+.sigil-spark {
+  letter-spacing: -0.02em;
+  color: var(--content-secondary);
+  margin: 0.25rem 0 0.5rem;
+}
+
+.sigil-spark-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75em;
+  color: var(--content-secondary);
+  margin-top: 0.1rem;
+}
+
+/* Agent bars with block chars */
+.sigil-bar-section {
+  margin: 0.5rem 0;
+}
+
+.sigil-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  white-space: nowrap;
+}
+
+.sigil-bar-label {
+  min-width: 11ch;
+  text-align: right;
+}
+
+.sigil-bar-track {
+  flex: 1 1 auto;
+  height: 10px;
+  background: #e0e0e0;
+}
+
+.sigil-bar-fill {
+  height: 10px;
+  background: #222;
+}
+
+.sigil-bar-pct {
+  color: var(--content-secondary);
+  min-width: 4ch;
+  text-align: center;
+}
+
+/* Numbers: key left, value right */
+.sigil-numbers {
+  margin: 0.5rem 0;
+}
+
+.sigil-num-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.sigil-num-row span {
+  color: var(--content-secondary);
+}
+
+/* Observations */
+.sigil-obs {
+  margin: 0.5rem 0;
+}
+
+.sigil-obs p {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  margin: 0.3rem 0;
+  line-height: 1.6;
+}
+
+.sigil-footer {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-size: 0.75em;
+  color: var(--content-secondary);
+}
+
+@media screen and (max-width: 640px) {
+  .sigil-stats {
+    gap: 1rem;
+  }
+
+  .sigil-bar-label {
+    min-width: 9ch;
+  }
+}
