@@ -7,9 +7,9 @@ draft: false
 hidePagination: true
 ---
 
-A transparent look at how I use AI. I work with AI agents every day — for writing code, debugging systems, drafting prose, and thinking through problems. Rather than just talk about it, I figured I'd show the actual numbers. 
+A transparent look at how I use AI. I work with AI agents every day, for building, debugging systems, writing, and thinking through problems. Rather than just talk about it, I figured I'd show the actual numbers.
 
-This page pulls live telemetry from my agent sessions and surfaces the patterns: how often, how long, and what kind of work.
+This page pulls live telemetry from my agent sessions and surfaces the patterns: how often, how long, and what kind of work, this is generated using sigil.
 
 {{< rawhtml >}}
 <div class="sigil">
