@@ -4,17 +4,17 @@ title: "About"
 
 👋🏻 Hi, I’m Junaid.
 
-I'm a systems engineer based in Bengaluru, currently helping build the future of agentic data collaboration at [Atlan](https://atlan.com).
+I'm a senior software engineer based in Bengaluru, currently working at [dbt Labs](https://www.getdbt.com).
 
 My work sits at the intersection of distributed systems, developer experience, and AI-native engineering.
 
 ## Work
 
-I wear multiple hats at Atlan. My work spans the following domains:
+Previously at [Atlan](https://atlan.com), I wore multiple hats across the following domains:
 
 **Platform Engineering**
 
-My primary focus right now is on the [Atlan App Framework](https://github.com/atlanhq/application-sdk) that enables our customers, forward-deployed and internal engineering teams to build on top of the Atlan platform faster and better.
+I worked on the [Atlan App Framework](https://github.com/atlanhq/application-sdk) that enables customers, forward-deployed and internal engineering teams to build on top of the Atlan platform faster and better.
 
 **Data Engineering**
 
