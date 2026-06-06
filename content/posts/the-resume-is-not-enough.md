@@ -61,7 +61,7 @@ So if resumes aren't enough, what actually works?
 
 How do you demonstrate technical competence in a format that actually preserves the signal?
 
-{{< tweet user="signulll" id="1884457471315472831" >}}
+{{< x user="signulll" id="1884457471315472831" >}}
 
 ### Blogs
 
