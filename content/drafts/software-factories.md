@@ -12,19 +12,19 @@ draft: false
 
 > This is AI written.
 
-*A meditation on Johannes Schickling's provocation: "Software engineering is no longer about building products. It's about building systems and software factories."*
+_A meditation on Johannes Schickling's provocation: "Software engineering is no longer about building products. It's about building systems and software factories."_
 
------
+---
 
 ## I. The Thesis That Landed
 
 When Johannes Schickling—founder of Prisma, host of the Local-First podcast, and one of the sharpest observers of developer tooling—tweeted that software engineering had undergone a fundamental transformation, he wasn't making a prediction. He was naming something that the best engineers had already quietly internalized: the unit of engineering effort has shifted from the product to the production system itself.
 
-This is not a minor semantic distinction. It represents a phase transition in what it means to be a software engineer—as significant as the shift from assembly to high-level languages, or from monoliths to microservices. But unlike those transitions, which changed *how* we build, this one changes *what* we're building. The artifact is no longer the application. The artifact is the machine that produces applications.
+This is not a minor semantic distinction. It represents a phase transition in what it means to be a software engineer—as significant as the shift from assembly to high-level languages, or from monoliths to microservices. But unlike those transitions, which changed _how_ we build, this one changes _what_ we're building. The artifact is no longer the application. The artifact is the machine that produces applications.
 
 Schickling's observation arrives at a particular moment: early 2026, when coding agents have moved from curiosity to infrastructure. Claude Code, Cursor, Codex, and their siblings are no longer toys for the adventurous. They're load-bearing components in how serious software gets made. And in this new reality, the engineers who are "shipping like crazy" aren't the ones who can type fastest or hold the most context in their heads. They're the ones who've figured out how to orchestrate systems that do the building for them.
 
------
+---
 
 ## II. What Is a Software Factory?
 
@@ -46,7 +46,7 @@ A modern software factory might include:
 
 This is what Schickling means by "systems and software factories." It's not one tool. It's an integrated apparatus for producing software—a meta-system that produces systems.
 
------
+---
 
 ## III. The Inversion of Effort
 
@@ -68,7 +68,7 @@ The new model inverts this. When you have a working software factory, the implem
 
 **Deployment becomes operations.** When software is produced continuously, deployment can't be a discrete event. It becomes a continuous process of rolling out changes, monitoring impacts, and rolling back failures. The factory model naturally leads to progressive deployment, feature flags, and sophisticated observability—not as nice-to-haves, but as essential components of the production system.
 
------
+---
 
 ## IV. The Effect Thesis
 
@@ -82,7 +82,7 @@ This is why Schickling's prediction about Effect "hitting mainstream with the ta
 
 The same principle extends beyond Effect. Any framework or pattern that makes structure explicit—that moves information from implicit conventions into explicit declarations—becomes more valuable in the factory model. This is the revenge of the type theorists: decades of research into formal methods, dependent types, and specification languages suddenly finds practical application as guardrails for AI generation.
 
------
+---
 
 ## V. The Skills of the Factory Engineer
 
@@ -98,7 +98,7 @@ If the product-building engineer's core skill was implementation—translating s
 
 **Institutional knowledge management.** A software factory embodies knowledge: about the codebase, about best practices, about organizational conventions, about past mistakes. The factory engineer must curate this knowledge, encoding it into prompts, validation rules, and training data. This is a form of knowledge engineering that was a fringe specialty in the expert systems era but becomes central in the factory era.
 
------
+---
 
 ## VI. The Human in the Loop—But Which Loop?
 
@@ -116,7 +116,7 @@ This is where Schickling's observation about the "best engineers" is crucial. Th
 
 The implication for engineering education and career development is significant. Aspiring engineers still need to learn to code, to debug, to reason about systems. But they also need to learn when and how to delegate these activities to AI systems. The curriculum expands; it doesn't replace.
 
------
+---
 
 ## VII. The Organizational Implications
 
@@ -132,7 +132,7 @@ If software engineering is increasingly about building factories rather than pro
 
 **Metrics evolve.** Story points and velocity—already problematic proxies for productivity—become even less relevant when a well-designed factory can implement features in minutes. New metrics emerge: specification quality (how often does a spec need refinement?), factory efficiency (what's the generation success rate?), time-to-validation (how quickly can we confirm a feature works?). These metrics measure the health of the production system rather than the busyness of the engineers.
 
------
+---
 
 ## VIII. The Economic Argument
 
@@ -144,7 +144,7 @@ The timeline for this transition is uncertain. As of early 2026, coding agents a
 
 Engineers who wait for this transition to complete before adapting may find they've waited too long. The skills of factory-building take time to develop. The organizational changes take time to implement. The competitive advantage accrues to early movers who figure out effective factory designs while others are still debating whether the transition is real.
 
------
+---
 
 ## IX. What Gets Lost
 
@@ -160,7 +160,7 @@ Every transition has costs. What do we lose in the move from product-building to
 
 **Accountability clarity.** When a human writes code and that code causes harm, the chain of responsibility is clear. When a factory generates code, responsibility is distributed: the specification author, the factory designer, the validation framework maintainer, the human reviewer (if any) all bear some responsibility. This diffusion of accountability could create problems for regulation, liability, and professional ethics.
 
------
+---
 
 ## X. The Way Forward
 
@@ -178,7 +178,7 @@ What does adaptation look like in practice?
 
 **Think about the transition, not the end state.** We're not in a steady state; we're in a transition. The factories that work today will need modification as AI capabilities improve. The skills that differentiate today will become table stakes tomorrow. Adaptability—the ability to learn new approaches as the landscape shifts—may be the most durable skill of all.
 
------
+---
 
 ## XI. Conclusion: The New Unit of Engineering
 

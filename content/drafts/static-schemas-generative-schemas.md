@@ -397,7 +397,6 @@ $ python main.py
 💫 That's the tea on your current tasks! Time to get this bread and check off that list! 💪✨
 ```
 
-
 You can find the complete code at [github.com/junaidrahim/rethinking-todo](https://github.com/junaidrahim/rethinking-todo)
 
 ## Super App ?

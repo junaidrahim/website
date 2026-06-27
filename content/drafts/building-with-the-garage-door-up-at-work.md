@@ -10,7 +10,6 @@ math: true
 draft: false
 ---
 
-
 ## Why Open the Door
 
 “Building in public” is often framed as an audience building tactic: share progress, post threads, collect likes. That is not what this essay is about.

@@ -18,20 +18,16 @@ theme = "light"
 homeIntro = true
 homeIntroTitle = 'Hello ☕️'
 homeIntroContent = """
-Just another [hacker](https://phrack.org/issues/7/3).
+I'm a senior software engineer on the agentic systems team at [dbt Labs](https://www.getdbt.com).
 
-I'm currently working as a senior software engineer at [dbt Labs](https://www.getdbt.com).
+Previously, I was an early engineer at [Atlan](https://atlan.com/) where I built the metadata sync and lineage generation platforms. Joined at under **$500k** ARR, left at **$60M**.
 
-Living in Bengaluru, India.
-
-This website is a record of my work, talks, projects, musings, curiosities and research.
-
-In my free time I love to write, read, cycle, travel and go on bike rides. I'm weirdly nerdy about PKM systems, fountain pens and street photography.
+This website is a record of my work, talks, projects, musings, curiosities and research. In my free time I love to write, read, cycle, travel and go on bike rides. I love to nerd out on knowledge graphs, fountain pens and street photography.
 
 I've written a longer introduction [here](/about) if you're interested :)
 """
 
-# Collection to display on home page: 
+# Collection to display on home page:
 # in this case we would display content/posts pages
 homeCollectionTitle = 'Posts'
 homeCollection = 'posts'
@@ -102,7 +98,7 @@ name = "ai"
 url = "/ai"
 
 
-# Syntax highlight on code blocks, all styles: 
+# Syntax highlight on code blocks, all styles:
 # https://xyproto.github.io/splash/docs/all.html
 # I suggest algol
 [markup]
