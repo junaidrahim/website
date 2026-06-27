@@ -9,7 +9,7 @@ math: false
 draft: false
 ---
 
-Every era of information technology has changed what it means to find something. 
+Every era of information technology has changed what it means to find something.
 
 Not just how fast or how conveniently, but what "finding" is, what becomes findable, and who decides.
 
@@ -29,7 +29,7 @@ The question shifts from "where is it" to "what do I want to see."
 
 You're no longer constrained to what was pre-indexed or pre-linked. The system can surface adjacencies you never noticed. It can respond to the question you're actually asking rather than the keywords you happened to use.
 
-But there's a strange new problem. When you locate a document, you can verify it exists. When you synthesize an answer, the line between discovery and invention blurs. 
+But there's a strange new problem. When you locate a document, you can verify it exists. When you synthesize an answer, the line between discovery and invention blurs.
 
 Did you find that insight in your notes, or did the model construct it? Does it matter?
 
@@ -37,7 +37,7 @@ The authorship of "finding" has always been distributed. The index was authored 
 
 Maybe this is fine. Maybe finding was always a creative act dressed up as retrieval. When you followed a chain of links down a rabbit hole at 2am, the path you took was yours, an improvisation on the material.
 
-Generative systems just make the improvisation explicit. 
+Generative systems just make the improvisation explicit.
 
 The search engineer's job used to be building indexes and ranking relevance. Now it might be something stranger: designing systems that synthesize without fabricating, that interpolate without overwriting, that help you find what you almost knew.
 

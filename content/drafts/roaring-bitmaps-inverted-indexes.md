@@ -10,7 +10,6 @@ math: true
 draft: false
 ---
 
-
 - https://vikramoberoi.com/posts/a-primer-on-roaring-bitmaps-what-they-are-and-how-they-work/
   - Two Papers
     - https://arxiv.org/pdf/1402.6407
