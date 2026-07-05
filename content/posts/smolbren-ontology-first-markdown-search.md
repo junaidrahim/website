@@ -7,7 +7,7 @@ summary:
 description:
   "Why I stopped letting agents grep through 13k notes and built smolbren: ontology-first search over markdown
   frontmatter."
-toc: true
+toc: false
 readTime: true
 autonumber: false
 math: true
