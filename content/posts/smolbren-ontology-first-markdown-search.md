@@ -161,24 +161,24 @@ search tool. Medians over 7 runs, release builds, M-series MacBook.
 
 ## In Conclusion
 
-My hermes agent, a cron job on my mac mini, now uses smolbren to rip through my obsidian vault and make sure that things
-are as per the ontology, and if needed it grows the ontology on its own.
+My hermes agent now uses smolbren to search through my obsidian vault and make sure that things are as per the ontology,
+and if needed it grows the ontology on its own.
 
 This is a very different approach from most of the advice on setting up a knowledge base, which is to give up all of the
-control to the agents and let them do the ingesting and the writing -- index literally everything you see on your
-screen, every notification, email and meeting note, and then ask dumb questions like "oh tell me everything I've read
-about this topic".
+control to the agents and let them do the ingesting and the writing. I have also seen tools that index literally
+everything you see on your screen, every notification, email and meeting note and that seems a bit unnecessary.
 
-All that does is undermine the highest signal input the system can get, your own long form writing. Free form writing is
-what surfaces the knots in your thinking, all the biases and assumptions. All ideas sound good until you write them
-down. Shove everything else in and it's slop in, slop out.
+All that does is undermine the highest signal input to the system which is your own long form writing, that's what
+surfaces the knots in your thinking, all the biases and assumptions. All ideas sound good until you write them down.
+Shove everything else in and it's slop in, slop out.
 
 That's also why smolbren stays a small tool and not a platform. Tools should be paint brushes and not hammers, at least
 the ones you interact with daily, and they should leave you the freedom to compose your own systems. The same freedom
 applies at the model layer, with the amount of flux in the AI models market, building anything that only works with
-OpenAI models/harnesses or only Anthropic ones is just stupid. BYOA, bring your own agent. Preserve your data and its
-indexes in a way that is fully harness and model agnostic, and you get to reap all the improvements that happen at the
-model layer.
+OpenAI models/harnesses or only Anthropic ones is just stupid.
+
+BYOA, bring your own agent. Preserve your data and its indexes in a way that is fully harness and model agnostic, and
+you get to reap all the improvements that happen at the model layer.
 
 ---
 
