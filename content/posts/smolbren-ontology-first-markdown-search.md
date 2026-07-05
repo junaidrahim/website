@@ -196,5 +196,4 @@ Special thanks to [Komal Tiwari](https://www.linkedin.com/in/komal-t-b4662119a) 
     `[[projects/note-0042]]` and the folder name always matches the note's type. My real vault has neither. Links look
     like `[[note-0042]]` or `[[note-0042|that search thing]]`, and `type: project` lives in frontmatter while the file
     sits in whatever folder made sense at the time. So to type-check a single link target you have to figure out which
-    file it points to and open it. Do that 15,000 times and you've rebuilt an indexer in bash, badly, and it reruns on
-    every question.
+    file it points to and open it, and that's just re-creating an indexer in bash.
