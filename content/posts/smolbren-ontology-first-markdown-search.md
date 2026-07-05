@@ -149,33 +149,36 @@ The first row, for example, is a single call:
 smolbren query "MATCH (b:blog)-[:mentions]->(p:project) RETURN count(DISTINCT p.id)"
 ```
 
-Grep costs assume the agent pulls intermediate results (file lists, frontmatter lines) into context to join them — the
-only option once links are basenames or aliases and `type` lives in frontmatter rather than the folder structure. At ~4
-bytes/token, the worst rows are 150–200k tokens: a context window spent answering one question.
+To put numbers on this I generated a 5,000-note vault with 15,000 links between notes and asked five questions that need
+the graph.
+
+The smolbren column is a single Cypher query per question. The grep column is what an agent has to pull into its context
+window to answer the same question with ripgrep: list the candidate files first, then fetch their frontmatter lines,
+then do the join itself[^2].
+
+Nothing about that loop is hypothetical, it's what Claude does in my sessions when all it has is a file tree and a
+search tool. Medians over 7 runs, release builds, M-series MacBook.
 
 ## In Conclusion
 
 My hermes agent, a cron job on my mac mini, now uses smolbren to rip through my obsidian vault and make sure that things
 are as per the ontology, and if needed it grows the ontology on its own.
 
-This is also a very different approach to doing this knowledge base setup, a lot of advice on setting this up is to give
-up all of the control to the agents and let them do all the ingesting and the writing.
+This is a very different approach from most of the advice on setting up a knowledge base, which is to give up all of the
+control to the agents and let them do the ingesting and the writing -- index literally everything you see on your
+screen, every notification, email and meeting note, and then ask dumb questions like "oh tell me everything I've read
+about this topic".
 
-There is no point in having the second brain index literally everything you see on your screen and all the notifications
-or emails or meeting notes you get. And then ask it dumb questions like "oh tell me everything I've read about this
-topic".
+All that does is undermine the highest signal input the system can get, your own long form writing. Free form writing is
+what surfaces the knots in your thinking, all the biases and assumptions. All ideas sound good until you write them
+down. Shove everything else in and it's slop in, slop out.
 
-I want to preserve my own long form writing as the highest signal input to this system. I am a big fan of free form
-writing, it's a great way to surface all the knots in your thinking and all the biases and assumptions. All ideas sound
-good until you write them down. Slop in, slop out.
-
-I like my tools to be paint brushes and not hammers. I like the freedom to compose my systems. At least the ones that I
-interact with daily.
-
-I am a big believer in BYOA (bring your own agent) architectures, the amount of flux that keeps happening in the AI
-models market, doing anything that can only work with either OpenAI models/harnesses or only Anthropic one's, that's
-just stupid. You should be able to preserve your data and its indexes in a way that are fully harness and model
-agnostic, that would allow you to reap the benefits of all the improvements that happen at the model layer.
+That's also why smolbren stays a small tool and not a platform. Tools should be paint brushes and not hammers, at least
+the ones you interact with daily, and they should leave you the freedom to compose your own systems. The same freedom
+applies at the model layer, with the amount of flux in the AI models market, building anything that only works with
+OpenAI models/harnesses or only Anthropic ones is just stupid. BYOA, bring your own agent. Preserve your data and its
+indexes in a way that is fully harness and model agnostic, and you get to reap all the improvements that happen at the
+model layer.
 
 ---
 
@@ -185,3 +188,13 @@ Special thanks to [Komal Tiwari](https://www.linkedin.com/in/komal-t-b4662119a) 
 [Ganesh Futane](https://www.linkedin.com/in/ganeshfutane) for reading drafts of this post and providing feedback.
 
 [^1]: [Andrej Karpathy on LLM Knowledge Bases](https://x.com/karpathy/status/2039805659525644595?s=20)
+
+[^2]:
+    Yes, you can often do this in one pipeline and skip the context cost entirely:
+    `rg -o '\[\[people/' | sort | uniq -c | head` type stuff. I timed those too and they beat smolbren, 30–150ms. The
+    catch is they only worked because I generated this vault to be grep-friendly: every link is a full path like
+    `[[projects/note-0042]]` and the folder name always matches the note's type. My real vault has neither. Links look
+    like `[[note-0042]]` or `[[note-0042|that search thing]]`, and `type: project` lives in frontmatter while the file
+    sits in whatever folder made sense at the time. So to type-check a single link target you have to figure out which
+    file it points to and open it. Do that 15,000 times and you've rebuilt an indexer in bash, badly, and it reruns on
+    every question.
