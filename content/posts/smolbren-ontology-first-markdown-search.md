@@ -135,18 +135,19 @@ around with your own way of doing CRON jobs and setting up your dreaming sequenc
 
 Test Setup: 5,000-note vault, 15,000 links.
 
-| Approach                                                                               | Agent ingests        | Turns |
-| -------------------------------------------------------------------------------------- | -------------------- | ----- |
-| `smolbren query "MATCH (b:blog)-[:mentions]->(p:project) RETURN count(DISTINCT p.id)"` | **37 bytes**         | 1     |
-| grep, naive (list blogs → pull their `mentions:` lines → count in-context)             | 610KB (~150k tokens) | 3+    |
+| Query                                                           | smolbren Cypher (1 call) | grep (agent ingests) |
+| --------------------------------------------------------------- | ------------------------ | -------------------- |
+| How many projects have a blog linking to them?                  | **198ms / 37 B**         | 611 KB over 2+ calls |
+| What does note X mention, with titles?                          | **211ms / 206 B**        | 2 KB over 2+ calls   |
+| Top-5 most-mentioned people                                     | **208ms / 205 B**        | 826 KB over 1+ calls |
+| How many projects are mentioned by both a blog _and_ a journal? | **320ms / 37 B**         | 719 KB over 2+ calls |
+| Who links to note Y, and what type is each?                     | **198ms / 136 B**        | 1 KB over 2+ calls   |
 
-| Query                                                           | smolbren Cypher   | grep (agent ingests) |
-| --------------------------------------------------------------- | ----------------- | -------------------- |
-| How many projects have a blog linking to them?                  | **198ms / 37 B**  | 611 KB over 2+ calls |
-| What does note X mention, with titles?                          | **211ms / 206 B** | 2 KB over 2+ calls   |
-| Top-5 most-mentioned people                                     | **208ms / 205 B** | 826 KB over 1+ calls |
-| How many projects are mentioned by both a blog _and_ a journal? | **320ms / 37 B**  | 719 KB over 2+ calls |
-| Who links to note Y, and what type is each?                     | **198ms / 136 B** | 1 KB over 2+ calls   |
+The first row, for example, is a single call:
+
+```sh
+smolbren query "MATCH (b:blog)-[:mentions]->(p:project) RETURN count(DISTINCT p.id)"
+```
 
 Grep costs assume the agent pulls intermediate results (file lists, frontmatter lines) into context to join them — the
 only option once links are basenames or aliases and `type` lives in frontmatter rather than the folder structure. At ~4
