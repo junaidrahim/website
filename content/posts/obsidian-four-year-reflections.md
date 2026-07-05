@@ -50,7 +50,7 @@ I use the following community plugins
 - [Home Tab](https://github.com/olrenso/obsidian-home-tab) for quick access to my most used notes
 - [Tag Wrangler](https://github.com/pjeby/tag-wrangler) for searching via tags and building a hierarchy of tags
 
-I also use [Obsidian Sync](https://obsidian.md/sync), mostly for a nice mobile experience. Also I *want to* pay them some money. I really want Obsidian to stick around, love their approach with being [100% user-supported](https://stephango.com/vcware).
+I also use [Obsidian Sync](https://obsidian.md/sync), mostly for a nice mobile experience. Also I _want to_ pay them some money. I really want Obsidian to stick around, love their approach with being [100% user-supported](https://stephango.com/vcware).
 
 The way my vault has evolved is by moving to simpler and simpler structures to organise my notes.
 

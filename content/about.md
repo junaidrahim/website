@@ -6,7 +6,7 @@ title: "About"
 
 I'm a senior software engineer based in Bengaluru, currently working at [dbt Labs](https://www.getdbt.com).
 
-Previously, I was an early engineer at [Atlan](https://atlan.com/). 
+Previously, I was an early engineer at [Atlan](https://atlan.com/).
 
 My work sits at the intersection of distributed systems, developer experience, and AI-native engineering.
 

@@ -1,0 +1,23 @@
+/* Tables: gray borders on all cells, overriding the theme's outer-and-row-only borders */
+:root {
+  --table-border-light: rgb(176, 176, 176);
+  --table-border-dark: rgb(96, 96, 96);
+  --table-border: light-dark(var(--table-border-light), var(--table-border-dark));
+}
+
+table {
+  /* the reset makes tables display:block, so the table's own border can't
+     collapse with cell borders — let the outer cells draw the edge instead */
+  border: none;
+  border-radius: 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--table-border);
+}
+
+tbody tr {
+  border-top: 1px solid var(--table-border);
+}
