@@ -1,16 +1,14 @@
 ---
-title: "From Static Schemas to Generative Systems"
+title: "Generative All the Way Down"
 date: "2025-11-12T00:12:31+05:30"
-summary: "We've been building apps with rigid schemas for decades. What happens when LLMs can rewrite not just the UI, but the entire data model on the fly?"
-description: "We've been building apps with rigid schemas for decades. What happens when AI can rewrite not just the UI, but the entire data model on the fly?"
+summary: "Generative UI stops at the presentation layer. What happens when the logic and the data model become fluid too ?"
+description: "Generative UI stops at the presentation layer. What happens when the logic and the data model become fluid too ?"
 toc: true
 readTime: true
 autonumber: false
 math: true
 draft: false
 ---
-
-> WIP Post, will be updated soon.
 
 I had been reading a lot about generative UIs lately.
 
@@ -33,9 +31,7 @@ Traditional:  [Fixed Schema] -> [Static Logic]  ->  [Predictable UI]
 Generative:   [Fluid Data]  <-> [Dynamic Rules] <-> [Adaptive Experience]
 ```
 
-Explanation: The first line shows the classic, one‑directional pipeline: you design a fixed schema, write logic on top, and the UI is a predictable rendering of that logic. The second line emphasizes bidirectional coupling and feedback: data, rules, and experience can influence and reshape each other on the fly, so changes in one layer can propagate back and forth to the others.
-
-Interestingly, with the help of libraries like [DSPy](https://dspy.ai), you can implement this fluidity in all the layers of your application very easily.
+The first line is a one-way pipeline. You freeze a schema, write logic on top of it, and the UI is a projection of whatever the logic allows. The second line is a loop, every layer can reshape the layers around it on the fly.
 
 What would happen if we let the entire stack be as fluid as the conversations we're having with these models instead of being rigid ?
 
@@ -57,8 +53,6 @@ Experience, Logic, and Data.
 └──────────────────────┘
 ```
 
-Explanation: A quick visual of the common three‑tier architecture. “Experience” is what users touch; “Logic” encodes rules, validations, workflows; “Data” is the underlying structure and persistence. The post explores making each layer fluid with LLMs so that the boundaries can adapt based on intent and context.
-
 This is also known as the infamous [three-tier architecture](https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture).
 
 Every app we build starts with the same first steps. Define your domain, lock down your schemas, build everything on top. We have done this for decades in software development.
@@ -73,9 +67,13 @@ They can understand and generate far more complex structures. They can evolve no
 
 ## Rethinking the To Do App
 
-To illustrate this, I'll use a simple in-memory todo app in python using DSPy.
+To illustrate this, I'll use a simple in-memory todo app in python. With a library like [DSPy](https://dspy.ai), you can prototype this kind of fluidity in an afternoon.
+
+We'll start with a completely static version, and then make each layer generative, one at a time.
 
 ### Setting a Base
+
+Every version implements the same interface. Two methods, add a todo and print all of them.
 
 ```python
 from pydantic import BaseModel
@@ -92,9 +90,9 @@ class BaseTodoApp(ABC):
         raise NotImplementedError
 ```
 
-Explanation: Defines an interface for a todo app using Python’s `ABC`. It sets two required behaviors: `add_todo`, which accepts a Pydantic model for type safety, and `print_todos`, which returns a string representation. Concrete implementations can swap how they store and render todos while keeping a consistent surface area.
-
 ### Vanilla
+
+The version we have all written a hundred times. A fixed `Todo` model, a list in memory, `tabulate` for the output.
 
 ```python
 from base.base_todo import BaseTodoApp
@@ -127,8 +125,6 @@ class VanillaTodoApp(BaseTodoApp):
         return tabulate(table, headers, tablefmt="github")
 ```
 
-Explanation: A conventional implementation. `Todo` is a structured Pydantic model. `VanillaTodoApp` collects todos in memory and uses `tabulate` to print a simple, deterministic ASCII table. Nothing generative here—schema and presentation are fixed, so you always get the same columns and layout.
-
 Running this looks like the following
 
 ```bash
@@ -145,9 +141,11 @@ $ python main.py
 | 8   | Backup photos            | Move 2025/Diwali album to NAS; verify checksums; #ops                                         | True      |
 ```
 
-Explanation: Running the vanilla version typically looks like initializing the app, adding a few `Todo` objects, then calling `print_todos()` to render the table. For example, you might run a small `main.py` that constructs `VanillaTodoApp`, adds sample tasks, and prints the output to the console.
+Same input, same table, every single time. The schema decides the columns, the code decides the layout. Nothing moves.
 
-### Generate Experience
+### Generative Experience
+
+Now we make the experience layer fluid. The data and the logic stay exactly the same, only `print_todos` changes. Instead of `tabulate` deciding the layout, a DSPy signature describes what we want and the model figures out the rest.
 
 ```python
 import dspy
@@ -192,8 +190,6 @@ class GenerativeExperienceTodoApp(BaseTodoApp):
         return formatted_output
 ```
 
-Explanation: The experience layer becomes fluid. `TodoPrintSignature` describes inputs and the desired output format to the LLM. `GenerativeExperienceTodoApp.print_todos` delegates rendering to `dspy.Predict`, letting the model choose layout, emojis, and style while producing a pipe‑delimited GitHub‑style Markdown table with a header and separator row. This ensures the table renders aligned in Markdown. The data and logic remain static; only the presentation is generative.
-
 ```bash
 $ python main.py
 ✨ **Your Todo Vibe Check** ✨
@@ -217,7 +213,13 @@ $ python main.py
 *You're doing amazing sweetie! 6 tasks to go, 2 already conquered. That's some main character energy right there! 💅*
 ```
 
+Same eight todos. The model grouped them by priority, added emojis and threw in a motivational speech at the end. I wrote none of that.
+
+This is the ASCII version of what all the generative UI products are doing with react components.
+
 ### Generative Logic
+
+Next, the logic layer. `add_todo` no longer stores what you gave it, every todo gets rewritten by the model on its way in.
 
 ```python
 import dspy
@@ -272,7 +274,7 @@ class GenerativeLogicTodoApp(BaseTodoApp):
         return formatted_output
 ```
 
-Explanation: The logic layer is now generative. Instead of storing exactly what the user provided, `add_todo` uses `RewriteTodoSignature` to expand and enrich the todo (longer description, tone, emojis) before persistence. The printed output still uses the generative formatter, but the key shift is that application behavior modifies data on the way in via the LLM.
+The behaviour of the app itself has changed now, the write path has an opinion. What gets persisted is not what you typed, it's what the model thought you meant.
 
 ```bash
 $ python main.py
@@ -308,6 +310,10 @@ Remember: Progress > Perfection. Let's get this bread! 🍞
 ```
 
 ### Generative Data
+
+And finally, the layer we never dare to touch. The schema itself.
+
+Notice there is no `Todo` model anymore, it's just a dict. You throw free-form text at `add_todo` and the model decides what keys the object should have.
 
 ```python
 import dspy
@@ -370,8 +376,6 @@ class GenerativeDataTodoApp(BaseTodoApp):
         return formatted_output
 ```
 
-Explanation: The data layer becomes fluid. There is no fixed `Todo` model; instead `Todo` is a generic dict. `CreateTodoSignature` turns free‑form text into a structured JSON object with keys inferred by the model, then `RewriteTodoSignature` enriches it. Printing still uses a generative formatter. This shows how schemas can emerge and evolve from text and intent rather than being hard‑coded.
-
 ```bash
 $ python main.py
 ┌─────────────────────────────────────────────────────────────────────────────────┐
@@ -397,6 +401,8 @@ $ python main.py
 💫 That's the tea on your current tasks! Time to get this bread and check off that list! 💪✨
 ```
 
+I never defined a `priority` field. Or `tags`, or `due`. The model looked at "book dentist appointment" and decided the todo needed them. The schema emerged from the data, instead of the data conforming to a schema.
+
 You can find the complete code at [github.com/junaidrahim/rethinking-todo](https://github.com/junaidrahim/rethinking-todo)
 
 ## Super App ?
@@ -405,14 +411,28 @@ Most apps in the market are pretty vertical, they solve a specific problem or a 
 
 This is mostly because evolving schemas rapidly is very hard and not economically viable. Engineers would rather focus on a narrow problem domain and offer a better experience for that. The great unbundling of SaaS.
 
-That did not mean there were no super apps. There have been apps that solve a broad domain of problems, but they also require teams of thousands of engineers to build and maintain this system.
+That did not mean there were no super apps. There have been apps that solve a broad domain of problems, but they also require teams of thousands of engineers to build and maintain, because every new vertical means new schemas, new logic and new UI, all hand-built and hand-migrated.
 
-But all this conversation about how with LLMs, it can detect a pattern change in the user behaviour and evolve the schema automatically on the fly, makes you wonder, is there another wave of bundling about to happen in the SaaS world ?
+We even got a manual preview of schema fluidity with the tools-for-thought crowd. Notion and Airtable let you define your own schemas, and people have built entire CRMs and content calendars inside them. But you are the one doing the schema evolution there, clicking "add property" every time your usage outgrows the structure.
 
-If you give ChatGPT a list of todos, and keep texting it to mark things as done, it will do a pretty good job at it. If you prompt it correctly, it will even generate a full UI for you to manage your todos that'd render right in the ChatGPT interface.
+Now if an LLM can detect a pattern change in your behaviour and evolve the schema on the fly, the economics flip. It makes you wonder, is another wave of bundling about to happen in the SaaS world ?
 
-ChatGPT can also do research, it can also write, it can search the web for you. I believe in the future, apps with LLMs baked into them will often have some sort of fluidity in all of the layers.
+If you give ChatGPT a list of todos, and keep texting it to mark things as done, it will do a pretty good job at it. If you prompt it correctly, it will even generate a full UI for you to manage your todos that'd render right in the ChatGPT interface. It can also do research, it can write, it can search the web for you. That's a todo app, a research assistant and a search engine sharing one fluid data layer.
 
-Project updates can be dynamically ordered in your homepage based on your email inbox. Maybe your founder needs some updates first thing in the morning, so your project manager software re-orders those particular updates to show them first.
+I believe in the future, apps with LLMs baked into them will have some sort of fluidity in all three layers. Project updates dynamically re-ordered on your homepage based on your email inbox. Your founder needs some numbers first thing in the morning, so your project management tool learns to surface those first. Nobody built that feature, nobody wrote a migration for it.
+
+## In Conclusion
+
+The todo app above is deliberately silly. Every print is an LLM call, it's slow, it costs money and it never renders the same thing twice. I wouldn't ship it.
+
+And some layers have earned their rigidity. Money, auth, anything with an audit trail, you want those schemas frozen, versioned and reviewed. Determinism there is a feature, not a limitation.
+
+A schema is also not just plumbing, it's a bunch of decisions. Every table you design is you thinking about the domain, what exists, what relates to what, what's in and what's out. [To structure is to think](/posts/to-structure-is-to-think). Handing all of that to a model means the thinking happens somewhere else.
+
+The middle path is what I find most interesting. Let the model discover structure while the domain is still fuzzy, and freeze whatever stabilises. The schema stops being something you author on day zero and becomes something you harvest from usage. **Generative until proven stable, static after that.**
+
+For decades, rigidity was not a design choice, it was the only option we had. Fluidity is on the menu now, for every layer of the stack.
+
+The interesting question isn't whether your app will use LLMs. It's which layers you pin down and which ones you let breathe.
 
 [^1]: Rightfully so, the UI or the presentation layer has been the most fluid of all the three layers, and it's a lot more fruitful to experiment there with LLM driven layouts. We've had [Server Driven UI](https://medium.com/@tech.rapipay/server-driven-ui-80ae85603747) in the mobile apps ecosystem for a while now. The logic and the data layer need to be mostly deterministic for reliable iterations.
