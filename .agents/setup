@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+started_at=$SECONDS
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$repo_root"
+
+hugo_version="0.165.0"
+if ! hugo version 2>/dev/null | grep -Fq "hugo v${hugo_version}"; then
+  echo "Installing Hugo ${hugo_version}..."
+  architecture="$(dpkg --print-architecture)"
+  package="hugo_${hugo_version}_linux-${architecture}.deb"
+  package_path="$(mktemp --suffix=.deb)"
+  trap 'rm -f "$package_path"' EXIT
+  curl --fail --location --retry 3 \
+    "https://github.com/gohugoio/hugo/releases/download/v${hugo_version}/${package}" \
+    --output "$package_path"
+  sudo dpkg --install "$package_path"
+else
+  echo "Hugo ${hugo_version} is already installed."
+fi
+
+echo "Initializing Git submodules..."
+git submodule update --init --recursive
+
+echo "Orb setup complete in $((SECONDS - started_at))s."

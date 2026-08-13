@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# This static Hugo site has no runtime services to reconnect after an orb resumes.
+echo "No orb services need to be resumed."
