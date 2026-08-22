@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="690" viewBox="0 0 340 690" role="img" aria-labelledby="title desc">
+  <title id="title">The Dispossessed note expanded into a typed knowledge graph</title>
+  <desc id="desc">A highlighted book note connects through author, themes, and related frontmatter fields to four vertically arranged notes.</desc>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #ffffff;
+      --ink: #242424;
+      --graphite: #757575;
+      --rule: #b0b0b0;
+      --fountain: #385568;
+      --fountain-wash: #e9eff2;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #141414;
+        --ink: #dadada;
+        --graphite: #8c8c8c;
+        --rule: #606060;
+        --fountain: #86a9ba;
+        --fountain-wash: #1e2b31;
+      }
+    }
+
+    .serif { fill: var(--ink); font-family: "Iowan Old Style", Georgia, Cambria, serif; }
+    .mono { fill: var(--graphite); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 11px; }
+    .edge-label { fill: var(--ink); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 11px; }
+    .note { fill: var(--fountain-wash); stroke: var(--fountain); stroke-width: 1.5; }
+    .node { fill: var(--paper); stroke: var(--rule); stroke-width: 1; }
+    .rule { fill: none; stroke: var(--rule); stroke-width: 1; }
+    .edge { fill: none; stroke: var(--ink); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.35; }
+    .accent { fill: var(--fountain); }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 8 4 0 8" fill="none" stroke="var(--ink)" stroke-width="1.2" />
+    </marker>
+  </defs>
+
+  <text class="mono" x="18" y="22">01 / one note, four relationships</text>
+  <path class="rule" d="M18 35H322" />
+
+  <g aria-label="The Dispossessed book note">
+    <rect class="note" x="20" y="54" width="300" height="238" rx="3" />
+    <path class="rule" d="M20 113H320" />
+    <text class="mono" x="38" y="80">/books/the-dispossessed</text>
+    <text class="serif" x="38" y="102" font-size="21" font-weight="600">The Dispossessed</text>
+    <text class="mono" x="38" y="143">type</text>
+    <text class="edge-label accent" x="116" y="143">book</text>
+    <text class="mono" x="38" y="175">author</text>
+    <text class="edge-label" x="116" y="175">Ursula K. Le Guin</text>
+    <text class="mono" x="38" y="207">themes</text>
+    <text class="edge-label" x="116" y="207">anarchism, utopia</text>
+    <text class="mono" x="38" y="239">related</text>
+    <text class="edge-label" x="116" y="239">The Left Hand…</text>
+    <text class="mono" x="38" y="273">markdown note</text>
+  </g>
+
+  <text class="mono" x="20" y="327">frontmatter keys become edges</text>
+
+  <path class="edge" d="M88 367H106" marker-end="url(#arrow)" />
+  <text class="edge-label" x="20" y="371">author</text>
+  <circle cx="88" cy="367" r="3" class="accent" />
+  <rect class="node" x="114" y="342" width="206" height="54" rx="2" />
+  <text class="mono" x="130" y="362">person</text>
+  <text class="serif" x="130" y="384" font-size="16">Ursula K. Le Guin</text>
+
+  <path class="edge" d="M88 447H106" marker-end="url(#arrow)" />
+  <text class="edge-label" x="20" y="451">themes</text>
+  <circle cx="88" cy="447" r="3" class="accent" />
+  <rect class="node" x="114" y="422" width="206" height="54" rx="2" />
+  <text class="mono" x="130" y="442">topic</text>
+  <text class="serif" x="130" y="464" font-size="16">anarchism</text>
+
+  <path class="edge" d="M88 527H106" marker-end="url(#arrow)" />
+  <text class="edge-label" x="20" y="531">themes</text>
+  <circle cx="88" cy="527" r="3" class="accent" />
+  <rect class="node" x="114" y="502" width="206" height="54" rx="2" />
+  <text class="mono" x="130" y="522">topic</text>
+  <text class="serif" x="130" y="544" font-size="16">utopia</text>
+
+  <path class="edge" d="M88 616H106" marker-end="url(#arrow)" />
+  <text class="edge-label" x="20" y="620">related</text>
+  <circle cx="88" cy="616" r="3" class="accent" />
+  <rect class="node" x="114" y="582" width="206" height="72" rx="2" />
+  <text class="mono" x="130" y="604">book</text>
+  <text class="serif" x="130" y="627" font-size="16">The Left Hand</text>
+  <text class="serif" x="130" y="646" font-size="16">of Darkness</text>
+</svg>

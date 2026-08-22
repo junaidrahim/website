@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">The book, person, and topic ontology used by the markdown vault</title>
+  <desc id="desc">The book type may have an author relationship to a person, themes relationships to topics, and a related relationship to another book.</desc>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --paper: #ffffff;
+      --ink: #242424;
+      --graphite: #757575;
+      --rule: #b0b0b0;
+      --fountain: #385568;
+      --fountain-wash: #e9eff2;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #141414;
+        --ink: #dadada;
+        --graphite: #8c8c8c;
+        --rule: #606060;
+        --fountain: #86a9ba;
+        --fountain-wash: #1e2b31;
+      }
+    }
+
+    .serif {
+      fill: var(--ink);
+      font-family: "Iowan Old Style", Georgia, Cambria, serif;
+    }
+
+    .mono {
+      fill: var(--graphite);
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+    }
+
+    .edge-label {
+      fill: var(--ink);
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+    }
+
+    .source {
+      fill: var(--fountain-wash);
+      stroke: var(--fountain);
+      stroke-width: 1.5;
+    }
+
+    .node {
+      fill: var(--paper);
+      stroke: var(--rule);
+      stroke-width: 1;
+    }
+
+    .rule {
+      fill: none;
+      stroke: var(--rule);
+      stroke-width: 1;
+    }
+
+    .edge {
+      fill: none;
+      stroke: var(--ink);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.35;
+    }
+
+    .boundary {
+      fill: none;
+      stroke: var(--rule);
+      stroke-dasharray: 4 4;
+      stroke-width: 1;
+    }
+  </style>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 8 4 0 8" fill="none" stroke="var(--ink)" stroke-width="1.2" />
+    </marker>
+  </defs>
+
+  <text class="mono" x="34" y="30">02 / the graph has rules</text>
+  <text class="mono" x="726" y="30" text-anchor="end">ontology / allowed relationships</text>
+  <path class="rule" d="M34 44H726" />
+
+  <text class="mono" x="78" y="91">source type</text>
+  <g aria-label="Book source type">
+    <rect class="source" x="78" y="112" width="164" height="76" rx="3" />
+    <text class="serif" x="160" y="158" font-size="24" font-weight="600" text-anchor="middle">book</text>
+  </g>
+
+  <path class="boundary" d="M470 68H704V310H470" />
+  <text class="mono" x="486" y="88">allowed target types</text>
+
+  <g aria-label="Person target type">
+    <rect class="node" x="506" y="103" width="164" height="66" rx="2" />
+    <text class="serif" x="588" y="143" font-size="22" text-anchor="middle">person</text>
+  </g>
+
+  <g aria-label="Topic target type">
+    <rect class="node" x="506" y="222" width="164" height="66" rx="2" />
+    <text class="serif" x="588" y="262" font-size="22" text-anchor="middle">topic</text>
+  </g>
+
+  <path class="edge" d="M242 136H498" marker-end="url(#arrow)" />
+  <text class="edge-label" x="366" y="129">author</text>
+
+  <path class="edge" d="M242 164H361V255H498" marker-end="url(#arrow)" />
+  <text class="edge-label" x="366" y="247">themes</text>
+
+  <path class="edge" d="M137 188V278H213V196" marker-end="url(#arrow)" />
+  <text class="edge-label" x="175" y="303" text-anchor="middle">related</text>
+  <text class="mono" x="175" y="321" text-anchor="middle">book → book</text>
+</svg>

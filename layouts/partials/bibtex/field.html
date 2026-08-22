@@ -1,0 +1,10 @@
+{{- $bibtex := .bibtex -}}
+{{- $name := .name -}}
+{{- $pattern := printf `(?mi)^[ \t]*%s[ \t]*=[ \t]*[{"]([^}\"]*)[}"][ \t]*,?[ \t]*$` $name -}}
+{{- $matches := findRE $pattern $bibtex 1 -}}
+{{- if gt (len $matches) 0 -}}
+  {{- $value := index $matches 0 -}}
+  {{- $value = replaceRE `(?s)^[^=]+=[ \t]*[{"]` "" $value -}}
+  {{- $value = replaceRE `[}\"][ \t]*,?[ \t]*$` "" $value -}}
+  {{- trim $value " \t\r\n" -}}
+{{- end -}}

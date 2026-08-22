@@ -1,0 +1,25 @@
+{{- $desktopPath := .Get "desktop" -}}
+{{- $mobilePath := .Get "mobile" -}}
+{{- $alt := .Get "alt" -}}
+{{- $caption := .Get "caption" -}}
+{{- $desktop := resources.Get $desktopPath -}}
+{{- $mobile := resources.Get $mobilePath -}}
+
+{{- if not $desktop -}}
+  {{- errorf "working-notes-diagram: desktop asset %q was not found" $desktopPath -}}
+{{- end -}}
+{{- if not $mobile -}}
+  {{- errorf "working-notes-diagram: mobile asset %q was not found" $mobilePath -}}
+{{- end -}}
+
+<figure class="working-notes-diagram">
+  <picture>
+    <source media="(max-width: 640px)" srcset="{{ $mobile.RelPermalink }}">
+    <img loading="lazy" decoding="async" src="{{ $desktop.RelPermalink }}" alt="{{ $alt }}">
+  </picture>
+  {{- with $caption }}
+  <div class="caption-container">
+    <figcaption>{{ . | markdownify }}</figcaption>
+  </div>
+  {{- end }}
+</figure>
