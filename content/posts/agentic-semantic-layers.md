@@ -62,9 +62,9 @@ idea is to build this continuously maintained semantic model over all the data t
 ## The Missing Domain
 
 In the older world, it was easier to imagine the data stack as three domains: movement, storage and meaning. Movement is
-where companies like Fivetran operated by moving data across various sources and tools, storage is the classic cloud data
-warehouses that offer storage and compute, and then finally we have the final domain of data meaning. In here you have
-companies like dbt Labs and all the BI tools which help teams derive meaning and insights from the stored data.
+where companies like Fivetran operated by moving data across various sources and tools, storage is the classic cloud
+data warehouses that offer storage and compute, and then finally we have the final domain of data meaning. In here you
+have companies like dbt Labs and all the BI tools which help teams derive meaning and insights from the stored data.
 
 Data transformation to BI is all an effort of encoding meaning. You do it when you define your dbt models and run them,
 you do it when you set up a reusable widget in your BI tool, you do it when you set up schedules to refresh certain
@@ -108,8 +108,8 @@ progress in raw model capability.
 You could just ask your LLM questions and it would get perfect SQL queries you could run via MCP and get all the answers
 you needed. This phase did not last very long as we quickly ran into issues while generating real SQL queries directly
 from questions. The NL2SQL dream did not really pan out even after the exponential growth in model capabilities because
-every organisation has its own way of organising data and that information is not really available anywhere for the
-LLMs to pre-train on.
+every organisation has its own way of organising data and that information is not really available anywhere for the LLMs
+to pre-train on.
 
 So naturally, we found LLMs generating plausible SQL for questions which were plausibly correct but actually wrong
 because the table with all the data about orders is not just `orders` but something like
@@ -126,8 +126,8 @@ As LLMs became more and more capable, the semantic layer especially has become r
 
 ## From Metrics to Semantic Objects
 
-Traditionally modern data stack companies are approaching this problem by getting their old-world semantic layer
-systems to the agents by adding MCPs or APIs. The semantic layer of the old world was built to solve a central definition
+Traditionally modern data stack companies are approaching this problem by getting their old-world semantic layer systems
+to the agents by adding MCPs or APIs. The semantic layer of the old world was built to solve a central definition
 problem. Right now with agents I think we need to move semantic layers into a more latent space where they hold a lot
 more than just SQL metrics.
 
@@ -179,9 +179,9 @@ that can do data analytics faster and cheaper, preferably with the help of agent
 
 The process of dreaming in memory systems would translate to agent loops that enrich these semantic objects based on the
 recent operations being done on them. If I am constantly asking my agent to tell me how much money I have spent in a
-given month, it should eventually be able to run a single SQL query and get that answer. The first time it can spend time
-figuring out the table etc. but in the next run, the semantic object needs to be enriched to point to the exact table and
-then perhaps in the next run it has a set of recommended filters that I have mostly used.
+given month, it should eventually be able to run a single SQL query and get that answer. The first time it can spend
+time figuring out the table etc. but in the next run, the semantic object needs to be enriched to point to the exact
+table and then perhaps in the next run it has a set of recommended filters that I have mostly used.
 
 It's like a piece of software that tries to embed meaning from immutable data. Modelling this is relatively trying to
 model "reality" inside your semantic layer.

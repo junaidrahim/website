@@ -10,11 +10,15 @@ math: true
 draft: false
 ---
 
-You’ve used JSON a thousand times — APIs, configs, logs, browser storage, device telemetry. It feels universal and “simple”, so we assume all JSON is parsed the same everywhere.
+You’ve used JSON a thousand times — APIs, configs, logs, browser storage, device telemetry. It feels universal and
+“simple”, so we assume all JSON is parsed the same everywhere.
 
-Reality: most of us (and many library authors) haven’t read the evolving specifications closely. Different standards and interpretations mean different behaviors. Those tiny differences don’t just cause bugs; in distributed systems they become vulnerabilities.
+Reality: most of us (and many library authors) haven’t read the evolving specifications closely. Different standards and
+interpretations mean different behaviors. Those tiny differences don’t just cause bugs; in distributed systems they
+become vulnerabilities.
 
-This post is a guided map through the gaps: where the spec is deliberately ambiguous, how real parsers diverge, and what attackers can do with that divergence. We’ll keep it practical and concrete.
+This post is a guided map through the gaps: where the spec is deliberately ambiguous, how real parsers diverge, and what
+attackers can do with that divergence. We’ll keep it practical and concrete.
 
 In this post, you’ll learn:
 
@@ -31,7 +35,8 @@ A few “it looks fine” examples that aren’t fine:
 {"items": [1,2,3,], /* note */ 4}  // Is this even JSON?
 ```
 
-If your services don’t agree on these, an attacker can make them disagree on your data. Let’s see how, and how to fix it.
+If your services don’t agree on these, an attacker can make them disagree on your data. Let’s see how, and how to fix
+it.
 
 ## The Myth of JSON
 
@@ -41,14 +46,19 @@ JSON looks simple: objects, arrays, strings, numbers, booleans, null. Six charac
 
 Well, there are a total of six standards that define JSON.
 
-- [RFC 4627](https://datatracker.ietf.org/doc/html/rfc4627) → [RFC 7158](https://datatracker.ietf.org/doc/html/rfc7158) → [RFC 7159](https://datatracker.ietf.org/doc/html/rfc7159) → [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259) (IETF evolution)
-- [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404/) (the "canonical" standard)
+- [RFC 4627](https://datatracker.ietf.org/doc/html/rfc4627) → [RFC 7158](https://datatracker.ietf.org/doc/html/rfc7158)
+  → [RFC 7159](https://datatracker.ietf.org/doc/html/rfc7159) →
+  [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259) (IETF evolution)
+- [ECMA-404](https://www.ecma-international.org/publications-and-standards/standards/ecma-404/) (the "canonical"
+  standard)
 - [ECMAScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/) (JavaScript's take)
 - [JSON5](https://json5.org/), [HJSON](https://hjson.github.io/) (supersets with "helpful" extensions)
 
-Nicolas Seriot tested dozens of parsers against a comprehensive test suite and found that no two libraries exhibit the same behaviour. [He wrote a blog post about it](https://seriot.ch/software/parsing_json.html).
+Nicolas Seriot tested dozens of parsers against a comprehensive test suite and found that no two libraries exhibit the
+same behaviour. [He wrote a blog post about it](https://seriot.ch/software/parsing_json.html).
 
-Edge cases and maliciously crafted payloads cause bugs, crashes, and denial of services — mainly because JSON libraries rely on specifications that evolved over time and left many details loosely specified or not specified at all.
+Edge cases and maliciously crafted payloads cause bugs, crashes, and denial of services — mainly because JSON libraries
+rely on specifications that evolved over time and left many details loosely specified or not specified at all.
 
 ## Where the Spec Is Silent (or Shrugs)
 
@@ -56,10 +66,13 @@ Four categories of deliberate ambiguity:
 
 ### Duplicate Keys
 
-[RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259) says keys "SHOULD" be unique — not "MUST". That single word choice creates a vulnerability class.
+[RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259) says keys "SHOULD" be unique — not "MUST". That single word
+choice creates a vulnerability class.
 
-> "When the names within an object are not unique, the behavior of software that receives such an object is unpredictable. Many implementations report the last name/value pair only. Other implementations report an error or fail to parse the object, and some implementations report all of the name/value pairs, including duplicates."
-> — [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)
+> "When the names within an object are not unique, the behavior of software that receives such an object is
+> unpredictable. Many implementations report the last name/value pair only. Other implementations report an error or
+> fail to parse the object, and some implementations report all of the name/value pairs, including duplicates." —
+> [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)
 
 Three parsers, three outcomes:
 
@@ -71,18 +84,21 @@ Three parsers, three outcomes:
 
 The spec explicitly punts on precision:
 
-> "This specification allows implementations to set limits on the range and precision of numbers accepted."
-> — [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)
+> "This specification allows implementations to set limits on the range and precision of numbers accepted." —
+> [RFC 8259](https://datatracker.ietf.org/doc/html/rfc8259)
 
 What's "safe"? Integers in the range `[-(2^53)+1, (2^53)-1]`. Anything outside is implementation-defined.
 
-Worse: Python's `json.dump` will happily emit `NaN` and `Infinity` by default — values that aren't valid JSON at all. Set `allow_nan=False` or your "JSON" will break compliant parsers.
+Worse: Python's `json.dump` will happily emit `NaN` and `Infinity` by default — values that aren't valid JSON at all.
+Set `allow_nan=False` or your "JSON" will break compliant parsers.
 
-Numbers like `1E400` or `3.141592653589793238462643383279` indicate potential interoperability problems — the producing software expects more precision than most consumers provide.
+Numbers like `1E400` or `3.141592653589793238462643383279` indicate potential interoperability problems — the producing
+software expects more precision than most consumers provide.
 
 ### String Encoding
 
-String encoding was only explicitly required to be UTF-8 in the 2017 revision of the specification. Before that? Implementation-defined.
+String encoding was only explicitly required to be UTF-8 in the 2017 revision of the specification. Before that?
+Implementation-defined.
 
 Handling of:
 
@@ -94,7 +110,8 @@ Handling of:
 
 ### Comments and Trailing Commas
 
-Not in any JSON spec. But [JSON5](https://json5.org/) and [HJSON](https://hjson.github.io/) accept them. Some "lenient" parsers in strict-mode languages accept them too.
+Not in any JSON spec. But [JSON5](https://json5.org/) and [HJSON](https://hjson.github.io/) accept them. Some "lenient"
+parsers in strict-mode languages accept them too.
 
 Attackers can craft payloads that exploit inconsistent support for comments:
 
@@ -102,9 +119,8 @@ Attackers can craft payloads that exploit inconsistent support for comments:
 { "qty": 1, "extra": 1 /*, "qty": -1, "extra2": 2*/ }
 ```
 
-Parser A (no comment support): syntax error
-Parser B (comment support): `{"qty": 1, "extra": 1}`
-Parser C (lenient): `{"qty": -1}` after stripping "comments"
+Parser A (no comment support): syntax error Parser B (comment support): `{"qty": 1, "extra": 1}` Parser C (lenient):
+`{"qty": -1}` after stripping "comments"
 
 ## Real Attack Scenarios
 
@@ -118,7 +134,8 @@ Scenario: Cart service validates, Payment service processes.
 { "qty": 1, "qty": -1 }
 ```
 
-- Cart service (Python, last-key precedence): sees `qty: -1`, fails validation? No — JSON Schema validates the _parsed_ object, which only has one key.
+- Cart service (Python, last-key precedence): sees `qty: -1`, fails validation? No — JSON Schema validates the _parsed_
+  object, which only has one key.
 - Payment service (Go, first-key precedence): sees `qty: 1`
 
 Result: attacker gets items, payment processes negative amount (refund).
@@ -142,16 +159,19 @@ Inject control characters to create "shadow keys":
 { "qty": 1, "qty\u0000": -1 }
 ```
 
-Some parsers truncate at NUL byte, seeing two different keys. Others see one key with a NUL in its name. The mismatch creates exploitable gaps.
+Some parsers truncate at NUL byte, seeing two different keys. Others see one key with a NUL in its name. The mismatch
+creates exploitable gaps.
 
 ## The Microservices Amplifier
 
 In a monolith, parser quirks are annoying. In microservices, they're a vulnerability class.
 
-> "Parsers provided by standard libraries tended to be the most compliant, but they often lacked speed, which is of increasing importance in microservice architectures."
-> — BishopFox
+> "Parsers provided by standard libraries tended to be the most compliant, but they often lacked speed, which is of
+> increasing importance in microservice architectures." — BishopFox
 
-Performance pressure drives teams to third-party parsers. Each service picks its own. Your validation layer uses Python's `json`, your business logic uses Go's `encoding/json`, your downstream uses Node's `JSON.parse` — three different interpretations of the same payload.
+Performance pressure drives teams to third-party parsers. Each service picks its own. Your validation layer uses
+Python's `json`, your business logic uses Go's `encoding/json`, your downstream uses Node's `JSON.parse` — three
+different interpretations of the same payload.
 
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
@@ -192,7 +212,8 @@ Validation passed at the gateway. Business logic saw different data. The vulnera
 
 ## Closing Thought
 
-JSON's simplicity is a mirage. The spec punts on hard decisions, and every library author made different choices. In a single-service world, this is an annoyance. In microservices, it's a vulnerability class.
+JSON's simplicity is a mirage. The spec punts on hard decisions, and every library author made different choices. In a
+single-service world, this is an annoyance. In microservices, it's a vulnerability class.
 
 The fix isn't to abandon JSON — it's to stop assuming all parsers agree. They don't. They never did.
 

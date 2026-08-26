@@ -9,13 +9,15 @@ math: true
 draft: false
 ---
 
-In this era of AI and LLMs, being articulate isn't just nice to have, it's becoming the hidden superpower that separates the successful from the merely competent.
+In this era of AI and LLMs, being articulate isn't just nice to have, it's becoming the hidden superpower that separates
+the successful from the merely competent.
 
 Let me explain why.
 
 ## Misunderstood Hierarchy of Software Creation
 
-Anyone who doesn't write software thinks the hardest part is coding—the mysterious symbols and syntax that make machines do things. It's easy to be impressed by it if you're not familiar with the process.
+Anyone who doesn't write software thinks the hardest part is coding—the mysterious symbols and syntax that make machines
+do things. It's easy to be impressed by it if you're not familiar with the process.
 
 But people who write software know that typing code is usually the easiest part. The real challenges lie in:
 
@@ -24,9 +26,11 @@ But people who write software know that typing code is usually the easiest part.
 - Choosing the right components.
 - Understanding and partitioning the problem creatively and correctly.
 
-If you want to solve these challenges with LLMs, you need to be able to express and articulate complex problems very clearly.
+If you want to solve these challenges with LLMs, you need to be able to express and articulate complex problems very
+clearly.
 
-It takes a lot more than just doing `Cmd+K => "Fix this"` on cursor to actually improve your effectiveness as an engineer using AI.
+It takes a lot more than just doing `Cmd+K => "Fix this"` on cursor to actually improve your effectiveness as an
+engineer using AI.
 
 ## The Flamegraph of Problems in Companies
 
@@ -36,13 +40,16 @@ Problems in companies look remarkably like flame graphs in performance profiling
 
 At the bottom, the widest part of the graph, sits the company's mission.
 
-As you move up, you get increasingly specific problems and tasks, each stacking on the foundation below it. Your typical individual contributor works near the top of this graph, solving specific, well-defined problems.
+As you move up, you get increasingly specific problems and tasks, each stacking on the foundation below it. Your typical
+individual contributor works near the top of this graph, solving specific, well-defined problems.
 
-But here's the thing: the deeper down you can operate in this hierarchy, the more multiplicative your impact becomes. Solving a problem one level deeper doesn't just fix one issue—it potentially resolves dozens that stem from it.
+But here's the thing: the deeper down you can operate in this hierarchy, the more multiplicative your impact becomes.
+Solving a problem one level deeper doesn't just fix one issue—it potentially resolves dozens that stem from it.
 
 And this is where articulation becomes critical.
 
-LLMs like Claude, tools like Cursor—they're exceptionally good at solving specific, well-defined problems. Want to optimize a function? Fix a bug? Generate boilerplate? They've got you.
+LLMs like Claude, tools like Cursor—they're exceptionally good at solving specific, well-defined problems. Want to
+optimize a function? Fix a bug? Generate boilerplate? They've got you.
 
 But to tackle those deeper, wider problems, you need to provide significantly more context. You need to articulate:
 
@@ -52,22 +59,27 @@ But to tackle those deeper, wider problems, you need to provide significantly mo
 - The interlocking dependencies
 - The people bottlenecks
 
-This requires sitting down and thoughtfully writing out or dictating what you're trying to do, or engaging in extended dialogue with these systems to help them understand the broader context.
+This requires sitting down and thoughtfully writing out or dictating what you're trying to do, or engaging in extended
+dialogue with these systems to help them understand the broader context.
 
-The more articulate you are, the more you can explain a problem structurally, the deeper in the flame graph you can effectively operate with these tools.
+The more articulate you are, the more you can explain a problem structurally, the deeper in the flame graph you can
+effectively operate with these tools.
 
 ## The LLM Inflection Point
 
-We've now entered an era where LLMs can generate very competent code from a well-articulated prompts. This creates a fascinating inversion:
+We've now entered an era where LLMs can generate very competent code from a well-articulated prompts. This creates a
+fascinating inversion:
 
 - **Previously**: Technical skills and experience were the bottleneck.
 - **Now**: Articulation skills are the bottleneck
 
-The better you can express your intentions, clarify your needs, and communicate constraints, the better results you'll get from these systems.
+The better you can express your intentions, clarify your needs, and communicate constraints, the better results you'll
+get from these systems.
 
 And not just marginally better, but _exponentially_ better.
 
-This matches perfectly with the flame graph model. As you move down the graph to more foundational problems, the complexity increases, and simple prompts no longer suffice.
+This matches perfectly with the flame graph model. As you move down the graph to more foundational problems, the
+complexity increases, and simple prompts no longer suffice.
 
 Your ability to articulate complex systems becomes the limiting factor in your collaboration with these AI tools.
 
@@ -88,11 +100,14 @@ These are all fundamentally language skills, not coding skills.
 
 This isn't just about software development.
 
-As these tools spread into marketing, design, content creation, business analysis, and virtually every knowledge field, the ability to articulate thoughts clearly becomes the universal competitive advantage.
+As these tools spread into marketing, design, content creation, business analysis, and virtually every knowledge field,
+the ability to articulate thoughts clearly becomes the universal competitive advantage.
 
-Someone who can express "I need X that does Y while considering A,B,C and D and also something.json." will consistently outperform the person who can only manage "Make something like X."
+Someone who can express "I need X that does Y while considering A,B,C and D and also something.json." will consistently
+outperform the person who can only manage "Make something like X."
 
-In an era where anyone can generate mediocre content at scale, precision of thought and expression becomes the differentiator.
+In an era where anyone can generate mediocre content at scale, precision of thought and expression becomes the
+differentiator.
 
 The future belongs to those who can say exactly what they mean.
 

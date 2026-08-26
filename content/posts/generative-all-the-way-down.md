@@ -1,8 +1,10 @@
 ---
 title: "Generative All the Way Down"
 date: "2025-11-12T00:12:31+05:30"
-summary: "Generative UI stops at the presentation layer. What happens when the logic and the data model become fluid too ?"
-description: "Generative UI stops at the presentation layer. What happens when the logic and the data model become fluid too ?"
+summary:
+  "Generative UI stops at the presentation layer. What happens when the logic and the data model become fluid too ?"
+description:
+  "Generative UI stops at the presentation layer. What happens when the logic and the data model become fluid too ?"
 toc: true
 readTime: true
 autonumber: false
@@ -14,26 +16,34 @@ I had been reading a lot about generative UIs lately.
 
 Most of the re-thinking is happening in the UI layer[^1], it naturally got me curious about the other layers.
 
-"Generative UI" is an umbrella term for all the methods and tricks used to generate and display UI components on the fly using LLMs. Instead of conditional rendering or component swapping, the actual structure and composition of the UI is generated based on context, data, and user intent.
+"Generative UI" is an umbrella term for all the methods and tricks used to generate and display UI components on the fly
+using LLMs. Instead of conditional rendering or component swapping, the actual structure and composition of the UI is
+generated based on context, data, and user intent.
 
-For example, instead of replying with "The weather in Bengaluru is 26 degrees", your tool can generate a nice custom weather widget with a nice background image and temperature display as a reply to your query.
+For example, instead of replying with "The weather in Bengaluru is 26 degrees", your tool can generate a nice custom
+weather widget with a nice background image and temperature display as a reply to your query.
 
-Every system or app I've worked on in the pre-LLM era follows a similar pattern. You model the domain, write the schemas, write your business logic and then build the UI on top of it.
+Every system or app I've worked on in the pre-LLM era follows a similar pattern. You model the domain, write the
+schemas, write your business logic and then build the UI on top of it.
 
 It's muscle memory at this point.
 
-But watching LLMs rewrite entire UI components on the fly made me wonder - What if we do not stop at the presentation layer?
+But watching LLMs rewrite entire UI components on the fly made me wonder - What if we do not stop at the presentation
+layer?
 
-The LLMs are perfectly capable of understanding our data structures better than most ORMs. They can infer relationships, suggest fields, even question the domain boundaries and extend it.
+The LLMs are perfectly capable of understanding our data structures better than most ORMs. They can infer relationships,
+suggest fields, even question the domain boundaries and extend it.
 
 ```text
 Traditional:  [Fixed Schema] -> [Static Logic]  ->  [Predictable UI]
 Generative:   [Fluid Data]  <-> [Dynamic Rules] <-> [Adaptive Experience]
 ```
 
-The first line is a one-way pipeline. You freeze a schema, write logic on top of it, and the UI is a projection of whatever the logic allows. The second line is a loop, every layer can reshape the layers around it on the fly.
+The first line is a one-way pipeline. You freeze a schema, write logic on top of it, and the UI is a projection of
+whatever the logic allows. The second line is a loop, every layer can reshape the layers around it on the fly.
 
-What would happen if we let the entire stack be as fluid as the conversations we're having with these models instead of being rigid ?
+What would happen if we let the entire stack be as fluid as the conversations we're having with these models instead of
+being rigid ?
 
 This really takes the whole idea of "state is text" and builds on it.
 
@@ -53,21 +63,26 @@ Experience, Logic, and Data.
 └──────────────────────┘
 ```
 
-This is also known as the infamous [three-tier architecture](https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture).
+This is also known as the infamous
+[three-tier architecture](https://en.wikipedia.org/wiki/Multitier_architecture#Three-tier_architecture).
 
-Every app we build starts with the same first steps. Define your domain, lock down your schemas, build everything on top. We have done this for decades in software development.
+Every app we build starts with the same first steps. Define your domain, lock down your schemas, build everything on
+top. We have done this for decades in software development.
 
-[Domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design) told us to model our world in rigid structures - A Todo app has tasks, projects, subtasks. A CRM has contacts, deals, pipelines.
+[Domain-driven design](https://en.wikipedia.org/wiki/Domain-driven_design) told us to model our world in rigid
+structures - A Todo app has tasks, projects, subtasks. A CRM has contacts, deals, pipelines.
 
 LLMs allow us to break this assumption.
 
-They can understand and generate far more complex structures. They can evolve not just the UI layer, but the entire stack.
+They can understand and generate far more complex structures. They can evolve not just the UI layer, but the entire
+stack.
 
 {{<x user="sriramk" id="1953872171584852395" >}}
 
 ## Rethinking the To Do App
 
-To illustrate this, I'll use a simple in-memory todo app in python. With a library like [DSPy](https://dspy.ai), you can prototype this kind of fluidity in an afternoon.
+To illustrate this, I'll use a simple in-memory todo app in python. With a library like [DSPy](https://dspy.ai), you can
+prototype this kind of fluidity in an afternoon.
 
 We'll start with a completely static version, and then make each layer generative, one at a time.
 
@@ -145,7 +160,8 @@ Same input, same table, every single time. The schema decides the columns, the c
 
 ### Generative Experience
 
-Now we make the experience layer fluid. The data and the logic stay exactly the same, only `print_todos` changes. Instead of `tabulate` deciding the layout, a DSPy signature describes what we want and the model figures out the rest.
+Now we make the experience layer fluid. The data and the logic stay exactly the same, only `print_todos` changes.
+Instead of `tabulate` deciding the layout, a DSPy signature describes what we want and the model figures out the rest.
 
 ```python
 import dspy
@@ -213,13 +229,15 @@ $ python main.py
 *You're doing amazing sweetie! 6 tasks to go, 2 already conquered. That's some main character energy right there! 💅*
 ```
 
-Same eight todos. The model grouped them by priority, added emojis and threw in a motivational speech at the end. I wrote none of that.
+Same eight todos. The model grouped them by priority, added emojis and threw in a motivational speech at the end. I
+wrote none of that.
 
 This is the ASCII version of what all the generative UI products are doing with react components.
 
 ### Generative Logic
 
-Next, the logic layer. `add_todo` no longer stores what you gave it, every todo gets rewritten by the model on its way in.
+Next, the logic layer. `add_todo` no longer stores what you gave it, every todo gets rewritten by the model on its way
+in.
 
 ```python
 import dspy
@@ -274,7 +292,8 @@ class GenerativeLogicTodoApp(BaseTodoApp):
         return formatted_output
 ```
 
-The behaviour of the app itself has changed now, the write path has an opinion. What gets persisted is not what you typed, it's what the model thought you meant.
+The behaviour of the app itself has changed now, the write path has an opinion. What gets persisted is not what you
+typed, it's what the model thought you meant.
 
 ```bash
 $ python main.py
@@ -313,7 +332,8 @@ Remember: Progress > Perfection. Let's get this bread! 🍞
 
 And finally, the layer we never dare to touch. The schema itself.
 
-Notice there is no `Todo` model anymore, it's just a dict. You throw free-form text at `add_todo` and the model decides what keys the object should have.
+Notice there is no `Todo` model anymore, it's just a dict. You throw free-form text at `add_todo` and the model decides
+what keys the object should have.
 
 ```python
 import dspy
@@ -401,38 +421,66 @@ $ python main.py
 💫 That's the tea on your current tasks! Time to get this bread and check off that list! 💪✨
 ```
 
-I never defined a `priority` field. Or `tags`, or `due`. The model looked at "book dentist appointment" and decided the todo needed them. The schema emerged from the data, instead of the data conforming to a schema.
+I never defined a `priority` field. Or `tags`, or `due`. The model looked at "book dentist appointment" and decided the
+todo needed them. The schema emerged from the data, instead of the data conforming to a schema.
 
-You can find the complete code at [github.com/junaidrahim/rethinking-todo](https://github.com/junaidrahim/rethinking-todo)
+You can find the complete code at
+[github.com/junaidrahim/rethinking-todo](https://github.com/junaidrahim/rethinking-todo)
 
 ## Super App ?
 
-Most apps in the market are pretty vertical, they solve a specific problem or a set of closely related problems. You use Todoist or TickTick to manage your todos, you use Spotify to listen to music.
+Most apps in the market are pretty vertical, they solve a specific problem or a set of closely related problems. You use
+Todoist or TickTick to manage your todos, you use Spotify to listen to music.
 
-This is mostly because evolving schemas rapidly is very hard and not economically viable. Engineers would rather focus on a narrow problem domain and offer a better experience for that. The great unbundling of SaaS.
+This is mostly because evolving schemas rapidly is very hard and not economically viable. Engineers would rather focus
+on a narrow problem domain and offer a better experience for that. The great unbundling of SaaS.
 
-That did not mean there were no super apps. There have been apps that solve a broad domain of problems, but they also require teams of thousands of engineers to build and maintain, because every new vertical means new schemas, new logic and new UI, all hand-built and hand-migrated.
+That did not mean there were no super apps. There have been apps that solve a broad domain of problems, but they also
+require teams of thousands of engineers to build and maintain, because every new vertical means new schemas, new logic
+and new UI, all hand-built and hand-migrated.
 
-We even got a manual preview of schema fluidity with the tools-for-thought crowd. Notion and Airtable let you define your own schemas, and people have built entire CRMs and content calendars inside them. But you are the one doing the schema evolution there, clicking "add property" every time your usage outgrows the structure.
+We even got a manual preview of schema fluidity with the tools-for-thought crowd. Notion and Airtable let you define
+your own schemas, and people have built entire CRMs and content calendars inside them. But you are the one doing the
+schema evolution there, clicking "add property" every time your usage outgrows the structure.
 
-Now if an LLM can detect a pattern change in your behaviour and evolve the schema on the fly, the economics flip. It makes you wonder, is another wave of bundling about to happen in the SaaS world ?
+Now if an LLM can detect a pattern change in your behaviour and evolve the schema on the fly, the economics flip. It
+makes you wonder, is another wave of bundling about to happen in the SaaS world ?
 
-If you give ChatGPT a list of todos, and keep texting it to mark things as done, it will do a pretty good job at it. If you prompt it correctly, it will even generate a full UI for you to manage your todos that'd render right in the ChatGPT interface. It can also do research, it can write, it can search the web for you. That's a todo app, a research assistant and a search engine sharing one fluid data layer.
+If you give ChatGPT a list of todos, and keep texting it to mark things as done, it will do a pretty good job at it. If
+you prompt it correctly, it will even generate a full UI for you to manage your todos that'd render right in the ChatGPT
+interface. It can also do research, it can write, it can search the web for you. That's a todo app, a research assistant
+and a search engine sharing one fluid data layer.
 
-I believe in the future, apps with LLMs baked into them will have some sort of fluidity in all three layers. Project updates dynamically re-ordered on your homepage based on your email inbox. Your founder needs some numbers first thing in the morning, so your project management tool learns to surface those first. Nobody built that feature, nobody wrote a migration for it.
+I believe in the future, apps with LLMs baked into them will have some sort of fluidity in all three layers. Project
+updates dynamically re-ordered on your homepage based on your email inbox. Your founder needs some numbers first thing
+in the morning, so your project management tool learns to surface those first. Nobody built that feature, nobody wrote a
+migration for it.
 
 ## In Conclusion
 
-The todo app above is deliberately silly. Every print is an LLM call, it's slow, it costs money and it never renders the same thing twice. I wouldn't ship it.
+The todo app above is deliberately silly. Every print is an LLM call, it's slow, it costs money and it never renders the
+same thing twice. I wouldn't ship it.
 
-And some layers have earned their rigidity. Money, auth, anything with an audit trail, you want those schemas frozen, versioned and reviewed. Determinism there is a feature, not a limitation.
+And some layers have earned their rigidity. Money, auth, anything with an audit trail, you want those schemas frozen,
+versioned and reviewed. Determinism there is a feature, not a limitation.
 
-A schema is also not just plumbing, it's a bunch of decisions. Every table you design is you thinking about the domain, what exists, what relates to what, what's in and what's out. [To structure is to think](/posts/to-structure-is-to-think). Handing all of that to a model means the thinking happens somewhere else.
+A schema is also not just plumbing, it's a bunch of decisions. Every table you design is you thinking about the domain,
+what exists, what relates to what, what's in and what's out.
+[To structure is to think](/posts/to-structure-is-to-think). Handing all of that to a model means the thinking happens
+somewhere else.
 
-The middle path is what I find most interesting. Let the model discover structure while the domain is still fuzzy, and freeze whatever stabilises. The schema stops being something you author on day zero and becomes something you harvest from usage. **Generative until proven stable, static after that.**
+The middle path is what I find most interesting. Let the model discover structure while the domain is still fuzzy, and
+freeze whatever stabilises. The schema stops being something you author on day zero and becomes something you harvest
+from usage. **Generative until proven stable, static after that.**
 
-For decades, rigidity was not a design choice, it was the only option we had. Fluidity is on the menu now, for every layer of the stack.
+For decades, rigidity was not a design choice, it was the only option we had. Fluidity is on the menu now, for every
+layer of the stack.
 
-The interesting question isn't whether your app will use LLMs. It's which layers you pin down and which ones you let breathe.
+The interesting question isn't whether your app will use LLMs. It's which layers you pin down and which ones you let
+breathe.
 
-[^1]: Rightfully so, the UI or the presentation layer has been the most fluid of all the three layers, and it's a lot more fruitful to experiment there with LLM driven layouts. We've had [Server Driven UI](https://medium.com/@tech.rapipay/server-driven-ui-80ae85603747) in the mobile apps ecosystem for a while now. The logic and the data layer need to be mostly deterministic for reliable iterations.
+[^1]:
+    Rightfully so, the UI or the presentation layer has been the most fluid of all the three layers, and it's a lot more
+    fruitful to experiment there with LLM driven layouts. We've had
+    [Server Driven UI](https://medium.com/@tech.rapipay/server-driven-ui-80ae85603747) in the mobile apps ecosystem for
+    a while now. The logic and the data layer need to be mostly deterministic for reliable iterations.

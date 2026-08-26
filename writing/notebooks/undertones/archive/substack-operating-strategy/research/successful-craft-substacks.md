@@ -1,0 +1,25 @@
+---
+stream: successful-craft-substacks
+question: "Which craft-focused Substacks offer useful operating examples?"
+status: dropped
+sources: []
+updated: 2026-07-20
+---
+
+# Which craft-focused Substacks offer useful operating examples?
+
+## Findings
+
+- No research was retained; the stream was dropped when the operating strategy was consolidated.
+
+## Evidence and notes
+
+- This recovery stub corresponds to the dropped stream recorded in `notebook.md`; the source archive did not contain a stream file.
+
+## What this means for the draft
+
+- None. The archived draft remains untouched.
+
+## Loose ends
+
+- None in this archived notebook.
