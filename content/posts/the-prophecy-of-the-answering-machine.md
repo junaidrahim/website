@@ -10,6 +10,8 @@ math: false
 draft: false
 ---
 
+> This post is a **work in progress**.
+
 I love conversational analytics, it kinda feels magical when you ask a talk-to-data agent questions and it's able to
 compose a SQL query or search documents to precisely answer your question.
 
