@@ -10,13 +10,17 @@ math: true
 draft: false
 ---
 
-C++ is not a garbage collected language, that means the responsibility to free the memory allocated on the heap lies entirely on the programmer. In straight forward terms, it means that for every `new` you write, there has to be a `delete` at the right place.
+C++ is not a garbage collected language, that means the responsibility to free the memory allocated on the heap lies
+entirely on the programmer. In straight forward terms, it means that for every `new` you write, there has to be a
+`delete` at the right place.
 
 ## Issues with Raw Pointers
 
-In any sufficiently large C++ project, objects are copied, moved and passed everywhere in the code. The standard way has been to allocate the objects on the heap and pass around pointers and references to manipulate them.
+In any sufficiently large C++ project, objects are copied, moved and passed everywhere in the code. The standard way has
+been to allocate the objects on the heap and pass around pointers and references to manipulate them.
 
-Now, if we allocate on the heap, we also have to “free” those resources. We use the `new` and `delete` keyword for that in C++, but the real problem comes with the following situations…
+Now, if we allocate on the heap, we also have to “free” those resources. We use the `new` and `delete` keyword for that
+in C++, but the real problem comes with the following situations…
 
 - What if we forget to `delete` a pointer ? That would cause a memory leak.
 - What if we run `delete` before all the functions modifying that object are completed ?
@@ -25,7 +29,8 @@ Now, if we allocate on the heap, we also have to “free” those resources. We 
 
 Let’s look at this very simple piece of code that causes a memory leak,
 
-I will use [Valgrind](https://valgrind.org/) to check the binary for memory leaks. The following are the commands to do so
+I will use [Valgrind](https://valgrind.org/) to check the binary for memory leaks. The following are the commands to do
+so
 
     $ g++ --std=c++17 --pedantic memory_leak.cpp -o memory_leak
     $ valgrind --leak-check=full ./memory_leak
@@ -47,7 +52,9 @@ _NOTE : All the examples are in C++17_
 If you try to think about solutions to the problems mentioned above, two ideas might strike you…
 
 - Running `delete` on a pointer when it goes out of scope might solve the issue of memory leaks
-- Keeping count of the number of times the pointer to an object is used when it is shared and copied, and running `delete` when the count becomes zero might solve the other issues where multiple functions are modifying the same object.
+- Keeping count of the number of times the pointer to an object is used when it is shared and copied, and running
+  `delete` when the count becomes zero might solve the other issues where multiple functions are modifying the same
+  object.
 
 Well, those are exactly the ideas on which smart pointers are based on.
 
@@ -57,13 +64,16 @@ We have three types of smart pointers in C++11 that we can use, all of these are
 - `std::shared_ptr<T>`
 - `std::weak_ptr<T>`
 
-These are the pointers of type `T` . A unique pointer of type `int` would be `std::unique_pointer<int>` and the same follows for all the smart pointers.
+These are the pointers of type `T` . A unique pointer of type `int` would be `std::unique_pointer<int>` and the same
+follows for all the smart pointers.
 
-To accompany these new pointer types, we also have `std::make_unique<T>()` and `std::make_shared<T>()` functions we can use to create objects of type `T` and wrap them in unique and shared pointers respectively.
+To accompany these new pointer types, we also have `std::make_unique<T>()` and `std::make_shared<T>()` functions we can
+use to create objects of type `T` and wrap them in unique and shared pointers respectively.
 
 ## Unique Pointers
 
-A unique pointer is the simplest of the smart pointers, **the memory is freed as soon as a unique pointer goes out of scope**. If we consider doing this with raw pointers, the code would look something like this
+A unique pointer is the simplest of the smart pointers, **the memory is freed as soon as a unique pointer goes out of
+scope**. If we consider doing this with raw pointers, the code would look something like this
 
 ```cpp
 #include <iostream>
@@ -105,7 +115,8 @@ int main(){
 }
 ```
 
-The signature of the `make_unique` function is `std::make_unique<T>(...args)` where `T` is the type of the object and `args` are the constructor arguments.
+The signature of the `make_unique` function is `std::make_unique<T>(...args)` where `T` is the type of the object and
+`args` are the constructor arguments.
 
 A more realistic example, the explanation is in the comments
 
@@ -158,27 +169,38 @@ unique_ptr<SomeBigObject> pBigObject2 = pBigObject;
 error: use of deleted function ‘std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = SomeBigObject; _Dp = std::default_delete<SomeBigObject>]’
 ```
 
-Then the compiler will slap you will a massive error because **copying a unique pointer is restricted**. Creating copies would mean that two unique pointers would point to the same object and when the scope ends, we would land in the “double free” problem.
+Then the compiler will slap you will a massive error because **copying a unique pointer is restricted**. Creating copies
+would mean that two unique pointers would point to the same object and when the scope ends, we would land in the “double
+free” problem.
 
-**You can only move unique pointers**, thus there exists only one true owner of the pointer that points to the object. That code would look something like this and it would compile perfectly.
+**You can only move unique pointers**, thus there exists only one true owner of the pointer that points to the object.
+That code would look something like this and it would compile perfectly.
 
 ```cpp
 unique_ptr<SomeBigObject> pBigObject2 = std::move(pBigObject);
 ```
 
-If you have no idea what `std::move` does then learn about move semantics in C++ [here](https://www.youtube.com/watch?v=ehMg6zvXuMY)
+If you have no idea what `std::move` does then learn about move semantics in C++
+[here](https://www.youtube.com/watch?v=ehMg6zvXuMY)
 
-Unique pointers offer a simple way to reduce memory leaks. There are some developers that have an ethic of not using the `new` and `delete` keywords at all in their code and just use unique pointers to handle deallocation of memory automatically.
+Unique pointers offer a simple way to reduce memory leaks. There are some developers that have an ethic of not using the
+`new` and `delete` keywords at all in their code and just use unique pointers to handle deallocation of memory
+automatically.
 
 ## Shared Pointers
 
-As we saw in unique pointers, there was a restriction that we cannot copy them, for obvious reasons. But there might be scenarios where you might need to create multiple pointers of the same object and “share” them. For cases like that we have shared pointers.
+As we saw in unique pointers, there was a restriction that we cannot copy them, for obvious reasons. But there might be
+scenarios where you might need to create multiple pointers of the same object and “share” them. For cases like that we
+have shared pointers.
 
-Shared pointers keep something called a **reference count.** It is nothing but a count of how many times a shared pointer has been _copied_, that also includes cases where the pointer was passed to a call by value function.
+Shared pointers keep something called a **reference count.** It is nothing but a count of how many times a shared
+pointer has been _copied_, that also includes cases where the pointer was passed to a call by value function.
 
-Reference count is incremented and decremented accordingly as we create more copies of the pointer and they go out of scope. Finally when the reference count hits 0, that’s when the underlying memory is freed.
+Reference count is incremented and decremented accordingly as we create more copies of the pointer and they go out of
+scope. Finally when the reference count hits 0, that’s when the underlying memory is freed.
 
-Thus, a shared pointer can be freely passed around and C++ will take care of the reference count and free the memory when it hits 0.
+Thus, a shared pointer can be freely passed around and C++ will take care of the reference count and free the memory
+when it hits 0.
 
 Take a look at the following example.
 
@@ -225,15 +247,22 @@ int main(){
 }
 ```
 
-It is always advised to use the `make_shared<T>()` function when creating shared pointers because it allocates our object and the control block (the object in which the reference count is stored) at the same time and thus is a bit more efficient.
+It is always advised to use the `make_shared<T>()` function when creating shared pointers because it allocates our
+object and the control block (the object in which the reference count is stored) at the same time and thus is a bit more
+efficient.
 
-Shared pointers do have _some overhead_ to them as they maintain the reference count, and it also depends a bit on the compiler and the standard library implementation you’re using, but you do get a good model to manage memory automatically. That’s one less thing the developer needs to worry about.
+Shared pointers do have _some overhead_ to them as they maintain the reference count, and it also depends a bit on the
+compiler and the standard library implementation you’re using, but you do get a good model to manage memory
+automatically. That’s one less thing the developer needs to worry about.
 
 ## Weak Pointers
 
-There is one more type of a smart pointer, called a weak pointer. You can copy shared pointers into weak pointers but it will not increase the reference count of the shared pointer.
+There is one more type of a smart pointer, called a weak pointer. You can copy shared pointers into weak pointers but it
+will not increase the reference count of the shared pointer.
 
-Weak pointers are freed when they go out of scope. It is for the cases when you just need a pointer to something for the sake of checking validity. It is when you want just temporary ownership. It is okay if a weak pointer becomes a dangling pointer, you can actually check if a weak pointer is dangling or not.
+Weak pointers are freed when they go out of scope. It is for the cases when you just need a pointer to something for the
+sake of checking validity. It is when you want just temporary ownership. It is okay if a weak pointer becomes a dangling
+pointer, you can actually check if a weak pointer is dangling or not.
 
 ```cpp
 #include <iostream>
@@ -262,13 +291,18 @@ Output
 */
 ```
 
-We create a dummy scope for the shared pointer and as you can see, the shared pointer `sp` expires when the scope ends and `wp` is deemed invalid and we get `wp.expired()` as `true`
+We create a dummy scope for the shared pointer and as you can see, the shared pointer `sp` expires when the scope ends
+and `wp` is deemed invalid and we get `wp.expired()` as `true`
 
 ## In Conclusion
 
-Memory errors are frequent and expensive. They might cause serious damage if the developers are not careful enough, in such scenarios, it might be wise to **always** use smart pointers to automatically manage memory allocation and drop the habit of explicitly using `new` and `delete`
+Memory errors are frequent and expensive. They might cause serious damage if the developers are not careful enough, in
+such scenarios, it might be wise to **always** use smart pointers to automatically manage memory allocation and drop the
+habit of explicitly using `new` and `delete`
 
-But we can also make the case that some times we need more granular control over memory and we have `new` and `delete` at our disposal. Isn’t this exactly what makes modern C++ so great, you have options for granular control as well as options for when you want to go in autopilot mode.
+But we can also make the case that some times we need more granular control over memory and we have `new` and `delete`
+at our disposal. Isn’t this exactly what makes modern C++ so great, you have options for granular control as well as
+options for when you want to go in autopilot mode.
 
 Please refer to further reading for more detail on the topic
 

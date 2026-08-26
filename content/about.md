@@ -16,19 +16,24 @@ Previously at [Atlan](https://atlan.com), I wore multiple hats across the follow
 
 **Platform Engineering**
 
-I worked on the [Atlan App Framework](https://github.com/atlanhq/application-sdk) that enables customers, forward-deployed and internal engineering teams to build on top of the Atlan platform faster and better.
+I worked on the [Atlan App Framework](https://github.com/atlanhq/application-sdk) that enables customers,
+forward-deployed and internal engineering teams to build on top of the Atlan platform faster and better.
 
 **Data Engineering**
 
-I've built a lot of metadata pipelines for databases, data warehouses and BI integrations using Argo Workflows, JDBC, and Python.
+I've built a lot of metadata pipelines for databases, data warehouses and BI integrations using Argo Workflows, JDBC,
+and Python.
 
 **AI-Native Developer Experience**
 
-I contribute on a few side quests around figuring out the tooling investments that help engineers ship faster with LLMs, Cursor and Claude Code.
+I contribute on a few side quests around figuring out the tooling investments that help engineers ship faster with LLMs,
+Cursor and Claude Code.
 
 ## Not Work
 
-On weekends you'll find me [reading in cubbon park](https://www.instagram.com/cubbonreads/), [doing bike rides](https://www.corner.inc/list/db4aac10-9f0e-461b-bf00-2d785b387bf0) or [cycling across bengaluru](https://www.strava.com/athletes/50189743).
+On weekends you'll find me [reading in cubbon park](https://www.instagram.com/cubbonreads/),
+[doing bike rides](https://www.corner.inc/list/db4aac10-9f0e-461b-bf00-2d785b387bf0) or
+[cycling across bengaluru](https://www.strava.com/athletes/50189743).
 
 I do street photography sometimes, you can find my photos on [my unsplash page](https://unsplash.com/@junaidrahxm).
 

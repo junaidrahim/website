@@ -63,8 +63,8 @@ things, you use them as evidence or visual aids to write your final draft.
 Almost all of the AI tools marketed to "help" you write are focused on getting AI to generate the text or edit it. They
 either optimise for output quantity or editorial rigour. I tried using these but they are just not the right UX. It's
 like trying to edit photos using a hex editor. I want AI to do the grunt work to support and argue about the idea I am
-trying to write about, so then I, myself, with my bare fingers, token by token, can write a final polished draft that another human
-would actually enjoy reading.
+trying to write about, so then I, myself, with my bare fingers, token by token, can write a final polished draft that
+another human would actually enjoy reading.
 
 And the way I have organised these drafts is like research notebooks: a folder where AI can do whatever it wants in
 terms of experiments, drafts, deep research runs, etc., but all those artifacts are isolated to just one section of the

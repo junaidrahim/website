@@ -60,33 +60,22 @@ of the note and relationships are arbitrary keys with list of wikilinks.
 
 This is what the graph for this note and its linked notes looks like.
 
-```mermaid
-graph LR
-    dispossessed["books/the-dispossessed (book)"]
-    leguin["people/ursula-k-le-guin (person)"]
-    anarchism["topics/anarchism (topic)"]
-    utopia["topics/utopia (topic)"]
-    lefthand["books/the-left-hand-of-darkness (book)"]
-
-    dispossessed -->|"author"| leguin
-    dispossessed -->|"themes"| anarchism
-    dispossessed -->|"themes"| utopia
-    dispossessed -->|"related"| lefthand
-```
+{{< working-notes-diagram
+  desktop="images/smolbren/note-graph.svg"
+  mobile="images/smolbren/note-graph-mobile.svg"
+  alt="The Dispossessed note connected to its author, themes, and a related book"
+  caption="A markdown note becomes a typed graph when frontmatter keys are treated as relationship verbs."
+>}}
 
 And zooming out from the note, this is what the ontology itself looks like -- the types and the relationships allowed
 between them.
 
-```mermaid
-graph LR
-    book["book"]
-    person["person"]
-    topic["topic"]
-
-    book -->|"author"| person
-    book -->|"themes"| topic
-    book -->|"related"| book
-```
+{{< working-notes-diagram
+  desktop="images/smolbren/ontology-graph.svg"
+  mobile="images/smolbren/ontology-graph-mobile.svg"
+  alt="The book, person, and topic types and their allowed relationships"
+  caption="The ontology constrains which kinds of notes each frontmatter relationship may point to."
+>}}
 
 I also clip a lot of web articles using the obsidian web clipper and I frequently ask agents to research a topic and
 keep a few markdown files ready for me to review, naturally my vault grew by ~6x in terms of number of notes.

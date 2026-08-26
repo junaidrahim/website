@@ -1,0 +1,39 @@
+{{- $bibtex := trim .Inner " \t\r\n" -}}
+{{- $authors := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "author") -}}
+{{- $title := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "title") -}}
+{{- $year := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "year") -}}
+{{- $url := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "url") -}}
+{{- $doi := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "doi") -}}
+{{- $journal := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "journal") -}}
+{{- $booktitle := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "booktitle") -}}
+{{- $publisher := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "publisher") -}}
+{{- $archive := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "archivePrefix") -}}
+{{- $eprint := partial "bibtex/field.html" (dict "bibtex" $bibtex "name" "eprint") -}}
+
+{{- if not $title -}}
+  {{- errorf "The bibtex shortcode in %s is missing a title field" .Page.File.Path -}}
+{{- end -}}
+
+{{- $displayAuthors := $authors -}}
+{{- if $authors -}}
+  {{- $authorList := split $authors " and " -}}
+  {{- if gt (len $authorList) 3 -}}
+    {{- $displayAuthors = printf "%s et al." (index $authorList 0) -}}
+  {{- else -}}
+    {{- $displayAuthors = delimit $authorList ", " " and " -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $venue := or $journal $booktitle $publisher -}}
+{{- if and (not $url) $doi -}}
+  {{- $url = printf "https://doi.org/%s" $doi -}}
+{{- end -}}
+
+<span class="bibtex-entry">
+  {{- with $displayAuthors }}{{ . }}, {{ end -}}
+  “{{- if $url -}}<a href="{{ $url | safeURL }}">{{ $title }}</a>{{- else -}}{{ $title }}{{- end -}},”
+  {{- with $venue }} <em>{{ . }}</em>{{ end -}}
+  {{- if and $archive $eprint }} <em>{{ $archive }}</em>:{{ $eprint }}{{ end -}}
+  {{- with $year }} ({{ . }}){{ end -}}.
+  {{- with $doi }} <a href="https://doi.org/{{ . | safeURL }}">doi:{{ . }}</a>.{{ end -}}
+</span>

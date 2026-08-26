@@ -10,7 +10,8 @@ math: true
 draft: false
 ---
 
-> **Token**: In natural language processing (NLP), a token is a smaller unit of text that can be a word, phrase, or character.
+> **Token**: In natural language processing (NLP), a token is a smaller unit of text that can be a word, phrase, or
+> character.
 
 All this talk about LLMs and tokens got me wondering.
 
@@ -28,9 +29,11 @@ Do you produce more tokens than you consume ? Or do you have your phases ?
 
 When I say producing tokens, I don't mean just words on a paper or on a screen, it applies to everything.
 
-In true wordcel fashion, let's just say that your brain send tokens across your body to make you do things. Brain signals are not really discrete like tokens, but you get the point.
+In true wordcel fashion, let's just say that your brain send tokens across your body to make you do things. Brain
+signals are not really discrete like tokens, but you get the point.
 
-Our brains get better at things if we increase the flux of tokens related to that thing. Every piece of advice around getting better at something is about doing the same thing more. Study and Practise.
+Our brains get better at things if we increase the flux of tokens related to that thing. Every piece of advice around
+getting better at something is about doing the same thing more. Study and Practise.
 
 Want to get better at writing ? Read a lot more. Write a lot more.
 
@@ -40,13 +43,17 @@ Want to get better at programming ? Write a lot more code. Read other people's c
 
 I think trying to always produce more tokens seems to be pretty solid advice.
 
-It's very easy to fall prey to just consuming a lot of tokens, the internet allows you to do that, but what if you can flip it at the right time, become obsessed with doing more, doing harder things. That changes the game.
+It's very easy to fall prey to just consuming a lot of tokens, the internet allows you to do that, but what if you can
+flip it at the right time, become obsessed with doing more, doing harder things. That changes the game.
 
-At some point, you'd probably expose a hole in yourself if you kept on creating. Then you'd have to rest and consume to figure things out.
+At some point, you'd probably expose a hole in yourself if you kept on creating. Then you'd have to rest and consume to
+figure things out.
 
-But, how would you ever expose this hole if you do not produce, if you do not empty your sinks completely of the things you can put out in the universe.
+But, how would you ever expose this hole if you do not produce, if you do not empty your sinks completely of the things
+you can put out in the universe.
 
-Good taste is cultivated through an endless stream of creation, not just consumption. It's is a byproduct of great creation and selective consumption.
+Good taste is cultivated through an endless stream of creation, not just consumption. It's is a byproduct of great
+creation and selective consumption.
 
 Keep producing more tokens.
 

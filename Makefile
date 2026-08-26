@@ -10,4 +10,12 @@ build:
 
 lint:
 	npx prettier content --write
-	
+
+notebook-status:
+	uv run --frozen python main.py status
+
+notebook-doctor:
+	uv run --frozen python main.py doctor
+
+notebook-test:
+	uv run --frozen python -m unittest main.NotebookCliTest
