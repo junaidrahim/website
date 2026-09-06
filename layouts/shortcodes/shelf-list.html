@@ -1,0 +1,25 @@
+{{ $kind := .Get "kind" }}
+{{ $entries := index hugo.Data.shelf $kind }}
+{{ if $entries }}
+<ol class="shelf-list">
+  {{ range sort $entries "title" "asc" }}
+    {{ if not (and .id .title .authors .added) }}
+      {{ errorf "Shelf entry needs id, title, authors, and added: %v" . }}
+    {{ end }}
+    {{ with .status }}
+      {{ if not (eq . "finished") }}
+        {{ errorf "Unknown shelf status: %s" . }}
+      {{ end }}
+    {{ end }}
+    <li id="{{ $kind }}-{{ .id }}">
+      {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}<span>{{ .title }}</span>{{ end }}
+      <span class="shelf-authors"> — {{ delimit .authors ", " }}</span>
+      {{ if eq .status "finished" }}<span class="shelf-status">finished</span>{{ end }}
+      {{ with .finished }}<time class="shelf-date" datetime="{{ . }}">{{ time.Format "Jan 2006" . }}</time>{{ end }}
+      {{ with .note }}<p class="shelf-note">{{ . }}</p>{{ end }}
+    </li>
+  {{ end }}
+</ol>
+{{ else }}
+<p class="shelf-empty">No {{ $kind }} added yet.</p>
+{{ end }}

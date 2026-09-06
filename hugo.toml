@@ -90,6 +90,10 @@ name = "projects"
 url = "/projects"
 
 [[params.menu]]
+name = "shelf"
+url = "/shelf"
+
+[[params.menu]]
 name = "about"
 url = "/about"
 
