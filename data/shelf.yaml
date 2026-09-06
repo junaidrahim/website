@@ -1,0 +1,832 @@
+# Maintained with .agents/skills/shelf/SKILL.md. Lists render alphabetically by title.
+books:
+  - id: a-burglars-guide-to-the-city
+    url: "https://burglarsguide.com/"
+    title: A Burglar's Guide to the City
+    authors:
+      - Geoff Manaugh
+    added: "2026-09-06"
+  - id: beach-read
+    url: "https://www.penguinrandomhouse.com/books/608898/beach-read-by-emily-henry/"
+    title: Beach Read
+    authors:
+      - Emily Henry
+    added: "2026-09-06"
+  - id: building-a-second-brain
+    title: Building a Second Brain
+    authors:
+      - Tiago Forte
+    added: "2026-09-06"
+    url: https://www.buildingasecondbrain.com/
+  - id: butter
+    url: "https://books.google.com/books/about/Butter.html?id=dO--EAAAQBAJ"
+    title: Butter
+    authors:
+      - Asako Yuzuki
+    added: "2026-09-06"
+  - id: cleopatra-and-frankenstein
+    url: "https://www.bloomsbury.com/us/cleopatra-and-frankenstein-9781639730704/"
+    title: Cleopatra and Frankenstein
+    authors:
+      - Coco Mellors
+    added: "2026-09-06"
+  - id: cursed-bunny
+    url: "https://www.hachettebookgroup.com/titles/bora-chung/cursed-bunny/9781643753607/"
+    title: Cursed Bunny
+    authors:
+      - Bora Chung
+    added: "2026-09-06"
+  - id: desperately-seeking-shahrukh
+    url: "https://books.google.com/books/about/Desperately_Seeking_Shah_Rukh.html?id=MAxEEAAAQBAJ"
+    title: Desperately Seeking Shah Rukh
+    authors:
+      - Shrayana Bhattacharya
+    added: "2026-09-06"
+  - id: essence-of-indian-art
+    title: Essence of Indian Art
+    authors:
+      - B. N. Goswamy
+    added: "2026-09-06"
+    url: https://books.google.com/books/about/Essence_of_Indian_Art.html?id=_AXqAAAAMAAJ
+  - id: everything-i-know-about-love
+    url: "https://www.penguin.co.uk/books/306824/everything-i-know-about-love-by-alderton-dolly/9780241982105"
+    title: Everything I Know About Love
+    authors:
+      - Dolly Alderton
+    added: "2026-09-06"
+    status: finished
+  - id: fool-me-twice
+    url: "https://www.penguin.co.in/book/fool-me-twice/"
+    title: Fool Me Twice
+    authors:
+      - Nona Uppal
+    added: "2026-09-06"
+    status: finished
+  - id: girl-made-of-gold
+    title: Girl Made of Gold
+    authors:
+      - Gitanjali Kolanad
+    added: "2026-09-06"
+    url: https://openlibrary.org/books/OL43553504M/Girl_made_of_gold
+  - id: give-and-take
+    url: "https://adamgrant.net/book/give-and-take/"
+    title: Give and Take
+    authors:
+      - Adam Grant
+    added: "2026-09-06"
+  - id: how-the-world-really-works
+    url: "https://www.penguinrandomhouse.com/books/666342/how-the-world-really-works-by-vaclav-smil/"
+    title: How the World Really Works
+    authors:
+      - Vaclav Smil
+    added: "2026-09-06"
+  - id: how-to-kill-men-and-get-away-with-it
+    url: "https://amheath.com/books/how-to-kill-men-and-get-away-with-it"
+    title: How to Kill Men and Get Away With It
+    authors:
+      - Katy Brent
+    added: "2026-09-06"
+    status: finished
+  - id: how-to-take-smart-notes
+    url: "https://www.soenkeahrens.de/en/takesmartnotes"
+    title: How to Take Smart Notes
+    authors:
+      - Sönke Ahrens
+    added: "2026-09-06"
+  - id: hurda
+    title: Hurda
+    authors:
+      - Atharva Pandit
+    added: "2026-09-06"
+    url: https://www.bloomsbury.com/in/hurda-9789356402218/
+  - id: if-on-a-winters-night-a-traveller
+    url: "https://www.penguinrandomhouse.com/books/23123/if-on-a-winters-night-a-traveler-by-italo-calvino/"
+    title: If on a winter's night a traveller
+    authors:
+      - Italo Calvino
+    added: "2026-09-06"
+  - id: invention-a-life
+    title: "Invention: A Life"
+    authors:
+      - James Dyson
+    added: "2026-09-06"
+    url: https://www.dyson.com/james-dyson/invention-a-life
+  - id: lady-doctors
+    url: "https://www.hachette.co.uk/titles/kavitha-rao/lady-doctors/9781914344978/"
+    title: Lady Doctors
+    authors:
+      - Kavitha Rao
+    added: "2026-09-06"
+  - id: latitudes-of-longing
+    url: "https://www.penguinrandomhouse.com/books/611027/latitudes-of-longing-by-shubhangi-swarup/"
+    title: Latitudes of Longing
+    authors:
+      - Shubhangi Swarup
+    added: "2026-09-06"
+  - id: lust-for-life
+    url: "https://www.penguinrandomhouse.com/books/324744/lust-for-life-by-irving-stone/"
+    title: Lust for Life
+    authors:
+      - Irving Stone
+    added: "2026-09-06"
+  - id: luv-un-arranged
+    title: Luv (Un)Arranged
+    authors:
+      - N. M. Patel
+    added: "2026-09-06"
+    status: finished
+    url: https://www.nmpatelbooks.com/books
+  - id: mother-india
+    title: Mother India
+    authors:
+      - Prayaag Akbar
+    added: "2026-09-06"
+    status: finished
+    url: https://books.google.com/books/about/Mother_India.html?id=cvjo0AEACAAJ
+  - id: my-seditious-heart
+    url: "https://www.haymarketbooks.org/books/1277-my-seditious-heart"
+    title: My Seditious Heart
+    authors:
+      - Arundhati Roy
+    added: "2026-09-06"
+  - id: no-place-to-call-my-own
+    url: "https://www.crossword.in/products/no-place-to-call-my-own"
+    title: No Place to Call My Own
+    authors:
+      - Alina Gufran
+    added: "2026-09-06"
+  - id: novelist-as-a-vocation
+    url: "https://www.penguinrandomhouse.com/books/547926/novelist-as-a-vocation-by-haruki-murakami/"
+    title: Novelist as a Vocation
+    authors:
+      - Haruki Murakami
+    added: "2026-09-06"
+  - id: on-earth-we-re-briefly-gorgeous
+    url: "https://www.penguinrandomhouse.com/books/600633/on-earth-were-briefly-gorgeous-by-ocean-vuong/"
+    title: On Earth We’re Briefly Gorgeous
+    authors:
+      - Ocean Vuong
+    added: "2026-09-06"
+  - id: on-writing-charles-bukowski
+    url: "https://canongate.co.uk/books/2307-on-writing/"
+    title: On Writing
+    authors:
+      - Charles Bukowski
+    added: "2026-09-06"
+  - id: sakina-s-kiss
+    url: "https://www.penguin.co.in/book/sakinas-kiss/"
+    title: Sakina’s Kiss
+    authors:
+      - Vivek Shanbhag
+    added: "2026-09-06"
+  - id: franz-kafka-selected-works
+    url: "https://www.penguinrandomhouse.com/books/831621/selected-works-of-kafka-deluxe-hardbound-edition-by-franz-kafka/9789362143952/"
+    title: Selected Works
+    authors:
+      - Franz Kafka
+    added: "2026-09-06"
+  - id: show-your-work
+    url: "https://austinkleon.com/show-your-work/"
+    title: Show Your Work!
+    authors:
+      - Austin Kleon
+    added: "2026-09-06"
+  - id: stubborn-attachments
+    url: "https://press.stripe.com/stubborn-attachments"
+    title: Stubborn Attachments
+    authors:
+      - Tyler Cowen
+    added: "2026-09-06"
+  - id: the-art-of-noticing
+    url: "https://robwalker.net/noticing/"
+    title: The Art of Noticing
+    authors:
+      - Rob Walker
+    added: "2026-09-06"
+  - id: the-bell-jar
+    url: "https://www.faber.co.uk/product/9780571081783-the-bell-jar/"
+    title: The Bell Jar
+    authors:
+      - Sylvia Plath
+    added: "2026-09-06"
+  - id: the-best-of-tagore
+    url: "https://www.penguin.co.uk/books/457494/the-best-of-tagore-by-tagore-rabindranath/9781841594156"
+    title: The Best of Tagore
+    authors:
+      - Rabindranath Tagore
+    added: "2026-09-06"
+  - id: notes-from-the-creative-act-by-rick-rubin
+    url: "https://www.penguinrandomhouse.com/books/717356/the-creative-act-by-rick-rubin/"
+    title: "The Creative Act: A Way of Being"
+    authors:
+      - Rick Rubin
+    added: "2026-09-06"
+    status: finished
+  - id: the-girl-who-knew-too-much
+    url: "https://www.penguin.co.in/book/the-girl-who-knew-too-much/"
+    title: The Girl Who Knew Too Much
+    authors:
+      - Vikrant Khanna
+    added: "2026-09-06"
+    status: finished
+  - id: the-infinite-game
+    url: "https://simonsinek.com/books/the-infinite-game"
+    title: The Infinite Game
+    authors:
+      - Simon Sinek
+    added: "2026-09-06"
+  - id: the-midnight-library
+    url: "https://canongate.co.uk/books/2471-the-midnight-library/"
+    title: The Midnight Library
+    authors:
+      - Matt Haig
+    added: "2026-09-06"
+    status: finished
+  - id: the-poppy-war-trilogy
+    url: "https://books.google.com/books/about/The_Complete_Poppy_War_Trilogy.html?id=sjqyEAAAQBAJ"
+    title: The Poppy War Trilogy
+    authors:
+      - R. F. Kuang
+    added: "2026-09-06"
+  - id: the-silk-roads-a-new-history-of-the-world
+    url: "https://www.peterfrankopan.com/the-silk-roads.html"
+    title: "The Silk Roads: A New History of the World"
+    authors:
+      - Peter Frankopan
+    added: "2026-09-06"
+  - id: the-stories-of-john-cheever
+    title: The Stories of John Cheever
+    authors:
+      - John Cheever
+    added: "2026-09-06"
+    purchased: "2026-08-04"
+    url: https://www.amazon.in/dp/0099748304
+  - id: the-vegetarian
+    url: "https://www.penguinrandomhouse.com/books/250333/the-vegetarian-by-han-kang/"
+    title: The Vegetarian
+    authors:
+      - Han Kang
+    added: "2026-09-06"
+  - id: train-to-pakistan
+    url: "https://www.penguin.co.in/book/train-to-pakistan/"
+    title: Train to Pakistan
+    authors:
+      - Khushwant Singh
+    added: "2026-09-06"
+  - id: unboxing-bengaluru
+    title: "Unboxing Bengaluru: The City of New Beginnings"
+    authors:
+      - Malini Goyal
+      - Prashanth Prakash
+    added: "2026-09-06"
+    url: https://www.penguin.co.in/book/unboxing-bengaluru/
+  - id: whole-numbers-and-half-truths
+    url: "https://books.google.com/books/about/Whole_Numbers_And_Half_Truths_What_Data.html?id=2U93zwEACAAJ"
+    title: Whole Numbers and Half Truths
+    authors:
+      - Rukmini S
+    added: "2026-09-06"
+  - id: why-were-polarized
+    url: "https://www.simonandschuster.com/books/Why-Were-Polarized/Ezra-Klein/9781476700328"
+    title: Why We're Polarized
+    authors:
+      - Ezra Klein
+    added: "2026-09-06"
+  - id: yellowface
+    url: "https://books.google.com/books/about/Yellowface.html?id=NJsC0AEACAAJ"
+    title: Yellowface
+    authors:
+      - R. F. Kuang
+    added: "2026-09-06"
+    status: finished
+  - id: pride-and-prejudice
+    title: "Pride and Prejudice"
+    authors:
+      - "Jane Austen"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0141439513"
+  - id: the-trial
+    title: "The Trial"
+    authors:
+      - "Franz Kafka"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0241197791"
+  - id: the-diaries-of-franz-kafka
+    title: "The Diaries of Franz Kafka"
+    authors:
+      - "Franz Kafka"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0241695759"
+  - id: metamorphosis-and-other-stories
+    title: "Metamorphosis and Other Stories"
+    authors:
+      - "Franz Kafka"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0241372550"
+  - id: the-castle
+    title: "The Castle"
+    authors:
+      - "Franz Kafka"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0241197805"
+  - id: sense-and-sensibility
+    title: "Sense and Sensibility"
+    authors:
+      - "Jane Austen"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0141439661"
+  - id: northanger-abbey
+    title: "Northanger Abbey"
+    authors:
+      - "Jane Austen"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0141439793"
+  - id: mansfield-park
+    title: "Mansfield Park"
+    authors:
+      - "Jane Austen"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0141439807"
+  - id: emma
+    title: "Emma"
+    authors:
+      - "Jane Austen"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0141439580"
+  - id: persuasion
+    title: "Persuasion"
+    authors:
+      - "Jane Austen"
+    added: "2026-09-06"
+    purchased: "2026-08-24"
+    url: "https://www.amazon.in/dp/0141439688"
+  - id: things-i-don-t-want-to-know-living-autobiography-1
+    title: "Things I Don't Want to Know: Living Autobiography 1"
+    authors:
+      - "Deborah Levy"
+    added: "2026-09-06"
+    purchased: "2026-08-22"
+    url: "https://www.amazon.in/dp/0241983088"
+  - id: real-estate-living-autobiography-3
+    title: "Real Estate: Living Autobiography 3"
+    authors:
+      - "Deborah Levy"
+    added: "2026-09-06"
+    purchased: "2026-08-22"
+    url: "https://www.amazon.in/dp/0241977584"
+  - id: the-cost-of-living-living-autobiography-2
+    title: "The Cost of Living: Living Autobiography 2"
+    authors:
+      - "Deborah Levy"
+    added: "2026-09-06"
+    purchased: "2026-08-22"
+    url: "https://www.amazon.in/dp/0241977568"
+  - id: i-never-promised-you-a-rose-garden
+    title: "I Never Promised You a Rose Garden"
+    authors:
+      - "Joanne Greenberg"
+    added: "2026-09-06"
+    purchased: "2026-08-21"
+    url: "https://www.amazon.in/dp/0241563429"
+  - id: the-grapes-of-wrath
+    title: "The Grapes of Wrath"
+    authors:
+      - "John Steinbeck"
+    added: "2026-09-06"
+    purchased: "2026-08-21"
+    url: "https://www.amazon.in/dp/0141185066"
+  - id: giovanni-s-room
+    title: "Giovanni's Room"
+    authors:
+      - "James Baldwin"
+    added: "2026-09-06"
+    purchased: "2026-08-21"
+    url: "https://www.amazon.in/dp/0141186356"
+  - id: of-mice-and-men
+    title: "Of Mice and Men"
+    authors:
+      - "John Steinbeck"
+    added: "2026-09-06"
+    purchased: "2026-08-21"
+    url: "https://www.amazon.in/dp/0141185104"
+  - id: notes-from-underground
+    title: "Notes from Underground"
+    authors:
+      - "Fyodor Dostoevsky"
+    added: "2026-09-06"
+    purchased: "2026-08-21"
+    url: "https://www.amazon.in/dp/1857152719"
+  - id: pnin
+    title: "Pnin"
+    authors:
+      - "Vladimir Nabokov"
+    added: "2026-09-06"
+    purchased: "2026-08-21"
+    url: "https://www.amazon.in/dp/0141183756"
+  - id: the-pearl
+    title: "The Pearl"
+    authors:
+      - "John Steinbeck"
+    added: "2026-09-06"
+    purchased: "2026-08-21"
+    url: "https://www.amazon.in/dp/0141185120"
+  - id: the-brothers-karamazov
+    title: "The Brothers Karamazov"
+    authors:
+      - "Fyodor Dostoevsky"
+    added: "2026-09-06"
+    purchased: "2026-08-04"
+    url: "https://www.amazon.in/dp/1857150708"
+  - id: crime-and-punishment
+    title: "Crime and Punishment"
+    authors:
+      - "Fyodor Dostoevsky"
+    added: "2026-09-06"
+    purchased: "2026-08-04"
+    url: "https://www.amazon.in/dp/185715035X"
+  - id: the-idiot
+    title: "The Idiot"
+    authors:
+      - "Fyodor Dostoevsky"
+    added: "2026-09-06"
+    purchased: "2026-08-04"
+    url: "https://www.amazon.in/dp/1857152549"
+  - id: atlas-shrugged
+    title: "Atlas Shrugged"
+    authors:
+      - "Ayn Rand"
+    added: "2026-09-06"
+    purchased: "2026-08-04"
+    url: "https://www.amazon.in/dp/0141188936"
+  - id: the-book-of-disquiet
+    title: "The Book of Disquiet"
+    authors:
+      - "Fernando Pessoa"
+    added: "2026-09-06"
+    purchased: "2026-08-04"
+    url: "https://www.amazon.in/dp/024120013X"
+  - id: the-paris-review-interviews-volume-1
+    title: "The Paris Review Interviews, Volume 1"
+    authors:
+      - "The Paris Review"
+    added: "2026-09-06"
+    purchased: "2026-07-11"
+    url: "https://www.amazon.in/dp/0312361750"
+  - id: the-picture-of-dorian-gray
+    title: "The Picture of Dorian Gray"
+    authors:
+      - "Oscar Wilde"
+    added: "2026-09-06"
+    purchased: "2026-06-28"
+    url: "https://www.amazon.in/dp/0141442468"
+  - id: the-society-of-the-spectacle
+    title: "The Society of the Spectacle"
+    authors:
+      - "Guy Debord"
+    added: "2026-09-06"
+    purchased: "2026-06-08"
+    url: "https://www.amazon.in/dp/1922491284"
+  - id: east-of-eden
+    title: "East of Eden"
+    authors:
+      - "John Steinbeck"
+    added: "2026-09-06"
+    purchased: "2026-06-08"
+    url: "https://www.amazon.in/dp/0141185074"
+  - id: the-revolt-of-the-public-and-the-crisis-of-authority-in-the-new-millennium
+    title: "The Revolt of the Public and the Crisis of Authority in the New Millennium"
+    authors:
+      - "Martin Gurri"
+    added: "2026-09-06"
+    purchased: "2026-04-11"
+    url: "https://www.amazon.in/dp/1732265143"
+  - id: the-sati-series-box-set
+    title: "Sati Series"
+    authors:
+      - "Koral Dasgupta"
+    added: "2026-09-06"
+    purchased: "2026-03-24"
+    url: "https://www.panmacmillan.co.in/authors/koral-dasgupta/the-sati-series-box-set/9789361136658"
+  - id: the-argumentative-indian-writings-on-indian-history-culture-and-identity
+    title: "The Argumentative Indian: Writings on Indian History, Culture and Identity"
+    authors:
+      - "Amartya Sen"
+    added: "2026-09-06"
+    purchased: "2026-03-15"
+    url: "https://www.amazon.in/dp/0141012110"
+  - id: the-collected-stories-of-saadat-hasan-manto-volume-1-poona-and-bombay
+    title: "The Collected Stories of Saadat Hasan Manto, Volume 1: Poona and Bombay"
+    authors:
+      - "Saadat Hasan Manto"
+    added: "2026-09-06"
+    purchased: "2026-02-20"
+    url: "https://www.amazon.in/dp/9390652774"
+  - id: mottled-dawn
+    title: "Mottled Dawn"
+    authors:
+      - "Saadat Hasan Manto"
+    added: "2026-09-06"
+    purchased: "2026-02-20"
+    url: "https://www.amazon.in/dp/0143418319"
+  - id: the-jackfruit-chronicles-memories-and-recipes-from-a-british-bangladeshi-kitchen
+    title: "The Jackfruit Chronicles: Memories and Recipes from a British-Bangladeshi Kitchen"
+    authors:
+      - "Shahnaz Ahsan"
+    added: "2026-09-06"
+    purchased: "2026-01-28"
+    url: "https://www.shahnazahsan.com/jackfruit-chronicles"
+  - id: cultural-amnesia
+    title: "Cultural Amnesia"
+    authors:
+      - "Clive James"
+    added: "2026-09-06"
+    purchased: "2026-01-28"
+    url: "https://www.amazon.in/dp/1529077346"
+  - id: screenplay-the-foundations-of-screenwriting
+    title: "Screenplay: The Foundations of Screenwriting"
+    authors:
+      - "Syd Field"
+    added: "2026-09-06"
+    purchased: "2026-01-28"
+    url: "https://www.amazon.in/dp/0385339038"
+  - id: the-artist-s-way
+    title: "The Artist's Way"
+    authors:
+      - "Julia Cameron"
+    added: "2026-09-06"
+    purchased: "2026-01-28"
+    url: "https://www.amazon.in/dp/1788164296"
+  - id: interpreter-of-maladies
+    title: "Interpreter of Maladies"
+    authors:
+      - "Jhumpa Lahiri"
+    added: "2026-09-06"
+    purchased: "2026-01-28"
+    url: "https://www.amazon.in/dp/817223502X"
+  - id: why-the-poor-don-t-kill-us-the-psychology-of-indians
+    title: "Why the Poor Don't Kill Us: The Psychology of Indians"
+    authors:
+      - "Manu Joseph"
+    added: "2026-09-06"
+    purchased: "2026-01-13"
+    url: "https://www.amazon.in/dp/9365234573"
+  - id: the-loneliness-of-sonia-and-sunny
+    title: "The Loneliness of Sonia and Sunny"
+    authors:
+      - "Kiran Desai"
+    added: "2026-09-06"
+    purchased: "2026-01-13"
+    url: "https://www.amazon.in/dp/067008557X"
+  - id: read-write-own
+    url: "https://www.penguin.co.uk/books/459860/read-write-own-by-dixon-chris/9781804949245"
+    title: Read Write Own
+    authors:
+      - Chris Dixon
+    added: "2026-09-06"
+  - id: the-origins-of-efficiency
+    title: "The Origins of Efficiency"
+    authors:
+      - "Brian Potter"
+    added: "2026-09-06"
+    purchased: "2026-04-11"
+    url: "https://press.stripe.com/origins-of-efficiency"
+  - id: the-making-of-prince-of-persia
+    url: "https://press.stripe.com/the-making-of-prince-of-persia"
+    title: The Making of Prince of Persia
+    authors:
+      - Jordan Mechner
+    added: "2026-09-06"
+textbooks:
+  - id: a-philosophy-of-software-design
+    title: A Philosophy of Software Design
+    authors:
+      - John Ousterhout
+    added: "2026-09-06"
+    url: https://web.stanford.edu/~ouster/cgi-bin/book.php
+  - id: an-elegant-puzzle-systems-of-engineering-management
+    title: "An Elegant Puzzle: Systems of Engineering Management"
+    authors:
+      - Will Larson
+    added: "2026-09-06"
+    url: https://press.stripe.com/an-elegant-puzzle
+  - id: build-a-large-language-model-from-scratch
+    title: Build a Large Language Model (From Scratch)
+    authors:
+      - Sebastian Raschka
+    added: "2026-09-06"
+    isbn: "9781633437166"
+    purchased: "2026-07-05"
+    url: https://www.amazon.in/dp/1633437167
+  - id: crafting-interpreters
+    url: "https://craftinginterpreters.com/"
+    title: Crafting Interpreters
+    authors:
+      - Robert Nystrom
+    added: "2026-09-06"
+  - id: database-internals
+    url: "https://www.oreilly.com/library/view/database-internals/9781492040330/"
+    title: Database Internals
+    authors:
+      - Alex Petrov
+    added: "2026-09-06"
+  - id: database-system-concepts
+    url: "https://www.db-book.com/"
+    title: Database System Concepts
+    authors:
+      - Abraham Silberschatz
+      - Henry F. Korth
+      - S. Sudarshan
+    added: "2026-09-06"
+  - id: docs-for-developers
+    title: "Docs for Developers: An Engineer’s Field Guide to Technical Writing"
+    authors:
+      - Jared Bhatti
+      - Sarah Corleissen
+      - Jen Lambourne
+      - David Nuñez
+      - Heidi Waterhouse
+    added: "2026-09-06"
+    url: https://docsfordevelopers.com/
+  - id: effective-software-testing
+    url: "https://www.manning.com/books/effective-software-testing"
+    title: Effective Software Testing
+    authors:
+      - Maurício Aniche
+    added: "2026-09-06"
+  - id: engineering-management-for-the-rest-of-us
+    title: Engineering Management for the Rest of Us
+    authors:
+      - Sarah Drasner
+    added: "2026-09-06"
+    url: https://www.engmanagement.dev/
+  - id: foundations-of-databases
+    url: "https://www.sigmod.org/publications/dblp/db/books/dbtext/abiteboul95.html"
+    title: Foundations of Databases
+    authors:
+      - Serge Abiteboul
+      - Richard Hull
+      - Victor Vianu
+    added: "2026-09-06"
+  - id: fundamentals-of-software-architecture
+    url: "https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/"
+    title: Fundamentals of Software Architecture
+    authors:
+      - Mark Richards
+      - Neal Ford
+    added: "2026-09-06"
+  - id: grokking-streaming-systems
+    url: "https://www.manning.com/books/grokking-streaming-systems"
+    title: Grokking Streaming Systems
+    authors:
+      - Josh Fischer
+      - Ning Wang
+    added: "2026-09-06"
+  - id: introduction-to-information-retrieval
+    title: Introduction to Information Retrieval
+    authors:
+      - Christopher D. Manning
+      - Prabhakar Raghavan
+      - Hinrich Schütze
+    added: "2026-09-06"
+    url: https://nlp.stanford.edu/IR-book/
+    purchased: "2026-05-22"
+  - id: operating-system-concepts
+    url: "https://www.os-book.com/OS10/"
+    title: Operating System Concepts
+    authors:
+      - Abraham Silberschatz
+      - Peter B. Galvin
+      - Greg Gagne
+    added: "2026-09-06"
+  - id: operating-systems-three-easy-pieces
+    url: "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+    title: "Operating Systems: Three Easy Pieces"
+    authors:
+      - Remzi H. Arpaci-Dusseau
+      - Andrea C. Arpaci-Dusseau
+    added: "2026-09-06"
+  - id: podman-in-action
+    url: "https://www.manning.com/books/podman-in-action"
+    title: Podman in Action
+    authors:
+      - Daniel J. Walsh
+    added: "2026-09-06"
+  - id: relevant-search
+    url: "https://www.manning.com/books/relevant-search"
+    title: Relevant Search
+    authors:
+      - Doug Turnbull
+      - John Berryman
+    added: "2026-09-06"
+  - id: software-architecture-the-hard-parts
+    url: "https://www.oreilly.com/library/view/software-architecture-the/9781492086888/"
+    title: "Software Architecture: The Hard Parts"
+    authors:
+      - Neal Ford
+      - Mark Richards
+      - Pramod Sadalage
+      - Zhamak Dehghani
+    added: "2026-09-06"
+  - id: software-engineering-at-google
+    url: "https://research.google/pubs/software-engineering-at-google/"
+    title: Software Engineering at Google
+    authors:
+      - Titus Winters
+      - Tom Manshreck
+      - Hyrum Wright
+    added: "2026-09-06"
+  - id: systems-performance
+    url: "https://www.brendangregg.com/sysperfbook.html"
+    title: Systems Performance
+    authors:
+      - Brendan Gregg
+    added: "2026-09-06"
+  - id: the-future-of-text-vol-1
+    url: "https://futuretextpublishing.com/future-of-text-2020-download/"
+    title: The Future of Text, Vol. 1
+    authors:
+      - Frode Hegland (editor)
+    added: "2026-09-06"
+  - id: the-rust-programming-language
+    title: The Rust Programming Language
+    authors:
+      - Steve Klabnik
+      - Carol Nichols
+    added: "2026-09-06"
+    url: https://doc.rust-lang.org/book/
+  - id: the-software-engineer-s-guidebook
+    title: The Software Engineer’s Guidebook
+    authors:
+      - Gergely Orosz
+    added: "2026-09-06"
+    url: https://www.engguidebook.com/
+  - id: the-staff-engineers-path
+    url: "https://www.oreilly.com/library/view/the-staff-engineers/9781098118723/"
+    title: The Staff Engineer's Path
+    authors:
+      - Tanya Reilly
+    added: "2026-09-06"
+  - id: understanding-software-dynamics
+    url: "https://www.oreilly.com/library/view/understanding-software-dynamics/9780137589692/"
+    title: Understanding Software Dynamics
+    authors:
+      - Richard L. Sites
+    added: "2026-09-06"
+  - id: unit-testing-principles-practices-and-patterns
+    url: "https://www.manning.com/books/unit-testing"
+    title: Unit Testing Principles, Practices, and Patterns
+    authors:
+      - Vladimir Khorikov
+    added: "2026-09-06"
+  - id: linear-algebra-and-its-applications-4th-edition
+    title: "Linear Algebra and Its Applications (4th edition)"
+    authors:
+      - "Gilbert Strang"
+    added: "2026-09-06"
+    purchased: "2026-08-12"
+    url: "https://www.amazon.in/dp/8131501728"
+  - id: reinforcement-learning-an-introduction-2nd-edition
+    title: "Reinforcement Learning: An Introduction (2nd edition)"
+    authors:
+      - "Richard S. Sutton"
+      - "Andrew G. Barto"
+    added: "2026-09-06"
+    purchased: "2026-05-22"
+    url: "https://www.amazon.in/dp/0262039249"
+  - id: rust-for-rustaceans-idiomatic-programming-for-experienced-developers
+    title: "Rust for Rustaceans: Idiomatic Programming for Experienced Developers"
+    authors:
+      - "Jon Gjengset"
+    added: "2026-09-06"
+    purchased: "2026-04-30"
+    url: "https://www.amazon.in/dp/1718501854"
+  - id: rust-atomics-and-locks-low-level-concurrency-in-practice
+    title: "Rust Atomics and Locks: Low-Level Concurrency in Practice"
+    authors:
+      - "Mara Bos"
+    added: "2026-09-06"
+    purchased: "2026-04-30"
+    url: "https://www.amazon.in/dp/9355422296"
+  - id: the-art-of-doing-science-and-engineering-learning-to-learn
+    title: "The Art of Doing Science and Engineering: Learning to Learn"
+    authors:
+      - "Richard W. Hamming"
+    added: "2026-09-06"
+    purchased: "2026-04-11"
+    url: "https://www.amazon.in/dp/1732265178"
+  - id: the-scaling-era-an-oral-history-of-ai-2019-2025
+    title: "The Scaling Era: An Oral History of AI, 2019–2025"
+    authors:
+      - "Dwarkesh Patel"
+    added: "2026-09-06"
+    purchased: "2026-04-09"
+    url: "https://press.stripe.com/scaling"

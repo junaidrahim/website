@@ -36,3 +36,5 @@ hugo.IsProduction }} {{ template "_internal/google_analytics.html" . }} {{ end
 {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
 {{ end }}
+
+{{ partial "functions/get_hook.html" (dict "hook" "head_end" "context" .) }}

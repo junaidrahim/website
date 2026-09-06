@@ -1,0 +1,52 @@
+.shelf-wave {
+  --shelf-accent: light-dark(#385568, #86a9ba);
+  margin: 0 0 2rem;
+}
+
+.shelf-wave-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7px, 1fr));
+  grid-auto-rows: 16px;
+  gap: 4px;
+  height: 176px;
+  overflow: hidden;
+  color: var(--shelf-accent);
+}
+
+.shelf-wave-grid span {
+  background: currentColor;
+  opacity: 0.15;
+  border-radius: 1px;
+}
+
+/* A quiet static pattern also works before JavaScript and with reduced motion. */
+.shelf-wave-grid span:nth-child(7n + 1) {
+  opacity: 0.4;
+}
+.shelf-wave-grid span:nth-child(13n + 3) {
+  opacity: 0.65;
+}
+
+.shelf-list li {
+  margin-bottom: 0.3rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.shelf-authors {
+  color: var(--content-secondary);
+}
+.shelf-status,
+.shelf-date {
+  display: inline-block;
+  margin-left: 0.65rem;
+  color: var(--content-secondary);
+  font: 0.75rem var(--font-mono);
+}
+.shelf-note {
+  margin: 0.2rem 0 0;
+  line-height: 1.25;
+}
+.shelf-empty {
+  color: var(--content-secondary);
+  font-style: italic;
+}

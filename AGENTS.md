@@ -1,5 +1,12 @@
 # Repository Guidance
 
+## Shelf
+
+The public `/shelf/` page lists books and textbooks in `data/shelf.yaml`. For additions from photos, links, or names,
+purchases, and reading-status updates, use [`.agents/skills/shelf/SKILL.md`](.agents/skills/shelf/SKILL.md).
+Technical books go under Textbooks; preserve Junaid's explicit category choices. Both sections render alphabetically
+by title. Only explicitly finished books receive a status tag.
+
 ## Writing system
 
 This repository is the source of truth for public technical writing and its research history. It is deliberately split
