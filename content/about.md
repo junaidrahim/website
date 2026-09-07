@@ -41,6 +41,6 @@ I do a lot of right-brain writing on my substack, you can find it [here](https:/
 
 ## Contact
 
-- I'm fairly active on X -- [@junaidrahxm](https://x.com/junaidrahxm)
+- I'm fairly active on X -- [@junaidrahim](https://x.com/junaidrahim)
 - You can dm me on telegram -- [@zebion](https://t.me/zebion)
 - You can email me at [junaidrahim5a@gmail.com](mailto:junaidrahim5a@gmail.com)
