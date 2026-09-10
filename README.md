@@ -9,14 +9,24 @@ The agent-safe notebook workflow is documented in [`AGENTS.md`](AGENTS.md). The 
 simple: Junaid writes every notebook's `draft.md`; agents do the research, sourcing, review, and
 tooling around it.
 
+Install [Task](https://taskfile.dev/docs/installation) to run the commands in `Taskfile.yml`.
+Run `task` to list available tasks.
+
+Useful commands:
+
 ```sh
-make server
-make build
-make lint
-make notebook-status
-make notebook-doctor
-make notebook-test
+task theme
+task dev
+task build
+task format
+task notebook-status
+task notebook-doctor
+task notebook-test
 ```
+
+Notebook status fits the terminal width, switching to wrapped fields below 93 columns.
+Use `COLUMNS=120 task notebook-status` to override the width, or
+`uv run --frozen python main.py status --json` for complete structured output.
 
 ## Why this exists
 

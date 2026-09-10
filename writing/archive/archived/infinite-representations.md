@@ -8,7 +8,7 @@ migrated_from:
 - /Users/junaidrahim/Obsidian/Everything/Notes/blogs/infinite-representations.md
 ---
 
-> Merged into [Generative UIs and Schemas](../../../../content/posts/generative-all-the-way-down.md) on 2026-06-27. Archived.
+> Merged into [Generative UIs and Schemas](../../../../content/posts/generative-schemas.md) on 2026-06-27. Archived.
 
 # Infinite Representations
 

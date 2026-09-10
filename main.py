@@ -1,17 +1,21 @@
 from __future__ import annotations
 
 import argparse
+import io
 import json
 import os
 import re
 import shutil
 import sys
 import tempfile
+import textwrap
 import unittest
+from contextlib import redirect_stdout
 from dataclasses import asdict, dataclass
 from datetime import date
 from pathlib import Path
 from typing import Any, Iterable
+from unittest.mock import patch
 
 import yaml
 
@@ -273,26 +277,53 @@ def print_status(rows: list[NotebookRow], as_json: bool) -> None:
     if as_json:
         print(json.dumps([asdict(row) for row in rows], indent=2, ensure_ascii=False))
         return
+    terminal_width = max(1, shutil.get_terminal_size(fallback=(80, 24)).columns)
+    if not rows:
+        print(textwrap.fill("No notebooks found.", width=terminal_width))
+        return
     headers = ["Notebook", "Kind", "Status", "Thesis", "Open", "Target", "Last touched"]
     values = [
         [
             row.notebook,
             row.kind,
             row.status,
-            clipped(row.thesis, 54),
+            row.thesis,
             str(row.open_streams),
-            clipped(row.target, 30),
+            row.target,
             row.last_touched,
         ]
         for row in rows
     ]
-    widths = [len(header) for header in headers]
+    # Below this size, seven columns become harder to read than stacked fields.
+    minimum_widths = [16, 10, 11, 16, 4, 12, 12]
+    spacing = 2 * (len(headers) - 1)
+    if terminal_width < sum(minimum_widths) + spacing:
+        for index, value_row in enumerate(values):
+            if index:
+                print()
+            for header, value in zip(headers, value_row):
+                print(textwrap.fill(f"{header}: {value or '—'}", width=terminal_width))
+        return
+
+    limits = [48, 10, 11, 54, 8, 30, 12]
+    widths = minimum_widths.copy()
     for value_row in values:
-        widths = [max(current, len(value)) for current, value in zip(widths, value_row)]
+        widths = [
+            max(current, min(len(value), limit))
+            for current, value, limit in zip(widths, value_row, limits)
+        ]
+    while sum(widths) + spacing > terminal_width:
+        index = max(range(len(widths)), key=lambda i: widths[i] - minimum_widths[i])
+        widths[index] -= 1
     print("  ".join(header.ljust(width) for header, width in zip(headers, widths)))
     print("  ".join("-" * width for width in widths))
     for value_row in values:
-        print("  ".join(value.ljust(width) for value, width in zip(value_row, widths)))
+        print(
+            "  ".join(
+                clipped(value, width).ljust(width)
+                for value, width in zip(value_row, widths)
+            )
+        )
 
 
 def append_log(body: str, message: str) -> str:
@@ -697,6 +728,48 @@ class NotebookCliTest(unittest.TestCase):
             {row.notebook for row in read_rows(self.root, include_archive=True)},
             {"active-piece", "park-me"},
         )
+
+    def test_status_fits_terminal_width(self) -> None:
+        row = NotebookRow(
+            notebook="a-notebook-with-a-very-long-name",
+            kind="technical",
+            status="researching",
+            thesis="An answerable question with enough detail to exceed a narrow column. " * 3,
+            open_streams=12,
+            target="content/posts/a-notebook-with-a-very-long-name.md",
+            last_touched="2026-09-06",
+            archived=False,
+            path="writing/notebooks/technical/a-notebook-with-a-very-long-name",
+        )
+        for width in (20, 40, 80, 92, 93, 100, 120, 200, 300):
+            with self.subTest(width=width), patch.dict(os.environ, {"COLUMNS": str(width)}):
+                output = io.StringIO()
+                with redirect_stdout(output):
+                    print_status([row, row], as_json=False)
+                rendered = output.getvalue()
+                self.assertTrue(all(len(line) <= width for line in rendered.splitlines()))
+                self.assertIn("researching", rendered)
+                self.assertIn("2026-09-06", rendered)
+                if width < 93:
+                    # Wrapping must retain complete field values on narrow screens.
+                    compact = "".join(rendered.split())
+                    for value in (row.notebook, row.thesis, row.target):
+                        self.assertIn("".join(value.split()), compact)
+                else:
+                    self.assertIn("Notebook", rendered.splitlines()[0])
+                    self.assertIn("Last touched", rendered.splitlines()[0])
+
+    def test_status_json_ignores_terminal_width(self) -> None:
+        create_notebook(self.root, "one-piece", "One piece", "technical")
+        rows = read_rows(self.root)
+        with patch.dict(os.environ, {"COLUMNS": "20"}), redirect_stdout(io.StringIO()) as output:
+            print_status(rows, as_json=True)
+        self.assertEqual(json.loads(output.getvalue()), [asdict(row) for row in rows])
+
+    def test_status_empty(self) -> None:
+        with redirect_stdout(io.StringIO()) as output:
+            print_status([], as_json=False)
+        self.assertEqual(output.getvalue().strip(), "No notebooks found.")
 
     def test_archive_moves_notebook_and_updates_status(self) -> None:
         create_notebook(self.root, "archivable", "Archivable", "undertones")

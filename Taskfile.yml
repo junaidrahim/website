@@ -1,0 +1,43 @@
+version: '3'
+
+tasks:
+  default:
+    desc: List available tasks
+    cmds:
+      - task --list
+
+  theme:
+    desc: Initialize and update the Hugo theme
+    cmds:
+      - git submodule update --init --recursive
+      - git submodule update --recursive --remote
+
+  dev:
+    desc: Run the local Hugo server
+    cmds:
+      - hugo server
+
+  build:
+    desc: Build the Hugo site
+    cmds:
+      - hugo
+
+  format:
+    desc: Format public content with Prettier
+    cmds:
+      - npx prettier content --write
+
+  notebook-status:
+    desc: Show active writing notebooks
+    cmds:
+      - uv run --frozen python main.py status
+
+  notebook-doctor:
+    desc: Check writing notebook structure and publication boundaries
+    cmds:
+      - uv run --frozen python main.py doctor
+
+  notebook-test:
+    desc: Run notebook CLI tests
+    cmds:
+      - uv run --frozen python -m unittest main.NotebookCliTest

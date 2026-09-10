@@ -6,8 +6,11 @@ The public `/shelf/` page lists books and textbooks in `data/shelf.yaml`. For ad
 purchases, and reading-status updates, use [`.agents/skills/shelf/SKILL.md`](.agents/skills/shelf/SKILL.md).
 Technical books go under Textbooks; preserve Junaid's explicit category choices. Both sections render alphabetically
 by title. Only explicitly finished books receive a status tag.
+Keep the two sections together across technical and nontechnical subjects. Record only Junaid's stated reading
+status; an item on the shelf is not necessarily finished.
 
 ## Writing system
+
 
 This repository is the source of truth for public technical writing and its research history. It is deliberately split
 into a public surface and a private working layer:
@@ -161,8 +164,8 @@ returned, and moves it back to the active lane with a current active state. `sta
 
 ### Hugo
 
-Install or update the theme once with `make update-theme`. Run the local site with `make server`, build it with
-`make build`, and format Markdown with `make lint`.
+Install or update the theme once with `task theme`. Run the local site with `task dev`, build it with
+`task build`, and format Markdown with `task format`.
 
 Hugo excludes a page whose frontmatter says `draft: true` from a normal production build. Before assuming a
 work-in-progress is private, also run `uv run --frozen python main.py doctor`; it checks notebook targets and scans
@@ -203,11 +206,11 @@ Start with a mechanism, observation, incident, or argument. Do not rewrite Junai
 ### Structural verification
 
 ```sh
-make notebook-test
-make notebook-doctor
-make notebook-status
-make lint
-make build
+task notebook-test
+task notebook-doctor
+task notebook-status
+task format
+task build
 ```
 
 `notebook doctor` checks required files, frontmatter, slugs, lifecycle state, ownership banners, citation IDs, research

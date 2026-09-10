@@ -1,5 +1,7 @@
 ---
-title: "Generative All the Way Down"
+title: "Generative Schemas"
+aliases:
+  - /posts/generative-all-the-way-down/
 date: "2025-11-12T00:12:31+05:30"
 summary:
   "Generative UI stops at the presentation layer. What happens when the logic and the data model become fluid too ?"
@@ -12,21 +14,22 @@ math: true
 draft: false
 ---
 
-I had been reading a lot about generative UIs lately.
-
-Most of the re-thinking is happening in the UI layer[^1], it naturally got me curious about the other layers.
+I had been reading a lot about generative UIs lately, it's all the rage on X.
 
 "Generative UI" is an umbrella term for all the methods and tricks used to generate and display UI components on the fly
 using LLMs. Instead of conditional rendering or component swapping, the actual structure and composition of the UI is
 generated based on context, data, and user intent.
 
-For example, instead of replying with "The weather in Bengaluru is 26 degrees", your tool can generate a nice custom
+For example, instead of replying with "the weather in Bengaluru is 26 degrees", your agent can generate a nice custom
 weather widget with a nice background image and temperature display as a reply to your query.
 
-Every system or app I've worked on in the pre-LLM era follows a similar pattern. You model the domain, write the
-schemas, write your business logic and then build the UI on top of it.
+The UI or the presentation layer has been the most fluid of all the three layers, and it's a lot more fruitful to
+experiment there with LLM driven layouts. We've had
+[Server Driven UI](https://medium.com/@tech.rapipay/server-driven-ui-80ae85603747) in the mobile apps ecosystem for a
+while now. The logic and the data layer need to be mostly deterministic for reliable iterations.
 
-It's muscle memory at this point.
+Every software roughly follows the same cake-like structure. You model the domain, write the schemas, write your
+business logic and then build the UI on top of it. It's muscle memory for professional engineers at this point.
 
 But watching LLMs rewrite entire UI components on the fly made me wonder - What if we do not stop at the presentation
 layer?
@@ -39,11 +42,10 @@ Traditional:  [Fixed Schema] -> [Static Logic]  ->  [Predictable UI]
 Generative:   [Fluid Data]  <-> [Dynamic Rules] <-> [Adaptive Experience]
 ```
 
-The first line is a one-way pipeline. You freeze a schema, write logic on top of it, and the UI is a projection of
-whatever the logic allows. The second line is a loop, every layer can reshape the layers around it on the fly.
-
-What would happen if we let the entire stack be as fluid as the conversations we're having with these models instead of
-being rigid ?
+The first one is a one-way pipeline. You freeze a schema, write logic on top of it, and the UI is a projection of
+whatever the logic allows. The second one is a loop, every layer can reshape the layers around it on the fly. What would
+happen if we let the entire stack be as fluid as the conversations we're having with these models instead of being rigid
+?
 
 This really takes the whole idea of "state is text" and builds on it.
 
@@ -79,7 +81,7 @@ stack.
 
 {{<x user="sriramk" id="1953872171584852395" >}}
 
-## Rethinking the To Do App
+## Rethinking the To-Do App
 
 To illustrate this, I'll use a simple in-memory todo app in python. With a library like [DSPy](https://dspy.ai), you can
 prototype this kind of fluidity in an afternoon.
@@ -399,24 +401,24 @@ class GenerativeDataTodoApp(BaseTodoApp):
 ```bash
 $ python main.py
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                           ✨ TODO LIST - MAIN CHARACTER ENERGY ✨                │
-├─────────────────────────────────────────────────────────────────────────────────┤
+│                     ✨ TODO LIST - MAIN CHARACTER ENERGY ✨                     │
+├──────────┬──────────────────────────────────────────────────────────────────────┤
 │ ID       │ todo_001                                                             │
 │ TASK     │ 🦷✨ Book dentist appointment                                        │
-│ VIBE     │ 📞 Okay bestie, time to adult and call that dental clinic!         │
-│          │ Need to schedule my annual check-up because we're not about         │
-│          │ that cavity life 💅 Gotta keep these pearly whites sparkling       │
-│          │ and my oral health on point! No cap, dental hygiene is self-care   │
-│          │ and we stan a responsible queen/king who takes care of their       │
-│          │ teeth 🔥 Time to face the music and book that appointment -        │
-│          │ my future self will thank me fr fr! 😤💪                           │
-│ STATUS   │ ❌ Not done yet (but we're gonna slay this!)                       │
-│ DUE      │ 📅 2025-12-15 (mark your calendar bestie!)                        │
-│ PRIORITY │ 🟡 Medium energy - important but not urgent urgent                  │
-│ CATEGORY │ 🏠 Personal (self-care era activated)                              │
-│ TAGS     │ #personal #adulting #self-care #health                             │
-│ CREATED  │ 📝 2024-12-19 (when the motivation hit different)                 │
-└─────────────────────────────────────────────────────────────────────────────────┘
+│ VIBE     │ 📞 Okay bestie, time to adult and call that dental clinic!           │
+│          │ Need to schedule my annual check-up because we're not about          │
+│          │ that cavity life 💅 Gotta keep these pearly whites sparkling         │
+│          │ and my oral health on point! No cap, dental hygiene is self-care     │
+│          │ and we stan a responsible queen/king who takes care of their         │
+│          │ teeth 🔥 Time to face the music and book that appointment -          │
+│          │ my future self will thank me fr fr! 😤💪                             │
+│ STATUS   │ ❌ Not done yet (but we're gonna slay this!)                         │
+│ DUE      │ 📅 2025-12-15 (mark your calendar bestie!)                           │
+│ PRIORITY │ 🟡 Medium energy - important but not urgent urgent                   │
+│ CATEGORY │ 🏠 Personal (self-care era activated)                                │
+│ TAGS     │ #personal #adulting #self-care #health                               │
+│ CREATED  │ 📝 2024-12-19 (when the motivation hit different)                    │
+└──────────┴──────────────────────────────────────────────────────────────────────┘
 
 💫 That's the tea on your current tasks! Time to get this bread and check off that list! 💪✨
 ```
@@ -458,29 +460,20 @@ migration for it.
 
 ## In Conclusion
 
-The todo app above is deliberately silly. Every print is an LLM call, it's slow, it costs money and it never renders the
-same thing twice. I wouldn't ship it.
+The todo app above takes this idea too far on purpose. Every print makes an LLM call. It’s slow, costs money, and gives
+you a different result each time. I wouldn’t ship it, but building it helped me explore what happens when the output has
+no fixed shape.
 
-And some layers have earned their rigidity. Money, auth, anything with an audit trail, you want those schemas frozen,
-versioned and reviewed. Determinism there is a feature, not a limitation.
+I’d keep much tighter control over money, permissions, and audit records. Those schemas need versions and review. You
+need to know what a field meant when a transaction happened, even if the rest of the application has changed since.
 
-A schema is also not just plumbing, it's a bunch of decisions. Every table you design is you thinking about the domain,
-what exists, what relates to what, what's in and what's out.
-[To structure is to think](/posts/to-structure-is-to-think). Handing all of that to a model means the thinking happens
-somewhere else.
+There’s also value in designing a schema yourself. Choosing tables and relationships forces you to work through the
+domain. You have to decide what counts as an entity, how things connect, and which distinctions matter.
+[To structure is to think](/posts/to-structure-is-to-think). I’d be reluctant to give up that exercise just because a
+model can produce the tables for me.
 
-The middle path is what I find most interesting. Let the model discover structure while the domain is still fuzzy, and
-freeze whatever stabilises. The schema stops being something you author on day zero and becomes something you harvest
-from usage. **Generative until proven stable, static after that.**
+Where I’d like to experiment is earlier, when I’m still figuring out the domain. Let the model try different structures.
+See which ones hold up as people use the application. Then make those explicit, version them, and stop generating them.
 
-For decades, rigidity was not a design choice, it was the only option we had. Fluidity is on the menu now, for every
-layer of the stack.
-
-The interesting question isn't whether your app will use LLMs. It's which layers you pin down and which ones you let
-breathe.
-
-[^1]:
-    Rightfully so, the UI or the presentation layer has been the most fluid of all the three layers, and it's a lot more
-    fruitful to experiment there with LLM driven layouts. We've had
-    [Server Driven UI](https://medium.com/@tech.rapipay/server-driven-ui-80ae85603747) in the mobile apps ecosystem for
-    a while now. The logic and the data layer need to be mostly deterministic for reliable iterations.
+That leaves me with a practical question for the next thing I build: which parts do I understand well enough to fix in
+place, and where would it help to keep experimenting?

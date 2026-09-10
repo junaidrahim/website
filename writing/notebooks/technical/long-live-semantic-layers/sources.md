@@ -35,7 +35,7 @@ Bibliography for this notebook. Agents append; each entry is a **real, verifiabl
 - Reliability: primary for the verbatim quote; the paraphrase-on-file must not be presented as his words
 
 ## [S4] Junaid's vault — internal intuition sources
-- Locator: `docs/prism-core-semantic-layer-gateway` (keep out of public draft), `concepts/context-graph`, [Generative UIs and Schemas](../../../../content/posts/generative-all-the-way-down.md)
+- Locator: `docs/prism-core-semantic-layer-gateway` (keep out of public draft), `concepts/context-graph`, [Generative UIs and Schemas](../../../../content/posts/generative-schemas.md)
 - Accessed: 2026-07-13
 - Type: vault
 - Key quotes / facts: background intuition only; Prism internals stay firewalled per the blog guardrails

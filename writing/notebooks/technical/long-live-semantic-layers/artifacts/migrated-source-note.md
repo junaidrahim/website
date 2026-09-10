@@ -100,5 +100,5 @@ Both from the Anthropic post — even the most AI-first company couldn't shortcu
 
 - `docs/prism-core-semantic-layer-gateway` — internal intuition source (keep out of the public draft)
 - `concepts/context-graph`, `concepts/inferred-fact`
-- [Generative UIs and Schemas](../../../../../content/posts/generative-all-the-way-down.md) — models-first architecture / BI-tools-discover-schemas thread connects here
+- [Generative UIs and Schemas](../../../../../content/posts/generative-schemas.md) — models-first architecture / BI-tools-discover-schemas thread connects here
 - [From Index to Oracle](../../../../../content/posts/from-index-to-oracle.md) · [Context engineering](../../../../archive/blog-notes/cancelled/context-engineering.md)

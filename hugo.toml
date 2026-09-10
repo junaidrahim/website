@@ -18,7 +18,7 @@ theme = "light"
 homeIntro = true
 homeIntroTitle = 'Hello ☕️'
 homeIntroContent = """
-I'm a senior software engineer on the agentic systems team at [dbt Labs](https://www.getdbt.com).
+I'm a senior software engineer in the CTO's office at [Fivetran](https://www.fivetran.com).
 
 Previously, I was an early engineer at [Atlan](https://atlan.com/) where I built the metadata sync and lineage generation platforms. Joined at under **$500k** ARR, left at **$80M**.
 
@@ -86,8 +86,8 @@ name = "talks"
 url = "/talks"
 
 [[params.menu]]
-name = "projects"
-url = "/projects"
+name = "shelf"
+url = "/shelf"
 
 [[params.menu]]
 name = "shelf"

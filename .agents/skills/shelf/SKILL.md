@@ -66,7 +66,7 @@ never include private purchase/account details or access tokens.
 
 ## Verify and report
 
-Run `hugo` and `git diff --check`. Check the rendered `public/shelf/index.html` for the new entry,
+Run `task build` and `git diff --check`. Check the rendered `public/shelf/index.html` for the new entry,
 correct section, working internal anchors, and the intended status/date. Confirm no duplicate IDs or works
 were introduced. For layout or animation edits, also check narrow widths, light/dark themes,
 and reduced motion; a data-only addition does not require redesigning the page.
