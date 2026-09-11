@@ -163,7 +163,7 @@ books:
     added: "2026-09-06"
   - id: on-earth-we-re-briefly-gorgeous
     url: "https://www.penguinrandomhouse.com/books/600633/on-earth-were-briefly-gorgeous-by-ocean-vuong/"
-    title: On Earth We’re Briefly Gorgeous
+    title: On Earth We're Briefly Gorgeous
     authors:
       - Ocean Vuong
     added: "2026-09-06"
@@ -175,7 +175,7 @@ books:
     added: "2026-09-06"
   - id: sakina-s-kiss
     url: "https://www.penguin.co.in/book/sakinas-kiss/"
-    title: Sakina’s Kiss
+    title: Sakina's Kiss
     authors:
       - Vivek Shanbhag
     added: "2026-09-06"
@@ -605,6 +605,344 @@ books:
     authors:
       - Jordan Mechner
     added: "2026-09-06"
+  - id: the-city-and-its-uncertain-walls-haruki-murakami
+    url: "https://www.penguin.co.uk/books/455387/the-city-and-its-uncertain-walls-by-murakami-haruki/9781787304475"
+    title: The City and Its Uncertain Walls
+    authors:
+      - Haruki Murakami
+    added: "2026-09-11"
+  - id: my-friends-hisham-matar
+    url: "https://www.penguin.co.uk/books/455198/my-friends-by-matar-hisham/9780241409473"
+    title: My Friends
+    authors:
+      - Hisham Matar
+    added: "2026-09-11"
+  - id: the-lion-and-the-lily-the-rise-and-fall-of-awadh-ira-mukhoty
+    url: "https://www.alephbookcompany.com/book/the-lion-and-the-lily-the-rise-and-fall-of-awadh/"
+    title: "The Lion and the Lily: The Rise and Fall of Awadh"
+    authors:
+      - Ira Mukhoty
+    added: "2026-09-11"
+  - id: katabasis-r-f-kuang
+    url: "https://www.harpercollins.com/products/katabasis-r-f-kuang"
+    title: Katabasis
+    authors:
+      - R. F. Kuang
+    added: "2026-09-11"
+  - id: on-the-origin-of-species-charles-darwin
+    url: "https://www.penguin.co.uk/books/57108/on-the-origin-of-species-by-darwin-charles/9780140439120"
+    title: On the Origin of Species
+    authors:
+      - Charles Darwin
+    added: "2026-09-11"
+  - id: the-fever-sonia-faleiro
+    title: The Fever
+    authors:
+      - Sonia Faleiro
+    added: "2026-09-11"
+  - id: bangkok-wakes-to-rain-pitchaya-sudbanthad
+    url: "https://www.penguinrandomhouse.com/books/566385/bangkok-wakes-to-rain-by-pitchaya-sudbanthad/"
+    title: Bangkok Wakes to Rain
+    authors:
+      - Pitchaya Sudbanthad
+    added: "2026-09-11"
+  - id: the-blind-earthworm-in-the-labyrinth-veeraporn-nitiprapha
+    title: The Blind Earthworm in the Labyrinth
+    authors:
+      - Veeraporn Nitiprapha
+    added: "2026-09-11"
+  - id: the-barbary-coast-herbert-asbury
+    title: The Barbary Coast
+    authors:
+      - Herbert Asbury
+    added: "2026-09-11"
+  - id: persepolis-marjane-satrapi
+    url: "https://www.penguin.co.uk/books/56425/persepolis-by-satrapi-marjane/9780099523994"
+    title: Persepolis
+    authors:
+      - Marjane Satrapi
+    added: "2026-09-11"
+  - id: the-story-of-art-e-h-gombrich
+    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
+    title: The Story of Art
+    authors:
+      - E. H. Gombrich
+    added: "2026-09-11"
+  - id: the-covenant-of-water-abraham-verghese
+    url: "https://groveatlantic.com/book/the-covenant-of-water/"
+    title: The Covenant of Water
+    authors:
+      - Abraham Verghese
+    added: "2026-09-11"
+  - id: dune-frank-herbert
+    url: "https://www.penguin.co.uk/books/57294/dune-by-herbert-frank/9781529394658"
+    title: Dune
+    authors:
+      - Frank Herbert
+    added: "2026-09-11"
+  - id: emperor-of-rome-mary-beard
+    url: "https://www.profilebooks.com/work/emperor-of-rome/"
+    title: Emperor of Rome
+    authors:
+      - Mary Beard
+    added: "2026-09-11"
+  - id: breaking-the-mould-raghuram-g-rajan
+    title: Breaking the Mould
+    authors:
+      - Raghuram G. Rajan
+      - Rohit Lamba
+    added: "2026-09-11"
+  - id: principles-ray-dalio
+    url: "https://www.principles.com/"
+    title: Principles
+    authors:
+      - Ray Dalio
+    added: "2026-09-11"
+  - id: flashlight-susan-choi
+    title: Flashlight
+    authors:
+      - Susan Choi
+    added: "2026-09-11"
+  - id: tom-lake-ann-patchett
+    url: "https://www.harpercollins.com/products/tom-lake-ann-patchett"
+    title: Tom Lake
+    authors:
+      - Ann Patchett
+    added: "2026-09-11"
+  - id: home-marilynne-robinson
+    title: Home
+    authors:
+      - Marilynne Robinson
+    added: "2026-09-11"
+  - id: prophet-song-paul-lynch
+    url: "https://www.penguin.co.uk/books/451609/prophet-song-by-lynch-paul/9780861546459"
+    title: Prophet Song
+    authors:
+      - Paul Lynch
+    added: "2026-09-11"
+  - id: how-to-raise-an-adult-julie-lythcott-haims
+    title: How to Raise an Adult
+    authors:
+      - Julie Lythcott-Haims
+    added: "2026-09-11"
+  - id: meditations-marcus-aurelius
+    url: "https://www.penguin.co.uk/books/35413/meditations-by-marcus-aurelius/9780140449334"
+    title: Meditations
+    authors:
+      - Marcus Aurelius
+    added: "2026-09-11"
+  - id: the-collected-works-of-kahlil-gibran-kahlil-gibran
+    title: The Collected Works of Kahlil Gibran
+    authors:
+      - Kahlil Gibran
+    added: "2026-09-11"
+  - id: hamnet-maggie-o-farrell
+    url: "https://www.penguin.co.uk/books/111/1119253/hamnet/9781472223821"
+    title: Hamnet
+    authors:
+      - "Maggie O'Farrell"
+    added: "2026-09-11"
+  - id: i-do-what-i-do-raghuram-g-rajan
+    title: I Do What I Do
+    authors:
+      - Raghuram G. Rajan
+    added: "2026-09-11"
+  - id: the-catcher-in-the-rye-j-d-salinger
+    url: "https://www.penguin.co.uk/books/57054/the-catcher-in-the-rye-by-salinger-j-d/9780241950432"
+    title: The Catcher in the Rye
+    authors:
+      - J. D. Salinger
+    added: "2026-09-11"
+  - id: all-fours-miranda-july
+    url: "https://www.penguinrandomhouse.com/books/734996/all-fours-by-miranda-july/"
+    title: All Fours
+    authors:
+      - Miranda July
+    added: "2026-09-11"
+  - id: the-coworker-freida-mcfadden
+    title: The Coworker
+    authors:
+      - Freida McFadden
+    added: "2026-09-11"
+  - id: arrangements-in-blue-amy-key
+    title: Arrangements in Blue
+    authors:
+      - Amy Key
+    added: "2026-09-11"
+  - id: the-quran-traditional
+    title: The Quran
+    authors:
+      - Traditional
+    added: "2026-09-11"
+  - id: infinite-jest-david-foster-wallace
+    url: "https://www.penguin.co.uk/books/56609/infinite-jest-by-wallace-david-foster/9780349121086"
+    title: Infinite Jest
+    authors:
+      - David Foster Wallace
+    added: "2026-09-11"
+  - id: tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin
+    url: "https://www.penguinrandomhouse.com/books/617274/tomorrow-and-tomorrow-and-tomorrow-by-gabrielle-zevin/"
+    title: "Tomorrow, and Tomorrow, and Tomorrow"
+    authors:
+      - Gabrielle Zevin
+    added: "2026-09-11"
+  - id: kitchen-confidential-anthony-bourdain
+    url: "https://www.bloomsbury.com/us/kitchen-confidential-9781635576023/"
+    title: Kitchen Confidential
+    authors:
+      - Anthony Bourdain
+    added: "2026-09-11"
+  - id: permanent-record-edward-snowden
+    url: "https://us.macmillan.com/books/9781250237231/permanentrecord"
+    title: Permanent Record
+    authors:
+      - Edward Snowden
+    added: "2026-09-11"
+  - id: sapiens-yuval-noah-harari
+    url: "https://www.ynharari.com/book/sapiens/"
+    title: Sapiens
+    authors:
+      - Yuval Noah Harari
+    added: "2026-09-11"
+  - id: behave-robert-m-sapolsky
+    url: "https://www.penguinrandomhouse.com/books/221773/behave-by-robert-m-sapolsky/"
+    title: Behave
+    authors:
+      - Robert M. Sapolsky
+    added: "2026-09-11"
+  - id: humble-pie-gordon-ramsay
+    title: Humble Pie
+    authors:
+      - Gordon Ramsay
+    added: "2026-09-11"
+  - id: homo-deus-yuval-noah-harari
+    url: "https://www.ynharari.com/book/homo-deus/"
+    title: Homo Deus
+    authors:
+      - Yuval Noah Harari
+    added: "2026-09-11"
+  - id: becoming-michelle-obama
+    url: "https://www.penguinrandomhouse.com/books/550168/becoming-by-michelle-obama/"
+    title: Becoming
+    authors:
+      - Michelle Obama
+    added: "2026-09-11"
+  - id: the-battle-of-belonging-shashi-tharoor
+    title: The Battle of Belonging
+    authors:
+      - Shashi Tharoor
+    added: "2026-09-11"
+  - id: babel-r-f-kuang
+    url: "https://www.harpercollins.com/products/babel-r-f-kuang"
+    title: Babel
+    authors:
+      - R. F. Kuang
+    added: "2026-09-11"
+  - id: the-count-of-monte-cristo-alexandre-dumas
+    url: "https://www.penguin.co.uk/books/35416/the-count-of-monte-cristo-by-dumas-alexandre/9780140449266"
+    title: The Count of Monte Cristo
+    authors:
+      - Alexandre Dumas
+    added: "2026-09-11"
+  - id: for-the-love-of-physics-walter-lewin
+    title: For the Love of Physics
+    authors:
+      - Walter Lewin
+    added: "2026-09-11"
+  - id: h-pop-kunal-purohit
+    title: H-Pop
+    authors:
+      - Kunal Purohit
+    added: "2026-09-11"
+  - id: how-to-avoid-a-climate-disaster-bill-gates
+    url: "https://www.penguinrandomhouse.com/books/633984/how-to-avoid-a-climate-disaster-by-bill-gates/"
+    title: How to Avoid a Climate Disaster
+    authors:
+      - Bill Gates
+    added: "2026-09-11"
+  - id: no-longer-human-osamu-dazai
+    title: No Longer Human
+    authors:
+      - Osamu Dazai
+    added: "2026-09-11"
+  - id: dongri-to-dubai-six-decades-of-the-mumbai-mafia-s-hussain-zaidi
+    title: "Dongri to Dubai: Six Decades of the Mumbai Mafia"
+    authors:
+      - S. Hussain Zaidi
+    added: "2026-09-11"
+  - id: the-art-of-the-personal-essay-phillip-lopate
+    title: The Art of the Personal Essay
+    authors:
+      - Phillip Lopate
+    added: "2026-09-11"
+  - id: victory-city-salman-rushdie
+    url: "https://www.penguinrandomhouse.com/books/706158/victory-city-by-salman-rushdie/"
+    title: Victory City
+    authors:
+      - Salman Rushdie
+    added: "2026-09-11"
+  - id: good-to-great-jim-collins
+    url: "https://www.harpercollins.com/products/good-to-great-jim-collins"
+    title: Good to Great
+    authors:
+      - Jim Collins
+    added: "2026-09-11"
+  - id: the-cooking-of-books-ramachandra-guha
+    title: The Cooking of Books
+    authors:
+      - Ramachandra Guha
+    added: "2026-09-11"
+  - id: amp-it-up-frank-slootman
+    title: Amp It Up
+    authors:
+      - Frank Slootman
+    added: "2026-09-11"
+  - id: the-third-pillar-raghuram-g-rajan
+    title: The Third Pillar
+    authors:
+      - Raghuram G. Rajan
+    added: "2026-09-11"
+  - id: gods-guns-and-missionaries-manu-s-pillai
+    title: "Gods, Guns and Missionaries"
+    authors:
+      - Manu S. Pillai
+    added: "2026-09-11"
+  - id: unsealed-covers-gautam-bhatia
+    title: Unsealed Covers
+    authors:
+      - Gautam Bhatia
+    added: "2026-09-11"
+  - id: all-about-love-bell-hooks
+    url: "https://www.harpercollins.com/products/all-about-love-bell-hooks"
+    title: All About Love
+    authors:
+      - bell hooks
+    added: "2026-09-11"
+  - id: no-bad-parts-richard-c-schwartz
+    title: No Bad Parts
+    authors:
+      - Richard C. Schwartz
+    added: "2026-09-11"
+  - id: hit-refresh-satya-nadella
+    title: Hit Refresh
+    authors:
+      - Satya Nadella
+    added: "2026-09-11"
+  - id: bangalore-through-the-centuries-m-fazlul-hasan
+    title: Bangalore Through the Centuries
+    authors:
+      - M. Fazlul Hasan
+    added: "2026-09-11"
+  - id: bangalore-blues-kirtana-kumar
+    title: Bangalore Blues
+    authors:
+      - Kirtana Kumar
+    added: "2026-09-11"
+  - id: jaya-an-illustrated-retelling-of-the-mahabharata-devdutt-pattanaik
+    title: "Jaya: An Illustrated Retelling of the Mahabharata"
+    authors:
+      - Devdutt Pattanaik
+    added: "2026-09-11"
 textbooks:
   - id: a-philosophy-of-software-design
     title: A Philosophy of Software Design
@@ -647,12 +985,12 @@ textbooks:
       - S. Sudarshan
     added: "2026-09-06"
   - id: docs-for-developers
-    title: "Docs for Developers: An Engineer’s Field Guide to Technical Writing"
+    title: "Docs for Developers: An Engineer's Field Guide to Technical Writing"
     authors:
       - Jared Bhatti
       - Sarah Corleissen
       - Jen Lambourne
-      - David Nuñez
+      - David Nunez
       - Heidi Waterhouse
     added: "2026-09-06"
     url: https://docsfordevelopers.com/
@@ -660,7 +998,7 @@ textbooks:
     url: "https://www.manning.com/books/effective-software-testing"
     title: Effective Software Testing
     authors:
-      - Maurício Aniche
+      - Mauricio Aniche
     added: "2026-09-06"
   - id: engineering-management-for-the-rest-of-us
     title: Engineering Management for the Rest of Us
@@ -695,7 +1033,7 @@ textbooks:
     authors:
       - Christopher D. Manning
       - Prabhakar Raghavan
-      - Hinrich Schütze
+      - Hinrich Schutze
     added: "2026-09-06"
     url: https://nlp.stanford.edu/IR-book/
     purchased: "2026-05-22"
@@ -764,7 +1102,7 @@ textbooks:
     added: "2026-09-06"
     url: https://doc.rust-lang.org/book/
   - id: the-software-engineer-s-guidebook
-    title: The Software Engineer’s Guidebook
+    title: The Software Engineer's Guidebook
     authors:
       - Gergely Orosz
     added: "2026-09-06"
@@ -824,9 +1162,119 @@ textbooks:
     purchased: "2026-04-11"
     url: "https://www.amazon.in/dp/1732265178"
   - id: the-scaling-era-an-oral-history-of-ai-2019-2025
-    title: "The Scaling Era: An Oral History of AI, 2019–2025"
+    title: "The Scaling Era: An Oral History of AI, 2019-2025"
     authors:
       - "Dwarkesh Patel"
     added: "2026-09-06"
     purchased: "2026-04-09"
     url: "https://press.stripe.com/scaling"
+  - id: patterns-of-distributed-systems-unmesh-joshi
+    url: "https://www.pearson.com/en-us/subject-catalog/p/patterns-of-distributed-systems/P200000009636"
+    title: Patterns of Distributed Systems
+    authors:
+      - Unmesh Joshi
+    added: "2026-09-11"
+  - id: modern-operating-systems-andrew-s-tanenbaum
+    title: Modern Operating Systems
+    authors:
+      - Andrew S. Tanenbaum
+      - Herbert Bos
+    added: "2026-09-11"
+  - id: fundamentals-of-data-engineering-joe-reis
+    url: "https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/"
+    title: Fundamentals of Data Engineering
+    authors:
+      - Joe Reis
+      - Matt Housley
+    added: "2026-09-11"
+  - id: apache-iceberg-the-definitive-guide-tomer-shiran
+    url: "https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/"
+    title: "Apache Iceberg: The Definitive Guide"
+    authors:
+      - Tomer Shiran
+      - Jason Hughes
+      - Alex Merced
+    added: "2026-09-11"
+  - id: ai-engineering-chip-huyen
+    url: "https://www.oreilly.com/library/view/ai-engineering/9781098166298/"
+    title: AI Engineering
+    authors:
+      - Chip Huyen
+    added: "2026-09-11"
+  - id: learning-dapr-haishi-bai
+    url: "https://www.oreilly.com/library/view/learning-dapr/9781492072416/"
+    title: Learning Dapr
+    authors:
+      - Haishi Bai
+      - Yaron Schneider
+    added: "2026-09-11"
+  - id: the-annotated-turing-charles-petzold
+    title: The Annotated Turing
+    authors:
+      - Charles Petzold
+    added: "2026-09-11"
+  - id: fundamentals-of-computer-algorithms-ellis-horowitz
+    title: Fundamentals of Computer Algorithms
+    authors:
+      - Ellis Horowitz
+      - Sartaj Sahni
+      - Sanguthevar Rajasekaran
+    added: "2026-09-11"
+  - id: computer-organization-carl-hamacher
+    title: Computer Organization
+    authors:
+      - Carl Hamacher
+      - Zvonko Vranesic
+      - Safwat Zaky
+    added: "2026-09-11"
+  - id: learning-ebpf-liz-rice
+    url: "https://www.oreilly.com/library/view/learning-ebpf/9781098135119/"
+    title: Learning eBPF
+    authors:
+      - Liz Rice
+    added: "2026-09-11"
+  - id: fundamentals-of-database-systems-ramez-elmasri
+    title: Fundamentals of Database Systems
+    authors:
+      - Ramez Elmasri
+      - Shamkant B. Navathe
+    added: "2026-09-11"
+  - id: introduction-to-algorithms-thomas-h-cormen
+    url: "https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/"
+    title: Introduction to Algorithms
+    authors:
+      - Thomas H. Cormen
+      - Charles E. Leiserson
+      - Ronald L. Rivest
+      - Clifford Stein
+    added: "2026-09-11"
+  - id: computer-networks-a-top-down-approach-behrouz-a-forouzan
+    title: "Computer Networks: A Top-Down Approach"
+    authors:
+      - Behrouz A. Forouzan
+      - Firouz Mosharraf
+    added: "2026-09-11"
+  - id: an-introduction-to-probability-theory-and-its-applications-william-feller
+    title: An Introduction to Probability Theory and Its Applications
+    authors:
+      - William Feller
+    added: "2026-09-11"
+  - id: the-essence-of-compilers-robin-hunter
+    title: The Essence of Compilers
+    authors:
+      - Robin Hunter
+    added: "2026-09-11"
+  - id: an-introduction-to-probability-and-statistics-vijay-k-rohatgi
+    title: An Introduction to Probability and Statistics
+    authors:
+      - Vijay K. Rohatgi
+      - A. K. Md. Ehsanes Saleh
+    added: "2026-09-11"
+  - id: deep-learning-ian-goodfellow
+    url: "https://www.deeplearningbook.org/"
+    title: Deep Learning
+    authors:
+      - Ian Goodfellow
+      - Yoshua Bengio
+      - Aaron Courville
+    added: "2026-09-11"
