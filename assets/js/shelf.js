@@ -5,7 +5,6 @@
   const caption = root.querySelector("[data-shelf-caption]");
   const defaultCaption = caption.textContent;
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
-  let previous = null;
 
   function reveal(entry) {
     if (!entry) return;
@@ -14,7 +13,6 @@
       behavior: motion.matches ? "instant" : "smooth",
       block: "center",
     });
-    previous = entry;
   }
 
   // Shuffle the whole inventory without replacement for a fresh shelf each visit.
@@ -46,17 +44,5 @@
       event.preventDefault();
       reveal(document.getElementById(spine.hash.slice(1)));
     });
-  });
-
-  const button = root.querySelector("[data-shelf-random]");
-  if (entries.length) button.hidden = false;
-  button.addEventListener("click", () => {
-    const choices = entries.filter(
-      (entry) => entries.length === 1 || entry !== previous,
-    );
-    const entry = choices[Math.floor(Math.random() * choices.length)];
-    root.querySelector("[data-shelf-announcement]").textContent =
-      `Picked ${entry.dataset.title}`;
-    reveal(entry);
   });
 })();
