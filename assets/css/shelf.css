@@ -57,21 +57,6 @@
   min-height: 2.6em;
   margin: 0.65rem 0 0.4rem;
 }
-.shelf-random {
-  font: inherit;
-  color: var(--shelf-accent);
-  background: transparent;
-  padding: 0.4rem 0;
-  border: 0;
-  border-bottom: 1px solid var(--shelf-rule);
-  cursor: pointer;
-}
-.shelf-random[hidden] {
-  display: none;
-}
-.shelf-random:hover {
-  border-color: var(--shelf-accent);
-}
 .shelf-list li {
   position: relative;
   margin-bottom: 0.65rem;
@@ -81,7 +66,6 @@
 }
 .shelf-list li:focus-visible,
 .shelf-spine:focus-visible,
-.shelf-random:focus-visible,
 .shelf-note summary:focus-visible {
   outline: 2px solid var(--shelf-accent);
   outline-offset: 4px;
@@ -128,15 +112,6 @@
 .shelf-empty {
   color: var(--content-secondary);
   font-style: italic;
-}
-.shelf-sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
 }
 @media (prefers-reduced-motion: reduce) {
   .shelf-spine {
