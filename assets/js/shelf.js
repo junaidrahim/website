@@ -1,83 +1,62 @@
-// Original wave field inspired by the YC event's animated grid.
-// Small local DOM animation: no libraries, network requests, or reading-data access.
 (() => {
-  const root = document.querySelector("[data-shelf-wave]");
+  const root = document.querySelector("[data-shelf-header]");
   if (!root) return;
-  const grid = root.querySelector(".shelf-wave-grid");
-  const cells = [...grid.children];
+  const entries = [...document.querySelectorAll("[data-shelf-entry]")];
+  const caption = root.querySelector("[data-shelf-caption]");
+  const defaultCaption = caption.textContent;
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
-  let visible = true;
-  let frame = 0;
-  let last = 0;
-  let elapsed = 0;
-  let columns = 1;
-  let pointer = null;
+  let previous = null;
 
-  function draw(time) {
-    const count = Math.min(cells.length, columns * 9);
-    for (let index = 0; index < count; index++) {
-      const x = index % columns;
-      const y = Math.floor(index / columns);
-      const depth = 1 + y / 8;
-      const wave = Math.sin((x * 0.19) / depth + y * 0.65 - time * 0.7);
-      const swell = Math.cos(x * 0.09 - y * 0.8 + time * 0.43);
-      let intensity = 0.12 + 0.62 * Math.pow((wave + swell + 2) / 4, 1.6);
-      if (pointer) {
-        const distance = Math.hypot(
-          (x + 0.5) / columns - pointer.x,
-          (y + 0.5) / 9 - pointer.y,
-        );
-        intensity = Math.min(
-          0.95,
-          intensity + 0.5 * Math.exp(-distance * distance * 65),
-        );
-      }
-      cells[index].style.opacity = intensity.toFixed(3);
+  function reveal(entry) {
+    if (!entry) return;
+    entry.focus({ preventScroll: true });
+    entry.scrollIntoView({
+      behavior: motion.matches ? "instant" : "smooth",
+      block: "center",
+    });
+    previous = entry;
+  }
+
+  // Shuffle the whole inventory without replacement for a fresh shelf each visit.
+  const shuffled = [...entries];
+  for (let index = shuffled.length - 1; index > 0; index--) {
+    const swap = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swap]] = [shuffled[swap], shuffled[index]];
+  }
+
+  root.querySelectorAll(".shelf-spine").forEach((spine, index) => {
+    const entry = shuffled[index];
+    if (entry) {
+      spine.href = `#${entry.id}`;
+      spine.dataset.title = entry.dataset.title;
+      spine.setAttribute("aria-label", `Find ${entry.dataset.title} on the shelf`);
+      spine.querySelector("span").textContent = entry.dataset.title;
     }
-  }
-
-  function tick(now) {
-    if (last) elapsed += Math.min(now - last, 100) / 1000;
-    last = now;
-    draw(elapsed);
-    frame = requestAnimationFrame(tick);
-  }
-
-  function sync() {
-    cancelAnimationFrame(frame);
-    frame = 0;
-    last = 0;
-    if (!motion.matches && visible && !document.hidden)
-      frame = requestAnimationFrame(tick);
-    else draw(elapsed);
-  }
-
-  new ResizeObserver(() => {
-    columns = getComputedStyle(grid).gridTemplateColumns.split(" ").length;
-    draw(elapsed);
-  }).observe(grid);
-  new IntersectionObserver(([entry]) => {
-    visible = entry.isIntersecting;
-    sync();
-  }).observe(root);
-  document.addEventListener("visibilitychange", sync);
-  motion.addEventListener("change", () => {
-    pointer = null;
-    sync();
-  });
-  grid.addEventListener("pointermove", (event) => {
-    if (motion.matches) return;
-    const bounds = grid.getBoundingClientRect();
-    pointer = {
-      x: (event.clientX - bounds.left) / bounds.width,
-      y: (event.clientY - bounds.top) / bounds.height,
+    const show = () => {
+      caption.textContent = spine.dataset.title;
     };
+    const reset = () => {
+      caption.textContent = defaultCaption;
+    };
+    spine.addEventListener("pointerenter", show);
+    spine.addEventListener("focus", show);
+    spine.addEventListener("pointerleave", reset);
+    spine.addEventListener("blur", reset);
+    spine.addEventListener("click", (event) => {
+      event.preventDefault();
+      reveal(document.getElementById(spine.hash.slice(1)));
+    });
   });
-  grid.addEventListener("pointerleave", () => {
-    pointer = null;
+
+  const button = root.querySelector("[data-shelf-random]");
+  if (entries.length) button.hidden = false;
+  button.addEventListener("click", () => {
+    const choices = entries.filter(
+      (entry) => entries.length === 1 || entry !== previous,
+    );
+    const entry = choices[Math.floor(Math.random() * choices.length)];
+    root.querySelector("[data-shelf-announcement]").textContent =
+      `Picked ${entry.dataset.title}`;
+    reveal(entry);
   });
-  grid.addEventListener("pointercancel", () => {
-    pointer = null;
-  });
-  sync();
 })();

@@ -13,6 +13,7 @@ books:
       - Emily Henry
     added: "2026-09-06"
   - id: building-a-second-brain
+    status: finished
     title: Building a Second Brain
     authors:
       - Tiago Forte
@@ -37,6 +38,7 @@ books:
       - Bora Chung
     added: "2026-09-06"
   - id: desperately-seeking-shahrukh
+    status: finished
     url: "https://books.google.com/books/about/Desperately_Seeking_Shah_Rukh.html?id=MAxEEAAAQBAJ"
     title: Desperately Seeking Shah Rukh
     authors:
@@ -69,6 +71,7 @@ books:
     added: "2026-09-06"
     url: https://openlibrary.org/books/OL43553504M/Girl_made_of_gold
   - id: give-and-take
+    status: finished
     url: "https://adamgrant.net/book/give-and-take/"
     title: Give and Take
     authors:
@@ -106,6 +109,7 @@ books:
       - Italo Calvino
     added: "2026-09-06"
   - id: invention-a-life
+    status: finished
     title: "Invention: A Life"
     authors:
       - James Dyson
@@ -124,6 +128,7 @@ books:
       - Shubhangi Swarup
     added: "2026-09-06"
   - id: lust-for-life
+    status: finished
     url: "https://www.penguinrandomhouse.com/books/324744/lust-for-life-by-irving-stone/"
     title: Lust for Life
     authors:
@@ -156,6 +161,7 @@ books:
       - Alina Gufran
     added: "2026-09-06"
   - id: novelist-as-a-vocation
+    status: finished
     url: "https://www.penguinrandomhouse.com/books/547926/novelist-as-a-vocation-by-haruki-murakami/"
     title: Novelist as a Vocation
     authors:
@@ -168,6 +174,7 @@ books:
       - Ocean Vuong
     added: "2026-09-06"
   - id: on-writing-charles-bukowski
+    status: finished
     url: "https://canongate.co.uk/books/2307-on-writing/"
     title: On Writing
     authors:
@@ -186,6 +193,7 @@ books:
       - Franz Kafka
     added: "2026-09-06"
   - id: show-your-work
+    status: finished
     url: "https://austinkleon.com/show-your-work/"
     title: Show Your Work!
     authors:
@@ -198,6 +206,7 @@ books:
       - Tyler Cowen
     added: "2026-09-06"
   - id: the-art-of-noticing
+    status: finished
     url: "https://robwalker.net/noticing/"
     title: The Art of Noticing
     authors:
@@ -230,6 +239,7 @@ books:
     added: "2026-09-06"
     status: finished
   - id: the-infinite-game
+    status: finished
     url: "https://simonsinek.com/books/the-infinite-game"
     title: The Infinite Game
     authors:
@@ -274,6 +284,7 @@ books:
       - Khushwant Singh
     added: "2026-09-06"
   - id: unboxing-bengaluru
+    status: finished
     title: "Unboxing Bengaluru: The City of New Beginnings"
     authors:
       - Malini Goyal
@@ -281,6 +292,7 @@ books:
     added: "2026-09-06"
     url: https://www.penguin.co.in/book/unboxing-bengaluru/
   - id: whole-numbers-and-half-truths
+    status: finished
     url: "https://books.google.com/books/about/Whole_Numbers_And_Half_Truths_What_Data.html?id=2U93zwEACAAJ"
     title: Whole Numbers and Half Truths
     authors:
@@ -475,6 +487,7 @@ books:
     purchased: "2026-08-04"
     url: "https://www.amazon.in/dp/024120013X"
   - id: the-paris-review-interviews-volume-1
+    status: finished
     title: "The Paris Review Interviews, Volume 1"
     authors:
       - "The Paris Review"
@@ -489,6 +502,7 @@ books:
     purchased: "2026-06-28"
     url: "https://www.amazon.in/dp/0141442468"
   - id: the-society-of-the-spectacle
+    status: finished
     title: "The Society of the Spectacle"
     authors:
       - "Guy Debord"
@@ -573,6 +587,7 @@ books:
     purchased: "2026-01-28"
     url: "https://www.amazon.in/dp/817223502X"
   - id: why-the-poor-don-t-kill-us-the-psychology-of-indians
+    status: finished
     title: "Why the Poor Don't Kill Us: The Psychology of Indians"
     authors:
       - "Manu Joseph"
@@ -600,6 +615,7 @@ books:
     purchased: "2026-04-11"
     url: "https://press.stripe.com/origins-of-efficiency"
   - id: the-making-of-prince-of-persia
+    status: finished
     url: "https://press.stripe.com/the-making-of-prince-of-persia"
     title: The Making of Prince of Persia
     authors:
@@ -624,6 +640,7 @@ books:
       - Ira Mukhoty
     added: "2026-09-11"
   - id: katabasis-r-f-kuang
+    status: finished
     url: "https://www.harpercollins.com/products/katabasis-r-f-kuang"
     title: Katabasis
     authors:
@@ -636,6 +653,7 @@ books:
       - Charles Darwin
     added: "2026-09-11"
   - id: the-fever-sonia-faleiro
+    status: finished
     title: The Fever
     authors:
       - Sonia Faleiro
@@ -647,11 +665,13 @@ books:
       - Pitchaya Sudbanthad
     added: "2026-09-11"
   - id: the-blind-earthworm-in-the-labyrinth-veeraporn-nitiprapha
+    url: "https://www.simonandschuster.com/books/The-Blind-Earthworm-in-the-Labyrinth/Veeraporn-Nitiprapha/9786164510135"
     title: The Blind Earthworm in the Labyrinth
     authors:
       - Veeraporn Nitiprapha
     added: "2026-09-11"
   - id: the-barbary-coast-herbert-asbury
+    url: "https://www.hachettebookgroup.com/titles/herbert-asbury/the-barbary-coast/9781560254089/"
     title: The Barbary Coast
     authors:
       - Herbert Asbury
@@ -687,18 +707,21 @@ books:
       - Mary Beard
     added: "2026-09-11"
   - id: breaking-the-mould-raghuram-g-rajan
+    url: "https://www.penguin.co.in/book/breaking-the-mould/"
     title: Breaking the Mould
     authors:
       - Raghuram G. Rajan
       - Rohit Lamba
     added: "2026-09-11"
   - id: principles-ray-dalio
+    status: finished
     url: "https://www.principles.com/"
     title: Principles
     authors:
       - Ray Dalio
     added: "2026-09-11"
   - id: flashlight-susan-choi
+    url: "https://www.penguin.co.uk/books/461727/flashlight-by-choi-susan/9781529970661"
     title: Flashlight
     authors:
       - Susan Choi
@@ -710,6 +733,7 @@ books:
       - Ann Patchett
     added: "2026-09-11"
   - id: home-marilynne-robinson
+    url: "https://us.macmillan.com/books/9781250784025/homeoprahsbookclub/"
     title: Home
     authors:
       - Marilynne Robinson
@@ -721,17 +745,20 @@ books:
       - Paul Lynch
     added: "2026-09-11"
   - id: how-to-raise-an-adult-julie-lythcott-haims
+    url: "https://www.julielythcotthaims.com/how-to-raise-an-adult/"
     title: How to Raise an Adult
     authors:
       - Julie Lythcott-Haims
     added: "2026-09-11"
   - id: meditations-marcus-aurelius
+    status: finished
     url: "https://www.penguin.co.uk/books/35413/meditations-by-marcus-aurelius/9780140449334"
     title: Meditations
     authors:
       - Marcus Aurelius
     added: "2026-09-11"
   - id: the-collected-works-of-kahlil-gibran-kahlil-gibran
+    url: "https://www.penguinrandomhouse.com/books/59586/the-collected-works-of-kahlil-gibran-by-kahlil-gibran/"
     title: The Collected Works of Kahlil Gibran
     authors:
       - Kahlil Gibran
@@ -743,11 +770,14 @@ books:
       - "Maggie O'Farrell"
     added: "2026-09-11"
   - id: i-do-what-i-do-raghuram-g-rajan
+    status: finished
+    url: "https://books.google.com/books/about/I_Do_What_I_Do.html?id=4HIyDwAAQBAJ"
     title: I Do What I Do
     authors:
       - Raghuram G. Rajan
     added: "2026-09-11"
   - id: the-catcher-in-the-rye-j-d-salinger
+    status: finished
     url: "https://www.penguin.co.uk/books/57054/the-catcher-in-the-rye-by-salinger-j-d/9780241950432"
     title: The Catcher in the Rye
     authors:
@@ -760,16 +790,19 @@ books:
       - Miranda July
     added: "2026-09-11"
   - id: the-coworker-freida-mcfadden
+    url: "https://www.freidamcfadden.com/books/standalone-thrillers/the-coworker/"
     title: The Coworker
     authors:
       - Freida McFadden
     added: "2026-09-11"
   - id: arrangements-in-blue-amy-key
+    url: "https://www.penguin.co.uk/books/447053/arrangements-in-blue-by-key-amy/9781529906899"
     title: Arrangements in Blue
     authors:
       - Amy Key
     added: "2026-09-11"
   - id: the-quran-traditional
+    url: "https://quran.com/"
     title: The Quran
     authors:
       - Traditional
@@ -787,6 +820,7 @@ books:
       - Gabrielle Zevin
     added: "2026-09-11"
   - id: kitchen-confidential-anthony-bourdain
+    status: finished
     url: "https://www.bloomsbury.com/us/kitchen-confidential-9781635576023/"
     title: Kitchen Confidential
     authors:
@@ -799,40 +833,48 @@ books:
       - Edward Snowden
     added: "2026-09-11"
   - id: sapiens-yuval-noah-harari
+    status: finished
     url: "https://www.ynharari.com/book/sapiens/"
     title: Sapiens
     authors:
       - Yuval Noah Harari
     added: "2026-09-11"
   - id: behave-robert-m-sapolsky
+    status: finished
     url: "https://www.penguinrandomhouse.com/books/221773/behave-by-robert-m-sapolsky/"
     title: Behave
     authors:
       - Robert M. Sapolsky
     added: "2026-09-11"
   - id: humble-pie-gordon-ramsay
+    status: finished
+    url: "https://books.google.com/books/about/Humble_Pie.html?id=j31bhXPly6QC"
     title: Humble Pie
     authors:
       - Gordon Ramsay
     added: "2026-09-11"
   - id: homo-deus-yuval-noah-harari
+    status: finished
     url: "https://www.ynharari.com/book/homo-deus/"
     title: Homo Deus
     authors:
       - Yuval Noah Harari
     added: "2026-09-11"
   - id: becoming-michelle-obama
+    status: finished
     url: "https://www.penguinrandomhouse.com/books/550168/becoming-by-michelle-obama/"
     title: Becoming
     authors:
       - Michelle Obama
     added: "2026-09-11"
   - id: the-battle-of-belonging-shashi-tharoor
+    url: "https://shashitharoor.in/books_details_non_fictions/22"
     title: The Battle of Belonging
     authors:
       - Shashi Tharoor
     added: "2026-09-11"
   - id: babel-r-f-kuang
+    status: finished
     url: "https://www.harpercollins.com/products/babel-r-f-kuang"
     title: Babel
     authors:
@@ -845,32 +887,41 @@ books:
       - Alexandre Dumas
     added: "2026-09-11"
   - id: for-the-love-of-physics-walter-lewin
+    status: finished
+    url: "https://www.simonandschuster.com/books/For-the-Love-of-Physics/Walter-Lewin/9781451607130"
     title: For the Love of Physics
     authors:
       - Walter Lewin
     added: "2026-09-11"
   - id: h-pop-kunal-purohit
+    status: finished
+    url: "https://books.google.com/books/about/H_Pop.html?id=5xxV0AEACAAJ"
     title: H-Pop
     authors:
       - Kunal Purohit
     added: "2026-09-11"
   - id: how-to-avoid-a-climate-disaster-bill-gates
+    status: finished
     url: "https://www.penguinrandomhouse.com/books/633984/how-to-avoid-a-climate-disaster-by-bill-gates/"
     title: How to Avoid a Climate Disaster
     authors:
       - Bill Gates
     added: "2026-09-11"
   - id: no-longer-human-osamu-dazai
+    status: finished
+    url: "https://www.ndbooks.com/book/no-longer-human/"
     title: No Longer Human
     authors:
       - Osamu Dazai
     added: "2026-09-11"
   - id: dongri-to-dubai-six-decades-of-the-mumbai-mafia-s-hussain-zaidi
+    url: "https://rolibooks.com/product/dongri-to-dubai/"
     title: "Dongri to Dubai: Six Decades of the Mumbai Mafia"
     authors:
       - S. Hussain Zaidi
     added: "2026-09-11"
   - id: the-art-of-the-personal-essay-phillip-lopate
+    url: "https://www.penguinrandomhouse.com/books/103559/the-art-of-the-personal-essay-by-phillip-lopate/9780385423397/"
     title: The Art of the Personal Essay
     authors:
       - Phillip Lopate
@@ -882,32 +933,41 @@ books:
       - Salman Rushdie
     added: "2026-09-11"
   - id: good-to-great-jim-collins
+    status: finished
     url: "https://www.harpercollins.com/products/good-to-great-jim-collins"
     title: Good to Great
     authors:
       - Jim Collins
     added: "2026-09-11"
   - id: the-cooking-of-books-ramachandra-guha
+    status: finished
+    url: "https://books.google.com/books?id=O9bOEAAAQBAJ"
     title: The Cooking of Books
     authors:
       - Ramachandra Guha
     added: "2026-09-11"
   - id: amp-it-up-frank-slootman
+    status: finished
+    url: "https://www.wiley-vch.de/en/areas-interest/finance-economics-law/business-management-13ba/management-13ba1/management-leadership-13ba14/amp-it-up-978-1-119-83611-7"
     title: Amp It Up
     authors:
       - Frank Slootman
     added: "2026-09-11"
   - id: the-third-pillar-raghuram-g-rajan
+    status: finished
+    url: "https://www.penguinrandomhouse.com/books/566369/the-third-pillar-by-raghuram-rajan/"
     title: The Third Pillar
     authors:
       - Raghuram G. Rajan
     added: "2026-09-11"
   - id: gods-guns-and-missionaries-manu-s-pillai
+    url: "https://www.penguin.co.in/book/gods-guns-and-missionaries/"
     title: "Gods, Guns and Missionaries"
     authors:
       - Manu S. Pillai
     added: "2026-09-11"
   - id: unsealed-covers-gautam-bhatia
+    url: "https://books.apple.com/us/book/unsealed-covers/id6450609332"
     title: Unsealed Covers
     authors:
       - Gautam Bhatia
@@ -916,33 +976,54 @@ books:
     url: "https://www.harpercollins.com/products/all-about-love-bell-hooks"
     title: All About Love
     authors:
-      - bell hooks
+      - Bell Hooks
     added: "2026-09-11"
   - id: no-bad-parts-richard-c-schwartz
+    url: "https://us.macmillan.com/books/9781683646686/nobadparts/"
     title: No Bad Parts
     authors:
       - Richard C. Schwartz
     added: "2026-09-11"
   - id: hit-refresh-satya-nadella
+    status: finished
+    url: "https://news.microsoft.com/announcement/hit-refresh-is-published/"
     title: Hit Refresh
     authors:
       - Satya Nadella
     added: "2026-09-11"
   - id: bangalore-through-the-centuries-m-fazlul-hasan
+    status: finished
+    url: "https://books.google.com/books/about/Bangalore_Through_the_Centuries.html?id=XQgiAAAAMAAJ"
     title: Bangalore Through the Centuries
     authors:
       - M. Fazlul Hasan
     added: "2026-09-11"
   - id: bangalore-blues-kirtana-kumar
+    status: finished
+    url: "https://attagalatta.com/booksmart/bangalore-blues/"
     title: Bangalore Blues
     authors:
       - Kirtana Kumar
     added: "2026-09-11"
   - id: jaya-an-illustrated-retelling-of-the-mahabharata-devdutt-pattanaik
+    url: "https://www.penguin.co.in/book/jaya/"
     title: "Jaya: An Illustrated Retelling of the Mahabharata"
     authors:
       - Devdutt Pattanaik
     added: "2026-09-11"
+  - id: martyr-kaveh-akbar
+    title: "Martyr!"
+    authors:
+      - Kaveh Akbar
+    added: "2026-10-10"
+    url: https://www.penguinrandomhouse.com/books/734476/martyr-national-book-award-finalist-by-kaveh-akbar/
+  - id: may-we-feed-the-king-rebecca-perry
+    title: May We Feed the King
+    authors:
+      - Rebecca Perry
+    added: "2026-10-10"
+    status: finished
+    url: https://granta.com/products/may-we-feed-the-king/
 textbooks:
   - id: a-philosophy-of-software-design
     title: A Philosophy of Software Design
@@ -1175,6 +1256,7 @@ textbooks:
       - Unmesh Joshi
     added: "2026-09-11"
   - id: modern-operating-systems-andrew-s-tanenbaum
+    url: "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295/9780137618934"
     title: Modern Operating Systems
     authors:
       - Andrew S. Tanenbaum
@@ -1209,11 +1291,13 @@ textbooks:
       - Yaron Schneider
     added: "2026-09-11"
   - id: the-annotated-turing-charles-petzold
+    url: "https://www.charlespetzold.com/AnnotatedTuring/"
     title: The Annotated Turing
     authors:
       - Charles Petzold
     added: "2026-09-11"
   - id: fundamentals-of-computer-algorithms-ellis-horowitz
+    url: "https://www.orientblackswan.com/details?obsin=1192"
     title: Fundamentals of Computer Algorithms
     authors:
       - Ellis Horowitz
@@ -1221,6 +1305,7 @@ textbooks:
       - Sanguthevar Rajasekaran
     added: "2026-09-11"
   - id: computer-organization-carl-hamacher
+    url: "https://books.google.com/books/about/Computer_Organization.html?id=GmVGAAAAYAAJ"
     title: Computer Organization
     authors:
       - Carl Hamacher
@@ -1234,6 +1319,7 @@ textbooks:
       - Liz Rice
     added: "2026-09-11"
   - id: fundamentals-of-database-systems-ramez-elmasri
+    url: "https://www.pearson.com/en-us/subject-catalog/p/Elmasri-Fundamentals-of-Database-Systems-Subscription-7th-Edition/P200000003546/9780137502523"
     title: Fundamentals of Database Systems
     authors:
       - Ramez Elmasri
@@ -1249,22 +1335,26 @@ textbooks:
       - Clifford Stein
     added: "2026-09-11"
   - id: computer-networks-a-top-down-approach-behrouz-a-forouzan
+    url: "https://www.mheducation.co.in/computer-networks-a-top-down-approach-9789355324900-india"
     title: "Computer Networks: A Top-Down Approach"
     authors:
       - Behrouz A. Forouzan
       - Firouz Mosharraf
     added: "2026-09-11"
   - id: an-introduction-to-probability-theory-and-its-applications-william-feller
+    url: "https://www.wiley-vch.de/en/areas-interest/mathematics-statistics/statistics-16st/probability-mathematical-statistics-16st1/introduction-to-probability-theory-and-its-applications-978-0-471-25708-0"
     title: An Introduction to Probability Theory and Its Applications
     authors:
       - William Feller
     added: "2026-09-11"
   - id: the-essence-of-compilers-robin-hunter
+    url: "https://search.worldcat.org/title/The-essence-of-compilers/oclc/255247532"
     title: The Essence of Compilers
     authors:
       - Robin Hunter
     added: "2026-09-11"
   - id: an-introduction-to-probability-and-statistics-vijay-k-rohatgi
+    url: "https://onlinelibrary.wiley.com/doi/book/10.1002/9781118799635"
     title: An Introduction to Probability and Statistics
     authors:
       - Vijay K. Rohatgi
@@ -1278,3 +1368,9 @@ textbooks:
       - Yoshua Bengio
       - Aaron Courville
     added: "2026-09-11"
+  - id: ai-systems-performance-engineering-chris-fregly
+    title: AI Systems Performance Engineering
+    authors:
+      - Chris Fregly
+    added: "2026-10-10"
+    url: https://www.oreilly.com/library/view/ai-systems-performance/9798341627772/

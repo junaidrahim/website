@@ -11,12 +11,18 @@
         {{ errorf "Unknown shelf status: %s" . }}
       {{ end }}
     {{ end }}
-    <li id="{{ $kind }}-{{ .id }}">
+    <li id="{{ $kind }}-{{ .id }}" tabindex="-1" data-shelf-entry data-title="{{ .title }}">
       {{ if .url }}<a href="{{ .url }}">{{ .title }}</a>{{ else }}<span>{{ .title }}</span>{{ end }}
       <span class="shelf-authors"> — {{ delimit .authors ", " }}</span>
-      {{ if eq .status "finished" }}<span class="shelf-status">finished</span>{{ end }}
-      {{ with .finished }}<time class="shelf-date" datetime="{{ . }}">{{ time.Format "Jan 2006" . }}</time>{{ end }}
-      {{ with .note }}<p class="shelf-note">{{ . }}</p>{{ end }}
+      {{ if eq .status "finished" }}
+        <span class="shelf-status">finished{{ with .finished }} <time datetime="{{ . }}">{{ time.Format "Jan 2006" . }}</time>{{ end }}</span>
+      {{ end }}
+      {{ with .note }}
+        <details class="shelf-note">
+          <summary>A note</summary>
+          <p>{{ . }}</p>
+        </details>
+      {{ end }}
     </li>
   {{ end }}
 </ol>
