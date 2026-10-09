@@ -1017,6 +1017,13 @@ books:
       - Kaveh Akbar
     added: "2026-10-10"
     url: https://www.penguinrandomhouse.com/books/734476/martyr-national-book-award-finalist-by-kaveh-akbar/
+  - id: may-we-feed-the-king-rebecca-perry
+    title: May We Feed the King
+    authors:
+      - Rebecca Perry
+    added: "2026-10-10"
+    status: finished
+    url: https://granta.com/products/may-we-feed-the-king/
 textbooks:
   - id: a-philosophy-of-software-design
     title: A Philosophy of Software Design
