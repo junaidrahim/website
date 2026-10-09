@@ -1,0 +1,18 @@
+<div class="shelf-header" data-shelf-header>
+  <nav class="shelf-spines" aria-label="Browse a few books from the shelf">
+    {{ range $kind := slice "books" "textbooks" }}
+      {{ $entries := sort (index hugo.Data.shelf $kind) "title" "asc" }}
+      {{ $step := math.Max 1 (math.Ceil (div (float (len $entries)) 12)) }}
+      {{ range $index, $entry := $entries }}
+        {{ if eq (mod $index (int $step)) 0 }}
+          <a class="shelf-spine" href="#{{ $kind }}-{{ .id }}" data-title="{{ .title }}" style="--spine-height: {{ add 125 (mod (mul $index 17) 65) }}px; --spine-width: {{ add 25 (mod $index 13) }}px" aria-label="Find {{ .title }} on the shelf">
+            <span>{{ .title }}</span>
+          </a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </nav>
+  <p class="shelf-caption" data-shelf-caption>Every spine, a place to wander.</p>
+  <button class="shelf-random" type="button" data-shelf-random hidden>Pull something off the shelf <span aria-hidden="true">↗</span></button>
+  <span class="shelf-sr-only" role="status" data-shelf-announcement></span>
+</div>

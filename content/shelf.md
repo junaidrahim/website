@@ -8,9 +8,9 @@ hidePagination: true
 shelf: true
 ---
 
-{{< shelf-wave >}}
+{{< shelf-header >}}
 
-Books and textbooks I've picked up, am reading, or have finished. A list, with the occasional note.[^animation]
+Books and textbooks I've picked up, am reading, or have finished. A list, with the occasional note.
 
 ## Books
 
@@ -19,8 +19,3 @@ Books and textbooks I've picked up, am reading, or have finished. A list, with t
 ## Textbooks
 
 {{< shelf-list kind="textbooks" >}}
-
-[^animation]:
-    The animated header is inspired by the wave grid on Y Combinator's
-    [Own Your Intelligence Hackathon page](https://events.ycombinator.com/gbrain-qm-river-memorable-hackathon), adapted
-    for this site.
