@@ -64,8 +64,6 @@
     art.replaceChildren();
     art.hidden = !drawing;
     if (drawing) art.append(drawing.cloneNode(true));
-    dialog.querySelector(".pulled-book-kind").textContent =
-      `/ ${book.dataset.kind}`;
     const status = dialog.querySelector(".pulled-book-status");
     status.replaceChildren();
     const stamp = entry.querySelector(".shelf-status");
@@ -127,12 +125,21 @@
   dialog.querySelector("button").addEventListener("click", closeBook);
   dialog.addEventListener("keydown", (event) => {
     if (event.key !== "Tab") return;
-    const controls = [...dialog.querySelectorAll("button, a[href]")].filter(
+    const controls = [...dialog.querySelectorAll("a[href]")].filter(
       (control) => !control.hidden,
     );
+    const title = dialog.querySelector("h2");
+    if (!controls.length) {
+      event.preventDefault();
+      title.focus();
+      return;
+    }
     const first = controls[0];
     const last = controls[controls.length - 1];
-    if (event.shiftKey && document.activeElement === first) {
+    if (document.activeElement === title) {
+      event.preventDefault();
+      (event.shiftKey ? last : first).focus();
+    } else if (event.shiftKey && document.activeElement === first) {
       event.preventDefault();
       last.focus();
     } else if (!event.shiftKey && document.activeElement === last) {
