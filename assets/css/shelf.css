@@ -236,7 +236,7 @@
   border: 0;
 }
 .pulled-book-cover {
-  min-height: 300px;
+  min-height: 360px;
   display: flex;
   flex-direction: column;
 }
