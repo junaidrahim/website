@@ -1025,6 +1025,12 @@ books:
     added: "2026-10-10"
     status: finished
     url: https://granta.com/products/may-we-feed-the-king/
+  - id: the-employees-olga-ravn
+    title: The Employees
+    authors:
+      - Olga Ravn
+    added: "2026-10-11"
+    url: https://www.ndbooks.com/book/the-employees/
 textbooks:
   - id: a-philosophy-of-software-design
     title: A Philosophy of Software Design
