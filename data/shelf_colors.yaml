@@ -1,0 +1,1300 @@
+# Approximate edition palettes researched 2026-10-11. Source URLs record the cover used.
+# Where identifiable, the user's shelf photos take precedence over other editions.
+# Colours are stored locally; cover images are not fetched or displayed by the site.
+a-burglars-guide-to-the-city:
+  background: "#35332c"
+  ink: "#ffffff"
+  accent: "#d8dc58"
+  source: https://openlibrary.org/works/OL17351668W
+  cover: https://covers.openlibrary.org/b/id/7429720-M.jpg?default=false
+a-philosophy-of-software-design:
+  background: "#f8fffd"
+  ink: "#191919"
+  accent: "#4fa9c8"
+  source: https://openlibrary.org/works/OL21221785W
+  cover: https://covers.openlibrary.org/b/id/10352230-M.jpg?default=false
+ai-engineering-chip-huyen:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#201814"
+  source: https://www.oreilly.com/library/view/ai-engineering/9781098166298/
+  cover: https://learning.oreilly.com/library/cover/9781098166298/250w/
+ai-systems-performance-engineering-chris-fregly:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#aa8a76"
+  source: https://www.oreilly.com/library/view/ai-systems-performance/9798341627772/
+  cover: https://learning.oreilly.com/library/cover/9798341627772/250w/
+all-about-love-bell-hooks:
+  background: "#d54d62"
+  ink: "#000000"
+  accent: "#282625"
+  source: https://openlibrary.org/works/OL31111W
+  cover: https://covers.openlibrary.org/b/id/42317-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+all-fours-miranda-july:
+  background: "#e7e0bd"
+  ink: "#191919"
+  accent: "#967946"
+  source: https://openlibrary.org/works/OL37827700W
+  cover: https://covers.openlibrary.org/b/id/14610346-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+amp-it-up-frank-slootman:
+  background: "#29373f"
+  ink: "#ffffff"
+  accent: "#7babcb"
+  source: https://openlibrary.org/works/OL25325891W
+  cover: https://covers.openlibrary.org/b/id/12406562-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+an-elegant-puzzle-systems-of-engineering-management:
+  background: "#ededed"
+  ink: "#191919"
+  accent: "#6e6e6e"
+  source: https://openlibrary.org/works/OL20641522W
+  cover: https://covers.openlibrary.org/b/id/9260083-M.jpg?default=false
+an-introduction-to-probability-and-statistics-vijay-k-rohatgi:
+  background: "#c45351"
+  ink: "#000000"
+  accent: "#2a2e2a"
+  source: https://openlibrary.org/works/OL20063790W
+  cover: https://covers.openlibrary.org/b/id/8746118-M.jpg?default=false
+  reference: User shelf photo 3, 2026-10-11
+an-introduction-to-probability-theory-and-its-applications-william-feller:
+  background: "#ba5558"
+  ink: "#ffffff"
+  accent: "#ecdcc1"
+  source: https://openlibrary.org/works/OL146759W
+  cover: https://covers.openlibrary.org/b/id/302683-M.jpg?default=false
+  reference: User shelf photo 3, 2026-10-11
+apache-iceberg-the-definitive-guide-tomer-shiran:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#a5a6a8"
+  source: https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/
+  cover: https://learning.oreilly.com/library/cover/9781098148614/250w/
+arrangements-in-blue-amy-key:
+  background: "#3f8daf"
+  ink: "#191919"
+  accent: "#e0d7bb"
+  source: https://www.penguin.co.uk/books/447053/arrangements-in-blue-by-key-amy/9781529906899
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9781529906899/9781529906899-jacket-large.jpg
+  reference: User shelf photo 1, 2026-10-11
+atlas-shrugged:
+  background: "#74846b"
+  ink: "#000000"
+  accent: "#d2d3bd"
+  source: https://openlibrary.org/works/OL731644W
+  cover: https://covers.openlibrary.org/b/id/362277-M.jpg?default=false
+bangkok-wakes-to-rain-pitchaya-sudbanthad:
+  background: "#b5a761"
+  ink: "#191919"
+  accent: "#ece0a3"
+  source: https://openlibrary.org/works/OL20093560W
+  cover: https://covers.openlibrary.org/b/id/8758315-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+beach-read:
+  background: "#9ec6c3"
+  ink: "#191919"
+  accent: "#bb525f"
+  source: https://openlibrary.org/works/OL20734329W
+  cover: https://covers.openlibrary.org/b/id/9426296-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+becoming-michelle-obama:
+  background: "#426461"
+  ink: "#ffffff"
+  accent: "#eadcc5"
+  source: https://www.penguinrandomhouse.com/books/562881/becoming-by-michelle-obama/
+  cover: https://images4.penguinrandomhouse.com/cover/9781524763145
+  reference: User shelf photo 4, 2026-10-11
+behave-robert-m-sapolsky:
+  background: "#e3dfd2"
+  ink: "#191919"
+  accent: "#bd4d5c"
+  source: https://openlibrary.org/works/OL17835813W
+  cover: https://covers.openlibrary.org/b/id/8814831-M.jpg?default=false
+  reference: User shelf photo 4, 2026-10-11
+breaking-the-mould-raghuram-g-rajan:
+  background: "#f0e0d0"
+  ink: "#191919"
+  accent: "#cf634c"
+  source: https://www.penguin.co.in/book/breaking-the-mould/
+  cover: https://cdn.penguin.co.in/wp-content/uploads/2025/06/9780143472773.jpg
+build-a-large-language-model-from-scratch:
+  background: "#16020d"
+  ink: "#ffffff"
+  accent: "#715a4c"
+  source: ISBN 1633437167
+  cover: https://covers.openlibrary.org/b/isbn/1633437167-M.jpg?default=false
+building-a-second-brain:
+  background: "#fbf2e9"
+  ink: "#191919"
+  accent: "#3b3c3a"
+  source: https://openlibrary.org/works/OL26417584W
+  cover: https://covers.openlibrary.org/b/id/12372866-M.jpg?default=false
+butter:
+  background: "#fdcc02"
+  ink: "#191919"
+  accent: "#b26b31"
+  source: https://books.google.com/books/about/Butter.html?id=dO--EAAAQBAJ
+  cover: https://books.google.com/books/content?id=dO--EAAAQBAJ&printsec=frontcover&img=1&zoom=1
+cleopatra-and-frankenstein:
+  background: "#fffcf7"
+  ink: "#191919"
+  accent: "#2f21ad"
+  source: https://openlibrary.org/works/OL25345096W
+  cover: https://covers.openlibrary.org/b/id/13308109-M.jpg?default=false
+computer-networks-a-top-down-approach-behrouz-a-forouzan:
+  background: "#e9e4d6"
+  ink: "#191919"
+  accent: "#b93139"
+  source: https://www.mheducation.co.in/computer-networks-a-top-down-approach-9789355324900-india
+  cover: https://www.mheducation.co.in/media/catalog/product/cache/935c5e31a278afa61ec31a89f3aecb7e/9/7/9789355324900.jpeg
+  reference: User shelf photo 4, 2026-10-11
+computer-organization-carl-hamacher:
+  background: "#286195"
+  ink: "#ffffff"
+  accent: "#e3dfc4"
+  source: https://books.google.com/books/about/Computer_Organization.html?id=GmVGAAAAYAAJ
+  cover: https://books.google.com/books/content?id=GmVGAAAAYAAJ&printsec=frontcover&img=1&zoom=1
+  reference: User shelf photo 4, 2026-10-11
+crafting-interpreters:
+  background: "#efe8d6"
+  ink: "#191919"
+  accent: "#878f8a"
+  source: https://openlibrary.org/works/OL26124818W
+  cover: https://covers.openlibrary.org/b/id/12075000-M.jpg?default=false
+crime-and-punishment:
+  background: "#6a4521"
+  ink: "#ffffff"
+  accent: "#bc8e4e"
+  source: ISBN 185715035X
+  cover: https://covers.openlibrary.org/b/isbn/185715035X-M.jpg?default=false
+cultural-amnesia:
+  background: "#e8e7e0"
+  ink: "#191919"
+  accent: "#e1b337"
+  source: https://openlibrary.org/works/OL2738862W
+  cover: https://covers.openlibrary.org/b/id/2388550-M.jpg?default=false
+  reference: User shelf photo 3, 2026-10-11
+cursed-bunny:
+  background: "#fcf4e7"
+  ink: "#191919"
+  accent: "#8b2d92"
+  source: https://www.hachettebookgroup.com/titles/bora-chung/cursed-bunny/9781643753607/
+  cover: https://www.hachettebookgroup.com/wp-content/uploads/2026/02/9781643753607.jpg
+database-internals:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#767a69"
+  source: https://www.oreilly.com/library/view/database-internals/9781492040330/
+  cover: https://learning.oreilly.com/library/cover/9781492040330/250w/
+database-system-concepts:
+  background: "#107cb0"
+  ink: "#ffffff"
+  accent: "#cbdac8"
+  source: https://openlibrary.org/works/OL1854539W
+  cover: https://covers.openlibrary.org/b/id/54871-M.jpg?default=false
+deep-learning-ian-goodfellow:
+  background: "#694f55"
+  ink: "#ffffff"
+  accent: "#92a9bc"
+  source: https://openlibrary.org/works/OL17801809W
+  cover: https://covers.openlibrary.org/b/id/8086288-M.jpg?default=false
+desperately-seeking-shahrukh:
+  background: "#fde203"
+  ink: "#191919"
+  accent: "#5082b3"
+  source: https://books.google.com/books/about/Desperately_Seeking_Shah_Rukh.html?id=MAxEEAAAQBAJ
+  cover: https://books.google.com/books/content?id=MAxEEAAAQBAJ&printsec=frontcover&img=1&zoom=1
+docs-for-developers:
+  background: "#f8a51b"
+  ink: "#191919"
+  accent: "#956a26"
+  source: https://docsfordevelopers.com/
+  cover: https://docsfordevelopers.com/wp-content/uploads/2026/07/screenshot-2026-07-01-at-2.25.30-pm.png?w=674
+dune-frank-herbert:
+  background: "#b68845"
+  ink: "#191919"
+  accent: "#298e98"
+  source: https://openlibrary.org/works/OL893414W
+  cover: https://covers.openlibrary.org/b/id/11481354-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+east-of-eden:
+  background: "#f6f7f2"
+  ink: "#191919"
+  accent: "#5c6b5f"
+  source: ISBN 0141185074
+  cover: https://covers.openlibrary.org/b/isbn/0141185074-M.jpg?default=false
+effective-software-testing:
+  background: "#7a898e"
+  ink: "#191919"
+  accent: "#ffffff"
+  source: https://openlibrary.org/works/OL27138299W
+  cover: https://covers.openlibrary.org/b/id/13588026-M.jpg?default=false
+emma:
+  background: "#000000"
+  ink: "#ffffff"
+  accent: "#938a73"
+  source: ISBN 0141439580
+  cover: https://covers.openlibrary.org/b/isbn/0141439580-M.jpg?default=false
+emperor-of-rome-mary-beard:
+  background: "#e4d6ba"
+  ink: "#191919"
+  accent: "#993c39"
+  source: https://www.profilebooks.com/work/emperor-of-rome/
+  cover: https://dam.bibliolive.com/profile/getimage.aspx?class=books&assetversionid=315946&cat=default&size=large&id=9393
+  reference: User shelf photo 1, 2026-10-11
+engineering-management-for-the-rest-of-us:
+  background: "#456388"
+  ink: "#ffffff"
+  accent: "#c39554"
+  source: https://www.engmanagement.dev/
+  cover: https://www.engmanagement.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fengineering-management-for-the-rest-of-us-book-mockup-front%402x.78ee6e3c.jpg&w=3840&q=95
+essence-of-indian-art:
+  background: "#0f5273"
+  ink: "#ffffff"
+  accent: "#8d855a"
+  source: https://www.scribd.com/doc/289064183/Essence-of-Indian-Art-Art-eBook
+  cover: https://imgv2-1-f.scribdassets.com/img/document/289064183/original/b12bbe5c7c/1?v=1
+everything-i-know-about-love:
+  background: "#f9ef7e"
+  ink: "#191919"
+  accent: "#ac8568"
+  source: https://www.penguin.co.uk/books/306824/everything-i-know-about-love-by-alderton-dolly/9780241982105
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9780241982105/9780241982105-jacket-large.jpg
+flashlight-susan-choi:
+  background: "#f0b734"
+  ink: "#191919"
+  accent: "#613b28"
+  source: https://www.penguin.co.uk/books/461727/flashlight-by-choi-susan/9781529970661
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9781529970661/9781529970661-jacket-large.jpg
+  reference: User shelf photo 1, 2026-10-11
+fool-me-twice:
+  background: "#1938b1"
+  ink: "#ffffff"
+  accent: "#f2dd3e"
+  source: https://www.penguin.co.in/book/fool-me-twice/
+  cover: https://cdn.penguin.co.in/wp-content/uploads/2025/06/9780143462347-1.jpg
+for-the-love-of-physics-walter-lewin:
+  background: "#c4bfc6"
+  ink: "#191919"
+  accent: "#7e7490"
+  source: https://openlibrary.org/works/OL15745563W
+  cover: https://covers.openlibrary.org/b/id/6771222-M.jpg?default=false
+  reference: User shelf photo 3, 2026-10-11
+foundations-of-databases:
+  background: "#826c82"
+  ink: "#ffffff"
+  accent: "#c5b2ab"
+  source: https://openlibrary.org/works/OL3483918W
+  cover: https://covers.openlibrary.org/b/id/135108-M.jpg?default=false
+franz-kafka-selected-works:
+  background: "#010101"
+  ink: "#ffffff"
+  accent: "#7e7e78"
+  source: https://openlibrary.org/works/OL27732689W
+  cover: https://covers.openlibrary.org/b/id/12733529-M.jpg?default=false
+fundamentals-of-computer-algorithms-ellis-horowitz:
+  background: "#d7ae36"
+  ink: "#191919"
+  accent: "#463d27"
+  source: https://openlibrary.org/works/OL2676162W
+  cover: https://covers.openlibrary.org/b/id/8652116-M.jpg?default=false
+  reference: User shelf photo 4, 2026-10-11
+fundamentals-of-data-engineering-joe-reis:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#392d25"
+  source: https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/
+  cover: https://learning.oreilly.com/library/cover/9781098108298/250w/
+fundamentals-of-database-systems-ramez-elmasri:
+  background: "#a9c622"
+  ink: "#191919"
+  accent: "#365a6f"
+  source: https://openlibrary.org/works/OL3947220W
+  cover: https://covers.openlibrary.org/b/id/3943051-M.jpg?default=false
+  reference: User shelf photo 4, 2026-10-11
+fundamentals-of-software-architecture:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#6e4b46"
+  source: https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/
+  cover: https://learning.oreilly.com/library/cover/9781492043447/250w/
+giovanni-s-room:
+  background: "#0d090a"
+  ink: "#ffffff"
+  accent: "#a30211"
+  source: ISBN 0141186356
+  cover: https://covers.openlibrary.org/b/isbn/0141186356-M.jpg?default=false
+girl-made-of-gold:
+  background: "#131116"
+  ink: "#ffffff"
+  accent: "#4f6753"
+  source: https://www.bookchor.com/book/9789393986290/girl-made-of-gold
+  cover: https://media.bookchor.com/images/cover/bc/97893939862901769840921.jpg
+give-and-take:
+  background: "#f1f1f1"
+  ink: "#191919"
+  accent: "#712033"
+  source: https://adamgrant.net/book/give-and-take/
+  cover: https://adamgrant.net/wp-content/uploads/2020/07/GiveandTake-copy.jpg
+gods-guns-and-missionaries-manu-s-pillai:
+  background: "#e2d7bd"
+  ink: "#191919"
+  accent: "#624032"
+  source: https://www.penguin.co.in/book/gods-guns-and-missionaries/
+  cover: https://cdn.penguin.co.in/wp-content/uploads/2024/10/9780670093656-1.jpg
+  reference: User shelf photo 2, 2026-10-11
+good-to-great-jim-collins:
+  background: "#d82d40"
+  ink: "#ffffff"
+  accent: "#252a2b"
+  source: https://openlibrary.org/works/OL3486275W
+  cover: https://covers.openlibrary.org/b/id/7431270-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+grokking-streaming-systems:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#2d2c2c"
+  source: https://www.simonandschuster.com/books/Grokking-Streaming-Systems/Josh-Fischer/9781617297304
+  cover: https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781617297304/grokking-streaming-systems-9781617297304_hr.jpg
+h-pop-kunal-purohit:
+  background: "#b74939"
+  ink: "#ffffff"
+  accent: "#efdcab"
+  source: https://books.google.com/books/about/H_Pop.html?id=5xxV0AEACAAJ
+  cover: https://books.google.com/books/content?id=5xxV0AEACAAJ&printsec=frontcover&img=1&zoom=1
+  reference: User shelf photo 3, 2026-10-11
+hamnet-maggie-o-farrell:
+  background: "#46445d"
+  ink: "#ffffff"
+  accent: "#e4d7bb"
+  source: https://openlibrary.org/works/OL20743965W
+  cover: https://covers.openlibrary.org/b/id/10306590-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+hit-refresh-satya-nadella:
+  background: "#e6e5df"
+  ink: "#191919"
+  accent: "#434d55"
+  source: https://openlibrary.org/works/OL17814342W
+  cover: https://covers.openlibrary.org/b/id/10209037-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+home-marilynne-robinson:
+  background: "#416663"
+  ink: "#ffffff"
+  accent: "#b7cbd1"
+  source: https://openlibrary.org/works/OL1875008W
+  cover: https://covers.openlibrary.org/b/id/6935253-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+homo-deus-yuval-noah-harari:
+  background: "#30383c"
+  ink: "#ffffff"
+  accent: "#c37d7c"
+  source: https://www.ynharari.com/book/homo-deus/
+  cover: https://www.ynharari.com/wp-content/uploads/2017/01/Homo-Deus-UK-book-cover-e1486886608326.jpg
+  reference: User shelf photo 4, 2026-10-11
+how-the-world-really-works:
+  background: "#e5a536"
+  ink: "#191919"
+  accent: "#3c598c"
+  source: https://openlibrary.org/works/OL25283119W
+  cover: https://covers.openlibrary.org/b/id/12777538-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+how-to-avoid-a-climate-disaster-bill-gates:
+  background: "#e8e7dd"
+  ink: "#191919"
+  accent: "#b63b3e"
+  source: https://www.penguinrandomhouse.com/books/633968/how-to-avoid-a-climate-disaster-by-bill-gates/
+  cover: https://images1.penguinrandomhouse.com/cover/9780593081853
+  reference: User shelf photo 3, 2026-10-11
+how-to-kill-men-and-get-away-with-it:
+  background: "#d94332"
+  ink: "#000000"
+  accent: "#f9e5ba"
+  source: https://openlibrary.org/works/OL28802560W
+  cover: https://covers.openlibrary.org/b/id/14845876-M.jpg?default=false
+  reference: User shelf photo 4, 2026-10-11
+how-to-raise-an-adult-julie-lythcott-haims:
+  background: "#fddc01"
+  ink: "#191919"
+  accent: "#b4351a"
+  source: https://openlibrary.org/works/OL19668504W
+  cover: https://covers.openlibrary.org/b/id/9357033-M.jpg?default=false
+how-to-take-smart-notes:
+  background: "#d2e0dc"
+  ink: "#191919"
+  accent: "#6e7a73"
+  source: https://openlibrary.org/works/OL18635700W
+  cover: https://covers.openlibrary.org/b/id/8362230-M.jpg?default=false
+humble-pie-gordon-ramsay:
+  background: "#5a8ea2"
+  ink: "#191919"
+  accent: "#d8e5db"
+  source: https://books.google.com/books/about/Humble_Pie.html?id=j31bhXPly6QC
+  cover: https://books.google.com/books/content?id=j31bhXPly6QC&printsec=frontcover&img=1&zoom=1
+  reference: User shelf photo 4, 2026-10-11
+hurda:
+  background: "#e5e4df"
+  ink: "#191919"
+  accent: "#453344"
+  source: https://books.google.com/books?id=gk_eEAAAQBAJ
+  cover: https://books.google.com/books/content?id=gk_eEAAAQBAJ&printsec=frontcover&img=1&zoom=1
+  reference: User shelf photo 1, 2026-10-11
+i-do-what-i-do-raghuram-g-rajan:
+  background: "#e3e1e1"
+  ink: "#191919"
+  accent: "#534b4d"
+  source: https://books.google.com/books/about/I_Do_What_I_Do.html?id=4HIyDwAAQBAJ
+  cover: https://books.google.com/books/content?id=4HIyDwAAQBAJ&printsec=frontcover&img=1&zoom=1
+i-never-promised-you-a-rose-garden:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#d59f9e"
+  source: https://openlibrary.org/works/OL2670419W
+  cover: https://covers.openlibrary.org/b/id/293347-M.jpg?default=false
+if-on-a-winters-night-a-traveller:
+  background: "#564d42"
+  ink: "#ffffff"
+  accent: "#baa899"
+  source: https://www.penguinrandomhouse.com/books/23123/if-on-a-winters-night-a-traveler-by-italo-calvino/
+  cover: https://images1.penguinrandomhouse.com/cover/9780679420255
+infinite-jest-david-foster-wallace:
+  background: "#eee9dd"
+  ink: "#191919"
+  accent: "#345c7a"
+  source: https://openlibrary.org/works/OL2943602W
+  cover: https://covers.openlibrary.org/b/id/8237639-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+interpreter-of-maladies:
+  background: "#757575"
+  ink: "#ffffff"
+  accent: "#ffffff"
+  source: https://openlibrary.org/works/OL2001058W
+  cover: https://covers.openlibrary.org/b/id/4915588-M.jpg?default=false
+introduction-to-algorithms-thomas-h-cormen:
+  background: "#dadbd0"
+  ink: "#191919"
+  accent: "#2c4850"
+  source: https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/
+  cover: https://mit-press-new-us.imgix.net/covers/9780262046305.jpg?auto=format&w=298
+  reference: User shelf photo 4, 2026-10-11
+introduction-to-information-retrieval:
+  background: "#0d5a64"
+  ink: "#ffffff"
+  accent: "#3fa3b0"
+  source: https://nlp.stanford.edu/IR-book/
+  cover: https://nlp.stanford.edu/IR-book/iir.jpg
+invention-a-life:
+  background: "#202320"
+  ink: "#ffffff"
+  accent: "#b2ad94"
+  source: https://openlibrary.org/works/OL25107216W
+  cover: https://covers.openlibrary.org/b/id/11970432-M.jpg?default=false
+  reference: User shelf photo 4, 2026-10-11
+jaya-an-illustrated-retelling-of-the-mahabharata-devdutt-pattanaik:
+  background: "#e5b133"
+  ink: "#191919"
+  accent: "#865336"
+  source: https://www.penguin.co.in/book/jaya/
+  cover: https://cdn.penguin.co.in/wp-content/uploads/2023/11/9780143104254.jpg
+  reference: User shelf photo 2, 2026-10-11
+kitchen-confidential-anthony-bourdain:
+  background: "#161924"
+  ink: "#ffffff"
+  accent: "#c8c5d7"
+  source: https://openlibrary.org/works/OL3348011W
+  cover: https://covers.openlibrary.org/b/id/843879-M.jpg?default=false
+lady-doctors:
+  background: "#a0d5cf"
+  ink: "#191919"
+  accent: "#191919"
+  source: https://www.hachette.co.uk/titles/kavitha-rao/lady-doctors/9781914344978/
+  cover: https://www.hachette.co.uk/wp-content/uploads/2024/08/hbg-title-lady-doctors-3-55.jpg
+latitudes-of-longing:
+  background: "#1c1a26"
+  ink: "#ffffff"
+  accent: "#577f86"
+  source: https://openlibrary.org/works/OL20746208W
+  cover: https://covers.openlibrary.org/b/id/10131787-M.jpg?default=false
+learning-dapr-haishi-bai:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#856b57"
+  source: https://www.oreilly.com/library/view/learning-dapr/9781492072416/
+  cover: https://learning.oreilly.com/library/cover/9781492072416/250w/
+learning-ebpf-liz-rice:
+  background: "#e9e9e2"
+  ink: "#191919"
+  accent: "#8d3455"
+  source: https://www.oreilly.com/library/view/learning-ebpf/9781098135119/
+  cover: https://learning.oreilly.com/library/cover/9781098135119/250w/
+  reference: User shelf photo 4, 2026-10-11
+linear-algebra-and-its-applications-4th-edition:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#b67149"
+  source: ISBN 8131501728
+  cover: https://covers.openlibrary.org/b/isbn/8131501728-M.jpg?default=false
+lust-for-life:
+  background: "#dfd9b7"
+  ink: "#191919"
+  accent: "#908a70"
+  source: https://openlibrary.org/works/OL112003W
+  cover: https://covers.openlibrary.org/b/id/6617761-M.jpg?default=false
+luv-un-arranged:
+  background: "#b01f22"
+  ink: "#ffffff"
+  accent: "#f6c17a"
+  source: https://heartboundbookshop.com/products/pre-order-luvunarranged-by-n-m-patel
+  cover: https://heartboundbookshop.com/cdn/shop/files/4ED3DB3A-A455-475F-9174-CA48C3D15961.jpg?crop=center&height=84&v=1728446583&width=84
+mansfield-park:
+  background: "#120e0b"
+  ink: "#ffffff"
+  accent: "#755337"
+  source: ISBN 0141439807
+  cover: https://covers.openlibrary.org/b/isbn/0141439807-M.jpg?default=false
+martyr-kaveh-akbar:
+  background: "#f9cc55"
+  ink: "#191919"
+  accent: "#3e3625"
+  source: https://www.penguinrandomhouse.com/books/734476/martyr-national-book-award-finalist-by-kaveh-akbar/
+  cover: https://images2.penguinrandomhouse.com/cover/9780593685778
+may-we-feed-the-king-rebecca-perry:
+  background: "#161513"
+  ink: "#ffffff"
+  accent: "#8a7c64"
+  source: https://books.google.com/books?id=jEl50QEACAAJ
+  cover: https://books.google.com/books/content?id=jEl50QEACAAJ&printsec=frontcover&img=1&zoom=1
+meditations-marcus-aurelius:
+  background: "#705638"
+  ink: "#ffffff"
+  accent: "#d7be67"
+  source: https://www.penguin.co.uk/books/35413/meditations-by-marcus-aurelius/9780140449334
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9780140449334/9780140449334-jacket-large.jpg
+  reference: User shelf photo 1, 2026-10-11
+metamorphosis-and-other-stories:
+  background: "#101a20"
+  ink: "#ffffff"
+  accent: "#a5a4a9"
+  source: ISBN 0241372550
+  cover: https://covers.openlibrary.org/b/isbn/0241372550-M.jpg?default=false
+modern-operating-systems-andrew-s-tanenbaum:
+  background: "#ab3509"
+  ink: "#ffffff"
+  accent: "#e29a21"
+  source: https://openlibrary.org/works/OL1970688W
+  cover: https://covers.openlibrary.org/b/id/9378721-M.jpg?default=false
+mother-india:
+  background: "#e6e9ea"
+  ink: "#191919"
+  accent: "#6a382a"
+  source: https://books.google.com/books/about/Mother_India.html?id=cvjo0AEACAAJ
+  cover: https://books.google.com/books/content?id=cvjo0AEACAAJ&printsec=frontcover&img=1&zoom=1
+mottled-dawn:
+  background: "#e9e5d7"
+  ink: "#191919"
+  accent: "#b8302c"
+  source: https://openlibrary.org/works/OL7976408W
+  cover: https://covers.openlibrary.org/b/id/100036-M.jpg?default=false
+  reference: User shelf photo 3, 2026-10-11
+my-friends-hisham-matar:
+  background: "#284943"
+  ink: "#ffffff"
+  accent: "#c6c290"
+  source: https://openlibrary.org/works/OL37505408W
+  cover: https://covers.openlibrary.org/b/id/14562202-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+my-seditious-heart:
+  background: "#0b0602"
+  ink: "#ffffff"
+  accent: "#b69052"
+  source: https://www.haymarketbooks.org/books/1277-my-seditious-heart
+  cover: https://cdn-ed.haymarketbooks.org/images/000005/793/9781608466733-eed95515e30508c705920dec7206f8cd.jpg20220302-22-1v206m8
+no-longer-human-osamu-dazai:
+  background: "#bf7786"
+  ink: "#191919"
+  accent: "#3c343a"
+  source: https://www.ndbooks.com/book/no-longer-human/
+  cover: https://cdn.sanity.io/images/p34gzxcg/production/7635c996b98d1762e7530fe157b599284de70123-750x1050.jpg?auto=format&w=1000
+  reference: User shelf photo 3, 2026-10-11
+no-place-to-call-my-own:
+  background: "#e63e96"
+  ink: "#191919"
+  accent: "#75274f"
+  source: https://www.midlandbookshop.com/en/product/no-place-to-call-my-own
+  cover: https://www.midlandbookshop.com/s/607fe93d7eafcac1f2c73ea4/67938fbee3954f0024926d66/81aasd64ril-_sy385_.jpg
+northanger-abbey:
+  background: "#220f0e"
+  ink: "#ffffff"
+  accent: "#8b6a59"
+  source: ISBN 0141439793
+  cover: https://covers.openlibrary.org/b/isbn/0141439793-M.jpg?default=false
+notes-from-the-creative-act-by-rick-rubin:
+  background: "#cdd0c7"
+  ink: "#191919"
+  accent: "#3e423e"
+  source: https://openlibrary.org/works/OL27955361W
+  cover: https://covers.openlibrary.org/b/id/13316390-M.jpg?default=false
+notes-from-underground:
+  background: "#41474a"
+  ink: "#ffffff"
+  accent: "#c6a187"
+  source: ISBN 1857152719
+  cover: https://covers.openlibrary.org/b/isbn/1857152719-M.jpg?default=false
+novelist-as-a-vocation:
+  background: "#e9e8ec"
+  ink: "#191919"
+  accent: "#7e7b71"
+  source: https://www.penguinrandomhouse.com/books/547926/novelist-as-a-vocation-by-haruki-murakami/
+  cover: https://images4.penguinrandomhouse.com/cover/9781101974537
+of-mice-and-men:
+  background: "#2e0e08"
+  ink: "#ffffff"
+  accent: "#685743"
+  source: ISBN 0141185104
+  cover: https://covers.openlibrary.org/b/isbn/0141185104-M.jpg?default=false
+on-earth-we-re-briefly-gorgeous:
+  background: "#dcddd7"
+  ink: "#191919"
+  accent: "#2e302a"
+  source: https://openlibrary.org/works/OL20783698W
+  cover: https://covers.openlibrary.org/b/id/10030425-M.jpg?default=false
+on-the-origin-of-species-charles-darwin:
+  background: "#293a2e"
+  ink: "#ffffff"
+  accent: "#dfd7a4"
+  source: https://www.penguin.co.uk/books/57108/on-the-origin-of-species-by-darwin-charles/9780140439120
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9780140439120/9780140439120-jacket-large.jpg
+  reference: User shelf photo 1, 2026-10-11
+on-writing-charles-bukowski:
+  background: "#d5a274"
+  ink: "#191919"
+  accent: "#674d3d"
+  source: https://canongate.co.uk/books/2307-on-writing/
+  cover: https://canongate.co.uk/wp-content/uploads/2026/06/on-writing.jpg
+  reference: User shelf photo 2, 2026-10-11
+operating-system-concepts:
+  background: "#9b6945"
+  ink: "#ffffff"
+  accent: "#d9aa78"
+  source: https://openlibrary.org/works/OL1854541W
+  cover: https://covers.openlibrary.org/b/id/302591-M.jpg?default=false
+operating-systems-three-easy-pieces:
+  background: "#070707"
+  ink: "#ffffff"
+  accent: "#a7a7a7"
+  source: https://openlibrary.org/works/OL21738416W
+  cover: https://covers.openlibrary.org/b/id/10401368-M.jpg?default=false
+patterns-of-distributed-systems-unmesh-joshi:
+  background: "#2a282a"
+  ink: "#ffffff"
+  accent: "#c41f27"
+  source: https://openlibrary.org/works/OL34961700W
+  cover: https://covers.openlibrary.org/b/id/14569150-M.jpg?default=false
+permanent-record-edward-snowden:
+  background: "#1f1f1f"
+  ink: "#ffffff"
+  accent: "#fbfbfb"
+  source: https://openlibrary.org/works/OL20080323W
+  cover: https://covers.openlibrary.org/b/id/8751316-M.jpg?default=false
+persepolis-marjane-satrapi:
+  background: "#252c2a"
+  ink: "#ffffff"
+  accent: "#f5ebc5"
+  source: https://www.penguin.co.uk/books/56425/persepolis-by-satrapi-marjane/9780099523994
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9780099523994/9780099523994-jacket-large.jpg
+  reference: User shelf photo 1, 2026-10-11
+persuasion:
+  background: "#f6f8f5"
+  ink: "#191919"
+  accent: "#08060c"
+  source: ISBN 0141439688
+  cover: https://covers.openlibrary.org/b/isbn/0141439688-M.jpg?default=false
+pnin:
+  background: "#e0bc61"
+  ink: "#191919"
+  accent: "#c54441"
+  source: ISBN 0141183756
+  cover: https://covers.openlibrary.org/b/isbn/0141183756-M.jpg?default=false
+pride-and-prejudice:
+  background: "#0c0f14"
+  ink: "#ffffff"
+  accent: "#90795c"
+  source: ISBN 0141439513
+  cover: https://covers.openlibrary.org/b/isbn/0141439513-M.jpg?default=false
+principles-ray-dalio:
+  background: "#242425"
+  ink: "#ffffff"
+  accent: "#bd4841"
+  source: https://www.principles.com/
+  cover: https://www.principles.com/assets/social-ray-dalio-principles-share-banner-7cf8e88cfa86356d6ac5c8e3b5cf5760b695b2403861de149bf5b247c3092399.png
+  reference: User shelf photo 1, 2026-10-11
+prophet-song-paul-lynch:
+  background: "#656197"
+  ink: "#ffffff"
+  accent: "#dedbbd"
+  source: https://openlibrary.org/works/OL34341539W
+  cover: https://covers.openlibrary.org/b/id/14814200-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+read-write-own:
+  background: "#f3f1f3"
+  ink: "#191919"
+  accent: "#494347"
+  source: https://www.penguin.co.uk/books/459860/read-write-own-by-dixon-chris/9781804949245
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9781804949245/9781804949245-jacket-large.jpg
+real-estate-living-autobiography-3:
+  background: "#fe0000"
+  ink: "#000000"
+  accent: "#191919"
+  source: https://openlibrary.org/works/OL24496521W
+  cover: https://covers.openlibrary.org/b/id/11116509-M.jpg?default=false
+reinforcement-learning-an-introduction-2nd-edition:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#191919"
+  source: ISBN 0262039249
+  cover: https://covers.openlibrary.org/b/isbn/0262039249-M.jpg?default=false
+relevant-search:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#949786"
+  source: https://www.simonandschuster.com/books/Relevant-Search/Doug-Turnbull/9781617292774
+  cover: https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781617292774/relevant-search-9781617292774_hr.jpg
+rust-atomics-and-locks-low-level-concurrency-in-practice:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#4f4e4f"
+  source: https://books.google.com/books?id=e-cTzwEACAAJ
+  cover: https://books.google.com/books/content?id=e-cTzwEACAAJ&printsec=frontcover&img=1&zoom=1
+rust-for-rustaceans-idiomatic-programming-for-experienced-developers:
+  background: "#fcfbc5"
+  ink: "#191919"
+  accent: "#271915"
+  source: ISBN 1718501854
+  cover: https://covers.openlibrary.org/b/isbn/1718501854-M.jpg?default=false
+sakina-s-kiss:
+  background: "#be894e"
+  ink: "#191919"
+  accent: "#311f1c"
+  source: https://www.penguin.co.in/book/sakinas-kiss/
+  cover: https://cdn.penguin.co.in/wp-content/uploads/2024/01/9780670098835-1.jpg
+  reference: User shelf photo 1, 2026-10-11
+sapiens-yuval-noah-harari:
+  background: "#e9e4d4"
+  ink: "#191919"
+  accent: "#922c39"
+  source: https://www.ynharari.com/book/sapiens/
+  cover: https://www.ynharari.com/wp-content/uploads/2017/01/Sapiens-Albanian2.png
+  reference: User shelf photo 4, 2026-10-11
+screenplay-the-foundations-of-screenwriting:
+  background: "#fefcf8"
+  ink: "#191919"
+  accent: "#e4050e"
+  source: ISBN 0385339038
+  cover: https://covers.openlibrary.org/b/isbn/0385339038-M.jpg?default=false
+sense-and-sensibility:
+  background: "#000000"
+  ink: "#ffffff"
+  accent: "#9a8674"
+  source: ISBN 0141439661
+  cover: https://covers.openlibrary.org/b/isbn/0141439661-M.jpg?default=false
+show-your-work:
+  background: "#ffd600"
+  ink: "#191919"
+  accent: "#191919"
+  source: https://austinkleon.com/show-your-work/
+  cover: http://austinkleon.com/wp-content/uploads/2018/08/show_3D_wo_shadow-1.jpg
+software-architecture-the-hard-parts:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#3a2f25"
+  source: https://www.oreilly.com/library/view/software-architecture-the/9781492086888/
+  cover: https://learning.oreilly.com/library/cover/9781492086888/250w/
+software-engineering-at-google:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#83625d"
+  source: https://openlibrary.org/works/OL22293580W
+  cover: https://covers.openlibrary.org/b/id/10450993-M.jpg?default=false
+stubborn-attachments:
+  background: "#c9222a"
+  ink: "#ffffff"
+  accent: "#552225"
+  source: https://openlibrary.org/works/OL26422034W
+  cover: https://covers.openlibrary.org/b/id/12385566-M.jpg?default=false
+systems-performance:
+  background: "#eeede6"
+  ink: "#191919"
+  accent: "#387590"
+  source: https://openlibrary.org/works/OL16817354W
+  cover: https://covers.openlibrary.org/b/id/7278358-M.jpg?default=false
+  reference: User shelf photo 4, 2026-10-11
+the-annotated-turing-charles-petzold:
+  background: "#242c38"
+  ink: "#ffffff"
+  accent: "#d3d6dc"
+  source: https://www.charlespetzold.com/AnnotatedTuring/
+  cover: https://www.charlespetzold.com/AnnotatedTuring/AnnotatedTuringCover25.jpg
+  reference: User shelf photo 4, 2026-10-11
+the-argumentative-indian-writings-on-indian-history-culture-and-identity:
+  background: "#d5d7e4"
+  ink: "#191919"
+  accent: "#363656"
+  source: https://www.amazon.in/dp/0141012110
+  cover: https://images.penguinrandomhouse.com/cover/9780141012117
+the-art-of-doing-science-and-engineering-learning-to-learn:
+  background: "#3d4536"
+  ink: "#ffffff"
+  accent: "#ffffff"
+  source: ISBN 1732265178
+  cover: https://covers.openlibrary.org/b/isbn/1732265178-M.jpg?default=false
+the-art-of-noticing:
+  background: "#93b7e7"
+  ink: "#191919"
+  accent: "#3e4e64"
+  source: https://openlibrary.org/works/OL20161789W
+  cover: https://covers.openlibrary.org/b/id/8807577-M.jpg?default=false
+the-art-of-the-personal-essay-phillip-lopate:
+  background: "#e9e8e1"
+  ink: "#191919"
+  accent: "#525351"
+  source: https://www.penguinrandomhouse.com/books/103559/the-art-of-the-personal-essay-by-phillip-lopate/9780385423397/
+  cover: https://images3.penguinrandomhouse.com/cover/9780385423397
+  reference: User shelf photo 3, 2026-10-11
+the-artist-s-way:
+  background: "#d9cc39"
+  ink: "#191919"
+  accent: "#575435"
+  source: https://openlibrary.org/works/OL14856321W
+  cover: https://covers.openlibrary.org/b/id/10840008-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+the-barbary-coast-herbert-asbury:
+  background: "#883443"
+  ink: "#ffffff"
+  accent: "#e3d3b3"
+  source: https://www.hachettebookgroup.com/titles/herbert-asbury/the-barbary-coast/9781560254089/
+  cover: https://www.hachettebookgroup.com/wp-content/uploads/2017/06/9781560254089.jpg
+  reference: User shelf photo 1, 2026-10-11
+the-bell-jar:
+  background: "#385063"
+  ink: "#ffffff"
+  accent: "#e4dacf"
+  source: https://openlibrary.org/works/OL1865528W
+  cover: https://covers.openlibrary.org/b/id/8477115-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+the-best-of-tagore:
+  background: "#946c3a"
+  ink: "#ffffff"
+  accent: "#3d341d"
+  source: https://www.penguin.co.uk/books/457494/the-best-of-tagore-by-tagore-rabindranath/9781841594156
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9781841594156/9781841594156-jacket-large.jpg
+the-brothers-karamazov:
+  background: "#fdffef"
+  ink: "#191919"
+  accent: "#191919"
+  source: ISBN 1857150708
+  cover: https://covers.openlibrary.org/b/isbn/1857150708-M.jpg?default=false
+the-castle:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#202020"
+  source: https://www.amazon.in/dp/0241197805
+  cover: https://images.penguinrandomhouse.com/cover/9780241197806
+the-catcher-in-the-rye-j-d-salinger:
+  background: "#e4ac73"
+  ink: "#191919"
+  accent: "#191919"
+  source: https://www.penguin.co.uk/books/57054/the-catcher-in-the-rye-by-salinger-j-d/9780241950432
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9780241950432/9780241950432-jacket-large.jpg
+the-collected-works-of-kahlil-gibran-kahlil-gibran:
+  background: "#9b2f35"
+  ink: "#ffffff"
+  accent: "#e4ca9a"
+  source: https://www.penguinrandomhouse.com/books/59586/the-collected-works-of-kahlil-gibran-by-kahlil-gibran/
+  cover: https://images3.penguinrandomhouse.com/cover/9780307267078
+  reference: User shelf photo 1, 2026-10-11
+the-cooking-of-books-ramachandra-guha:
+  background: "#9c2732"
+  ink: "#ffffff"
+  accent: "#dfbd76"
+  source: https://books.google.com/books?id=O9bOEAAAQBAJ
+  cover: https://books.google.com/books/content?id=O9bOEAAAQBAJ&printsec=frontcover&img=1&zoom=1
+  reference: User shelf photo 2, 2026-10-11
+the-cost-of-living-living-autobiography-2:
+  background: "#e6ad3a"
+  ink: "#191919"
+  accent: "#191919"
+  source: ISBN 0241977568
+  cover: https://covers.openlibrary.org/b/isbn/0241977568-M.jpg?default=false
+the-count-of-monte-cristo-alexandre-dumas:
+  background: "#0c1920"
+  ink: "#ffffff"
+  accent: "#6f7a76"
+  source: https://www.penguin.co.uk/books/35416/the-count-of-monte-cristo-by-dumas-alexandre/9780140449266
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9780140449266/9780140449266-jacket-large.jpg
+the-covenant-of-water-abraham-verghese:
+  background: "#6b9e91"
+  ink: "#191919"
+  accent: "#e8d09b"
+  source: https://openlibrary.org/works/OL29192912W
+  cover: https://covers.openlibrary.org/b/id/13190092-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+the-coworker-freida-mcfadden:
+  background: "#0e2028"
+  ink: "#ffffff"
+  accent: "#0e7ead"
+  source: https://www.freidamcfadden.com/books/standalone-thrillers/the-coworker/
+  cover: https://www.freidamcfadden.com/wp-content/uploads/2025/08/cover-the-coworker.jpg
+the-diaries-of-franz-kafka:
+  background: "#0e1c23"
+  ink: "#ffffff"
+  accent: "#e5e2e1"
+  source: https://www.amazon.in/dp/0241695759
+  cover: https://images.penguinrandomhouse.com/cover/9780241695753
+the-essence-of-compilers-robin-hunter:
+  background: "#f6f2ee"
+  ink: "#191919"
+  accent: "#191b27"
+  source: https://openlibrary.org/works/OL1985490W
+  cover: https://covers.openlibrary.org/b/id/91686-M.jpg?default=false
+the-fever-sonia-faleiro:
+  background: "#859650"
+  ink: "#191919"
+  accent: "#344323"
+  source: https://openlibrary.org/works/OL18166250W
+  cover: https://covers.openlibrary.org/b/id/8330458-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+the-girl-who-knew-too-much:
+  background: "#b2c4d8"
+  ink: "#191919"
+  accent: "#831660"
+  source: https://www.penguin.co.in/book/the-girl-who-knew-too-much/
+  cover: https://cdn.penguin.co.in/wp-content/uploads/2023/01/9780143439943.jpg
+the-grapes-of-wrath:
+  background: "#9d482c"
+  ink: "#ffffff"
+  accent: "#2e1d19"
+  source: ISBN 0141185066
+  cover: https://covers.openlibrary.org/b/isbn/0141185066-M.jpg?default=false
+the-idiot:
+  background: "#594f4c"
+  ink: "#ffffff"
+  accent: "#cc9e80"
+  source: https://www.penguin.co.uk/books/373070/the-idiot-by-dostoevsky-fyodor/9781857152548
+  cover: https://cdn.penguin.co.uk/dam-assets/books/9781857152548/9781857152548-jacket-large.jpg
+the-infinite-game:
+  background: "#e7e7dc"
+  ink: "#191919"
+  accent: "#c03036"
+  source: https://openlibrary.org/works/OL20469879W
+  cover: https://covers.openlibrary.org/b/id/10189716-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+the-jackfruit-chronicles-memories-and-recipes-from-a-british-bangladeshi-kitchen:
+  background: "#ead044"
+  ink: "#191919"
+  accent: "#b25827"
+  source: https://books.google.com/books?id=CU3W0AEACAAJ
+  cover: https://books.google.com/books/content?id=CU3W0AEACAAJ&printsec=frontcover&img=1&zoom=1
+  reference: User shelf photo 1, 2026-10-11
+the-loneliness-of-sonia-and-sunny:
+  background: "#334873"
+  ink: "#ffffff"
+  accent: "#e4b782"
+  source: https://openlibrary.org/works/OL42397165W
+  cover: https://covers.openlibrary.org/b/id/15110598-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+the-making-of-prince-of-persia:
+  background: "#2e469c"
+  ink: "#ffffff"
+  accent: "#cbced9"
+  source: https://openlibrary.org/works/OL24029650W
+  cover: https://covers.openlibrary.org/b/id/11200355-M.jpg?default=false
+the-midnight-library:
+  background: "#292738"
+  ink: "#ffffff"
+  accent: "#d5dccb"
+  source: https://canongate.co.uk/books/2471-the-midnight-library/
+  cover: https://canongate.co.uk/wp-content/uploads/2026/06/midnight-library-1.jpg
+the-origins-of-efficiency:
+  background: "#1d2a3a"
+  ink: "#ffffff"
+  accent: "#767779"
+  source: https://books.google.com/books?id=14TL0AEACAAJ
+  cover: https://books.google.com/books/content?id=14TL0AEACAAJ&printsec=frontcover&img=1&zoom=1
+the-paris-review-interviews-volume-1:
+  background: "#000000"
+  ink: "#ffffff"
+  accent: "#918479"
+  source: ISBN 0312361750
+  cover: https://covers.openlibrary.org/b/isbn/0312361750-M.jpg?default=false
+the-pearl:
+  background: "#b6bdc6"
+  ink: "#191919"
+  accent: "#434a55"
+  source: ISBN 0141185120
+  cover: https://covers.openlibrary.org/b/isbn/0141185120-M.jpg?default=false
+the-picture-of-dorian-gray:
+  background: "#19171c"
+  ink: "#ffffff"
+  accent: "#838384"
+  source: ISBN 0141442468
+  cover: https://covers.openlibrary.org/b/isbn/0141442468-M.jpg?default=false
+the-poppy-war-trilogy:
+  background: "#030204"
+  ink: "#ffffff"
+  accent: "#1e7fb8"
+  source: https://books.google.com/books/about/The_Complete_Poppy_War_Trilogy.html?id=sjqyEAAAQBAJ
+  cover: https://books.google.com/books/content?id=sjqyEAAAQBAJ&printsec=frontcover&img=1&zoom=1
+the-revolt-of-the-public-and-the-crisis-of-authority-in-the-new-millennium:
+  background: "#033ab7"
+  ink: "#ffffff"
+  accent: "#c17dd4"
+  source: ISBN 1732265143
+  cover: https://covers.openlibrary.org/b/isbn/1732265143-M.jpg?default=false
+the-rust-programming-language:
+  background: "#ededd3"
+  ink: "#191919"
+  accent: "#3c3a32"
+  source: https://openlibrary.org/works/OL19080231W
+  cover: https://covers.openlibrary.org/b/id/8508621-M.jpg?default=false
+the-sati-series-box-set:
+  background: "#d3373b"
+  ink: "#ffffff"
+  accent: "#e3dbb7"
+  source: https://www.panmacmillan.co.in/authors/koral-dasgupta/the-sati-series-box-set/9789361136658
+  cover: https://assets.consonance.app/481/supportingresources/374721/jpg_rgb_original.jpg
+the-scaling-era-an-oral-history-of-ai-2019-2025:
+  background: "#838780"
+  ink: "#191919"
+  accent: "#ecece7"
+  source: https://press.stripe.com/scaling
+  cover: https://images.stripeassets.com/fzn2n1nzq965/uQTc7aOzpewK2HyWreijY/06bdbdd0d46515c3dc8bc178701b48a0/TSE_social.jpg
+the-silk-roads-a-new-history-of-the-world:
+  background: "#96928a"
+  ink: "#191919"
+  accent: "#2f1f33"
+  source: https://www.peterfrankopan.com/the-silk-roads.html
+  cover: https://www.peterfrankopan.com/uploads/1/6/9/0/16904212/7597206.jpg
+the-society-of-the-spectacle:
+  background: "#252726"
+  ink: "#ffffff"
+  accent: "#efeeea"
+  source: https://books.google.com/books?id=FbxqzgEACAAJ
+  cover: https://books.google.com/books/content?id=FbxqzgEACAAJ&printsec=frontcover&img=1&zoom=1
+the-software-engineer-s-guidebook:
+  background: "#212832"
+  ink: "#ffffff"
+  accent: "#b0a168"
+  source: https://www.engguidebook.com/
+  cover: https://www.engguidebook.com/assets/images/Engguidebook_full_cover.png
+the-staff-engineers-path:
+  background: "#f2f3f5"
+  ink: "#191919"
+  accent: "#6a7061"
+  source: https://www.oreilly.com/library/view/the-staff-engineers/9781098118723/
+  cover: https://learning.oreilly.com/library/cover/9781098118723/250w/
+the-stories-of-john-cheever:
+  background: "#b7805d"
+  ink: "#191919"
+  accent: "#39302d"
+  source: ISBN 0099748304
+  cover: https://covers.openlibrary.org/b/isbn/0099748304-M.jpg?default=false
+the-story-of-art-e-h-gombrich:
+  background: "#e8c532"
+  ink: "#191919"
+  accent: "#403a25"
+  source: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
+  cover: http://www.phaidon.com/cdn/shop/files/the-story-of-art-en-6658-standing-front-3000_6528f769-dcfc-478b-8cf9-171a4a818ddc.jpg?v=1764656611
+  reference: User shelf photo 1, 2026-10-11
+the-third-pillar-raghuram-g-rajan:
+  background: "#5f273e"
+  ink: "#ffffff"
+  accent: "#dfbfaa"
+  source: https://www.penguinrandomhouse.com/books/566369/the-third-pillar-by-raghuram-rajan/
+  cover: https://images2.penguinrandomhouse.com/cover/9780525558330
+  reference: User shelf photo 2, 2026-10-11
+the-trial:
+  background: "#222122"
+  ink: "#ffffff"
+  accent: "#ffffff"
+  source: https://openlibrary.org/works/OL43043884W
+  cover: https://covers.openlibrary.org/b/id/14910748-M.jpg?default=false
+the-vegetarian:
+  background: "#ef525b"
+  ink: "#191919"
+  accent: "#240303"
+  source: https://www.penguinrandomhouse.com/books/250333/the-vegetarian-by-han-kang/
+  cover: https://images4.penguinrandomhouse.com/cover/9781101906118
+things-i-don-t-want-to-know-living-autobiography-1:
+  background: "#b8270f"
+  ink: "#ffffff"
+  accent: "#ffffff"
+  source: https://openlibrary.org/works/OL19980148W
+  cover: https://covers.openlibrary.org/b/id/12135639-M.jpg?default=false
+tom-lake-ann-patchett:
+  background: "#6f9f9e"
+  ink: "#191919"
+  accent: "#e5dbaa"
+  source: https://openlibrary.org/works/OL31098954W
+  cover: https://covers.openlibrary.org/b/id/13454692-M.jpg?default=false
+  reference: User shelf photo 1, 2026-10-11
+tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin:
+  background: "#f7f8e8"
+  ink: "#191919"
+  accent: "#0c3c59"
+  source: https://openlibrary.org/works/OL26004554W
+  cover: https://covers.openlibrary.org/b/id/12859975-M.jpg?default=false
+train-to-pakistan:
+  background: "#222625"
+  ink: "#ffffff"
+  accent: "#885d33"
+  source: https://www.penguin.co.in/book/train-to-pakistan/
+  cover: https://cdn.penguin.co.in/wp-content/uploads/2023/01/9780143065883.jpg
+unboxing-bengaluru:
+  background: "#8faebc"
+  ink: "#191919"
+  accent: "#405067"
+  source: https://www.penguin.co.in/book/unboxing-bengaluru/
+  cover: https://cdn.penguin.co.in/wp-content/uploads/2026/02/9780143468400.jpg
+  reference: User shelf photo 2, 2026-10-11
+understanding-software-dynamics:
+  background: "#ffffff"
+  ink: "#191919"
+  accent: "#1f82be"
+  source: https://www.oreilly.com/library/view/understanding-software-dynamics/9780137589692/
+  cover: https://learning.oreilly.com/library/cover/9780137589692/250w/
+unit-testing-principles-practices-and-patterns:
+  background: "#14120e"
+  ink: "#ffffff"
+  accent: "#d2cec2"
+  source: https://www.manning.com/books/unit-testing
+  cover: https://covers.openlibrary.org/b/isbn/9781617296277-M.jpg?default=false
+victory-city-salman-rushdie:
+  background: "#293948"
+  ink: "#ffffff"
+  accent: "#d8bf69"
+  source: https://openlibrary.org/works/OL28075975W
+  cover: https://covers.openlibrary.org/b/id/13195169-M.jpg?default=false
+  reference: User shelf photo 2, 2026-10-11
+whole-numbers-and-half-truths:
+  background: "#ece6d3"
+  ink: "#191919"
+  accent: "#b7332b"
+  source: https://books.google.com/books/about/Whole_Numbers_And_Half_Truths_What_Data.html?id=2U93zwEACAAJ
+  cover: https://books.google.com/books/content?id=2U93zwEACAAJ&printsec=frontcover&img=1&zoom=1
+  reference: User shelf photo 2, 2026-10-11
+why-the-poor-don-t-kill-us-the-psychology-of-indians:
+  background: "#ed1b24"
+  ink: "#000000"
+  accent: "#701114"
+  source: ISBN 9365234573
+  cover: https://covers.openlibrary.org/b/isbn/9365234573-M.jpg?default=false
+why-were-polarized:
+  background: "#eae6dc"
+  ink: "#191919"
+  accent: "#252629"
+  source: https://openlibrary.org/works/OL20648056W
+  cover: https://covers.openlibrary.org/b/id/9280635-M.jpg?default=false
+  reference: User shelf photo 3, 2026-10-11
+yellowface:
+  background: "#ffe405"
+  ink: "#191919"
+  accent: "#7b6f1a"
+  source: https://books.google.com/books/about/Yellowface.html?id=NJsC0AEACAAJ
+  cover: https://books.google.com/books/content?id=NJsC0AEACAAJ&printsec=frontcover&img=1&zoom=1
+the-city-and-its-uncertain-walls-haruki-murakami:
+  background: "#242331"
+  ink: "#ffffff"
+  accent: "#e8e5dc"
+  reference: User shelf photo 1, 2026-10-11
+  source: User shelf photo 1, 2026-10-11
+the-lion-and-the-lily-the-rise-and-fall-of-awadh-ira-mukhoty:
+  background: "#bda374"
+  ink: "#191919"
+  accent: "#746340"
+  reference: User shelf photo 1, 2026-10-11
+  source: User shelf photo 1, 2026-10-11
+katabasis-r-f-kuang:
+  background: "#282d25"
+  ink: "#ffffff"
+  accent: "#d9cb92"
+  reference: User shelf photo 1, 2026-10-11
+  source: User shelf photo 1, 2026-10-11
+the-blind-earthworm-in-the-labyrinth-veeraporn-nitiprapha:
+  background: "#413547"
+  ink: "#ffffff"
+  accent: "#ddd3b7"
+  reference: User shelf photo 1, 2026-10-11
+  source: User shelf photo 1, 2026-10-11
+the-future-of-text-vol-1:
+  background: "#313334"
+  ink: "#ffffff"
+  accent: "#e7e3d4"
+  reference: User shelf photo 1, 2026-10-11
+  source: User shelf photo 1, 2026-10-11
+the-quran-traditional:
+  background: "#1f2135"
+  ink: "#ffffff"
+  accent: "#dfddc4"
+  reference: User shelf photo 1, 2026-10-11
+  source: User shelf photo 1, 2026-10-11
+podman-in-action:
+  background: "#25252a"
+  ink: "#ffffff"
+  accent: "#eae4d6"
+  reference: User shelf photo 4, 2026-10-11
+  source: User shelf photo 4, 2026-10-11
+the-battle-of-belonging-shashi-tharoor:
+  background: "#753f43"
+  ink: "#ffffff"
+  accent: "#e5caaa"
+  reference: User shelf photo 4, 2026-10-11
+  source: User shelf photo 4, 2026-10-11
+unsealed-covers-gautam-bhatia:
+  background: "#e5e3dd"
+  ink: "#191919"
+  accent: "#6c263e"
+  reference: User shelf photo 2, 2026-10-11
+  source: User shelf photo 2, 2026-10-11
+no-bad-parts-richard-c-schwartz:
+  background: "#e9e1bf"
+  ink: "#191919"
+  accent: "#caad4a"
+  reference: User shelf photo 2, 2026-10-11
+  source: User shelf photo 2, 2026-10-11
+bangalore-through-the-centuries-m-fazlul-hasan:
+  background: "#b0b0ac"
+  ink: "#191919"
+  accent: "#444653"
+  reference: User shelf photo 2, 2026-10-11
+  source: User shelf photo 2, 2026-10-11
+bangalore-blues-kirtana-kumar:
+  background: "#65acb0"
+  ink: "#191919"
+  accent: "#244851"
+  reference: User shelf photo 2, 2026-10-11
+  source: User shelf photo 2, 2026-10-11
+the-book-of-disquiet:
+  background: "#b3d1c4"
+  ink: "#191919"
+  accent: "#37554c"
+  reference: User shelf photo 3, 2026-10-11
+  source: User shelf photo 3, 2026-10-11
+the-collected-stories-of-saadat-hasan-manto-volume-1-poona-and-bombay:
+  background: "#485a60"
+  ink: "#ffffff"
+  accent: "#dfb53c"
+  reference: User shelf photo 3, 2026-10-11
+  source: User shelf photo 3, 2026-10-11
+babel-r-f-kuang:
+  background: "#353333"
+  ink: "#ffffff"
+  accent: "#aba598"
+  reference: User shelf photo 3, 2026-10-11
+  source: User shelf photo 3, 2026-10-11
+dongri-to-dubai-six-decades-of-the-mumbai-mafia-s-hussain-zaidi:
+  background: "#292a27"
+  ink: "#ffffff"
+  accent: "#c53939"
+  reference: User shelf photo 3, 2026-10-11
+  source: User shelf photo 3, 2026-10-11

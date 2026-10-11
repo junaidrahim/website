@@ -1,62 +1,3 @@
-.shelf-header,
-.shelf-list {
-  --shelf-accent: light-dark(#385568, #86a9ba);
-  --shelf-rule: light-dark(#b0b0b0, #606060);
-  --shelf-paper: light-dark(#fff, #141414);
-  --shelf-wash: light-dark(#f9f9f9, #1e1e1e);
-}
-.shelf-header {
-  margin-bottom: 2rem;
-}
-.shelf-spines {
-  display: flex;
-  align-items: flex-end;
-  gap: 5px;
-  padding: 12px 4px 0;
-  border-bottom: 1.5px solid var(--content-primary);
-  overflow-x: auto;
-  scrollbar-width: thin;
-}
-.shelf-spine {
-  display: flex;
-  align-items: center;
-  flex: 1 0 var(--spine-width);
-  min-width: 25px;
-  max-width: 42px;
-  height: var(--spine-height);
-  box-sizing: border-box;
-  padding: 12px 4px;
-  border: 1px solid var(--shelf-rule);
-  border-bottom: 0;
-  border-radius: 2px 2px 0 0;
-  background: var(--shelf-wash);
-  color: var(--content-primary);
-  text-decoration: none;
-  transition:
-    transform 180ms ease,
-    color 180ms ease;
-}
-.shelf-spine span {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font: 0.75rem var(--font-body);
-  max-height: 100%;
-  margin: auto;
-}
-.shelf-spine:hover,
-.shelf-spine:focus-visible {
-  transform: translateY(-7px);
-  color: var(--shelf-accent);
-  border-color: var(--shelf-accent);
-}
-.shelf-caption {
-  font-style: italic;
-  min-height: 2.6em;
-  margin: 0.65rem 0 0.4rem;
-}
 .shelf-list li {
   position: relative;
   margin-bottom: 0.65rem;
@@ -65,7 +6,6 @@
   scroll-margin-block: 3rem;
 }
 .shelf-list li:focus-visible,
-.shelf-spine:focus-visible,
 .shelf-note summary:focus-visible {
   outline: 2px solid var(--shelf-accent);
   outline-offset: 4px;
@@ -113,12 +53,216 @@
   color: var(--content-secondary);
   font-style: italic;
 }
+.bookcase,
+.shelf-catalogue {
+  --shelf-accent: light-dark(#385568, #86a9ba);
+  --shelf-rule: light-dark(#b0b0b0, #606060);
+  --shelf-paper: light-dark(#ffffff, #141414);
+  --shelf-wash: light-dark(#f9f9f9, #1e1e1e);
+}
+.bookcase [hidden] {
+  display: none !important;
+}
+.bookcase-section h2 span {
+  font: 0.7rem var(--font-mono);
+  color: var(--content-secondary);
+}
+.bookcase-section h2 {
+  margin: 2.5rem 0 1.5rem;
+}
+.bookcase-section h2 span {
+  margin-left: 0.5rem;
+}
+.bookcase-rows {
+  border-left: 2px solid var(--shelf-rule);
+  border-right: 2px solid var(--shelf-rule);
+  padding: 0;
+}
+/* Flex wrapping is the fallback before JavaScript packs the individual rows. */
+.bookcase-rows,
+.bookcase-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 4px;
+}
+.bookcase-row {
+  flex-wrap: nowrap;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 28px 12px 0;
+  border-bottom: 9px double var(--shelf-rule);
+  margin-bottom: 18px;
+  background: var(--shelf-wash);
+}
+.bookcase-row:last-child {
+  margin-bottom: 0;
+}
+.bookcase-book {
+  flex: 0 0 var(--book-width);
+  height: var(--book-height);
+  box-sizing: border-box;
+  border: 1px solid var(--shelf-rule);
+  border-bottom: none;
+  border-radius: 3px 2px 0 0;
+  background: var(--cover-color, var(--shelf-paper));
+  color: var(--cover-ink, var(--content-primary));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+  padding: 14px 5px 11px;
+  text-decoration: none;
+  position: relative;
+  transform-origin: bottom center;
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease;
+}
+.bookcase-book::before,
+.bookcase-book::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  border-top: 3px solid var(--cover-accent, currentColor);
+  opacity: 0.85;
+}
+.bookcase-book::before {
+  top: 5px;
+}
+.bookcase-book::after {
+  bottom: 5px;
+}
+.bookcase-spine-title,
+.bookcase-spine-author {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bookcase-spine-title {
+  font: 0.85rem var(--font-body);
+}
+.bookcase-spine-author {
+  font: 0.5rem var(--font-mono);
+}
+.bookcase-book:hover,
+.bookcase-book:focus-visible {
+  transform: translateY(-10px) rotate(-2deg);
+  z-index: 1;
+}
+.bookcase-book.is-pulled {
+  opacity: 0.18;
+  transform: none;
+  border-style: dashed;
+}
+.bookcase :focus-visible {
+  outline: 2px solid var(--shelf-accent);
+  outline-offset: 4px;
+}
+.bookcase-open {
+  overflow: hidden;
+}
+.bookcase-dialog {
+  box-sizing: border-box;
+  width: min(420px, calc(100vw - 40px));
+  max-height: calc(100dvh - 40px);
+  padding: 0;
+  border: 1px solid var(--shelf-rule);
+  border-left: 6px double var(--shelf-rule);
+  border-radius: 2px;
+  color: var(--cover-ink, var(--content-primary));
+  background: var(--cover-color, var(--shelf-paper));
+  overflow: auto;
+}
+.bookcase-dialog::backdrop {
+  background: light-dark(rgb(255 255 255 / 85%), rgb(20 20 20 / 85%));
+}
+.pulled-book {
+  padding: 20px 28px 28px;
+}
+.bookcase-close {
+  display: block;
+  margin: 0 0 2rem auto;
+  padding: 8px 0;
+  color: var(--content-secondary);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--shelf-rule);
+  font: 0.65rem var(--font-mono);
+  cursor: pointer;
+}
+.pulled-book-cover {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.pulled-book-kind {
+  color: var(--content-secondary);
+  font: 0.65rem var(--font-mono);
+}
+.pulled-book-cover h2 {
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  line-height: 1.15;
+  margin: 2rem 0 1rem;
+  overflow-wrap: anywhere;
+}
+.pulled-book-authors {
+  margin: 0 0 2rem;
+  color: var(--content-secondary);
+}
+.pulled-book-rule {
+  width: 40px;
+  border-top: 2px solid var(--shelf-accent);
+  margin: auto 0 2rem;
+}
+.pulled-book-status .shelf-status {
+  margin: 0 0 1.5rem;
+}
+.pulled-book-note {
+  padding: 1rem 0;
+  border-top: 1px solid var(--shelf-rule);
+}
+.pulled-book-link {
+  color: var(--shelf-accent);
+}
+.shelf-catalogue {
+  margin-top: 3rem;
+  border-top: 1px solid var(--shelf-rule);
+  padding-top: 1rem;
+}
+.shelf-catalogue > summary {
+  cursor: pointer;
+}
 @media (prefers-reduced-motion: reduce) {
-  .shelf-spine {
+  .bookcase-book {
     transition: none;
   }
-  .shelf-spine:hover,
-  .shelf-spine:focus-visible {
+  .bookcase-book:hover,
+  .bookcase-book:focus-visible {
     transform: none;
   }
+}
+
+/* The pulled-out book keeps the same edition palette as its spine. */
+.bookcase-dialog .bookcase-close,
+.bookcase-dialog .pulled-book-kind,
+.bookcase-dialog .pulled-book-authors,
+.bookcase-dialog .shelf-status,
+.bookcase-dialog .pulled-book-link {
+  color: inherit;
+}
+.bookcase-dialog .pulled-book-rule {
+  border-color: var(--cover-accent, currentColor);
+}
+.bookcase-dialog .shelf-status,
+.bookcase-dialog .bookcase-close {
+  border-color: currentColor;
+}
+.bookcase-dialog .pulled-book-link:focus-visible,
+.bookcase-dialog .bookcase-close:focus-visible {
+  outline-color: currentColor;
 }
