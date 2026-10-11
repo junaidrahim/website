@@ -25,17 +25,16 @@
   {{ end }}
   <dialog class="bookcase-dialog" aria-labelledby="pulled-book-title">
     <div class="pulled-book">
-      <button type="button" class="bookcase-close" autofocus aria-label="Return book to shelf">Return to shelf <span aria-hidden="true">↗</span></button>
+      <button type="button" class="bookcase-close" tabindex="-1">Close book</button>
       <div class="pulled-book-cover">
-        <span class="pulled-book-kind"></span>
-        <h2 id="pulled-book-title"></h2>
+        <h2 id="pulled-book-title" tabindex="-1" autofocus></h2>
         <p class="pulled-book-authors"></p>
         <div class="pulled-book-art" aria-hidden="true" hidden></div>
         <span class="pulled-book-rule" aria-hidden="true"></span>
         <div class="pulled-book-status"></div>
       </div>
       <div class="pulled-book-note" hidden></div>
-      <a class="pulled-book-link">About this book <span aria-hidden="true">↗</span></a>
+      <a class="pulled-book-link" aria-label="About this book" title="About this book"><span aria-hidden="true">↗</span></a>
     </div>
   </dialog>
 </div>
