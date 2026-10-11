@@ -656,8 +656,9 @@ books:
     status: finished
     title: The Fever
     authors:
-      - Sonia Faleiro
+      - Sonia Shah
     added: "2026-09-11"
+    url: https://www.penguin.co.in/book/the-fever/
   - id: bangkok-wakes-to-rain-pitchaya-sudbanthad
     url: "https://www.penguinrandomhouse.com/books/566385/bangkok-wakes-to-rain-by-pitchaya-sudbanthad/"
     title: Bangkok Wakes to Rain
@@ -862,7 +863,7 @@ books:
     added: "2026-09-11"
   - id: becoming-michelle-obama
     status: finished
-    url: "https://www.penguinrandomhouse.com/books/550168/becoming-by-michelle-obama/"
+    url: "https://www.penguinrandomhouse.com/books/562881/becoming-by-michelle-obama/"
     title: Becoming
     authors:
       - Michelle Obama
@@ -902,7 +903,7 @@ books:
     added: "2026-09-11"
   - id: how-to-avoid-a-climate-disaster-bill-gates
     status: finished
-    url: "https://www.penguinrandomhouse.com/books/633984/how-to-avoid-a-climate-disaster-by-bill-gates/"
+    url: "https://www.penguinrandomhouse.com/books/633968/how-to-avoid-a-climate-disaster-by-bill-gates/"
     title: How to Avoid a Climate Disaster
     authors:
       - Bill Gates

@@ -1,16 +1,32 @@
-<div class="shelf-header" data-shelf-header>
-  <nav class="shelf-spines" aria-label="Browse a few books from the shelf">
-    {{ range $kind := slice "books" "textbooks" }}
-      {{ $entries := sort (index hugo.Data.shelf $kind) "title" "asc" }}
-      {{ $step := math.Max 1 (math.Ceil (div (float (len $entries)) 12)) }}
-      {{ range $index, $entry := $entries }}
-        {{ if eq (mod $index (int $step)) 0 }}
-          <a class="shelf-spine" href="#{{ $kind }}-{{ .id }}" data-title="{{ .title }}" style="--spine-height: {{ add 125 (mod (mul $index 17) 65) }}px; --spine-width: {{ add 25 (mod $index 13) }}px" aria-label="Find {{ .title }} on the shelf">
-            <span>{{ .title }}</span>
+<div class="bookcase" data-bookcase>
+  {{ range $kind := slice "books" "textbooks" }}
+    {{ $entries := sort (index hugo.Data.shelf $kind) "title" "asc" }}
+    <section class="bookcase-section" aria-labelledby="case-{{ $kind }}">
+      <h2 id="case-{{ $kind }}">{{ $kind | title }} <span>{{ len $entries }}</span></h2>
+      <div class="bookcase-rows" data-bookcase-rows>
+        {{ range $index, $entry := $entries }}
+          {{ $palette := index hugo.Data.shelf_colors .id }}
+          {{ $seed := int (printf "0x%s" (substr (crypto.MD5 .id) 0 6)) }}
+          <a class="bookcase-book" href="#{{ $kind }}-{{ .id }}" data-book-id="{{ $kind }}-{{ .id }}" data-title="{{ .title }}" data-authors="{{ delimit .authors ", " }}" data-kind="{{ $kind }}" style="{{ with $palette }}--cover-color: {{ .background }}; --cover-ink: {{ .ink }}; --cover-accent: {{ .accent }}; {{ end }}--book-height: {{ add 180 (mod $seed 65) }}px; --book-width: {{ add 38 (mod $seed 20) }}px" aria-label="Pull out {{ .title }} by {{ delimit .authors ", " }}">
+            <span class="bookcase-spine-title">{{ .title }}</span>
+            <span class="bookcase-spine-author" aria-hidden="true">{{ index .authors 0 }}</span>
           </a>
         {{ end }}
-      {{ end }}
-    {{ end }}
-  </nav>
-  <p class="shelf-caption" data-shelf-caption></p>
+      </div>
+    </section>
+  {{ end }}
+  <dialog class="bookcase-dialog" aria-labelledby="pulled-book-title">
+    <div class="pulled-book">
+      <button type="button" class="bookcase-close" autofocus aria-label="Return book to shelf">Return to shelf <span aria-hidden="true">↗</span></button>
+      <div class="pulled-book-cover">
+        <span class="pulled-book-kind"></span>
+        <h2 id="pulled-book-title"></h2>
+        <p class="pulled-book-authors"></p>
+        <span class="pulled-book-rule" aria-hidden="true"></span>
+        <div class="pulled-book-status"></div>
+      </div>
+      <div class="pulled-book-note" hidden></div>
+      <a class="pulled-book-link">About this book <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
 </div>
