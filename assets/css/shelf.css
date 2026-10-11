@@ -178,7 +178,7 @@
 }
 .pulled-book-art {
   width: 100%;
-  margin: -0.5rem auto 1.5rem;
+  margin: -0.5rem auto 0;
 }
 .pulled-book-art svg {
   display: block;
@@ -241,6 +241,7 @@
   min-height: 360px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 .pulled-book-cover h2 {
@@ -259,10 +260,10 @@
 .pulled-book-rule {
   width: 40px;
   border-top: 2px solid var(--shelf-accent);
-  margin: auto auto 2rem;
+  margin: 0 auto 2rem;
 }
 .pulled-book-status .shelf-status {
-  margin: 0 0 1.5rem;
+  margin: 1.5rem 0 0;
 }
 .pulled-book-note {
   padding: 1rem 0;
