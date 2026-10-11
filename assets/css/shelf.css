@@ -178,12 +178,14 @@
 }
 .pulled-book-art {
   width: 100%;
-  margin: -0.5rem 0 1.5rem;
+  margin: -0.5rem auto 1.5rem;
 }
 .pulled-book-art svg {
   display: block;
   width: 100%;
+  max-width: 285px;
   max-height: 190px;
+  margin-inline: auto;
 }
 .pulled-book-cover:has(.pulled-book-art:not([hidden])) .pulled-book-rule {
   display: none;
@@ -239,6 +241,7 @@
   min-height: 360px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .pulled-book-cover h2 {
   font-size: clamp(1.6rem, 5vw, 2.2rem);
@@ -256,7 +259,7 @@
 .pulled-book-rule {
   width: 40px;
   border-top: 2px solid var(--shelf-accent);
-  margin: auto 0 2rem;
+  margin: auto auto 2rem;
 }
 .pulled-book-status .shelf-status {
   margin: 0 0 1.5rem;
