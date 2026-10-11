@@ -9,6 +9,22 @@ by title. Only explicitly finished books receive a status tag.
 Keep the two sections together across technical and nontechnical subjects. Record only Junaid's stated reading
 status; an item on the shelf is not necessarily finished.
 
+Every book addition includes its cover treatment, not just an inventory entry:
+
+- Look up and inspect the actual cover using the publisher, author, or a reliable catalogue. Prefer the edition
+  visible in Junaid's photos when identifiable. Record the reference URL; never claim an unverified image matches his edition.
+- Add a matching palette under the stable book ID in `data/shelf_colors.yaml`: background, readable ink, and accent.
+  Keep title and author text at a contrast ratio of at least 4.5:1 in both themes.
+- Draw an original, low-fidelity SVG interpretation of the cover's main motif in `assets/images/shelf/`. Use the
+  existing simple linework, `currentColor`, and `.art-accent` / `.art-wash` classes. Typographic covers should use a
+  simplified typographic composition; do not assign an unrelated generic illustration. Do not upload reference photos
+  or hotlink jacket images. If a cover cannot be verified, record that limitation explicitly and use its title typography.
+- Register the book in `data/shelf_art.yaml` with `drawing` (SVG filename without extension), `motif` (what was drawn),
+  and `source` (the reference URL or supplied-photo reference). The same SVG appears on the spine and the pulled-out cover.
+- Run `task build` and `git diff --check`; inspect the new spine and opened book on desktop and mobile, in light and dark
+  themes. Check that the drawing fits, the text and controls remain readable, and closing restores focus. The build rejects
+  missing palette/artwork mappings or SVG assets.
+
 ## Writing system
 
 

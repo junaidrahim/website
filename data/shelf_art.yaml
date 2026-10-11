@@ -1,0 +1,822 @@
+# Original low-fidelity cover interpretations; colour editions are in shelf_colors.yaml.
+# Each entry records the observed motif and its reference. See AGENTS.md before adding a book.
+a-burglars-guide-to-the-city:
+  drawing: city
+  motif: City buildings
+  source: https://openlibrary.org/works/OL17351668W
+a-philosophy-of-software-design:
+  drawing: a-philosophy-of-software-design
+  motif: Looping blue strands from the cover
+  source: https://openlibrary.org/works/OL21221785W
+ai-engineering-chip-huyen:
+  drawing: owl
+  motif: Owl on a branch
+  source: https://www.oreilly.com/library/view/ai-engineering/9781098166298/
+ai-systems-performance-engineering-chris-fregly:
+  drawing: ai-systems-performance-engineering-chris-fregly
+  motif: Reclining spotted cheetah
+  source: https://www.oreilly.com/library/view/ai-systems-performance/9798341627772/
+all-about-love-bell-hooks:
+  drawing: butterflies
+  motif: Two butterflies
+  source: https://openlibrary.org/works/OL31111W
+all-fours-miranda-july:
+  drawing: cliff
+  motif: Cliff and low sun
+  source: https://openlibrary.org/works/OL37827700W
+amp-it-up-frank-slootman:
+  drawing: arrow
+  motif: Upward arrow
+  source: https://openlibrary.org/works/OL25325891W
+an-elegant-puzzle-systems-of-engineering-management:
+  drawing: an-elegant-puzzle-systems-of-engineering-management
+  motif: Fine branching tree
+  source: https://openlibrary.org/works/OL20641522W
+an-introduction-to-probability-and-statistics-vijay-k-rohatgi:
+  drawing: an-introduction-to-probability-and-statistics-vijay-k-rohatgi
+  motif: Repeated stepped blocks
+  source: https://openlibrary.org/works/OL20063790W
+an-introduction-to-probability-theory-and-its-applications-william-feller:
+  drawing: an-introduction-to-probability-theory-and-its-applications-william-feller
+  motif: Plain cloth cover, represented by its lettering
+  source: https://openlibrary.org/works/OL146759W
+apache-iceberg-the-definitive-guide-tomer-shiran:
+  drawing: apache-iceberg-the-definitive-guide-tomer-shiran
+  motif: Flying seabird
+  source: https://www.oreilly.com/library/view/apache-iceberg-the/9781098148614/
+arrangements-in-blue-amy-key:
+  drawing: window
+  motif: Window and chair
+  source: https://www.penguin.co.uk/books/447053/arrangements-in-blue-by-key-amy/9781529906899
+atlas-shrugged:
+  drawing: atlas-shrugged
+  motif: Railway tracks and a low sun
+  source: https://openlibrary.org/works/OL731644W
+babel-r-f-kuang:
+  drawing: babel-r-f-kuang
+  motif: Multi-tiered tower and arched windows
+  source: https://www.stevenhsilver.com/babel.html
+bangalore-blues-kirtana-kumar:
+  drawing: bangalore-blues-kirtana-kumar
+  motif: Panelled doorway and a small dog
+  source: https://www.bangaloreclub.com/useruploads/IMAGES/EVENTS/2024/BANGALORE_BLUES_WED_21ST_FEB_6_30_PM.jpg
+bangalore-through-the-centuries-m-fazlul-hasan:
+  drawing: bangalore-through-the-centuries-m-fazlul-hasan
+  motif: Historic landscape composition
+  source: https://library.iihs.co.in/wp-content/uploads/2023/08/Bengaluru.pdf
+bangkok-wakes-to-rain-pitchaya-sudbanthad:
+  drawing: bangkok-wakes-to-rain-pitchaya-sudbanthad
+  motif: Palm tree silhouette
+  source: https://openlibrary.org/works/OL20093560W
+beach-read:
+  drawing: beach-read
+  motif: Readers and a beach umbrella
+  source: https://openlibrary.org/works/OL20734329W
+becoming-michelle-obama:
+  drawing: becoming-michelle-obama
+  motif: Shoulder portrait with folded arms
+  source: https://www.penguinrandomhouse.com/books/562881/becoming-by-michelle-obama/
+behave-robert-m-sapolsky:
+  drawing: behave-robert-m-sapolsky
+  motif: Human silhouette and scattered marks
+  source: https://openlibrary.org/works/OL17835813W
+breaking-the-mould-raghuram-g-rajan:
+  drawing: breaking-the-mould-raghuram-g-rajan
+  motif: Broken horizontal line through the lettering
+  source: https://www.penguin.co.in/book/breaking-the-mould/
+build-a-large-language-model-from-scratch:
+  drawing: build-a-large-language-model-from-scratch
+  motif: Seated figure in historical dress
+  source: ISBN 1633437167
+building-a-second-brain:
+  drawing: circuits
+  motif: Interlocking rounded circuit paths
+  source: https://openlibrary.org/works/OL26417584W
+butter:
+  drawing: butter
+  motif: Leaping cow and cutlery
+  source: https://books.google.com/books/about/Butter.html?id=dO--EAAAQBAJ
+cleopatra-and-frankenstein:
+  drawing: cleopatra-and-frankenstein
+  motif: Cropped painted eye, nose, and lips
+  source: https://openlibrary.org/works/OL25345096W
+computer-networks-a-top-down-approach-behrouz-a-forouzan:
+  drawing: computer-networks-a-top-down-approach-behrouz-a-forouzan
+  motif: Linked photographs and network connections
+  source: https://www.mheducation.co.in/computer-networks-a-top-down-approach-9789355324900-india
+computer-organization-carl-hamacher:
+  drawing: computer-organization-carl-hamacher
+  motif: Central interlocking technical forms
+  source: https://books.google.com/books/about/Computer_Organization.html?id=GmVGAAAAYAAJ
+crafting-interpreters:
+  drawing: crafting-interpreters
+  motif: Mountain map with branching routes
+  source: https://openlibrary.org/works/OL26124818W
+crime-and-punishment:
+  drawing: crime-and-punishment
+  motif: Close-cropped eyes beneath a classic title plaque
+  source: ISBN 185715035X
+cultural-amnesia:
+  drawing: cultural-amnesia
+  motif: Hanging light in a geometric frame
+  source: https://openlibrary.org/works/OL2738862W
+cursed-bunny:
+  drawing: cursed-bunny
+  motif: White rabbit
+  source: https://www.hachettebookgroup.com/titles/bora-chung/cursed-bunny/9781643753607/
+database-internals:
+  drawing: database-internals
+  motif: Flatfish with patterned skin
+  source: https://www.oreilly.com/library/view/database-internals/9781492040330/
+database-system-concepts:
+  drawing: database-system-concepts
+  motif: Sailboats with tall triangular sails
+  source: https://openlibrary.org/works/OL1854539W
+deep-learning-ian-goodfellow:
+  drawing: deep-learning-ian-goodfellow
+  motif: Flower garden beneath bare branches
+  source: https://openlibrary.org/works/OL17801809W
+desperately-seeking-shahrukh:
+  drawing: desperately-seeking-shahrukh
+  motif: Travel case and luggage label
+  source: https://books.google.com/books/about/Desperately_Seeking_Shah_Rukh.html?id=MAxEEAAAQBAJ
+docs-for-developers:
+  drawing: docs-for-developers
+  motif: Typewriter and scattered writing tools
+  source: https://docsfordevelopers.com/
+dongri-to-dubai-six-decades-of-the-mumbai-mafia-s-hussain-zaidi:
+  drawing: dongri-to-dubai-six-decades-of-the-mumbai-mafia-s-hussain-zaidi
+  motif: Portrait from the book jacket
+  source: User shelf photo 3, 2026-10-11
+dune-frank-herbert:
+  drawing: dunes
+  motif: Dunes and a low sun
+  source: https://openlibrary.org/works/OL893414W
+east-of-eden:
+  drawing: east-of-eden
+  motif: Arched window
+  source: ISBN 0141185074
+effective-software-testing:
+  drawing: effective-software-testing
+  motif: Historical figure carrying a load
+  source: https://openlibrary.org/works/OL27138299W
+emma:
+  drawing: emma
+  motif: Dark curls, earrings, and pale dress from the painted portrait
+  source: ISBN 0141439580
+emperor-of-rome-mary-beard:
+  drawing: emperor-of-rome-mary-beard
+  motif: Golden eagle ornament
+  source: https://www.profilebooks.com/work/emperor-of-rome/
+engineering-management-for-the-rest-of-us:
+  drawing: engineering-management-for-the-rest-of-us
+  motif: Symmetrical botanical cover ornament
+  source: https://www.engmanagement.dev/
+essence-of-indian-art:
+  drawing: essence-of-indian-art
+  motif: Figure seated on a decorated bull
+  source: https://www.scribd.com/doc/289064183/Essence-of-Indian-Art-Art-eBook
+everything-i-know-about-love:
+  drawing: everything-i-know-about-love
+  motif: Loose lettering and underlining
+  source: https://www.penguin.co.uk/books/306824/everything-i-know-about-love-by-alderton-dolly/9780241982105
+flashlight-susan-choi:
+  drawing: flashlight-susan-choi
+  motif: Adult and child walking toward water
+  source: https://www.penguin.co.uk/books/461727/flashlight-by-choi-susan/9781529970661
+fool-me-twice:
+  drawing: fool-me-twice
+  motif: Two small illustrated figures
+  source: https://www.penguin.co.in/book/fool-me-twice/
+for-the-love-of-physics-walter-lewin:
+  drawing: for-the-love-of-physics-walter-lewin
+  motif: Suspended pendulum in a lecture room
+  source: https://openlibrary.org/works/OL15745563W
+foundations-of-databases:
+  drawing: foundations-of-databases
+  motif: Woman studying at a desk
+  source: https://openlibrary.org/works/OL3483918W
+franz-kafka-selected-works:
+  drawing: franz-kafka-selected-works
+  motif: Ruled classic typography
+  source: https://openlibrary.org/works/OL27732689W
+fundamentals-of-computer-algorithms-ellis-horowitz:
+  drawing: fundamentals-of-computer-algorithms-ellis-horowitz
+  motif: Plain title-led cover
+  source: https://openlibrary.org/works/OL2676162W
+fundamentals-of-data-engineering-joe-reis:
+  drawing: fundamentals-of-data-engineering-joe-reis
+  motif: Bird perched on a branch
+  source: https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/
+fundamentals-of-database-systems-ramez-elmasri:
+  drawing: fundamentals-of-database-systems-ramez-elmasri
+  motif: Water and distant hills
+  source: https://openlibrary.org/works/OL3947220W
+fundamentals-of-software-architecture:
+  drawing: fundamentals-of-software-architecture
+  motif: Parrot on a branch
+  source: https://www.oreilly.com/library/view/fundamentals-of-software/9781492043447/
+giovanni-s-room:
+  drawing: giovanni-s-room
+  motif: Large profile and small distant figures
+  source: ISBN 0141186356
+girl-made-of-gold:
+  drawing: girl-made-of-gold
+  motif: Figure framed by leaves
+  source: https://www.bookchor.com/book/9789393986290/girl-made-of-gold
+give-and-take:
+  drawing: give-and-take
+  motif: Contrasting GIVE and TAKE lettering
+  source: https://adamgrant.net/book/give-and-take/
+gods-guns-and-missionaries-manu-s-pillai:
+  drawing: gods-guns-and-missionaries-manu-s-pillai
+  motif: Crowned figure with extended arms
+  source: https://www.penguin.co.in/book/gods-guns-and-missionaries/
+good-to-great-jim-collins:
+  drawing: good-to-great-jim-collins
+  motif: Rising curve beneath the title
+  source: https://openlibrary.org/works/OL3486275W
+grokking-streaming-systems:
+  drawing: grokking-streaming-systems
+  motif: Group of historical figures
+  source: https://www.simonandschuster.com/books/Grokking-Streaming-Systems/Josh-Fischer/9781617297304
+h-pop-kunal-purohit:
+  drawing: h-pop-kunal-purohit
+  motif: Radiating crowd composition
+  source: https://books.google.com/books/about/H_Pop.html?id=5xxV0AEACAAJ
+hamnet-maggie-o-farrell:
+  drawing: hamnet-maggie-o-farrell
+  motif: Portrait with a hat and a band across the eyes
+  source: https://openlibrary.org/works/OL20743965W
+hit-refresh-satya-nadella:
+  drawing: hit-refresh-satya-nadella
+  motif: Portrait with round glasses
+  source: https://openlibrary.org/works/OL17814342W
+home-marilynne-robinson:
+  drawing: home-marilynne-robinson
+  motif: Empty wooden chair
+  source: https://openlibrary.org/works/OL1875008W
+homo-deus-yuval-noah-harari:
+  drawing: homo-deus-yuval-noah-harari
+  motif: Small fingerprint emblem
+  source: https://www.ynharari.com/book/homo-deus/
+how-the-world-really-works:
+  drawing: how-the-world-really-works
+  motif: Overlapping angular colour fields
+  source: https://openlibrary.org/works/OL25283119W
+how-to-avoid-a-climate-disaster-bill-gates:
+  drawing: how-to-avoid-a-climate-disaster-bill-gates
+  motif: Stacked bold title lettering
+  source: https://www.penguinrandomhouse.com/books/633968/how-to-avoid-a-climate-disaster-by-bill-gates/
+how-to-kill-men-and-get-away-with-it:
+  drawing: how-to-kill-men-and-get-away-with-it
+  motif: Woman carrying a handbag
+  source: https://openlibrary.org/works/OL28802560W
+how-to-raise-an-adult-julie-lythcott-haims:
+  drawing: how-to-raise-an-adult-julie-lythcott-haims
+  motif: Stacked type and horizontal bands
+  source: https://openlibrary.org/works/OL19668504W
+how-to-take-smart-notes:
+  drawing: how-to-take-smart-notes
+  motif: Interlocking rectangular note blocks
+  source: https://openlibrary.org/works/OL18635700W
+humble-pie-gordon-ramsay:
+  drawing: humble-pie-gordon-ramsay
+  motif: Portrait with short swept hair and a hand at the chin
+  source: https://books.google.com/books/about/Humble_Pie.html?id=j31bhXPly6QC
+hurda:
+  drawing: hurda
+  motif: Irregular overlapping colour fields
+  source: https://books.google.com/books?id=gk_eEAAAQBAJ
+i-do-what-i-do-raghuram-g-rajan:
+  drawing: i-do-what-i-do-raghuram-g-rajan
+  motif: Jacket-and-tie portrait with hand at chin
+  source: https://books.google.com/books/about/I_Do_What_I_Do.html?id=4HIyDwAAQBAJ
+i-never-promised-you-a-rose-garden:
+  drawing: i-never-promised-you-a-rose-garden
+  motif: Pale rose
+  source: https://openlibrary.org/works/OL2670419W
+if-on-a-winters-night-a-traveller:
+  drawing: if-on-a-winters-night-a-traveller
+  motif: Painted portrait partly covered by a book
+  source: https://www.penguinrandomhouse.com/books/23123/if-on-a-winters-night-a-traveler-by-italo-calvino/
+infinite-jest-david-foster-wallace:
+  drawing: infinite-jest-david-foster-wallace
+  motif: Clouds behind large lettering
+  source: https://openlibrary.org/works/OL2943602W
+interpreter-of-maladies:
+  drawing: interpreter-of-maladies
+  motif: Cropped eyes and a forehead dot
+  source: https://openlibrary.org/works/OL2001058W
+introduction-to-algorithms-thomas-h-cormen:
+  drawing: introduction-to-algorithms-thomas-h-cormen
+  motif: Hanging geometric mobile
+  source: https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/
+introduction-to-information-retrieval:
+  drawing: introduction-to-information-retrieval
+  motif: Index-like words arranged across the cover
+  source: https://nlp.stanford.edu/IR-book/
+invention-a-life:
+  drawing: invention-a-life
+  motif: Swept-haired portrait writing at a desk
+  source: https://openlibrary.org/works/OL25107216W
+jaya-an-illustrated-retelling-of-the-mahabharata-devdutt-pattanaik:
+  drawing: jaya-an-illustrated-retelling-of-the-mahabharata-devdutt-pattanaik
+  motif: Line drawing of a chariot
+  source: https://www.penguin.co.in/book/jaya/
+katabasis-r-f-kuang:
+  drawing: katabasis-r-f-kuang
+  motif: Interlocking stairs and an arched doorway
+  source: https://www.harperreach.com/products/katabasis-rf-kuang-9780008501907/
+kitchen-confidential-anthony-bourdain:
+  drawing: kitchen-confidential-anthony-bourdain
+  motif: Chef portrait with an apron
+  source: https://openlibrary.org/works/OL3348011W
+lady-doctors:
+  drawing: lady-doctors
+  motif: Seated figure in a sari
+  source: https://www.hachette.co.uk/titles/kavitha-rao/lady-doctors/9781914344978/
+latitudes-of-longing:
+  drawing: latitudes-of-longing
+  motif: Layered water and landscape curves
+  source: https://openlibrary.org/works/OL20746208W
+learning-dapr-haishi-bai:
+  drawing: learning-dapr-haishi-bai
+  motif: Two otters
+  source: https://www.oreilly.com/library/view/learning-dapr/9781492072416/
+learning-ebpf-liz-rice:
+  drawing: learning-ebpf-liz-rice
+  motif: Bee with spread wings
+  source: https://www.oreilly.com/library/view/learning-ebpf/9781098135119/
+linear-algebra-and-its-applications-4th-edition:
+  drawing: linear-algebra-and-its-applications-4th-edition
+  motif: Rectangular colour grid
+  source: ISBN 8131501728
+lust-for-life:
+  drawing: lust-for-life
+  motif: Small handwritten cover signature
+  source: https://openlibrary.org/works/OL112003W
+luv-un-arranged:
+  drawing: luv-un-arranged
+  motif: Illustrated couple
+  source: https://heartboundbookshop.com/products/pre-order-luvunarranged-by-n-m-patel
+mansfield-park:
+  drawing: mansfield-park
+  motif: Updo and square-necked dress from the painted portrait
+  source: ISBN 0141439807
+martyr-kaveh-akbar:
+  drawing: martyr-kaveh-akbar
+  motif: Small horse and rider
+  source: https://www.penguinrandomhouse.com/books/734476/martyr-national-book-award-finalist-by-kaveh-akbar/
+may-we-feed-the-king-rebecca-perry:
+  drawing: may-we-feed-the-king-rebecca-perry
+  motif: Pears against the dark ground
+  source: https://books.google.com/books?id=jEl50QEACAAJ
+meditations-marcus-aurelius:
+  drawing: meditations-marcus-aurelius
+  motif: Classical bearded bust
+  source: https://www.penguin.co.uk/books/35413/meditations-by-marcus-aurelius/9780140449334
+metamorphosis-and-other-stories:
+  drawing: metamorphosis-and-other-stories
+  motif: Faceted folded sculptural head
+  source: ISBN 0241372550
+modern-operating-systems-andrew-s-tanenbaum:
+  drawing: modern-operating-systems-andrew-s-tanenbaum
+  motif: Interlocking mechanical forms
+  source: https://openlibrary.org/works/OL1970688W
+mother-india:
+  drawing: mother-india
+  motif: Phone filled with a collage of images
+  source: https://books.google.com/books/about/Mother_India.html?id=cvjo0AEACAAJ
+mottled-dawn:
+  drawing: mottled-dawn
+  motif: Curling fabric-like abstract lines
+  source: https://openlibrary.org/works/OL7976408W
+my-friends-hisham-matar:
+  drawing: map
+  motif: Profile filled with street-map lines
+  source: https://openlibrary.org/works/OL37505408W
+my-seditious-heart:
+  drawing: my-seditious-heart
+  motif: Lit stage and steps
+  source: https://www.haymarketbooks.org/books/1277-my-seditious-heart
+no-bad-parts-richard-c-schwartz:
+  drawing: no-bad-parts-richard-c-schwartz
+  motif: Continuous face outline over abstract shapes
+  source: https://www.spiritualityhealth.com/reviews/books/2021/07/01/book-review-no-bad-parts
+no-longer-human-osamu-dazai:
+  drawing: no-longer-human-osamu-dazai
+  motif: Anonymous head-and-shoulders silhouette
+  source: https://www.ndbooks.com/book/no-longer-human/
+no-place-to-call-my-own:
+  drawing: no-place-to-call-my-own
+  motif: Face assembled from horizontal strips
+  source: https://www.midlandbookshop.com/en/product/no-place-to-call-my-own
+northanger-abbey:
+  drawing: northanger-abbey
+  motif: Turned portrait with curls and a pale neckline
+  source: ISBN 0141439793
+notes-from-the-creative-act-by-rick-rubin:
+  drawing: notes-from-the-creative-act-by-rick-rubin
+  motif: Circle with a central dot
+  source: https://openlibrary.org/works/OL27955361W
+notes-from-underground:
+  drawing: notes-from-underground
+  motif: Close-cropped eyes beneath the classic title panel
+  source: ISBN 1857152719
+novelist-as-a-vocation:
+  drawing: novelist-as-a-vocation
+  motif: Paper title band over muted imagery
+  source: https://www.penguinrandomhouse.com/books/547926/novelist-as-a-vocation-by-haruki-murakami/
+of-mice-and-men:
+  drawing: of-mice-and-men
+  motif: Close cropped face
+  source: ISBN 0141185104
+on-earth-we-re-briefly-gorgeous:
+  drawing: on-earth-we-re-briefly-gorgeous
+  motif: Intertwined figures from the cover photograph
+  source: https://openlibrary.org/works/OL20783698W
+on-the-origin-of-species-charles-darwin:
+  drawing: on-the-origin-of-species-charles-darwin
+  motif: Close-up toucan and large beak
+  source: https://www.penguin.co.uk/books/57108/on-the-origin-of-species-by-darwin-charles/9780140439120
+on-writing-charles-bukowski:
+  drawing: on-writing-charles-bukowski
+  motif: Small typewriter beneath the lettering
+  source: https://canongate.co.uk/books/2307-on-writing/
+operating-system-concepts:
+  drawing: operating-system-concepts
+  motif: Architectural castle illustration
+  source: https://openlibrary.org/works/OL1854541W
+operating-systems-three-easy-pieces:
+  drawing: operating-systems-three-easy-pieces
+  motif: Bright comet in a dark sky
+  source: https://openlibrary.org/works/OL21738416W
+patterns-of-distributed-systems-unmesh-joshi:
+  drawing: patterns-of-distributed-systems-unmesh-joshi
+  motif: Suspension bridge
+  source: https://openlibrary.org/works/OL34961700W
+permanent-record-edward-snowden:
+  drawing: permanent-record-edward-snowden
+  motif: Close portrait with glasses
+  source: https://openlibrary.org/works/OL20080323W
+persepolis-marjane-satrapi:
+  drawing: portrait
+  motif: Face in profile
+  source: https://www.penguin.co.uk/books/56425/persepolis-by-satrapi-marjane/9780099523994
+persuasion:
+  drawing: persuasion
+  motif: Bonnet and high-collared pale dress from the painted portrait
+  source: ISBN 0141439688
+pnin:
+  drawing: pnin
+  motif: Bright cubist faces and angular forms
+  source: ISBN 0141183756
+podman-in-action:
+  drawing: podman-in-action
+  motif: Historical figure on the Manning jacket
+  source: https://www.manning.com/books/podman-in-action
+pride-and-prejudice:
+  drawing: pride-and-prejudice
+  motif: Two seated women in flowing dresses
+  source: ISBN 0141439513
+principles-ray-dalio:
+  drawing: principles-ray-dalio
+  motif: Spare centered title typography
+  source: https://www.principles.com/
+prophet-song-paul-lynch:
+  drawing: prophet-song-paul-lynch
+  motif: Clapperboard and fractured angular panels
+  source: https://openlibrary.org/works/OL34341539W
+read-write-own:
+  drawing: read-write-own
+  motif: Small dimensional book-like block
+  source: https://www.penguin.co.uk/books/459860/read-write-own-by-dixon-chris/9781804949245
+real-estate-living-autobiography-3:
+  drawing: real-estate-living-autobiography-3
+  motif: Architectural stairs in the inset photograph
+  source: https://openlibrary.org/works/OL24496521W
+reinforcement-learning-an-introduction-2nd-edition:
+  drawing: reinforcement-learning-an-introduction-2nd-edition
+  motif: Fine branching coloured curves
+  source: ISBN 0262039249
+relevant-search:
+  drawing: relevant-search
+  motif: Historical figure in striped clothing
+  source: https://www.simonandschuster.com/books/Relevant-Search/Doug-Turnbull/9781617292774
+rust-atomics-and-locks-low-level-concurrency-in-practice:
+  drawing: rust-atomics-and-locks-low-level-concurrency-in-practice
+  motif: Black bear
+  source: https://books.google.com/books?id=e-cTzwEACAAJ
+rust-for-rustaceans-idiomatic-programming-for-experienced-developers:
+  drawing: rust-for-rustaceans-idiomatic-programming-for-experienced-developers
+  motif: Cartoon crab with raised claws
+  source: ISBN 1718501854
+sakina-s-kiss:
+  drawing: sakina-s-kiss
+  motif: Two profiles approaching
+  source: https://www.penguin.co.in/book/sakinas-kiss/
+sapiens-yuval-noah-harari:
+  drawing: sapiens-yuval-noah-harari
+  motif: Fingerprint emblem on the title-led cover
+  source: https://www.ynharari.com/book/sapiens/
+screenplay-the-foundations-of-screenwriting:
+  drawing: screenplay-the-foundations-of-screenwriting
+  motif: Lettering between strong horizontal rules
+  source: ISBN 0385339038
+sense-and-sensibility:
+  drawing: sense-and-sensibility
+  motif: Paired painted portraits with distinct hairstyles
+  source: ISBN 0141439661
+show-your-work:
+  drawing: show-your-work
+  motif: Slanted brush-like title lettering
+  source: https://austinkleon.com/show-your-work/
+software-architecture-the-hard-parts:
+  drawing: software-architecture-the-hard-parts
+  motif: Woodpecker on a branch
+  source: https://www.oreilly.com/library/view/software-architecture-the/9781492086888/
+software-engineering-at-google:
+  drawing: software-engineering-at-google
+  motif: Flamingo with a curved neck
+  source: https://openlibrary.org/works/OL22293580W
+stubborn-attachments:
+  drawing: stubborn-attachments
+  motif: Close-up clasped hands
+  source: https://openlibrary.org/works/OL26422034W
+systems-performance:
+  drawing: systems-performance
+  motif: Repeated figures in motion
+  source: https://openlibrary.org/works/OL16817354W
+the-annotated-turing-charles-petzold:
+  drawing: the-annotated-turing-charles-petzold
+  motif: Binary digits and circuitry
+  source: https://www.charlespetzold.com/AnnotatedTuring/
+the-argumentative-indian-writings-on-indian-history-culture-and-identity:
+  drawing: the-argumentative-indian-writings-on-indian-history-culture-and-identity
+  motif: Seated figures beneath a canopy
+  source: https://www.amazon.in/dp/0141012110
+the-art-of-doing-science-and-engineering-learning-to-learn:
+  drawing: the-art-of-doing-science-and-engineering-learning-to-learn
+  motif: Fine vertical irregular gold line
+  source: ISBN 1732265178
+the-art-of-noticing:
+  drawing: eye
+  motif: Eye and radiating lashes
+  source: https://openlibrary.org/works/OL20161789W
+the-art-of-the-personal-essay-phillip-lopate:
+  drawing: the-art-of-the-personal-essay-phillip-lopate
+  motif: Large quill feather
+  source: https://www.penguinrandomhouse.com/books/103559/the-art-of-the-personal-essay-by-phillip-lopate/9780385423397/
+the-artist-s-way:
+  drawing: the-artist-s-way
+  motif: Easel from the studio scene
+  source: https://openlibrary.org/works/OL14856321W
+the-barbary-coast-herbert-asbury:
+  drawing: the-barbary-coast-herbert-asbury
+  motif: Waterfront and tall ship
+  source: https://www.hachettebookgroup.com/titles/herbert-asbury/the-barbary-coast/9781560254089/
+the-battle-of-belonging-shashi-tharoor:
+  drawing: the-battle-of-belonging-shashi-tharoor
+  motif: Figures with flags
+  source: https://subhasbooks.com/products/the-battle-of-belonging-on-nationalism-patriotism-and-what-it-means-to-be-indian
+the-bell-jar:
+  drawing: the-bell-jar
+  motif: Woman in profile within a circular composition
+  source: https://openlibrary.org/works/OL1865528W
+the-best-of-tagore:
+  drawing: the-best-of-tagore
+  motif: Painted bearded face
+  source: https://www.penguin.co.uk/books/457494/the-best-of-tagore-by-tagore-rabindranath/9781841594156
+the-blind-earthworm-in-the-labyrinth-veeraporn-nitiprapha:
+  drawing: the-blind-earthworm-in-the-labyrinth-veeraporn-nitiprapha
+  motif: Violin, pale figure, and dense foliage
+  source: https://www.simonandschuster.com/books/The-Blind-Earthworm-in-the-Labyrinth/Veeraporn-Nitiprapha/9786164510135
+the-book-of-disquiet:
+  drawing: the-book-of-disquiet
+  motif: Two figures at a tall door, one with raised arms
+  source: https://www.penguin.co.uk/books/293014/the-book-of-disquiet-by-pessoa-fernando/9780241200131
+the-brothers-karamazov:
+  drawing: the-brothers-karamazov
+  motif: Classic centered title lettering
+  source: ISBN 1857150708
+the-castle:
+  drawing: the-castle
+  motif: Angular monochrome figure from the cover
+  source: https://www.amazon.in/dp/0241197805
+the-catcher-in-the-rye-j-d-salinger:
+  drawing: the-catcher-in-the-rye-j-d-salinger
+  motif: Two vertical colour blocks and title lettering
+  source: https://www.penguin.co.uk/books/57054/the-catcher-in-the-rye-by-salinger-j-d/9780241950432
+the-city-and-its-uncertain-walls-haruki-murakami:
+  drawing: the-city-and-its-uncertain-walls-haruki-murakami
+  motif: Figure, bench, bird, and window in an uncertain room
+  source: https://www.penguin.co.uk/books/460097/the-city-and-its-uncertain-walls-by-murakami-haruki/9781787304475
+the-collected-stories-of-saadat-hasan-manto-volume-1-poona-and-bombay:
+  drawing: the-collected-stories-of-saadat-hasan-manto-volume-1-poona-and-bombay
+  motif: Manto portrait with glasses and a cigarette
+  source: https://www.hindustantimes.com/books/reviewthe-collected-stories-of-saadat-hasan-manto-volume-1-bombay-and-poona-translated-by-nasreen-rehman-101656698021947.html
+the-collected-works-of-kahlil-gibran-kahlil-gibran:
+  drawing: the-collected-works-of-kahlil-gibran-kahlil-gibran
+  motif: Draped classic portrait from the jacket
+  source: https://www.penguinrandomhouse.com/books/59586/the-collected-works-of-kahlil-gibran-by-kahlil-gibran/
+the-cooking-of-books-ramachandra-guha:
+  drawing: the-cooking-of-books-ramachandra-guha
+  motif: Alternating sizes of title lettering
+  source: https://books.google.com/books?id=O9bOEAAAQBAJ
+the-cost-of-living-living-autobiography-2:
+  drawing: the-cost-of-living-living-autobiography-2
+  motif: Small inset portrait
+  source: ISBN 0241977568
+the-count-of-monte-cristo-alexandre-dumas:
+  drawing: the-count-of-monte-cristo-alexandre-dumas
+  motif: Castle on a rugged hill
+  source: https://www.penguin.co.uk/books/35416/the-count-of-monte-cristo-by-dumas-alexandre/9780140449266
+the-covenant-of-water-abraham-verghese:
+  drawing: the-covenant-of-water-abraham-verghese
+  motif: Waterside architecture and rippling water
+  source: https://openlibrary.org/works/OL29192912W
+the-coworker-freida-mcfadden:
+  drawing: the-coworker-freida-mcfadden
+  motif: Office window and desk chair
+  source: https://www.freidamcfadden.com/books/standalone-thrillers/the-coworker/
+the-diaries-of-franz-kafka:
+  drawing: the-diaries-of-franz-kafka
+  motif: Kafka standing before a building
+  source: https://www.amazon.in/dp/0241695759
+the-essence-of-compilers-robin-hunter:
+  drawing: the-essence-of-compilers-robin-hunter
+  motif: Interlocking letter and machine forms
+  source: https://openlibrary.org/works/OL1985490W
+the-fever-sonia-faleiro:
+  drawing: the-fever-sonia-faleiro
+  motif: Mosquito line illustration
+  source: https://openlibrary.org/works/OL18166250W
+the-future-of-text-vol-1:
+  drawing: the-future-of-text-vol-1
+  motif: Small serif title low on a plain dark jacket
+  source: https://futuretextpublishing.com/future-of-text-2020-download/
+the-girl-who-knew-too-much:
+  drawing: the-girl-who-knew-too-much
+  motif: Small figure among tall trees
+  source: https://www.penguin.co.in/book/the-girl-who-knew-too-much/
+the-grapes-of-wrath:
+  drawing: the-grapes-of-wrath
+  motif: Winding track through an arid landscape
+  source: ISBN 0141185066
+the-idiot:
+  drawing: the-idiot
+  motif: Cropped face and strong diagonal collar from the jacket portrait
+  source: https://www.penguin.co.uk/books/373070/the-idiot-by-dostoevsky-fyodor/9781857152548
+the-infinite-game:
+  drawing: the-infinite-game
+  motif: Repeating stacked title
+  source: https://openlibrary.org/works/OL20469879W
+the-jackfruit-chronicles-memories-and-recipes-from-a-british-bangladeshi-kitchen:
+  drawing: the-jackfruit-chronicles-memories-and-recipes-from-a-british-bangladeshi-kitchen
+  motif: Whole jackfruit and cut segments
+  source: https://books.google.com/books?id=CU3W0AEACAAJ
+the-lion-and-the-lily-the-rise-and-fall-of-awadh-ira-mukhoty:
+  drawing: the-lion-and-the-lily-the-rise-and-fall-of-awadh-ira-mukhoty
+  motif: Turbaned seated figure in an ornamental frame
+  source: https://www.exoticindiaart.com/book/details/lion-lily-rise-fall-of-awadh-hbh564/
+the-loneliness-of-sonia-and-sunny:
+  drawing: the-loneliness-of-sonia-and-sunny
+  motif: Repeated circular crescent-like motifs
+  source: https://openlibrary.org/works/OL42397165W
+the-making-of-prince-of-persia:
+  drawing: the-making-of-prince-of-persia
+  motif: Blocky running figure
+  source: https://openlibrary.org/works/OL24029650W
+the-midnight-library:
+  drawing: the-midnight-library
+  motif: Lit building beneath a moon
+  source: https://canongate.co.uk/books/2471-the-midnight-library/
+the-origins-of-efficiency:
+  drawing: the-origins-of-efficiency
+  motif: Cutaway mechanical cylinder
+  source: https://books.google.com/books?id=14TL0AEACAAJ
+the-paris-review-interviews-volume-1:
+  drawing: the-paris-review-interviews-volume-1
+  motif: Oversized quotation marks
+  source: ISBN 0312361750
+the-pearl:
+  drawing: the-pearl
+  motif: Oyster shell and pearl
+  source: ISBN 0141185120
+the-picture-of-dorian-gray:
+  drawing: the-picture-of-dorian-gray
+  motif: Repeating peacock feather eyes
+  source: ISBN 0141442468
+the-poppy-war-trilogy:
+  drawing: the-poppy-war-trilogy
+  motif: Dragon linework across the trilogy bands
+  source: https://books.google.com/books/about/The_Complete_Poppy_War_Trilogy.html?id=sjqyEAAAQBAJ
+the-quran-traditional:
+  drawing: the-quran-traditional
+  motif: Geometric ornamental medallion
+  source: User shelf photo 1, 2026-10-11
+the-revolt-of-the-public-and-the-crisis-of-authority-in-the-new-millennium:
+  drawing: the-revolt-of-the-public-and-the-crisis-of-authority-in-the-new-millennium
+  motif: Figure from the blue-toned cover
+  source: ISBN 1732265143
+the-rust-programming-language:
+  drawing: the-rust-programming-language
+  motif: Koala illustration
+  source: https://openlibrary.org/works/OL19080231W
+the-sati-series-box-set:
+  drawing: the-sati-series-box-set
+  motif: Five small framed portraits
+  source: https://www.panmacmillan.co.in/authors/koral-dasgupta/the-sati-series-box-set/9789361136658
+the-scaling-era-an-oral-history-of-ai-2019-2025:
+  drawing: the-scaling-era-an-oral-history-of-ai-2019-2025
+  motif: Stepped grid of small squares
+  source: https://press.stripe.com/scaling
+the-silk-roads-a-new-history-of-the-world:
+  drawing: mosaic
+  motif: Mosaic arch
+  source: https://www.peterfrankopan.com/the-silk-roads.html
+the-society-of-the-spectacle:
+  drawing: the-society-of-the-spectacle
+  motif: Rough horizontal brush field
+  source: https://books.google.com/books?id=FbxqzgEACAAJ
+the-software-engineer-s-guidebook:
+  drawing: the-software-engineer-s-guidebook
+  motif: Stacked small chevrons
+  source: https://www.engguidebook.com/
+the-staff-engineers-path:
+  drawing: the-staff-engineers-path
+  motif: Trees seen from below
+  source: https://www.oreilly.com/library/view/the-staff-engineers/9781098118723/
+the-stories-of-john-cheever:
+  drawing: the-stories-of-john-cheever
+  motif: Street scene and a walking figure
+  source: ISBN 0099748304
+the-story-of-art-e-h-gombrich:
+  drawing: the-story-of-art-e-h-gombrich
+  motif: Centered serif lettering
+  source: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
+the-third-pillar-raghuram-g-rajan:
+  drawing: the-third-pillar-raghuram-g-rajan
+  motif: Classical columns and pediment
+  source: https://www.penguinrandomhouse.com/books/566369/the-third-pillar-by-raghuram-rajan/
+the-trial:
+  drawing: the-trial
+  motif: Clothbound frame and small title
+  source: https://openlibrary.org/works/OL43043884W
+the-vegetarian:
+  drawing: the-vegetarian
+  motif: Dark silhouette and leaf forms
+  source: https://www.penguinrandomhouse.com/books/250333/the-vegetarian-by-han-kang/
+things-i-don-t-want-to-know-living-autobiography-1:
+  drawing: things-i-don-t-want-to-know-living-autobiography-1
+  motif: Large stacked serif title
+  source: https://openlibrary.org/works/OL19980148W
+tom-lake-ann-patchett:
+  drawing: tom-lake-ann-patchett
+  motif: Field of pale flowers
+  source: https://openlibrary.org/works/OL31098954W
+tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin:
+  drawing: tomorrow-and-tomorrow-and-tomorrow-gabrielle-zevin
+  motif: Cresting wave with hooked foam strokes
+  source: https://openlibrary.org/works/OL26004554W
+train-to-pakistan:
+  drawing: train-to-pakistan
+  motif: Steam locomotive seen head-on
+  source: https://www.penguin.co.in/book/train-to-pakistan/
+unboxing-bengaluru:
+  drawing: unboxing-bengaluru
+  motif: Bengaluru landmark facade
+  source: https://www.penguin.co.in/book/unboxing-bengaluru/
+understanding-software-dynamics:
+  drawing: understanding-software-dynamics
+  motif: Small Eiffel Tower inset
+  source: https://www.oreilly.com/library/view/understanding-software-dynamics/9780137589692/
+unit-testing-principles-practices-and-patterns:
+  drawing: unit-testing-principles-practices-and-patterns
+  motif: Historical woman in a long dress
+  source: https://www.manning.com/books/unit-testing
+unsealed-covers-gautam-bhatia:
+  drawing: unsealed-covers-gautam-bhatia
+  motif: Folded paper and a broken wax seal
+  source: https://www.crossword.in/products/unsealed-covers-a-decade-of-the-constitution-the-courts-and-the-state-paperback-bhatia-gautam-1
+victory-city-salman-rushdie:
+  drawing: victory-city-salman-rushdie
+  motif: Stepped temple ruins
+  source: https://openlibrary.org/works/OL28075975W
+whole-numbers-and-half-truths:
+  drawing: whole-numbers-and-half-truths
+  motif: Profile built from horizontal stripes
+  source: https://books.google.com/books/about/Whole_Numbers_And_Half_Truths_What_Data.html?id=2U93zwEACAAJ
+why-the-poor-don-t-kill-us-the-psychology-of-indians:
+  drawing: why-the-poor-don-t-kill-us-the-psychology-of-indians
+  motif: Small guillotine illustration
+  source: ISBN 9365234573
+why-were-polarized:
+  drawing: why-were-polarized
+  motif: Split stacked typography
+  source: https://openlibrary.org/works/OL20648056W
+yellowface:
+  drawing: yellowface
+  motif: A pair of watchful eyes
+  source: https://books.google.com/books/about/Yellowface.html?id=NJsC0AEACAAJ

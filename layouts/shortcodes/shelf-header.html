@@ -6,10 +6,18 @@
       <div class="bookcase-rows" data-bookcase-rows>
         {{ range $index, $entry := $entries }}
           {{ $palette := index hugo.Data.shelf_colors .id }}
+          {{ $art := index hugo.Data.shelf_art .id }}
+          {{ if not $palette }}{{ errorf "Shelf book %q needs a palette in data/shelf_colors.yaml" .id }}{{ end }}
+          {{ if not $art }}{{ errorf "Shelf book %q needs artwork in data/shelf_art.yaml" .id }}{{ end }}
           {{ $seed := int (printf "0x%s" (substr (crypto.MD5 .id) 0 6)) }}
           <a class="bookcase-book" href="#{{ $kind }}-{{ .id }}" data-book-id="{{ $kind }}-{{ .id }}" data-title="{{ .title }}" data-authors="{{ delimit .authors ", " }}" data-kind="{{ $kind }}" style="{{ with $palette }}--cover-color: {{ .background }}; --cover-ink: {{ .ink }}; --cover-accent: {{ .accent }}; {{ end }}--book-height: {{ add 180 (mod $seed 65) }}px; --book-width: {{ add 38 (mod $seed 20) }}px" aria-label="Pull out {{ .title }} by {{ delimit .authors ", " }}">
             <span class="bookcase-spine-title">{{ .title }}</span>
             <span class="bookcase-spine-author" aria-hidden="true">{{ index .authors 0 }}</span>
+            {{ with $art }}
+              {{ $drawing := resources.Get (printf "images/shelf/%s.svg" .drawing) }}
+              {{ if not $drawing }}{{ errorf "Missing shelf artwork: %s.svg" .drawing }}{{ end }}
+              <span class="bookcase-spine-art" aria-hidden="true">{{ with $drawing }}{{ .Content | safeHTML }}{{ end }}</span>
+            {{ end }}
           </a>
         {{ end }}
       </div>
@@ -22,6 +30,7 @@
         <span class="pulled-book-kind"></span>
         <h2 id="pulled-book-title"></h2>
         <p class="pulled-book-authors"></p>
+        <div class="pulled-book-art" aria-hidden="true" hidden></div>
         <span class="pulled-book-rule" aria-hidden="true"></span>
         <div class="pulled-book-status"></div>
       </div>
