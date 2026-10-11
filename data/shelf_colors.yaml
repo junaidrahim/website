@@ -951,6 +951,12 @@ the-diaries-of-franz-kafka:
   accent: "#e5e2e1"
   source: https://www.amazon.in/dp/0241695759
   cover: https://images.penguinrandomhouse.com/cover/9780241695753
+the-employees-olga-ravn:
+  background: "#d7d7d4"
+  ink: "#191919"
+  accent: "#497c94"
+  source: https://www.ndbooks.com/book/the-employees/
+  cover: https://cdn.sanity.io/images/p34gzxcg/production/87eefe2cc6fe29be707720719ac8a1a45d3dacc5-1350x2175.jpg?auto=format&w=500
 the-essence-of-compilers-robin-hunter:
   background: "#f6f2ee"
   ink: "#191919"

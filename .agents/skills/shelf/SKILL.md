@@ -13,9 +13,16 @@ belong in Books. Preserve Junaid’s explicit category choices for existing entr
 ## Files
 
 - `data/shelf.yaml` is the canonical item list. Edit it for routine additions and updates.
+- `data/shelf_colors.yaml`, `data/shelf_art.yaml`, and `assets/images/shelf/` hold each book's researched palette and original cover sketch.
 - `content/shelf.md` owns the page introduction and the two section shortcodes.
-- `layouts/shortcodes/shelf-list.html` renders each section alphabetically by title; data-file order does not affect display.
-- `assets/css/shelf.css` and `assets/js/shelf.js` own the page styling and animated header.
+- `layouts/shortcodes/shelf-header.html` renders the illustrated bookcase; `layouts/partials/shelf-list.html` renders the expandable catalogue. Both sort each section alphabetically by title.
+- `assets/css/shelf.css` and `assets/js/shelf.js` own the shelf styling, responsive rows, and pull-out interaction.
+
+Every new book also needs a cover palette and low-fidelity SVG drawing. Follow the **Shelf** cover-treatment
+instructions in the root `AGENTS.md`: inspect a real cover, record its source and motif, create a matching original
+SVG, register it under the stable book ID, and preview both the spine and pulled-out cover. A plain typographic cover
+gets a typographic interpretation. An unverified cover must be recorded as such; do not invent a cover match.
+The build rejects entries without a palette, artwork mapping, or referenced SVG.
 
 This skill lives in the website repository. Run its commands from that repository root.
 

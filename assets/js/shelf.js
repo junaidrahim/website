@@ -59,6 +59,11 @@
     dialog.querySelector("h2").textContent = book.dataset.title;
     dialog.querySelector(".pulled-book-authors").textContent =
       book.dataset.authors;
+    const drawing = book.querySelector(".bookcase-spine-art svg");
+    const art = dialog.querySelector(".pulled-book-art");
+    art.replaceChildren();
+    art.hidden = !drawing;
+    if (drawing) art.append(drawing.cloneNode(true));
     dialog.querySelector(".pulled-book-kind").textContent =
       `/ ${book.dataset.kind}`;
     const status = dialog.querySelector(".pulled-book-status");
