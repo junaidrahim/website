@@ -1,0 +1,15 @@
+{{- /* Site header shared by the homepage and inner pages; styles in assets/css/site-header.css. */ -}}
+{{- $current := . -}}
+<div class="site-header{{ if .IsHome }} is-home{{ end }}">
+  <div class="site-masthead">
+    <h1 class="site-title"><a href="{{ "/" | relURL }}">{{ site.Title }}</a></h1>
+    <nav class="site-nav" aria-label="Main">
+      {{- range site.Params.menu }}
+      <a href="{{ .url }}"{{ if eq .name (lower $current.Name) }} aria-current="page"{{ end }}>/{{ .name }}</a>
+      {{- end }}
+    </nav>
+  </div>
+  <div class="site-lamp">
+    {{ partial "desk-lamp.html" . }}
+  </div>
+</div>

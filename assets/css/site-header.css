@@ -1,0 +1,107 @@
+/* Site header on every page: the name, the main nav and the desk lamp sit in the same place
+   on the homepage and on inner pages. */
+
+.site-header {
+  --header-top: 4.75rem;
+  --title-size: 2.5rem;
+  --masthead-gap: 1.9rem;
+  /* Top of the name's ascenders, measured from the top of its line box. */
+  --title-ceiling: calc(var(--title-size) * 0.205);
+  position: relative;
+  padding-top: var(--header-top);
+  margin-bottom: 2rem;
+}
+
+.site-masthead {
+  display: flex;
+  flex-direction: column;
+  gap: var(--masthead-gap);
+}
+
+.site-title {
+  margin: 0;
+  font-size: var(--title-size);
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.site-title a,
+.site-nav a {
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.6rem;
+  font: 0.8125rem/1.4 var(--font-mono);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  text-decoration: underline;
+}
+
+.site-nav a[aria-current="page"] {
+  font-weight: 700;
+}
+
+/* The lamp rises from --lamp-room below the nav to the top of the name. Inner pages hang it
+   in the right gutter beside the content column, so their content starts right after the nav. */
+.site-lamp {
+  --lamp-room: 6.25rem;
+  --lamp-height: calc(
+    var(--lamp-room) + var(--title-size) * 1.2 + var(--masthead-gap) + 0.8125rem * 1.4 -
+      var(--title-ceiling)
+  );
+  position: absolute;
+  top: calc(var(--header-top) + var(--title-ceiling));
+  right: 2.5rem;
+}
+
+/* The homepage keeps that room in its layout: the lamp sits in flow below the nav and its
+   columns start --lamp-room further down. */
+.site-header.is-home {
+  margin-bottom: 0;
+}
+
+.is-home .site-lamp {
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: calc(var(--lamp-room) - var(--lamp-height));
+  padding-right: 2.5rem;
+}
+
+/* Without a gutter beside the content column, inner pages keep the lamp within the header,
+   ending where the content begins. */
+@media (max-width: 62.99rem) {
+  .site-header:not(.is-home) .site-lamp {
+    --lamp-height: 100%;
+    bottom: -2rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .site-header {
+    --header-top: 2.75rem;
+    --title-size: 2.2rem;
+  }
+
+  .site-nav {
+    column-gap: 1.3rem;
+  }
+
+  .is-home .site-lamp {
+    --lamp-height: 5.1rem;
+    --lamp-room: 5.9rem;
+    padding-right: 1rem;
+  }
+
+  /* The nav spans the phone's width, so inner pages stand the lamp beside the name. */
+  .site-header:not(.is-home) .site-lamp {
+    --lamp-height: calc(var(--title-size) * (1.2 - 0.205) + var(--masthead-gap) - 0.4rem);
+    bottom: auto;
+    right: 1rem;
+  }
+}

@@ -68,11 +68,7 @@ url = "https://t.me/zebion"
 name = "strava"
 url = "https://www.strava.com/athletes/50189743"
 
-# Main menu pages
-[[params.menu]]
-name = "home"
-url = "/"
-
+# Main menu pages; the site name links home.
 [[params.menu]]
 name = "posts"
 url = "/posts"

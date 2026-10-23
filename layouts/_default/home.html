@@ -14,20 +14,8 @@
 {{ $theme := .Param "theme" | default "auto" }}
 
 <body class="home{{ if ne $theme "auto" }} {{ $theme }}{{ end }}">
-  <header class="home-header">
-    <div class="home-masthead">
-      <h1 class="home-title"><a href="{{ "/" | relURL }}">{{ site.Title }}</a></h1>
-      <nav class="home-nav" aria-label="Main">
-        {{- range site.Params.menu }}
-        {{- if ne .url "/" }}
-        <a href="{{ .url }}">/{{ .name }}</a>
-        {{- end }}
-        {{- end }}
-      </nav>
-    </div>
-    <div class="home-lamp-slot">
-      {{ partial "desk-lamp.html" . }}
-    </div>
+  <header>
+    {{ partial "masthead.html" . }}
   </header>
 
   <main class="home-main">
