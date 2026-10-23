@@ -91,12 +91,12 @@
 }
 
 .home-posts li {
-  margin: 0 0 2.3rem;
+  margin: 0 0 1.25rem;
 }
 
 .home-posts time {
   display: block;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.2rem;
   font: 0.75rem/1.4 var(--font-mono);
   color: var(--content-secondary);
 }
