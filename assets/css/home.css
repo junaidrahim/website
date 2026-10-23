@@ -92,7 +92,7 @@
 
 /* Titles set the line box, so the list's height follows the title size. */
 .home-posts li {
-  margin: 0 0 1rem;
+  margin: 0 0 0.85rem;
   font-size: 1.5rem;
   line-height: 1.25;
 }

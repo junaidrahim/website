@@ -50,7 +50,7 @@
       <h2 class="home-label" id="home-writing-title">{{ site.Params.homeCollectionTitle }}</h2>
       {{ $dateFormat := site.Params.listDateFormat | default "2 Jan 2006" }}
       <ol class="home-posts">
-        {{- range first 6 (where site.RegularPages "Section" site.Params.homeCollection) }}
+        {{- range first 5 (where site.RegularPages "Section" site.Params.homeCollection) }}
         <li>
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format $dateFormat }}</time>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
