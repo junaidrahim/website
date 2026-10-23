@@ -13,7 +13,12 @@
   const REST_AXIS = 90 + 20;
   const SHADE_LIMIT = 24;
   const ARM_LIMIT = 5;
-  const EASE_MS = 160;
+  // The lamp notices the pointer a beat late and ignores small shifts.
+  const DELAY_MS = 120;
+  const DEADBAND = 1.5;
+  // Damped springs: the shade settles first and the upper arm follows the shade.
+  const SHADE_SPRING = { omega: 9, zeta: 0.82 };
+  const ARM_SPRING = { omega: 5.5, zeta: 0.95 };
 
   lamp.addEventListener("click", () => {
     const on = lamp.getAttribute("aria-pressed") !== "true";
@@ -23,59 +28,80 @@
   const finePointer = matchMedia("(hover: hover) and (pointer: fine)");
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 
-  let shadeAngle = 0;
-  let armAngle = 0;
-  let shadeTarget = 0;
-  let armTarget = 0;
+  const shadeJoint = { angle: 0, velocity: 0, target: 0 };
+  const armJoint = { angle: 0, velocity: 0, target: 0 };
+  let samples = [];
   let frame = 0;
   let lastTime = 0;
 
   const clamp = (value, limit) => Math.min(limit, Math.max(-limit, value));
 
   const render = () => {
-    shade.setAttribute("transform", `rotate(${shadeAngle.toFixed(2)})`);
-    upper.setAttribute("transform", `rotate(${armAngle.toFixed(2)} ${ELBOW[0]} ${ELBOW[1]})`);
+    shade.setAttribute("transform", `rotate(${shadeJoint.angle.toFixed(2)})`);
+    upper.setAttribute(
+      "transform",
+      `rotate(${armJoint.angle.toFixed(2)} ${ELBOW[0]} ${ELBOW[1]})`,
+    );
   };
 
-  // Ease toward the target and stop scheduling frames once settled.
+  const spring = (joint, { omega, zeta }, dt) => {
+    const acceleration =
+      omega * omega * (joint.target - joint.angle) - 2 * zeta * omega * joint.velocity;
+    joint.velocity += acceleration * dt;
+    joint.angle += joint.velocity * dt;
+  };
+
+  const settled = (joint) =>
+    Math.abs(joint.target - joint.angle) < 0.02 && Math.abs(joint.velocity) < 0.02;
+
   const step = (now) => {
-    const k = 1 - Math.exp(-(lastTime ? now - lastTime : 16) / EASE_MS);
+    // Release pointer samples only after the reaction delay has passed.
+    while (samples.length && samples[0].time <= now - DELAY_MS) {
+      const { angle } = samples.shift();
+      if (angle === 0 || Math.abs(angle - shadeJoint.target) > DEADBAND) shadeJoint.target = angle;
+    }
+    const dt = Math.min(lastTime ? now - lastTime : 16, 32) / 1000;
     lastTime = now;
-    shadeAngle += (shadeTarget - shadeAngle) * k;
-    armAngle += (armTarget - armAngle) * k;
-    const settled =
-      Math.abs(shadeTarget - shadeAngle) < 0.05 && Math.abs(armTarget - armAngle) < 0.05;
-    if (settled) {
-      shadeAngle = shadeTarget;
-      armAngle = armTarget;
+    spring(shadeJoint, SHADE_SPRING, dt);
+    armJoint.target = clamp(shadeJoint.angle * 0.2, ARM_LIMIT);
+    spring(armJoint, ARM_SPRING, dt);
+
+    if (!samples.length && settled(shadeJoint) && settled(armJoint)) {
+      shadeJoint.angle = shadeJoint.target;
+      armJoint.angle = armJoint.target;
+      shadeJoint.velocity = armJoint.velocity = 0;
+      render();
+      frame = 0;
+      return;
     }
     render();
-    frame = settled ? 0 : requestAnimationFrame(step);
+    frame = requestAnimationFrame(step);
   };
 
-  const aim = (shadeDeg, armDeg) => {
-    shadeTarget = shadeDeg;
-    armTarget = armDeg;
+  const aim = (angle) => {
+    samples.push({ time: performance.now(), angle });
     if (!frame) {
       lastTime = 0;
       frame = requestAnimationFrame(step);
     }
   };
 
-  const rest = () => aim(0, 0);
+  const rest = () => aim(0);
 
   const follow = (event) => {
     if (event.pointerType !== "mouse") return;
     const pivot = new DOMPoint(HEAD[0], HEAD[1]).matrixTransform(svg.getScreenCTM());
     const dx = event.clientX - pivot.x;
     const dy = event.clientY - pivot.y;
+    const distance = Math.hypot(dx, dy);
+    // Right at the hinge the direction is meaningless; hold the current pose.
+    if (distance < 24) return;
     const delta = ((((Math.atan2(dy, dx) * 180) / Math.PI - REST_AXIS) % 360) + 540) % 360 - 180;
     // Behind the lamp, fade back to rest instead of flipping between the limits.
     const facing = Math.min(1, (180 - Math.abs(delta)) / 60);
     // A distant pointer earns a glance; a nearby one a closer look.
-    const attention = Math.min(1, Math.max(0.35, 1 - Math.hypot(dx, dy) / 900));
-    const shadeDeg = clamp(delta * 0.5 * facing * attention, SHADE_LIMIT);
-    aim(shadeDeg, clamp(shadeDeg * 0.2, ARM_LIMIT));
+    const attention = Math.min(1, Math.max(0.35, 1 - distance / 900));
+    aim(clamp(delta * 0.5 * facing * attention, SHADE_LIMIT));
   };
 
   const leave = (event) => {
@@ -94,7 +120,8 @@
     }
     cancelAnimationFrame(frame);
     frame = 0;
-    shadeAngle = shadeTarget = armAngle = armTarget = 0;
+    samples = [];
+    for (const joint of [shadeJoint, armJoint]) joint.angle = joint.velocity = joint.target = 0;
     render();
   };
 
