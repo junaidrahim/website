@@ -15,9 +15,8 @@
 
 .home-masthead {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem 2rem;
+  flex-direction: column;
+  gap: 1.9rem;
 }
 
 .home-title {
@@ -36,7 +35,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1.6rem;
-  padding-top: 0.6rem;
   font: 0.8125rem/1.4 var(--font-mono);
 }
 
@@ -177,18 +175,12 @@
     padding-top: 2.75rem;
   }
 
-  .home-masthead {
-    flex-direction: column;
-    gap: 1.9rem;
-  }
-
   .home-title {
     font-size: 2.2rem;
   }
 
   .home-nav {
     column-gap: 1.3rem;
-    padding-top: 0;
   }
 
   .home-pen {
