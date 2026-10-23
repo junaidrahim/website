@@ -1,7 +1,7 @@
 {{- /*
   Homepage: editorial split. This template deliberately skips baseof.html so the
-  homepage can own its masthead and footer while every other page keeps the
-  shared theme header and footer.
+  homepage keeps the lamp's room in its own layout; the masthead partial is shared
+  with every other page.
 */ -}}
 <!DOCTYPE html>
 <html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
@@ -53,10 +53,6 @@
       {{ end }}
     </section>
   </main>
-
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
 
   {{ partial "functions/get_hook.html" (dict "hook" "body_end" "context" .) }}
 </body>

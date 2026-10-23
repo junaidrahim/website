@@ -29,22 +29,19 @@ html {
   scroll-behavior: smooth;
 }
 
-/* A column that fills the viewport, so short pages keep the footer at the bottom. */
+/* There is no footer; the bottom padding leaves the same quiet space under every page. */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   font-family: var(--font-body);
   margin: auto;
   max-width: var(--main-width);
-  padding-left: var(--main-padding);
-  padding-right: var(--main-padding);
+  padding: 0 var(--main-padding) 6rem;
   color: var(--content-primary);
   background: var(--background);
 }
 
-.content {
-  flex: 1 0 auto;
+/* The theme's baseof always renders a <footer>; the site has none (showFooter = false). */
+body > footer {
+  display: none;
 }
 
 h1 {
@@ -220,20 +217,6 @@ hr {
   max-width: var(--content-width);
 }
 
-/* Footer: a rule and the site name, the same on every page. */
-
-body > footer {
-  margin-top: 6rem;
-  padding: 1.75rem 0 3.9rem;
-  border-top: 1px solid var(--rule);
-}
-
-.site-colophon {
-  margin: 0;
-  font: 0.75rem/1.4 var(--font-mono);
-  color: var(--content-secondary);
-}
-
 /* Posts list  */
 
 .post-line {
@@ -386,51 +369,18 @@ body > footer {
 /* Single pagination */
 
 .single-pagination {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
 }
 
-.single-pagination a {
-  margin-left: 0.4rem;
-  margin-right: 0.4rem;
-}
-
-.single-pagination hr {
+.single-pagination p {
   margin: 0;
-}
-
-.single-pagination-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100%;
-}
-
-.single-pagination-prev {
-  min-width: 50%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-align: right;
-}
-
-.single-pagination-next {
-  min-width: 50%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.single-pagination-container-next {
-  display: flex;
-  min-height: 100%;
-  padding: 0.5rem;
-}
-
-.single-pagination-container-prev {
-  display: flex;
-  min-height: 100%;
-  padding: 0.5rem;
-  float: right;
 }
 
 /* Table of contents: inline and collapsible on narrow screens; fixed in the left margin,
@@ -671,7 +621,7 @@ figcaption {
 /* Back to top */
 
 .back-to-top {
-  text-align: center;
+  text-align: left;
   font-family: var(--font-mono);
   font-size: small;
 }

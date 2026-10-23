@@ -13,6 +13,8 @@ disableKinds = ['taxonomy']
 # Math mode
 math = true
 theme = "light"
+# The site has no footer.
+showFooter = false
 
 # Intro on main page, content in markdown, if you omit title or content the other can be displayed
 homeIntro = true
