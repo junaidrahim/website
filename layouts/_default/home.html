@@ -1,0 +1,84 @@
+{{- /*
+  Homepage: editorial split. This template deliberately skips baseof.html so the
+  homepage can own its masthead and footer while every other page keeps the
+  shared theme header and footer.
+*/ -}}
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+{{ $theme := .Param "theme" | default "auto" }}
+
+<body class="home{{ if ne $theme "auto" }} {{ $theme }}{{ end }}">
+  <header class="home-header">
+    <div class="home-masthead">
+      <h1 class="home-title"><a href="{{ "/" | relURL }}">{{ site.Title }}</a></h1>
+      <nav class="home-nav" aria-label="Main">
+        {{- range site.Params.menu }}
+        {{- if and (ne .url "/") (not .footer) }}
+        <a href="{{ .url }}">/{{ .name }}</a>
+        {{- end }}
+        {{- end }}
+      </nav>
+    </div>
+    <div class="home-pen">
+      {{ with resources.Get "images/home/fountain-pen.svg" }}{{ .Content | safeHTML }}{{ end }}
+    </div>
+  </header>
+
+  <main class="home-main">
+    <section class="home-intro" aria-labelledby="home-intro-title">
+      <h2 class="home-label" id="home-intro-title">{{ site.Params.homeIntroTitle }}</h2>
+      {{ site.Params.homeIntroContent | markdownify }}
+    </section>
+
+    <section class="home-writing" aria-labelledby="home-writing-title">
+      <h2 class="home-label" id="home-writing-title">{{ site.Params.homeCollectionTitle }}</h2>
+      {{ $dateFormat := site.Params.listDateFormat | default "2 Jan 2006" }}
+      <ol class="home-posts">
+        {{- range first 6 (where site.RegularPages "Section" site.Params.homeCollection) }}
+        <li>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format $dateFormat }}</time>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{- end }}
+      </ol>
+      {{ with site.GetPage site.Params.homeCollection }}
+      <a class="home-all" href="{{ .RelPermalink }}">All posts →</a>
+      {{ end }}
+    </section>
+  </main>
+
+  <footer class="home-footer">
+    {{ with site.Params.social }}
+    <div class="home-social">
+      {{- range . }}
+      <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
+        title="{{ (.title | default .name) | title }}">
+        {{ partial "svg.html" . }}
+      </a>
+      {{- end }}
+    </div>
+    {{ end }}
+    <div class="home-colophon">
+      <span>{{ site.Title }}</span>
+      <nav class="home-footer-links" aria-label="More">
+        {{- range site.Params.menu }}
+        {{- if .footer }}
+        <a href="{{ .url }}">/{{ .name }}</a>
+        {{- end }}
+        {{- end }}
+        {{- with .OutputFormats.Get "rss" }}
+        <a href="{{ .RelPermalink }}">RSS</a>
+        {{- end }}
+      </nav>
+    </div>
+  </footer>
+
+  {{ partial "functions/get_hook.html" (dict "hook" "body_end" "context" .) }}
+</body>
+</html>

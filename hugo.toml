@@ -16,7 +16,7 @@ theme = "light"
 
 # Intro on main page, content in markdown, if you omit title or content the other can be displayed
 homeIntro = true
-homeIntroTitle = 'Hello ☕️'
+homeIntroTitle = 'Hello'
 homeIntroContent = """
 I'm a senior software engineer in the CTO's office at [Fivetran](https://www.fivetran.com).
 
@@ -29,7 +29,7 @@ I've written a longer introduction [here](/about) if you're interested :)
 
 # Collection to display on home page:
 # in this case we would display content/posts pages
-homeCollectionTitle = 'Posts'
+homeCollectionTitle = 'Recent writing'
 homeCollection = 'posts'
 
 # Pagination size across all website, this is the same for homepage and single list page
@@ -96,6 +96,8 @@ url = "/about"
 [[params.menu]]
 name = "ai"
 url = "/ai"
+# Linked from the homepage footer instead of its main navigation.
+footer = true
 
 
 # Syntax highlight on code blocks, all styles:
