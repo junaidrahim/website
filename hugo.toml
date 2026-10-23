@@ -16,7 +16,7 @@ theme = "light"
 
 # Intro on main page, content in markdown, if you omit title or content the other can be displayed
 homeIntro = true
-homeIntroTitle = 'Hello'
+homeIntroTitle = 'About'
 homeIntroContent = """
 I'm a senior software engineer in the CTO's office at [Fivetran](https://www.fivetran.com).
 
