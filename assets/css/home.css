@@ -10,18 +10,20 @@
 /* Masthead */
 
 .home-header {
+  --title-size: 2.5rem;
+  --masthead-gap: 1.9rem;
   padding-top: 4.75rem;
 }
 
 .home-masthead {
   display: flex;
   flex-direction: column;
-  gap: 1.9rem;
+  gap: var(--masthead-gap);
 }
 
 .home-title {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: var(--title-size);
   font-weight: normal;
   line-height: 1.2;
 }
@@ -43,11 +45,15 @@
   text-decoration: underline;
 }
 
-/* The lamp grows upward into the empty space beside the nav: --lamp-room keeps the
-   slot's total height, so everything below the header stays where it was. */
+/* The lamp's slot keeps its original height (--lamp-room), so nothing below the header
+   moves. The drawing rises from the slot's bottom edge, past the nav, to the top of the
+   name's ascenders (0.205em below the top of the name's line box). */
 .home-lamp-slot {
-  --lamp-height: 10rem;
   --lamp-room: 6.25rem;
+  --lamp-height: calc(
+    var(--lamp-room) + var(--title-size) * 1.2 + var(--masthead-gap) + 0.8125rem * 1.4 -
+      var(--title-size) * 0.205
+  );
   display: flex;
   justify-content: flex-end;
   margin-top: calc(var(--lamp-room) - var(--lamp-height));
@@ -70,23 +76,21 @@
   outline-offset: 4px;
 }
 
-/* Fixed size (viewBox 72 × 84) so the lamp never shifts the layout. */
+/* Fixed size (viewBox 174 × 187.2) so the lamp never shifts the layout. */
 .home-lamp svg {
   display: block;
-  width: calc(var(--lamp-height) * 6 / 7);
+  width: calc(var(--lamp-height) * 174 / 187.2);
   height: var(--lamp-height);
   overflow: visible;
-  stroke-width: 1.45px;
 }
 
-/* Line weight stays constant in screen pixels at every lamp size. */
-.home-lamp svg * {
-  vector-effect: non-scaling-stroke;
-}
-
-.home-lamp .lamp-joint {
+/* Paper-coloured fills and highlights let the ink drawing occlude itself in both themes. */
+.home-lamp .paper {
   fill: var(--background);
-  stroke-width: 1.2px;
+}
+
+.home-lamp .paper-stroke {
+  stroke: var(--background);
 }
 
 .home-lamp .lamp-bulb {
@@ -95,23 +99,26 @@
   transition: fill-opacity 240ms ease;
 }
 
-.home-lamp .lamp-rays {
+.home-lamp .lamp-light {
   opacity: 0;
-  stroke-width: 1.2px;
   transition: opacity 240ms ease;
 }
 
-.home-lamp[aria-pressed="true"] .lamp-bulb {
-  fill-opacity: 0.3;
+.home-lamp .lamp-rays {
+  stroke-opacity: 0.7;
 }
 
-.home-lamp[aria-pressed="true"] .lamp-rays {
-  opacity: 0.8;
+.home-lamp[aria-pressed="true"] .lamp-bulb {
+  fill-opacity: 0.22;
+}
+
+.home-lamp[aria-pressed="true"] .lamp-light {
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .home-lamp .lamp-bulb,
-  .home-lamp .lamp-rays {
+  .home-lamp .lamp-light {
     transition: none;
   }
 }
@@ -253,11 +260,8 @@
 
 @media (max-width: 40rem) {
   .home-header {
+    --title-size: 2.2rem;
     padding-top: 2.75rem;
-  }
-
-  .home-title {
-    font-size: 2.2rem;
   }
 
   .home-nav {
@@ -265,7 +269,7 @@
   }
 
   .home-lamp-slot {
-    --lamp-height: 5.5rem;
+    --lamp-height: 5.1rem;
     --lamp-room: 5.9rem;
     padding-right: 1rem;
   }

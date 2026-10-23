@@ -7,10 +7,11 @@
   const upper = svg.querySelector(".lamp-upper");
   const shade = svg.querySelector(".lamp-shade");
 
-  // Joint positions and the shade's resting direction, in viewBox units and screen degrees.
-  const ELBOW = [56, 40];
-  const HEAD = [28, 22];
-  const REST_AXIS = 90 + 20;
+  // The drawing declares its joints (viewBox units) and the shade's resting tilt (degrees).
+  const point = (value) => value.split(" ").map(Number);
+  const ELBOW = point(svg.dataset.elbow);
+  const HEAD = point(svg.dataset.head);
+  const REST_AXIS = 90 + Number(svg.dataset.rest);
   const SHADE_LIMIT = 24;
   const ARM_LIMIT = 5;
   // The lamp notices the pointer a beat late and ignores small shifts.
