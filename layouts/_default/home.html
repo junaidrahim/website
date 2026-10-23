@@ -54,6 +54,9 @@
         <li>
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format $dateFormat }}</time>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{- with .Description }}
+          <p>{{ . }}</p>
+          {{- end }}
         </li>
         {{- end }}
       </ol>
