@@ -26,9 +26,7 @@
       </nav>
     </div>
     <div class="home-lamp-slot">
-      <button class="home-lamp" type="button" aria-pressed="false" aria-label="Desk lamp">
-        {{ with resources.Get "images/home/desk-lamp.svg" }}{{ .Content | safeHTML }}{{ end }}
-      </button>
+      {{ partial "desk-lamp.html" . }}
     </div>
   </header>
 

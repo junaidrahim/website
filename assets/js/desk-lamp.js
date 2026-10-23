@@ -1,6 +1,6 @@
-// Homepage desk lamp: the shade glances toward a mouse pointer and the button toggles the light.
+// Site-wide desk lamp: the shade glances toward a mouse pointer and the button toggles the light.
 (() => {
-  const lamp = document.querySelector(".home-lamp");
+  const lamp = document.querySelector(".desk-lamp");
   const svg = lamp?.querySelector("svg");
   if (!svg) return;
 

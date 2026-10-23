@@ -1,0 +1,68 @@
+/* Desk lamp shown in every page header. Its container sets --lamp-height (a length, or 100%
+   of a container with a definite height); the width follows the drawing's viewBox. */
+
+.desk-lamp {
+  --lamp-ink: light-dark(#385568, #86a9ba);
+  display: block;
+  height: var(--lamp-height);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--lamp-ink);
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.desk-lamp:focus-visible {
+  outline: 2px solid var(--lamp-ink);
+  outline-offset: 4px;
+}
+
+/* Fixed size (viewBox 174 × 187.2) so the lamp never shifts the layout. */
+.desk-lamp svg {
+  display: block;
+  width: auto;
+  height: 100%;
+  aspect-ratio: 174 / 187.2;
+  overflow: visible;
+}
+
+/* Paper-coloured fills and highlights let the ink drawing occlude itself in both themes. */
+.desk-lamp .paper {
+  fill: var(--background);
+}
+
+.desk-lamp .paper-stroke {
+  stroke: var(--background);
+}
+
+.desk-lamp .lamp-bulb {
+  fill: currentColor;
+  fill-opacity: 0;
+  transition: fill-opacity 240ms ease;
+}
+
+.desk-lamp .lamp-light {
+  opacity: 0;
+  transition: opacity 240ms ease;
+}
+
+.desk-lamp .lamp-rays {
+  stroke-opacity: 0.7;
+}
+
+.desk-lamp[aria-pressed="true"] .lamp-bulb {
+  fill-opacity: 0.22;
+}
+
+.desk-lamp[aria-pressed="true"] .lamp-light {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .desk-lamp .lamp-bulb,
+  .desk-lamp .lamp-light {
+    transition: none;
+  }
+}

@@ -212,8 +212,27 @@ hr {
 /* Header */
 
 .header {
+  position: relative;
   padding-top: var(--header-top-gap);
   margin-bottom: var(--header-bottom-gap);
+}
+
+/* The desk lamp stands in the header's empty right side, from the top of the name's
+   ascenders (0.205em of the 2.2em title) down to the header's bottom edge. */
+.header-lamp {
+  --lamp-height: 100%;
+  position: absolute;
+  top: calc(var(--header-top-gap) + 2.2em * 0.205);
+  right: 0;
+  bottom: 0;
+}
+
+/* On phones the nav spans the full width, so the lamp stays beside the name. */
+@media screen and (max-width: 640px) {
+  .header-lamp {
+    bottom: auto;
+    height: calc(2.2em * (1.2 - 0.205));
+  }
 }
 
 .header p {

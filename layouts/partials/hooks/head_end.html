@@ -1,9 +1,12 @@
+{{ with resources.Get "css/desk-lamp.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+{{ end }}
+{{ with resources.Get "js/desk-lamp.js" | minify | fingerprint }}
+  <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
+{{ end }}
 {{ if .IsHome }}
   {{ with resources.Get "css/home.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
-  {{ end }}
-  {{ with resources.Get "js/home-lamp.js" | minify | fingerprint }}
-    <script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>
   {{ end }}
 {{ end }}
 {{ if .Params.shelf }}

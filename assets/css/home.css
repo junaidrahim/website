@@ -60,69 +60,6 @@
   padding-right: 2.5rem;
 }
 
-.home-lamp {
-  display: block;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: var(--home-accent);
-  cursor: pointer;
-  touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.home-lamp:focus-visible {
-  outline: 2px solid var(--home-accent);
-  outline-offset: 4px;
-}
-
-/* Fixed size (viewBox 174 × 187.2) so the lamp never shifts the layout. */
-.home-lamp svg {
-  display: block;
-  width: calc(var(--lamp-height) * 174 / 187.2);
-  height: var(--lamp-height);
-  overflow: visible;
-}
-
-/* Paper-coloured fills and highlights let the ink drawing occlude itself in both themes. */
-.home-lamp .paper {
-  fill: var(--background);
-}
-
-.home-lamp .paper-stroke {
-  stroke: var(--background);
-}
-
-.home-lamp .lamp-bulb {
-  fill: currentColor;
-  fill-opacity: 0;
-  transition: fill-opacity 240ms ease;
-}
-
-.home-lamp .lamp-light {
-  opacity: 0;
-  transition: opacity 240ms ease;
-}
-
-.home-lamp .lamp-rays {
-  stroke-opacity: 0.7;
-}
-
-.home-lamp[aria-pressed="true"] .lamp-bulb {
-  fill-opacity: 0.22;
-}
-
-.home-lamp[aria-pressed="true"] .lamp-light {
-  opacity: 1;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .home-lamp .lamp-bulb,
-  .home-lamp .lamp-light {
-    transition: none;
-  }
-}
-
 /* Columns */
 
 .home-main {

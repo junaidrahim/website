@@ -1,0 +1,4 @@
+{{- /* The interactive desk lamp shown in every page header; behaviour lives in assets/js/desk-lamp.js. */ -}}
+<button class="desk-lamp" type="button" aria-pressed="false" aria-label="Desk lamp">
+  {{ with resources.Get "images/desk-lamp.svg" }}{{ .Content | safeHTML }}{{ end }}
+</button>
