@@ -445,6 +445,8 @@ footer a {
 
 .post-toc summary {
   cursor: pointer;
+  font-size: 1.15em;
+  font-weight: 700;
 }
 
 .post-toc ul {
