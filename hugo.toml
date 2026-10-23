@@ -96,8 +96,6 @@ url = "/about"
 [[params.menu]]
 name = "ai"
 url = "/ai"
-# Linked from the homepage footer instead of its main navigation.
-footer = true
 
 
 # Syntax highlight on code blocks, all styles:

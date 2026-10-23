@@ -159,21 +159,10 @@
   font-size: inherit;
 }
 
-.home-footer a {
-  margin: 0;
-}
-
 .home-colophon {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+  margin: 0;
   font: 0.75rem/1.4 var(--font-mono);
   color: var(--content-secondary);
-}
-
-.home-footer-links {
-  display: flex;
-  gap: 1.6rem;
 }
 
 @media (min-width: 56rem) {

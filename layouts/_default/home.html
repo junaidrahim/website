@@ -19,7 +19,7 @@
       <h1 class="home-title"><a href="{{ "/" | relURL }}">{{ site.Title }}</a></h1>
       <nav class="home-nav" aria-label="Main">
         {{- range site.Params.menu }}
-        {{- if and (ne .url "/") (not .footer) }}
+        {{- if ne .url "/" }}
         <a href="{{ .url }}">/{{ .name }}</a>
         {{- end }}
         {{- end }}
@@ -64,19 +64,7 @@
   </main>
 
   <footer class="home-footer">
-    <div class="home-colophon">
-      <span>{{ site.Title }}</span>
-      <nav class="home-footer-links" aria-label="More">
-        {{- range site.Params.menu }}
-        {{- if .footer }}
-        <a href="{{ .url }}">/{{ .name }}</a>
-        {{- end }}
-        {{- end }}
-        {{- with .OutputFormats.Get "rss" }}
-        <a href="{{ .RelPermalink }}">RSS</a>
-        {{- end }}
-      </nav>
-    </div>
+    <p class="home-colophon">{{ site.Title }}</p>
   </footer>
 
   {{ partial "functions/get_hook.html" (dict "hook" "body_end" "context" .) }}
