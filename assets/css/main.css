@@ -218,20 +218,22 @@ hr {
 }
 
 /* The desk lamp stands in the header's empty right side, from the top of the name's
-   ascenders (0.205em of the 2.2em title) down to the header's bottom edge. */
+   ascenders (0.205em of the 2.2em title) down through the header's bottom margin to where
+   the page content begins. It is absolutely positioned, so the page layout is unchanged. */
 .header-lamp {
   --lamp-height: 100%;
   position: absolute;
   top: calc(var(--header-top-gap) + 2.2em * 0.205);
   right: 0;
-  bottom: 0;
+  bottom: calc(-1 * var(--header-bottom-gap));
 }
 
-/* On phones the nav spans the full width, so the lamp stays beside the name. */
+/* On phones the first nav row spans the full width, so the lamp stands below it,
+   beside the shorter second row. */
 @media screen and (max-width: 640px) {
   .header-lamp {
-    bottom: auto;
-    height: calc(2.2em * (1.2 - 0.205));
+    top: auto;
+    height: 4.5rem;
   }
 }
 
