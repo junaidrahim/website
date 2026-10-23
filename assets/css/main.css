@@ -432,23 +432,97 @@ footer a {
   float: right;
 }
 
-/* Table of contents */
+/* Table of contents: inline and collapsible on narrow screens; fixed in the left margin,
+   level with the nav, once the margin is wide enough. */
 
-.toc {
-  font-size: var(--p-font-size);
-  line-height: calc(0.9 * var(--p-line-height));
+.post-toc {
   margin-top: var(--toc-margin-top);
   margin-bottom: var(--toc-margin-bottom);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--content-secondary);
 }
 
-.toc ul {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+.post-toc summary {
+  cursor: pointer;
 }
 
-.toc li {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+.post-toc ul {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-toc ul ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.post-toc li {
+  margin: 0.25rem 0;
+}
+
+.post-toc a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-toc a:hover,
+.post-toc a:focus-visible,
+.post-toc a.is-active {
+  color: var(--accent);
+}
+
+@media (min-width: 85rem) {
+  .post-toc {
+    position: fixed;
+    top: calc(4.75rem + 2.5rem * 1.2 + 1.9rem);
+    /* 10rem wide, 1.75rem left of the 60rem container's content edge. */
+    left: calc(50vw - 30rem - 1.75rem - 10rem);
+    width: 10rem;
+    max-height: calc(100vh - 12rem);
+    overflow-y: auto;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .post-toc summary {
+    list-style: none;
+    pointer-events: none;
+  }
+
+  .post-toc summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* Sidenotes: footnotes are copied beside their references in the right gutter
+   (assets/js/post-margins.js) and the endnotes are hidden while that gutter exists. */
+
+.sidenote {
+  display: none;
+}
+
+@media (min-width: 63rem) {
+  .sidenote {
+    display: block;
+    float: right;
+    clear: right;
+    /* 12.5rem wide, 1.75rem into the 14.375rem gutter beside the reading column. */
+    width: 12.5rem;
+    margin: 0.3rem -14.25rem 1rem 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--content-secondary);
+  }
+
+  .sidenote sup {
+    font-size: 0.75em;
+  }
+
+  .has-sidenotes .footnotes {
+    display: none;
+  }
 }
 
 /* Autonumbering */

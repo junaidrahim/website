@@ -2,7 +2,7 @@
    of a container with a definite height); the width follows the drawing's viewBox. */
 
 .desk-lamp {
-  --lamp-ink: light-dark(#385568, #86a9ba);
+  --lamp-ink: var(--accent);
   display: block;
   height: var(--lamp-height);
   padding: 0;

@@ -1,7 +1,7 @@
 /* Homepage: editorial split. Two columns on wide screens, one column on phones. */
 
 .home {
-  --home-accent: light-dark(#385568, #86a9ba);
+  --home-accent: var(--accent);
   --home-rule: light-dark(#b0b0b0, #606060);
 }
 

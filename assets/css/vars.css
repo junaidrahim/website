@@ -33,6 +33,9 @@
 
   --caption-padding: calc(0.25 * var(--main-padding));
 
+  /* Fountain-ink accent (Working Notes palette). */
+  --accent: light-dark(#385568, #86a9ba);
+
   /* Typography */
   --font-heading:
     "Iowan Old Style", Georgia, Cambria, "Noto Serif", "Droif Serif", ui-serif,

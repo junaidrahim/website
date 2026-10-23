@@ -59,13 +59,14 @@
       {{- end }}
     {{- end }}
     
-    {{- /* Table of Contents */}}
-    
-    {{- if .Param "toc" }}
-      <aside class="toc">
-        <p><strong>Table of contents</strong></p>
+    {{- /* Table of contents: inline and collapsible on narrow screens, fixed in the left
+         margin on wide ones (see assets/js/post-margins.js). */}}
+
+    {{- if and (.Param "toc") (findRE "<li>" .TableOfContents 1) }}
+      <details class="post-toc" open>
+        <summary>Contents</summary>
         {{ .TableOfContents }}
-      </aside>
+      </details>
     {{- end }}
     
     {{- /* Page content */}}
