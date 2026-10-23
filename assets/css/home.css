@@ -46,7 +46,7 @@
 /* The lamp grows upward into the empty space beside the nav: --lamp-room keeps the
    slot's total height, so everything below the header stays where it was. */
 .home-lamp-slot {
-  --lamp-height: 7rem;
+  --lamp-height: 10rem;
   --lamp-room: 6.25rem;
   display: flex;
   justify-content: flex-end;
@@ -265,7 +265,7 @@
   }
 
   .home-lamp-slot {
-    --lamp-height: 5rem;
+    --lamp-height: 5.5rem;
     --lamp-room: 5.9rem;
     padding-right: 1rem;
   }
