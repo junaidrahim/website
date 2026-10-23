@@ -1,11 +1,11 @@
-{{- /* Previous and next pages in the section, stacked and left-aligned with the text. */ -}}
+{{- /* Previous page on the left edge of the text column, next page on the right edge. */ -}}
 {{ if or .NextInSection .PrevInSection }}
 <nav class="single-pagination" aria-label="Previous and next">
   {{- with .PrevInSection }}
-  <p><span aria-hidden="true">←</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+  <p class="single-pagination-prev"><span aria-hidden="true">←</span> <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
   {{- end }}
   {{- with .NextInSection }}
-  <p><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span aria-hidden="true">→</span></p>
+  <p class="single-pagination-next"><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span aria-hidden="true">→</span></p>
   {{- end }}
 </nav>
 {{ end }}

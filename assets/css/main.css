@@ -366,12 +366,12 @@ hr {
   margin-right: 0.3rem;
 }
 
-/* Single pagination */
+/* Single pagination: previous on the text column's left edge, next on its right edge. */
 
 .single-pagination {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: baseline;
+  gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding: 1.25rem 0;
@@ -380,7 +380,13 @@ hr {
 }
 
 .single-pagination p {
+  flex: 0 1 50%;
   margin: 0;
+}
+
+.single-pagination .single-pagination-next {
+  margin-left: auto;
+  text-align: right;
 }
 
 /* Table of contents: inline and collapsible on narrow screens; fixed in the left margin,
