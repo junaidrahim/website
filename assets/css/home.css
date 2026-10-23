@@ -1,0 +1,124 @@
+/* Homepage: editorial split. Two columns on wide screens, one column on phones. */
+
+/* Columns */
+
+.home-main {
+  display: grid;
+  gap: 3.5rem;
+  margin-top: 2.25rem;
+}
+
+.home-label {
+  margin: 0 0 1.5rem;
+  font: 1.2rem/1.4 var(--font-heading);
+  color: var(--content-secondary);
+}
+
+.home-intro {
+  max-width: 36rem;
+}
+
+.home-intro p {
+  margin: 0 0 1.4rem;
+  font-size: 1.1875rem;
+  line-height: 1.68;
+}
+
+.home-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.home-posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Titles set the line box, so the list's height follows the title size. */
+.home-posts li {
+  margin: 0 0 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.home-posts time {
+  display: block;
+  margin-bottom: 0.2rem;
+  font: 0.95rem/1.3 var(--font-heading);
+  color: var(--content-secondary);
+}
+
+.home-posts a {
+  text-decoration: none;
+}
+
+.home-posts p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--content-secondary);
+}
+
+/* The newest post carries the page's single accent. */
+.home-posts li:first-child a,
+.home-posts a:hover,
+.home-posts a:focus-visible {
+  color: var(--accent);
+}
+
+.home-posts a:hover,
+.home-posts a:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.home-all {
+  display: block;
+  width: fit-content;
+  font: 0.75rem/1.4 var(--font-mono);
+}
+
+.home-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2.125rem;
+  margin-top: 2.25rem;
+}
+
+.home-social a {
+  display: block;
+  text-decoration: none;
+}
+
+.home-social svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 56rem) {
+  .home-main {
+    grid-template-columns: 21.5rem minmax(0, 1fr);
+    column-gap: 4.5rem;
+  }
+
+  /* A list shorter than the About column spreads out so both columns end level. */
+  .home-writing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-posts {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 40rem) {
+  .home-main {
+    margin-top: 1.1rem;
+  }
+}

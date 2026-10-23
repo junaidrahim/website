@@ -29,18 +29,19 @@ html {
   scroll-behavior: smooth;
 }
 
+/* There is no footer; the bottom padding leaves the same quiet space under every page. */
 body {
   font-family: var(--font-body);
   margin: auto;
   max-width: var(--main-width);
-  padding-left: var(--main-padding);
-  padding-right: var(--main-padding);
+  padding: 0 var(--main-padding) 6rem;
   color: var(--content-primary);
   background: var(--background);
 }
 
-.content {
-  min-height: var(--content-height) !important;
+/* The theme's baseof always renders a <footer>; the site has none (showFooter = false). */
+body > footer {
+  display: none;
 }
 
 h1 {
@@ -204,56 +205,16 @@ p code {
 hr {
   border: none;
   height: 1px;
-  background: var(--content-secondary);
+  background: var(--rule);
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/* Header */
+/* Header: see site-header.css. The reading column keeps the old content width, aligned to
+   the header's left edge. */
 
-.header {
-  padding-top: var(--header-top-gap);
-  margin-bottom: var(--header-bottom-gap);
-}
-
-.header p {
-  font-size: 0.8em;
-  font-family: var(--font-mono);
-  margin-top: 0;
-  margin-right: var(--header-menu-side-gap);
-}
-
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: var(--header-menu-top-gap);
-}
-
-.header-title {
-  font-size: 2.2em;
-  font-weight: bold;
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.header-title a {
-  text-decoration: none;
-}
-
-/* Footer */
-
-footer {
-  font-size: small;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: var(--footer-height);
-}
-
-footer a {
-  font-family: var(--font-mono);
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
+.main {
+  max-width: var(--content-width);
 }
 
 /* Posts list  */
@@ -301,8 +262,8 @@ footer a {
   color: var(--content-secondary);
 }
 
-.list-container {
-  padding-bottom: 3rem;
+.post-line:last-child {
+  margin-bottom: 0;
 }
 
 .pagination {
@@ -405,73 +366,122 @@ footer a {
   margin-right: 0.3rem;
 }
 
-/* Single pagination */
+/* Single pagination: previous on the text column's left edge, next on its right edge. */
 
 .single-pagination {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
 }
 
-.single-pagination a {
-  margin-left: 0.4rem;
-  margin-right: 0.4rem;
-}
-
-.single-pagination hr {
+.single-pagination p {
+  flex: 0 1 50%;
   margin: 0;
 }
 
-.single-pagination-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100%;
-}
-
-.single-pagination-prev {
-  min-width: 50%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.single-pagination .single-pagination-next {
+  margin-left: auto;
   text-align: right;
 }
 
-.single-pagination-next {
-  min-width: 50%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-align: left;
-}
+/* Table of contents: inline and collapsible on narrow screens; fixed in the left margin,
+   level with the nav, once the margin is wide enough. */
 
-.single-pagination-container-next {
-  display: flex;
-  min-height: 100%;
-  padding: 0.5rem;
-}
-
-.single-pagination-container-prev {
-  display: flex;
-  min-height: 100%;
-  padding: 0.5rem;
-  float: right;
-}
-
-/* Table of contents */
-
-.toc {
-  font-size: var(--p-font-size);
-  line-height: calc(0.9 * var(--p-line-height));
+.post-toc {
   margin-top: var(--toc-margin-top);
   margin-bottom: var(--toc-margin-bottom);
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--content-secondary);
 }
 
-.toc ul {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+.post-toc summary {
+  cursor: pointer;
+  font-size: 1.15em;
+  font-weight: 700;
 }
 
-.toc li {
-  margin-top: 0.1rem;
-  margin-bottom: 0.1rem;
+.post-toc ul {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.post-toc ul ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.post-toc li {
+  margin: 0.25rem 0;
+}
+
+.post-toc a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-toc a:hover,
+.post-toc a:focus-visible,
+.post-toc a.is-active {
+  color: var(--accent);
+}
+
+@media (min-width: 85rem) {
+  .post-toc {
+    position: fixed;
+    top: calc(4.75rem + 2.5rem * 1.2 + 1.9rem);
+    /* 10rem wide, 1.75rem left of the 60rem container's content edge. */
+    left: calc(50vw - 30rem - 1.75rem - 10rem);
+    width: 10rem;
+    max-height: calc(100vh - 12rem);
+    overflow-y: auto;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .post-toc summary {
+    list-style: none;
+    pointer-events: none;
+  }
+
+  .post-toc summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
+/* Sidenotes: footnotes are copied beside their references in the right gutter
+   (assets/js/post-margins.js) and the endnotes are hidden while that gutter exists. */
+
+.sidenote {
+  display: none;
+}
+
+@media (min-width: 63rem) {
+  .sidenote {
+    display: block;
+    float: right;
+    clear: right;
+    /* 12.5rem wide, 1.75rem into the 14.375rem gutter beside the reading column. */
+    width: 12.5rem;
+    margin: 0.3rem -14.25rem 1rem 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--content-secondary);
+  }
+
+  .sidenote sup {
+    font-size: 0.75em;
+  }
+
+  .has-sidenotes .footnotes {
+    display: none;
+  }
 }
 
 /* Autonumbering */
@@ -617,11 +627,9 @@ figcaption {
 /* Back to top */
 
 .back-to-top {
-  text-align: center;
+  text-align: left;
   font-family: var(--font-mono);
   font-size: small;
-  margin-bottom: 2rem;
-  /* margin-top: -3rem; */
 }
 
 /* Tables */

@@ -13,10 +13,12 @@ disableKinds = ['taxonomy']
 # Math mode
 math = true
 theme = "light"
+# The site has no footer.
+showFooter = false
 
 # Intro on main page, content in markdown, if you omit title or content the other can be displayed
 homeIntro = true
-homeIntroTitle = 'Hello ☕️'
+homeIntroTitle = 'About'
 homeIntroContent = """
 I'm a senior software engineer in the CTO's office at [Fivetran](https://www.fivetran.com).
 
@@ -29,7 +31,7 @@ I've written a longer introduction [here](/about) if you're interested :)
 
 # Collection to display on home page:
 # in this case we would display content/posts pages
-homeCollectionTitle = 'Posts'
+homeCollectionTitle = 'Recent writing'
 homeCollection = 'posts'
 
 # Pagination size across all website, this is the same for homepage and single list page
@@ -68,11 +70,7 @@ url = "https://t.me/zebion"
 name = "strava"
 url = "https://www.strava.com/athletes/50189743"
 
-# Main menu pages
-[[params.menu]]
-name = "home"
-url = "/"
-
+# Main menu pages; the site name links home.
 [[params.menu]]
 name = "posts"
 url = "/posts"

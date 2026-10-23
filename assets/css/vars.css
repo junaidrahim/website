@@ -24,17 +24,17 @@
 
 
 :root {
-  --main-width: 780px;
-  --main-padding: 1.4em;
+  /* Every page shares the homepage's 60rem container so the header never moves;
+     inner pages set their reading column to --content-width inside it. */
+  --main-padding: 1.5rem;
+  --main-width: calc(60rem + 2 * var(--main-padding));
+  --content-width: 45.625rem;
   --main-padding-bottom: 3rem;
 
   --caption-padding: calc(0.25 * var(--main-padding));
 
-  /* header settings */
-  --header-top-gap: 4rem;
-  --header-bottom-gap: 2rem;
-  --header-menu-side-gap: 1rem;
-  --header-menu-top-gap: 1rem;
+  /* Fountain-ink accent (Working Notes palette). */
+  --accent: light-dark(#385568, #86a9ba);
 
   /* Typography */
   --font-heading:
@@ -83,11 +83,10 @@
   /* Social section */
   --social-icons-bottom-margin: 3rem;
 
-  /* Footer */
-  --footer-height: 3rem;
+  /* Hairline rules (Working Notes palette). */
+  --rule: light-dark(#b0b0b0, #606060);
 
   /* Content */
-  --content-height: calc(100vh - var(--footer-height));
   --figure-img-max-height: 800px;
 
   /* Tables */
@@ -96,17 +95,8 @@
   --table-margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 1024px) {
-  :root {
-    --main-width: 750px;
-    --header-top-gap: 1rem;
-    --caption-padding: calc(0.25 * var(--main-padding));
-  }
-}
-
 @media screen and (max-width: 640px) {
   :root {
-    --header-top-gap: 1rem;
     --social-icons-bottom-margin: 0rem;
     --caption-padding: calc(2 * var(--main-padding));
   }
