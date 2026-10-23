@@ -5,6 +5,7 @@ readTime: false
 math: false
 draft: false
 hidePagination: true
+hideBackToTop: true
 ---
 
 I try my best to not write the final draft published here with AI. I've written a slightly more detailed post about my

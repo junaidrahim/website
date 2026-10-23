@@ -54,8 +54,8 @@
     </section>
   </main>
 
-  <footer class="home-footer">
-    <p class="home-colophon">{{ site.Title }}</p>
+  <footer>
+    {{ partial "footer.html" . }}
   </footer>
 
   {{ partial "functions/get_hook.html" (dict "hook" "body_end" "context" .) }}

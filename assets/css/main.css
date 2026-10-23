@@ -29,7 +29,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* A column that fills the viewport, so short pages keep the footer at the bottom. */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--font-body);
   margin: auto;
   max-width: var(--main-width);
@@ -40,7 +44,7 @@ body {
 }
 
 .content {
-  min-height: var(--content-height) !important;
+  flex: 1 0 auto;
 }
 
 h1 {
@@ -204,33 +208,30 @@ p code {
 hr {
   border: none;
   height: 1px;
-  background: var(--content-secondary);
+  background: var(--rule);
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/* Header: see site-header.css. The reading column and footer keep the old content width,
-   aligned to the header's left edge. */
+/* Header: see site-header.css. The reading column keeps the old content width, aligned to
+   the header's left edge. */
 
-.main,
-.content ~ footer {
+.main {
   max-width: var(--content-width);
 }
 
-/* Footer */
+/* Footer: a rule and the site name, the same on every page. */
 
-footer {
-  font-size: small;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: var(--footer-height);
+body > footer {
+  margin-top: 6rem;
+  padding: 1.75rem 0 3.9rem;
+  border-top: 1px solid var(--rule);
 }
 
-footer a {
-  font-family: var(--font-mono);
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
+.site-colophon {
+  margin: 0;
+  font: 0.75rem/1.4 var(--font-mono);
+  color: var(--content-secondary);
 }
 
 /* Posts list  */
@@ -278,8 +279,8 @@ footer a {
   color: var(--content-secondary);
 }
 
-.list-container {
-  padding-bottom: 3rem;
+.post-line:last-child {
+  margin-bottom: 0;
 }
 
 .pagination {
@@ -673,8 +674,6 @@ figcaption {
   text-align: center;
   font-family: var(--font-mono);
   font-size: small;
-  margin-bottom: 2rem;
-  /* margin-top: -3rem; */
 }
 
 /* Tables */

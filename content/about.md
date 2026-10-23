@@ -1,5 +1,6 @@
 ---
 title: "About"
+hidePagination: true
 ---
 
 👋🏻 Hi, I’m Junaid.

@@ -2,20 +2,19 @@
    of a container with a definite height); the width follows the drawing's viewBox. */
 
 .desk-lamp {
-  --lamp-ink: var(--accent);
   display: block;
   height: var(--lamp-height);
   padding: 0;
   border: 0;
   background: none;
-  color: var(--lamp-ink);
+  color: var(--accent);
   cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
 
 .desk-lamp:focus-visible {
-  outline: 2px solid var(--lamp-ink);
+  outline: 2px solid var(--accent);
   outline-offset: 4px;
 }
 
