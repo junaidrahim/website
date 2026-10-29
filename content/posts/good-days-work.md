@@ -1,8 +1,8 @@
 ---
 title: "A Good Day’s Work Looks Different Now"
 date: "2026-10-23"
-summary: ""
-description: ""
+summary: "My memoir of Atlan going AI-native: virtue signalling, burnout and loss of craft, and finding joy in the work again."
+description: "My memoir of Atlan going AI-native: virtue signalling, burnout and loss of craft, and finding joy in the work again."
 toc: false
 readTime: true
 math: false
