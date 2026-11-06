@@ -390,7 +390,7 @@ hr {
 }
 
 /* Table of contents: inline and collapsible on narrow screens; fixed in the left margin,
-   level with the nav, once the margin is wide enough. */
+   level with the post title, once the margin is wide enough. */
 
 .post-toc {
   margin-top: var(--toc-margin-top);
@@ -434,12 +434,14 @@ hr {
 
 @media (min-width: 85rem) {
   .post-toc {
+    /* Header top + masthead + gap + nav line + space before the post title. */
+    --post-toc-top: calc(4.75rem + 2.5rem * 1.2 + 1.9rem + 0.8125rem * 1.4 + 2rem);
     position: fixed;
-    top: calc(4.75rem + 2.5rem * 1.2 + 1.9rem);
+    top: var(--post-toc-top);
     /* 10rem wide, 1.75rem left of the 60rem container's content edge. */
     left: calc(50vw - 30rem - 1.75rem - 10rem);
     width: 10rem;
-    max-height: calc(100vh - 12rem);
+    max-height: calc(100vh - var(--post-toc-top) - 2rem);
     overflow-y: auto;
     margin: 0;
     font-size: 0.8rem;

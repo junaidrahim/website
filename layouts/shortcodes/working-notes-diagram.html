@@ -2,8 +2,8 @@
 {{- $mobilePath := .Get "mobile" -}}
 {{- $alt := .Get "alt" -}}
 {{- $caption := .Get "caption" -}}
-{{- $desktop := resources.Get $desktopPath -}}
-{{- $mobile := resources.Get $mobilePath -}}
+{{- $desktop := or (.Page.Resources.Get $desktopPath) (resources.Get $desktopPath) -}}
+{{- $mobile := or (.Page.Resources.Get $mobilePath) (resources.Get $mobilePath) -}}
 
 {{- if not $desktop -}}
   {{- errorf "working-notes-diagram: desktop asset %q was not found" $desktopPath -}}

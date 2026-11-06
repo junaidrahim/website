@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="414" viewBox="0 0 760 414" role="img" aria-labelledby="title desc">
+  <title id="title">The text buffer at the centre of the IDE</title>
+  <desc id="desc">A schematic editor window. The large central pane contains a file, line numbers, code and a cursor. A file tree, search, Git, debugger and terminal occupy smaller peripheral panes. Only the text buffer is outlined in fountain-ink blue.</desc>
+  <style>
+    :root { color-scheme: light dark; --fg: #242424; --muted: #757575; --border: #b0b0b0; --accent: #385568; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fg: #dadada; --muted: #8c8c8c; --border: #606060; --accent: #86a9ba; }
+    }
+    text { fill: var(--fg); font-family: "Iowan Old Style", Georgia, serif; }
+    .mono, .mono text { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; }
+    .muted { fill: var(--muted); }
+    .accent { fill: var(--accent); }
+    .rule { fill: none; stroke: var(--border); stroke-width: 1; }
+    .focus { fill: none; stroke: var(--accent); stroke-width: 1.5; }
+    .cursor { stroke: var(--accent); stroke-width: 2; }
+  </style>
+
+  <text class="mono" x="24" y="30">01 / the editor is the centre</text>
+  <path class="rule" d="M24 46H736"/>
+
+  <rect class="rule" x="24" y="72" width="712" height="322" rx="2"/>
+  <path class="rule" d="M24 108H736M158 72V394M604 108V328M158 328H736"/>
+  <text class="mono muted" x="42" y="95">project/</text>
+  <text class="mono accent" x="180" y="95">main.py</text>
+  <text class="mono muted" x="583" y="95" text-anchor="end">×</text>
+
+  <text x="42" y="146" font-size="19">Files</text>
+  <text class="mono muted" x="42" y="183">src/</text>
+  <path class="rule" d="M48 195V239M48 207H59M48 239H59"/>
+  <text class="mono" x="64" y="212">main.py</text>
+  <text class="mono muted" x="64" y="244">lib.py</text>
+  <text class="mono muted" x="42" y="280">tests/</text>
+
+  <rect class="focus" x="158" y="108" width="446" height="220"/>
+  <text class="accent" x="188" y="160" font-size="31">Text buffer</text>
+  <text class="mono muted" x="188" y="187">the file you read and edit</text>
+  <g class="mono">
+    <text class="muted" x="198" y="232" text-anchor="end">1</text>
+    <text x="216" y="232">def main():</text>
+    <text class="muted" x="198" y="260" text-anchor="end">2</text>
+    <text x="216" y="260" xml:space="preserve">    build()</text>
+    <text class="muted" x="198" y="288" text-anchor="end">3</text>
+  </g>
+  <path class="cursor" d="M216 274V292"/>
+
+  <text x="624" y="146" font-size="19">Tools</text>
+  <text class="mono muted" x="624" y="190">Search</text>
+  <text class="mono muted" x="624" y="228">Git</text>
+  <text class="mono muted" x="624" y="266">Debug</text>
+
+  <text x="180" y="353" font-size="18">Terminal</text>
+  <text class="mono muted" x="180" y="380">$ python main.py</text>
+</svg>

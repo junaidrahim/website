@@ -1,15 +1,18 @@
 ---
 title: "A Good Day’s Work Looks Different Now"
 date: "2026-10-23"
-summary: "My memoir of Atlan going AI-native: virtue signalling, burnout and loss of craft, and finding joy in the work again."
-description: "My memoir of Atlan going AI-native: virtue signalling, burnout and loss of craft, and finding joy in the work again."
+summary:
+  "My memoir of Atlan going AI-native: virtue signalling, burnout and loss of craft, and finding joy in the work again."
+description:
+  "My memoir of Atlan going AI-native: virtue signalling, burnout and loss of craft, and finding joy in the work again."
 toc: false
 readTime: true
 math: false
 draft: false
 ---
 
-> Originally submitted for [the pragmatic engineer essay contest](https://blog.pragmaticengineer.com/how-software-engineering-is-changing-an-essay-challenge/).
+> Originally submitted for
+> [the pragmatic engineer essay contest](https://blog.pragmaticengineer.com/how-software-engineering-is-changing-an-essay-challenge/).
 
 In January 2026, our founder announced in the engineering-wide Slack channel that \~zero “hand-crafted” code would be
 allowed from that day forward at Atlan.

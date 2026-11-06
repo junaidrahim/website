@@ -30,10 +30,6 @@ This website is a collection of all of my musings, I find the idea of having a p
 romantic. You can read my [technical posts](https://junaid.foo/posts/), explore the projects behind them, or browse my
 [bookshelf](https://junaid.foo/shelf/).
 
-I also write more personal essays on my substack that I have pretentiously named
-[Undertones](https://substack.com/@junaidrahim). I'd probably try making a living as a writer if I become part of the
-permanent underclass.
-
 Away from work, I enjoy reading in Cubbon Park, cycling around Bengaluru, and partake in being the occasional street
 photographer. Some of those photos are on [Unsplash](https://unsplash.com/@junaidrahxm).
 

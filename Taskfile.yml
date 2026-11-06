@@ -15,7 +15,7 @@ tasks:
   dev:
     desc: Run the local Hugo server
     cmds:
-      - hugo server
+      - hugo server --bind 0.0.0.0
 
   build:
     desc: Build the Hugo site

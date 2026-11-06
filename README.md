@@ -28,6 +28,16 @@ Notebook status fits the terminal width, switching to wrapped fields below 93 co
 Use `COLUMNS=120 task notebook-status` to override the width, or
 `uv run --frozen python main.py status --json` for complete structured output.
 
+Post contents stay fixed in the left margin at widths of at least 85rem, starting level
+with the post title. On narrower screens, they remain inline and collapsible.
+
+Posts with their own images use a page bundle: `content/posts/<slug>/index.md`, with assets beside it.
+The `working-notes-diagram` shortcode accepts `desktop`, `mobile`, `alt`, and `caption` parameters.
+Asset paths resolve within the page bundle first, then under `assets/` for shared diagrams.
+Use separate narrow-screen SVGs when scaling the desktop composition would make labels unreadable.
+Keep each diagram shortcode on one line, preceded by `<!-- prettier-ignore -->`; Prettier can
+otherwise split its closing delimiter into invalid Hugo syntax.
+
 ## Why this exists
 
 I'm not trying to build a brand. I'm not trying to sell anything. I'm just trying to write.
