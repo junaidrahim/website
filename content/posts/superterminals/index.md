@@ -1,5 +1,5 @@
 ---
-title: "You need a superterminal"
+title: "You need a Superterminal"
 date: "2026-11-06T18:58:16+05:30"
 summary: "You need a manager for infinite minds. You need a superterminal."
 description: "You need a manager for infinite minds. You need a superterminal."
@@ -13,13 +13,15 @@ draft: false
 I have been trying to come up with a unified theory of how engineering tools are changing and what kind of tools I would
 like to use personally. And I think I finally have an answer.
 
-All of this is downstream from Thorsten Ball's world of software engineering [^1]. I agree with everything he has
-listed. His post caused a stir on X, but I feel he is directionally very correct.
+All of this is downstream from [@thorstenball](https://x.com/thorstenball)'s world of software engineering [^1]. I
+agree with everything he has listed. His post caused a big stir here on X, but I feel he is directionally very
+correct.
 
-Since 2026 started, I have barely written code manually in a file. I have spent a lot more time reading code and doing a
-ton of experiments. It has been fun to force myself to 10x my ambition. I recently switched jobs and moved into a team
-where my role is closer to research engineering. With that change, I find myself doing a lot of experiments and trying
-to evaluate and argue about research directions which eventually become features in a product/system.
+Since 2026 started, I have barely written code manually in a file. Instead I have spent a lot more time reading
+code and dong a lot of things in parallel. It has been fun to force myself to 10x my ambition. I also recently
+switched jobs and moved into a team where my role is closer to research engineering. With that change, I find
+myself doing a lot of experiments and trying to evaluate and argue about research directions which eventually
+become features in a product/system.
 
 I also join meetings, give presentations, discuss issues with my colleagues, talk to customers, look at transcripts of
 customer calls I was not a part of, attend architecture meetings, RFC discussions, etc. All of this while trying to
@@ -28,7 +30,7 @@ manage a fleet of agents that are sustainably pushing research and system implem
 And with all these changes, I have grown to hate the tools I was using on a daily basis. Raw dogging Claude Code on
 Ghostty has been very annoying.
 
-## Text buffers to cloud agents
+## Text Buffers to Cloud Agents
 
 Software engineering tools have evolved around the text editor. Everything was done to make sure you could add code in a
 file. JetBrains, Vim, Sublime, Visual Studio, VS Code, Zed, etc.
@@ -36,9 +38,9 @@ file. JetBrains, Vim, Sublime, Visual Studio, VS Code, Zed, etc.
 <!-- prettier-ignore -->
 {{< working-notes-diagram desktop="text-buffer.svg" mobile="text-buffer-mobile.svg" alt="An IDE layout dominated by a central text buffer, with files on the left, search, Git and debugging tools on the right, and a terminal below." caption="This is what most IDEs have looked like for the longest time. At least pre-AI." >}}
 
-Even the early versions of Cursor were built around the text buffer of a file, so you could see the changes AI was
-making to your file. Thanks to Claude Code, we moved on to a workflow where you are not reading the code most of the
-time.
+Even the early versions of Cursor were built around the text buffer of a file, so you could see the changes your
+agent was making to a file. Thanks to Claude Code, we moved on to a workflow where you are not reading the code
+most of the time.
 
 The most primitive software engineering setup today is splitting your terminal and then running separate Claude Code
 sessions in different worktrees. You are looking at multiple chat windows where your agent is working.
@@ -59,7 +61,7 @@ It’s an interesting time to observe the advances in these tools because they a
 in our work pattern, of going from writing and reading code to interacting with agents and their outputs, and perhaps
 reviewing code at the end.
 
-With an ADE setup, you can easily run a dozen agents at once and try to divide work among them. Going from zero to a
+With an ADE setup, you can easily run a dozen agents at once and try to divide work among them. Going from one to a
 dozen agents is the hardest; it's a fundamental shift in how you work, but going from a dozen to hundreds is relatively
 easy. As you parallelize more, you need the agents to start and only go to them once they have finished a task. In
 between, you can context switch while they work to make better use of your time.
@@ -68,11 +70,10 @@ Watching an agent work is a waste of time and an anti-pattern. If you are just w
 you don’t have enough confidence in the work it’s doing or you don’t have enough guardrails that’d stop the agent from
 doing something harmful, something along the lines of deleting a full dev k8s cluster just because it was trying to
 clean something up. You want to get into a rhythm where you keep spawning agents, give them tasks and burden them with
-producing irrefutable proof that whatever they have done works and is correct. This has brought formal verification back
-in vogue.
+producing irrefutable proof that whatever they have done works and is correct (yay formal verification).
 
 A big part of inspecting this "irrefutable proof" looks a lot like data analysis. The agent has probably run a bunch of
-tests and dumped all the test results in a SQLite database or a JSON file. The agent pings you and says that it’s done.
+tests and dumped all the test results in a SQLite or a JSON file. The agent pings you and says that it’s done.
 You look at the JSON file, maybe ask it to plot some charts or build an HTML UI to visualize that JSON file. You look at
 it from multiple angles, things make sense, and you ask it to create a PR. Multiply this workflow by a dozen agents, and
 you quickly have this situation where your whole day is just jumping from worktree to worktree, looking at different
@@ -83,49 +84,49 @@ You are working on multiple initiatives. Some of them are perhaps product-focuse
 are just throwaway explorations that an agent is doing so that you can use them to understand the direction you want to
 take. It’s a good mix of all this.
 
-I know a lot of people live an extreme version of this way of working by running hundreds of agents with automated loops
-that spawn themselves and keep working endlessly. But a lot of times even the loops need some maintenance because the
-underlying problem has shifted, or maybe you have discovered a new source of data that needs to be used to influence the
-loop or something. So you are always in this mode of writing material to influence agents so they can do their work.
+I know a lot of people live an extreme version of this way of working by running hundreds of agents with automated
+loops that spawn themselves and keep working endlessly. But a lot of times even the loops need some maintenance
+because the underlying problem has shifted, or maybe you have discovered a new source of data that needs to
+influence the loop or something. So you are always in this mode of writing more material to influence agents so
+they can do their work.
 
-So now, the work is a mix of writing, data analysis and engineering. It used to be like this earlier as well, but we
-used to do data analysis maybe once a week. Now it's every other hour.
+So now, the work is a mix of writing, data analysis and engineering. It used to be like this earlier as well, just
+that we used to do data analysis maybe once a week after a full sprint of just writing code. Now it's every other
+hour.
 
-## Bloomberg terminals
+## Bloomberg Terminals
 
-As someone who is trying to get more and more done using AI as much as they can, I have found some interesting parallels
-between our engineering and the trading world.
+You know who else in the world do a relatively similar job of constantly analysing a lot of data to take decisions
+? Traders. I have found some interesting parallels between our engineering and the trading world.
 
-The Bloomberg Terminal is a tool used by all of the big banks and hedge funds to basically look at market data. It costs
-around US\$30k per year, and it’s a darling tool for most professional traders.
+![A Bloomberg Terminal workstation with multiple market-data monitors and a specialized keyboard.](./bloomberg-terminal.jpg)
+
+The Bloomberg Terminal is a tool used by all of the big banks and hedge funds to analse live market data. It costs
+around \$30k USD per year, and it’s a darling tool for most professional traders.
 
 You have probably seen it in movies like The Big Short and Margin Call. Even Alexandr Wang has a
 [bloomie](https://x.com/alexandr_wang/status/2105052032126292279?s=20).
 
-There is a lot of commentary on whether the price is justified or not. There have also been a lot of pointless attempts
-to vibe code a free alternative to it, but most people who try to do it completely miss the point of how much work goes
-into making that black-and-yellow app work. What makes the Bloomberg Terminal useful is the mountain of work Bloomberg
-does as a tech company to unify and serve all the data feeds that exist in the finance universe. This involves
-everything from news data, weather data, tickers for every single financial instrument on the planet and things like
-that.
-
-I learned about the Bloomberg Terminal when I watched The Big Short in high school and had just made a Zerodha account
-to trade in the Indian markets. Now, as a research engineer, I appreciate it even more. You see, the Bloomberg Terminal
-is the best inspiration we have for what kind of tools we should be building for the software engineers of the future.
+There is a lot of commentary on whether the price is justified or not. There have also been a lot of pointless
+attempts to vibe code a free alternative to it, but most people who try to do it completely miss the point of how
+much work goes into making that black-and-yellow app work. What makes the Bloomberg Terminal useful is the mountain
+of work Bloomberg does as a tech company to unify and serve all the data feeds that exist in the finance universe.
+This involves everything from news data, weather data and live tickers for every single financial instrument on the
+planet.
 
 When information was scarce and local, a trader’s edge came from relationships, being physically on the floor and
-hearing news first. The job was about voice, reading the tape and knowing the right dealer. Bloomberg standardized that
-information and made it widely available, shifting the edge toward analysis and the network on the terminal, which
-became a status symbol at roughly \$25–30k a year per seat.
+hearing news first. The job was about voice, reading the tape and knowing the right dealer. Bloomberg standardized
+that information and made it widely available, shifting the edge toward analysis and the network on the terminal.
 
-Today, execution is largely automated, and the edge comes from data, models, latency and risk management. Human traders
-handle large, illiquid or complex trades, manage the algorithms and still use Bloomberg chat for over-the-counter (OTC)
-negotiation.
+As a research engineer, I appreciate the bloomie even more. You see, the Bloomberg Terminal is a very good
+inspiration we have for what kind of tools we should be building for software engineers of the future because our
+work is going through a similar transition. All the leverage is being pushed to analysis and fast decision making,
+instead of writing code.
 
 I am deeply inspired by the Bloomberg Terminal because it enables this sort of lightning-fast experience when it comes
 to analyzing a lot of information quickly to make decisions.
 
-In the Bloomberg Terminal, you can hit a few keystrokes and be looking at the stock price of something like \$NVDA. Hit
+You can hit a few keystrokes and be looking at the stock price of something like \$NVDA. Hit
 a few more and you are looking at the bar chart of its quarterly earnings report. Hit a few more and you are able to
 correlate it with the stock prices of its suppliers.
 
@@ -167,15 +168,19 @@ A superterminal needs client/daemon separation so that sessions outlive the wind
 shells and organize them, preferably in a hierarchy. This client/daemon setup gives you very good support for multi-host
 work. You can direct work on multiple machines very easily.
 
-It should also let you open and read files quickly, especially Markdown, without leaving the workspace.
+It should have something closer to the idea of blocks, where you can build custom panes for displaying information
+in different modalities. It should also let you open and read files quickly, especially Markdown, without leaving
+the workspace.
 
-It also needs a plugin ecosystem for creating custom views and a native meta-harness that can inspect what is happening
-across every shell session. When you have many agents running at once, the problem is not just managing their terminals;
-it is making sense of all the information they produce. An extensible system of blocks lets you bring that information
-into the workspace and build new views on the fly as you need them.
+It also needs a plugin ecosystem for creating custom blocks and a native meta-harness that can inspect what is
+happening across every shell session.
+
+When you have many agents running at once, you need to make sense of all the information they produce. An
+extensible system of blocks lets you bring that information into the workspace and build new views on the fly as
+you need them.
 
 If you have these primitives, they give you all the tools and surface area you need to ensure that you can build your
-own Bloomberg Terminal.
+own Bloomberg Terminal, or something closer.
 
 There are two tools at the time of writing that fit this description: [Tern by Stencil](https://stencil.so/tern)[^2] and
 [Rex by Superlogical](https://www.superlogical.com/rex/docs/installation)[^3].
@@ -198,17 +203,20 @@ There are two tools at the time of writing that fit this description: [Tern by S
 | Built-in Git graph and diff views              | Yes  | No  |
 | Built-in SQLite browser and query results      | Yes  | No  |
 
-I have thoroughly enjoyed using Tern over the past few weeks as my ADE. I use it at work and also for my personal setup.
-It's been fun to vibe code different plugins in Luau and mould this terminal exactly how I want it. I have made two of
-my plugins public:
+Both of them are in beta, but are aligned to the direction I just talked about before, a highly customisable
+superterminal, that allows you to command your fleet in all the ways you want.
+
+I have thoroughly enjoyed using Tern with omp over the past few weeks as my ADE. I use it at work and also for my
+personal setup, I use the ios app when I am gym.
+
+It's been fun to vibe code different plugins in Luau and mould this terminal exactly how I want it. I have made two
+of my plugins public:
 
 - https://github.com/junaidrahim/tern-bigquery
 - https://github.com/junaidrahim/tern-software-factory
 
-I want to find out how much work I can take on without losing track of what I’m responsible for. Starting another agent
-is easy enough now. What takes time is understanding what it did, checking whether it worked and deciding where to go
-from there. I’m enjoying shaping Tern around that part of my day. There’s still plenty to figure out, but being able to
-build the views I need beside the agents doing the work feels like a useful place to start.
+There’s still plenty to figure out, but being able to build the blocks I need beside the agents doing the work
+feels like a useful place to start.
 
 You need a manager for infinite minds. You need a superterminal.
 
