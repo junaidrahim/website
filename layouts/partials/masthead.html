@@ -9,7 +9,11 @@
       {{- end }}
     </nav>
   </div>
-  <div class="site-lamp">
-    {{ partial "desk-lamp.html" . }}
+  <div class="site-lamp{{ if .IsHome }} site-writing-desk{{ end }}">
+    {{ if .IsHome }}
+      {{ partial "writing-desk.html" . }}
+    {{ else }}
+      {{ partial "desk-lamp.html" . }}
+    {{ end }}
   </div>
 </div>

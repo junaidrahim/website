@@ -1,0 +1,41 @@
+/* The homepage desk has its own centered row below the existing masthead. */
+.is-home .site-lamp.site-writing-desk {
+  position: static;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 1.5rem;
+  padding-right: 0;
+}
+.writing-desk {
+  width: 100%;
+  max-width: 54rem;
+  color: var(--content-primary);
+}
+.writing-desk svg { display: block; width: 100%; height: auto; overflow: visible; }
+.writing-desk .desk-art { fill: none; stroke: currentColor; stroke-width: 1.45; stroke-linecap: round; stroke-linejoin: round; }
+.writing-desk .desk-wash { fill: light-dark(#f9f9f9, #1e1e1e); stroke: none; }
+.writing-desk .desk-paper { fill: var(--background); }
+.writing-desk .desk-thin { stroke-width: .75; opacity: .6; }
+.writing-desk .desk-beam { fill: light-dark(#f9f9f9, #1e1e1e); stroke: none; }
+.writing-desk .desk-hotspot { cursor: pointer; touch-action: manipulation; }
+.writing-desk .desk-hit { fill: transparent; stroke: none; pointer-events: all; }
+.writing-desk .desk-hotspot:hover .desk-accent,
+.writing-desk .desk-hotspot:focus-visible .desk-accent { stroke: var(--accent); }
+.writing-desk .desk-hotspot:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.writing-desk .desk-cursor { animation: desk-blink 2s step-end infinite; }
+.writing-desk .desk-steam { animation: desk-drift 5s ease-in-out infinite; }
+@keyframes desk-blink { 50% { opacity: 0; } }
+@keyframes desk-drift { 50% { transform: translateY(-4px); opacity: .2; } }
+/* Leave a little breathing room between the desk and the introduction/articles. */
+.home .home-main { margin-top: 3rem; }
+
+/* Strengthen fine linework as the complete composition scales down on phones. */
+@media (max-width: 40rem) {
+  .home .home-main { margin-top: 2rem; }
+  .writing-desk .desk-art { stroke-width: 2.5; }
+  .writing-desk .desk-thin { stroke-width: 1.4; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .writing-desk .desk-cursor, .writing-desk .desk-steam { animation: none; }
+}
