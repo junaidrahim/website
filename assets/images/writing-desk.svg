@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 55 860 330" role="group" aria-labelledby="desk-title desk-desc">
+  <title id="desk-title">At the writing desk</title>
+  <desc id="desk-desc">A pen-and-ink desk with a lamp, open notebook, terminal, books, camera and steaming coffee. Open the notebook for posts, books for the shelf, terminal for AI, and camera for photographs. The lamp switches between daylight and night.</desc>
+  <g class="desk-art">
+    <path d="M73 334 Q450 328 925 337 M87 342 Q510 337 913 345"/>
+    <path class="desk-thin" d="M102 352L898 355M126 364L880 366M158 381L168 348M845 350L856 383"/>
+    <path class="desk-beam" d="M344 139L311 145L249 331L627 335Z"/>
+    <a class="desk-hotspot" href="/ai/" aria-label="Explore AI">
+      <title>Explore AI</title>
+      <rect class="desk-hit" x="578" y="160" width="220" height="178"/>
+      <g class="desk-accent">
+        <path class="desk-wash" d="M603 169L793 179L787 302L597 289Z"/>
+        <path d="M603 167L793 178L786 301L597 289ZM612 177L782 188L776 283L607 274Z"/>
+        <path class="desk-paper" d="M612 177L782 188L776 283L607 274Z"/>
+        <path d="M599 290L578 316L793 330L787 302M578 316L580 322L791 336L793 330"/>
+        <path class="desk-thin" d="M606 299L776 310M601 305L778 317M594 312L781 324M625 301L622 313M648 303L645 315M672 305L670 317M698 307L697 319M724 309L724 321M748 311L749 323M629 205L636 210L628 215M644 216L670 218M627 235L725 241M626 245L692 249"/>
+        <path class="desk-cursor" d="M699 250L706 250" stroke-width="5"/>
+      </g>
+    </a>
+    <a class="desk-hotspot" href="/shelf/" aria-label="Visit the bookshelf">
+      <title>Visit the bookshelf</title>
+      <rect class="desk-hit" x="174" y="265" width="160" height="72"/>
+      <g class="desk-accent">
+        <path class="desk-wash" d="M167 293L308 287L333 306L191 314Z"/>
+        <path d="M165 293L307 287L333 305L191 314L165 293L164 307L190 326L332 316L333 305M190 314L190 326"/>
+        <path class="desk-thin" d="M199 318L324 310M199 322L324 314"/>
+        <path class="desk-paper" d="M176 273L291 265L315 283L199 293L176 273Z"/>
+        <path d="M176 273L291 265L315 283L314 294L199 304L175 284ZM199 293L199 304M199 293L315 283"/>
+        <path class="desk-thin" d="M204 297L308 288M208 300L307 291"/>
+        <path class="desk-wash" d="M214 269L233 283L231 303L240 299L245 302L247 281L229 268"/>
+      </g>
+    </a>
+    <g class="desk-hotspot desk-switch" role="button" tabindex="0" aria-label="Night mode" aria-pressed="false">
+      <title>Switch the light</title>
+      <rect class="desk-hit" x="220" y="80" width="140" height="180"/>
+      <g class="desk-accent">
+        <path class="desk-wash" d="M238 255Q267 242 293 251L305 260Q269 273 230 264Z"/>
+        <path d="M230 263Q260 247 293 251L305 259Q272 274 230 263ZM262 250L267 222L226 171L234 163L278 217L275 251M227 169L287 101L297 108L236 174M241 157L283 110M270 218L234 174"/>
+        <circle cx="232" cy="169" r="6"/><circle cx="289" cy="105" r="6"/><circle cx="273" cy="222" r="5"/>
+        <path class="desk-wash" d="M296 105Q314 76 330 92L355 134Q332 153 307 143Z"/>
+        <path d="M296 105Q314 76 330 92L355 134Q332 153 307 143ZM307 143Q330 124 355 134M313 140Q331 131 347 136"/>
+        <path class="desk-thin" d="M301 104L317 133M306 99L322 129M312 95L328 125M267 265C266 289 242 281 248 305C251 320 284 322 287 332"/>
+      </g>
+    </g>
+    <a class="desk-hotspot" href="/posts/" aria-label="Read the writing">
+      <title>Read the writing</title>
+      <rect class="desk-hit" x="334" y="260" width="240" height="80"/>
+      <g class="desk-accent">
+        <path class="desk-wash" d="M343 289Q390 273 444 285Q495 268 548 279L574 326Q522 314 460 337Q396 322 332 339Z"/>
+        <path class="desk-paper" d="M344 278Q399 268 446 281Q499 260 549 272L569 317Q514 308 460 329Q399 314 335 329Z"/>
+        <path d="M344 278Q399 268 446 281Q499 260 549 272L569 317Q514 308 460 329Q399 314 335 329ZM446 281L460 329M335 329L333 337Q398 323 460 336Q520 316 572 325L569 317"/>
+        <path class="desk-thin" d="M359 287Q396 281 430 288M357 295Q397 289 433 296M354 303Q397 297 436 303M352 312Q398 305 439 313M467 286Q505 272 539 281M470 295Q507 281 543 290M474 304Q508 291 547 299"/>
+        <path d="M386 318L471 277L479 278L475 285L390 325L380 328Z" fill="currentColor" stroke-width=".5"/>
+        <path class="desk-paper" d="M386 318L390 325L380 328Z"/>
+      </g>
+    </a>
+    <g>
+      <path class="desk-wash" d="M813 285L855 288L851 322Q831 330 816 319Z"/>
+      <path d="M813 286L816 317Q831 332 852 321L856 289M853 295C877 286 875 316 853 315"/>
+      <ellipse cx="834" cy="287" rx="22" ry="6"/><ellipse class="desk-thin" cx="834" cy="328" rx="33" ry="7"/>
+      <path class="desk-steam desk-thin" d="M826 273C813 259 842 257 827 241M841 275C854 258 828 252 841 236"/>
+    </g>
+    <!-- Original camera geometry from the approved writing-desk prototype. -->
+    <a class="desk-hotspot" href="https://unsplash.com/@junaidrahxm" aria-label="Junaid’s photographs on Unsplash">
+      <title>Photographs on Unsplash</title>
+      <rect class="desk-hit" x="80" y="251" width="88" height="86"/>
+      <g class="desk-accent">
+        <path class="desk-wash" d="M105 293L146 290L160 302L159 327L105 331Z"/>
+        <path d="M105 293L146 290L160 302L159 327L105 331ZM105 293L95 302L96 326L105 331M113 292L117 283L136 282L141 291M145 291L148 285L154 286L155 297"/>
+        <ellipse class="desk-paper" cx="134" cy="311" rx="14" ry="15"/>
+        <ellipse cx="134" cy="311" rx="9" ry="10"/>
+        <path class="desk-thin" d="M102 301L104 320M117 301L121 299M149 303L154 303"/>
+      </g>
+    </a>
+    <path class="desk-thin" d="M492 344L534 338L555 347L512 354ZM516 342L536 344M515 347L540 348M685 349Q716 357 741 350"/>
+  </g>
+</svg>
